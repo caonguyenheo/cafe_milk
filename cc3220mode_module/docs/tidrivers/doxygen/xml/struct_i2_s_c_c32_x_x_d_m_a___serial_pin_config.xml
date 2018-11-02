@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_config" kind="struct" language="C++" prot="public">
+    <compoundname>I2SCC32XXDMA_SerialPinConfig</compoundname>
+    <includes refid="_i2_s_c_c32_x_x_d_m_a_8h" local="no">I2SCC32XXDMA.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_config_1a5dc1c02388a2e57c905ce705095358dd" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char I2SCC32XXDMA_SerialPinConfig::pinNumber</definition>
+        <argsstring></argsstring>
+        <name>pinNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pin number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="216" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_config_1a12d656101decc31be21fb6514d8e2c96" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a4d65c38ae0ec5612527f112c34bec287" kindref="member">I2S_PinMode</ref></type>
+        <definition>I2S_PinMode I2SCC32XXDMA_SerialPinConfig::pinMode</definition>
+        <argsstring></argsstring>
+        <name>pinMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode the pin will operate(Rx/Tx) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="219" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_config_1a0fd6201927a43d685b6167719c713e10" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1af1308040949263df5bd0e6862d20c034" kindref="member">I2S_SerInActiveConfig</ref></type>
+        <definition>I2S_SerInActiveConfig I2SCC32XXDMA_SerialPinConfig::inActiveConfig</definition>
+        <argsstring></argsstring>
+        <name>inActiveConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pin configuration in inactive state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="222" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CC32XX Serial Pin Configuration. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="214" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="214" bodyend="224"/>
+    <listofallmembers>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_config_1a0fd6201927a43d685b6167719c713e10" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_SerialPinConfig</scope><name>inActiveConfig</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_config_1a12d656101decc31be21fb6514d8e2c96" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_SerialPinConfig</scope><name>pinMode</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_config_1a5dc1c02388a2e57c905ce705095358dd" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_SerialPinConfig</scope><name>pinNumber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

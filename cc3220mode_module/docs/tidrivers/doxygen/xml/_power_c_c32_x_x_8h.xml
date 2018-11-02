@@ -1,0 +1,1344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_power_c_c32_x_x_8h" kind="file" language="C++">
+    <compoundname>PowerCC32XX.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_list_8h" local="no">ti/drivers/utils/List.h</includes>
+    <includes refid="_power_8h" local="no">ti/drivers/Power.h</includes>
+    <includes local="no">ti/devices/cc32xx/inc/hw_types.h</includes>
+    <includes local="no">ti/devices/cc32xx/driverlib/rom.h</includes>
+    <includes local="no">ti/devices/cc32xx/driverlib/rom_map.h</includes>
+    <includes local="no">ti/devices/cc32xx/driverlib/pin.h</includes>
+    <includedby refid="_s_d_host_c_c32_x_x_8h" local="no">SDHostCC32XX.h</includedby>
+    <includedby refid="_u_a_r_t_c_c32_x_x_8h" local="no">UARTCC32XX.h</includedby>
+    <includedby refid="_u_a_r_t_c_c32_x_x_d_m_a_8h" local="no">UARTCC32XXDMA.h</includedby>
+    <incdepgraph>
+      <node id="182">
+        <label>stdbool.h</label>
+      </node>
+      <node id="180">
+        <label>stdint.h</label>
+      </node>
+      <node id="181">
+        <label>ti/drivers/utils/List.h</label>
+        <link refid="_list_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>ti/devices/cc32xx/driverlib/rom_map.h</label>
+      </node>
+      <node id="183">
+        <label>stddef.h</label>
+      </node>
+      <node id="186">
+        <label>ti/devices/cc32xx/driverlib/rom.h</label>
+      </node>
+      <node id="185">
+        <label>ti/devices/cc32xx/inc/hw_types.h</label>
+      </node>
+      <node id="184">
+        <label>ti/drivers/Power.h</label>
+        <link refid="_power_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>ti/devices/cc32xx/driverlib/pin.h</label>
+      </node>
+      <node id="179">
+        <label>PowerCC32XX.h</label>
+        <link refid="_power_c_c32_x_x_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="192">
+        <label>UARTCC32XXDMA.h</label>
+        <link refid="_u_a_r_t_c_c32_x_x_d_m_a_8h"/>
+      </node>
+      <node id="190">
+        <label>SDHostCC32XX.h</label>
+        <link refid="_s_d_host_c_c32_x_x_8h"/>
+      </node>
+      <node id="191">
+        <label>UARTCC32XX.h</label>
+        <link refid="_u_a_r_t_c_c32_x_x_8h"/>
+      </node>
+      <node id="189">
+        <label>PowerCC32XX.h</label>
+        <link refid="_power_c_c32_x_x_8h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_power_c_c32_x_x___park_info" prot="public">PowerCC32XX_ParkInfo</innerclass>
+    <innerclass refid="struct_power_c_c32_x_x___config_v1" prot="public">PowerCC32XX_ConfigV1</innerclass>
+    <innerclass refid="struct_power_c_c32_x_x___wakeup" prot="public">PowerCC32XX_Wakeup</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a528f8e6597a7317f4314ff42f45bee4a" prot="public" static="no">
+        <name>PowerCC32XX_RESUMETIMELPDS</name>
+        <initializer>2500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The latency to reserve for resuming from LPDS (usec) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="79" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1adb1afc85435996fda4859a122342ed4b" prot="public" static="no">
+        <name>PowerCC32XX_TOTALTIMELPDS</name>
+        <initializer>20000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The total latency to reserve for entry to and exit from LPDS (usec) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="82" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a7277518bc0764d35bc429db6b027a677" prot="public" static="no">
+        <name>PowerCC32XX_TOTALTIMESHUTDOWN</name>
+        <initializer>500000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The total latency to reserve for entry to and exit from Shutdown (usec) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="85" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a15304ae92de241614ab83dec83672670" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_CAMERA</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: Camera </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="88" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a6c9a2b0d0c5eb13b780a6a86059ca3ae" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_I2S</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: I2S </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="91" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a4bcdd9efa6f8f2ca8869acb2ef0f4b32" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_SDHOST</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: SDHost </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="94" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a820927c5bb17385de411adce16e6773d" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_GSPI</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose SPI (GSPI) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="97" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a8e1cf65d2c6c77b2e88889070fd8ada3" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_LSPI</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: LSPI </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="100" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a93eb7cbb4b3eda55e8154fcd4c8927d5" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_UDMA</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: uDMA Controller </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="103" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a61230f895821ed7eed10cbc59e20c49f" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_GPIOA0</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose I/O Port A0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="106" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a05b7ab3a242c5b9618913dfa4415e382" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_GPIOA1</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose I/O Port A1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="109" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1acd49fff952e4131e7f1c11f4fb87ae46" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_GPIOA2</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose I/O Port A2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="112" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a5f680126084d0d402ab7c4ee2b8f63dc" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_GPIOA3</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose I/O Port A3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="115" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a0b2bc3b127aed5b2b4194154ec0b0bc6" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_GPIOA4</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose I/O Port A4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="118" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1aadbc8aa8d470467d95cbf189bf6afb4d" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_WDT</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: Watchdog module </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="121" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1ae953dbd38336d7f11217f892c011ce40" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_UARTA0</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: UART 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="124" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a48ab28f7fddb29508949caa25a46cf1b" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_UARTA1</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: UART 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="127" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a35ccb58cbe3c9478f0684b06920e4240" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_TIMERA0</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose Timer A0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="130" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1acd53e008454a1ac2f1733e46aaae3936" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_TIMERA1</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose Timer A1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="133" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1aa3b3c5254e1c805e1c93ca670d60e3f3" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_TIMERA2</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose Timer A2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="136" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1acb8adb699e8da6d7af415f4a9c0a4ae9" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_TIMERA3</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: General Purpose Timer A3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="139" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a12f726f1a0b3932a78b3a8298f005fe6" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_DTHE</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: Cryptography Accelerator (DTHE) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="142" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1acac0b50e887e5553c3c2c7c3bd4aec41" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_SSPI</name>
+        <initializer>19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: Serial Flash SPI (SSPI) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="145" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a84adb37d2fa4887ad909f34b9d87a1aa" prot="public" static="no">
+        <name>PowerCC32XX_PERIPH_I2CA0</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resource ID: I2C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="148" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a28c1b9d61722626ebbf4b396cfe01f2b" prot="public" static="no">
+        <name>PowerCC32XX_DISALLOW_LPDS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constraint: Disallow entry to Low Power Deep Sleep (LPDS) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="158" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1abe813e65b883356bfb391db56f1a74a9" prot="public" static="no">
+        <name>PowerCC32XX_DISALLOW_SHUTDOWN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constraint: Disallow entry to Shutdown </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="161" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a6d957905530048108aa0d1426e605aaf" prot="public" static="no">
+        <name>PowerCC32XX_ENTERING_LPDS</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power event: The device is entering the LPDS sleep state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="174" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a59e51a0e61a9a9c6e92d365126c8d419" prot="public" static="no">
+        <name>PowerCC32XX_ENTERING_SHUTDOWN</name>
+        <initializer>0x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power event: The device is entering the Shutdown state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="177" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1affc28b42aa5baf96df3cbc40277569a2" prot="public" static="no">
+        <name>PowerCC32XX_AWAKE_LPDS</name>
+        <initializer>0x4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power event: The device is waking from the LPDS sleep state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="180" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_power_c_c32_x_x_8h_1a2f4e9817ec80977d198669c08d72518b" prot="public" static="no">
+        <name>PowerCC32XX_LPDS</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LPDS sleep state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="188" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0f" prot="public" static="no">
+        <name>PowerCC32XX_ParkState</name>
+        <enumvalue id="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fa3b1792d7242c007685f745bd6cefb595" prot="public">
+          <name>PowerCC32XX_NO_PULL_HIZ</name>
+          <initializer>= PIN_TYPE_STD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No pull resistor, leave pin in a HIZ state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0faad59e18a80fa084707cbcef6fb9c7bfc" prot="public">
+          <name>PowerCC32XX_WEAK_PULL_UP_STD</name>
+          <initializer>= PIN_TYPE_STD_PU</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pull-up resistor for standard pin type </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fad33d4f815b552912e0b14242686968b8" prot="public">
+          <name>PowerCC32XX_WEAK_PULL_DOWN_STD</name>
+          <initializer>= PIN_TYPE_STD_PD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pull-down resistor for standard pin type </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fae21a71872210a127ac0e0c88a5ac527b" prot="public">
+          <name>PowerCC32XX_WEAK_PULL_UP_OPENDRAIN</name>
+          <initializer>= PIN_TYPE_OD_PU</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pull-up resistor for open drain pin type </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fa9d784d43cfb717602e0fb2f5e8ef2765" prot="public">
+          <name>PowerCC32XX_WEAK_PULL_DOWN_OPENDRAIN</name>
+          <initializer>= PIN_TYPE_OD_PD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pull-down resistor for open drain pin type </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0faa1f59990c0db454c5e3882e00f047d01" prot="public">
+          <name>PowerCC32XX_DRIVE_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Drive pin to a low logic state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fad6e4bdd22a0b10b1537499ccd8e3e430" prot="public">
+          <name>PowerCC32XX_DRIVE_HIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Drive pin to a high logic state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fa69cd18ca49c0cacbc8b5274782862133" prot="public">
+          <name>PowerCC32XX_DONT_PARK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Take no action; do not park the pin </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of states a pin can be parked in. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="385" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="385" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="enum" id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86d" prot="public" static="no">
+        <name>PowerCC32XX_Pin</name>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daa6d530286e7c6edff15c8357701ee6cd" prot="public">
+          <name>PowerCC32XX_PIN01</name>
+          <initializer>= PIN_01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_01 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da80040b908cd70e980569d82bce8321cd" prot="public">
+          <name>PowerCC32XX_PIN02</name>
+          <initializer>= PIN_02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_02 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da3ca9fe82daaa32eaad88f8dea71e9989" prot="public">
+          <name>PowerCC32XX_PIN03</name>
+          <initializer>= PIN_03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_03 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da69ed41767c56a527bd25edb2e2f71669" prot="public">
+          <name>PowerCC32XX_PIN04</name>
+          <initializer>= PIN_04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_04 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dac8e8798adbf836e12448c2a775bf4337" prot="public">
+          <name>PowerCC32XX_PIN05</name>
+          <initializer>= PIN_05</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_05 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da94b2c84eac0041457288bc03aede4b54" prot="public">
+          <name>PowerCC32XX_PIN06</name>
+          <initializer>= PIN_06</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_06 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dacbe68681f64cad240c53b1e630fbc4e2" prot="public">
+          <name>PowerCC32XX_PIN07</name>
+          <initializer>= PIN_07</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_07 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dac0fc8f80f97992a2377de95fbae25e93" prot="public">
+          <name>PowerCC32XX_PIN08</name>
+          <initializer>= PIN_08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_08 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da5baa1d1e6797552bd1f8d1cf555b854e" prot="public">
+          <name>PowerCC32XX_PIN11</name>
+          <initializer>= PIN_11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_11 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daa4dbe22b8bf795ef072405289dec100e" prot="public">
+          <name>PowerCC32XX_PIN12</name>
+          <initializer>= PIN_12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_12 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dae4bd63df193de87427f665fac2357a2d" prot="public">
+          <name>PowerCC32XX_PIN13</name>
+          <initializer>= PIN_13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_13 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da188008b66779aa65443641b8146e5798" prot="public">
+          <name>PowerCC32XX_PIN14</name>
+          <initializer>= PIN_14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_14 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daf6fece79ad36246a1a88cd3209e45120" prot="public">
+          <name>PowerCC32XX_PIN15</name>
+          <initializer>= PIN_15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_15 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da6fc93fe72819acc6eb0a39d1c988af72" prot="public">
+          <name>PowerCC32XX_PIN16</name>
+          <initializer>= PIN_16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_16 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da7d47f85656b9f77f1b6f69c72ec7f478" prot="public">
+          <name>PowerCC32XX_PIN17</name>
+          <initializer>= PIN_17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_17 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da66d7117689a861f9ade5a6899d11ae5e" prot="public">
+          <name>PowerCC32XX_PIN18</name>
+          <initializer>= PIN_18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_18 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da4e8b4e04c82921acdc686b81a760c897" prot="public">
+          <name>PowerCC32XX_PIN19</name>
+          <initializer>= PIN_19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_19 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da97111a58b8907c05128b039143c8546c" prot="public">
+          <name>PowerCC32XX_PIN20</name>
+          <initializer>= PIN_20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_20 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dabc9a47127e0e43d1c5238c5eca014cd5" prot="public">
+          <name>PowerCC32XX_PIN21</name>
+          <initializer>= PIN_21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_21 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da8cf8196700c1f6465124f79b220b8b93" prot="public">
+          <name>PowerCC32XX_PIN29</name>
+          <initializer>= 0x1C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_29 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dae9f99709cb82edbb3609ba6f0a6c0713" prot="public">
+          <name>PowerCC32XX_PIN30</name>
+          <initializer>= 0x1D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_30 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da6282e54ba25937f84013e1a574f97f4a" prot="public">
+          <name>PowerCC32XX_PIN45</name>
+          <initializer>= PIN_45</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_45 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dafb479f020e210c0fe174abed8673ea51" prot="public">
+          <name>PowerCC32XX_PIN50</name>
+          <initializer>= PIN_50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_50 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dae0a58c3afc142220469ab14827ffc00d" prot="public">
+          <name>PowerCC32XX_PIN52</name>
+          <initializer>= PIN_52</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_52 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da4c459376dd7656028c55209721aac831" prot="public">
+          <name>PowerCC32XX_PIN53</name>
+          <initializer>= PIN_53</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_53 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daf3cc88c0eb38f49958bb864d256733a1" prot="public">
+          <name>PowerCC32XX_PIN55</name>
+          <initializer>= PIN_55</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_55 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da3205333b26472c2c4b5f049188920f30" prot="public">
+          <name>PowerCC32XX_PIN57</name>
+          <initializer>= PIN_57</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_57 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da15fa91abf1a0536f2df9d2bf5b9adff4" prot="public">
+          <name>PowerCC32XX_PIN58</name>
+          <initializer>= PIN_58</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_58 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da64329ca809b721bcc7aad063c05c0bce" prot="public">
+          <name>PowerCC32XX_PIN59</name>
+          <initializer>= PIN_59</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_59 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da46f94a1e0a3f5116506e250baf6fa827" prot="public">
+          <name>PowerCC32XX_PIN60</name>
+          <initializer>= PIN_60</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_60 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da952673c30d5c153ee9e2d570f7c4890a" prot="public">
+          <name>PowerCC32XX_PIN61</name>
+          <initializer>= PIN_61</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_61 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da885a5c27dd804b7a7f19f17f5c1bd37c" prot="public">
+          <name>PowerCC32XX_PIN62</name>
+          <initializer>= PIN_62</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_62 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da37cb6875ed3fc921e39b06f78c6c050b" prot="public">
+          <name>PowerCC32XX_PIN63</name>
+          <initializer>= PIN_63</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_63 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dad0bf37a3c62608011c74f7de5ad12a28" prot="public">
+          <name>PowerCC32XX_PIN64</name>
+          <initializer>= PIN_64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PIN_64 </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of pins that can be parked. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="405" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="405" bodyend="474"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_power_c_c32_x_x_8h_1ad19a48f33c9c65eae2386a4e50fb38bc" prot="public" static="no">
+        <type>struct <ref refid="struct_power_c_c32_x_x___park_info" kindref="compound">PowerCC32XX_ParkInfo</ref></type>
+        <definition>typedef struct PowerCC32XX_ParkInfo  PowerCC32XX_ParkInfo</definition>
+        <argsstring></argsstring>
+        <name>PowerCC32XX_ParkInfo</name>
+        <briefdescription>
+<para>Used to specify parking of a pin during LPDS. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_power_c_c32_x_x_8h_1a52336503f4da4c88c9db390fef6c0853" prot="public" static="no">
+        <type>struct <ref refid="struct_power_c_c32_x_x___config_v1" kindref="compound">PowerCC32XX_ConfigV1</ref></type>
+        <definition>typedef struct PowerCC32XX_ConfigV1  PowerCC32XX_ConfigV1</definition>
+        <argsstring></argsstring>
+        <name>PowerCC32XX_ConfigV1</name>
+        <briefdescription>
+<para>Power global configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_power_c_c32_x_x_8h_1acac0277deebc9040bdfb319db47e510a" prot="public" static="no">
+        <type>struct <ref refid="struct_power_c_c32_x_x___wakeup" kindref="compound">PowerCC32XX_Wakeup</ref></type>
+        <definition>typedef struct PowerCC32XX_Wakeup  PowerCC32XX_Wakeup</definition>
+        <argsstring></argsstring>
+        <name>PowerCC32XX_Wakeup</name>
+        <briefdescription>
+<para>Specify the wakeup sources for LPDS and Shutdown. </para>        </briefdescription>
+        <detaileddescription>
+<para>The wakeup sources for LPDS and Shutdown can be dynamically changed at runtime, via <ref refid="_power_c_c32_x_x_8h_1a986d0b70b32014ef782c87c0bce288f1" kindref="member">PowerCC32XX_configureWakeup()</ref>. The application should fill a structure of this type, and pass it as the parameter to <ref refid="_power_c_c32_x_x_8h_1a986d0b70b32014ef782c87c0bce288f1" kindref="member">PowerCC32XX_configureWakeup()</ref> to specify the new wakeup settings. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="552" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_power_c_c32_x_x_8h_1a986d0b70b32014ef782c87c0bce288f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PowerCC32XX_configureWakeup</definition>
+        <argsstring>(PowerCC32XX_Wakeup *wakeup)</argsstring>
+        <name>PowerCC32XX_configureWakeup</name>
+        <param>
+          <type><ref refid="struct_power_c_c32_x_x___wakeup" kindref="compound">PowerCC32XX_Wakeup</ref> *</type>
+          <declname>wakeup</declname>
+        </param>
+        <briefdescription>
+<para>Function configures wakeup for LPDS and shutdown. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function allows the app to configure the GPIO source and type for waking up from LPDS and shutdown and the network host as a wakeup source for LPDS. This overwrites any previous wakeup settings.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wakeup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings applied to wakeup configuration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="588" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_power_c_c32_x_x_8h_1aefc92ad91252600e93d738cebd5c1280" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PowerCC32XX_initPolicy</definition>
+        <argsstring>(void)</argsstring>
+        <name>PowerCC32XX_initPolicy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OS-specific power policy initialization function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="591" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_power_c_c32_x_x_8h_1aa3bc904695aaecb0ff1a97ab6875310b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PowerCC32XX_getWakeup</definition>
+        <argsstring>(PowerCC32XX_Wakeup *wakeup)</argsstring>
+        <name>PowerCC32XX_getWakeup</name>
+        <param>
+          <type><ref refid="struct_power_c_c32_x_x___wakeup" kindref="compound">PowerCC32XX_Wakeup</ref> *</type>
+          <declname>wakeup</declname>
+        </param>
+        <briefdescription>
+<para>Function to get wakeup configuration settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function allows an app to query the current LPDS and shutdown wakeup configuration settings.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wakeup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="struct_power_c_c32_x_x___wakeup" kindref="compound">PowerCC32XX_Wakeup</ref> structure to be written into </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="601" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_power_c_c32_x_x_8h_1aee13ddd0470aadaa329f813d2807c82b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0f" kindref="member">PowerCC32XX_ParkState</ref></type>
+        <definition>PowerCC32XX_ParkState PowerCC32XX_getParkState</definition>
+        <argsstring>(PowerCC32XX_Pin pin)</argsstring>
+        <name>PowerCC32XX_getParkState</name>
+        <param>
+          <type><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86d" kindref="member">PowerCC32XX_Pin</ref></type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CC32XX-specific function to query the LPDS park state for a pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="604" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_power_c_c32_x_x_8h_1a6f43293db9723019d14a869f781d230b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PowerCC32XX_restoreParkState</definition>
+        <argsstring>(PowerCC32XX_Pin pin, PowerCC32XX_ParkState state)</argsstring>
+        <name>PowerCC32XX_restoreParkState</name>
+        <param>
+          <type><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86d" kindref="member">PowerCC32XX_Pin</ref></type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0f" kindref="member">PowerCC32XX_ParkState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CC32XX-specific function to restore the LPDS park state for a pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="607" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_power_c_c32_x_x_8h_1adeb2a87aaee02601bda2c9e155c5c76d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PowerCC32XX_setParkState</definition>
+        <argsstring>(PowerCC32XX_Pin pin, uint32_t level)</argsstring>
+        <name>PowerCC32XX_setParkState</name>
+        <param>
+          <type><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86d" kindref="member">PowerCC32XX_Pin</ref></type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CC32XX-specific function to dynamically set the LPDS park state for a pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="611" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_power_c_c32_x_x_8h_1aacdb475d318a3e7bd68452d0915e621a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PowerCC32XX_disableIORetention</definition>
+        <argsstring>(unsigned long groupFlags)</argsstring>
+        <name>PowerCC32XX_disableIORetention</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>groupFlags</declname>
+        </param>
+        <briefdescription>
+<para>Function to disable IO retention and unlock pin groups following exit from Shutdown. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="struct_power_c_c32_x_x___config_v1_1a7d60c228158f0a984a04a44f6bbb300b" kindref="member">PowerCC32XX_ConfigV1.ioRetentionShutdown</ref> can be used to specify locking and retention of pin groups during Shutdown. Upon exit from Shutdown, and when appropriate, an application can call this function, to correspondingly disable IO retention, and unlock the specified pin groups.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>groupFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A logical OR of one or more of the following flags (defined in driverlib/prcm.h): PRCM_IO_RET_GRP_0 - all pins except sFlash and JTAG interface PRCM_IO_RET_GRP_1 - sFlash interface pins 11,12,13,14 PRCM_IO_RET_GRP_2 - JTAG TDI and TDO interface pins 16,17 PRCM_IO_RET_GRP_3 - JTAG TCK and TMS interface pins 19,20 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="629" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_power_c_c32_x_x_8h_1a1eb16630d968dac31b60a3b698205cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PowerCC32XX_sleepPolicy</definition>
+        <argsstring>(void)</argsstring>
+        <name>PowerCC32XX_sleepPolicy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OS-specific power policy function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="632" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_power_c_c32_x_x_8h_1af8f4614a7beca2f02c65679bb98e7a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int_fast16_t</type>
+        <definition>int_fast16_t PowerCC32XX_reset</definition>
+        <argsstring>(uint_fast16_t resourceId)</argsstring>
+        <name>PowerCC32XX_reset</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>resourceId</declname>
+        </param>
+        <briefdescription>
+<para>Software reset of a resource. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function performs a software reset of a resource.</para><para>Resource identifiers are device specific, and defined in the device-specific Power include file. For example, the resources for CC32XX are defined in <ref refid="_power_c_c32_x_x_8h" kindref="compound">PowerCC32XX.h</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resourceId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>resource id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Power_SOK on success, Power_EINVALIDINPUT if the reseourceId is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="649" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Power manager interface for the CC32XX. </para>    </briefdescription>
+    <detaileddescription>
+<para>============================================================================</para><para>The Power header file should be included in an application as follows: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/Power.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/power/PowerCC32XX.h&gt;</highlight></codeline>
+</programlisting></para><para>Refer to <ref refid="_power_8h" kindref="compound">Power.h</ref> for a complete description of APIs.</para><para><heading level="2">Implementation</heading>
+</para><para>This module defines the power resources, constraints, events, sleep states and transition latencies for CC32XX.</para><para>A reference power policy is provided which can transition the MCU from the active state to one of two sleep states: LPDS or Sleep. The policy looks at the estimated idle time remaining, and the active constraints, and determine which sleep state to transition to. The policy will give first preference to choosing LPDS, but if that is not appropriate (e.g., not enough idle time), it will choose Sleep. <hruler/>
+ </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015-2018,<sp/>Texas<sp/>Instruments<sp/>Incorporated</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor">#ifndef<sp/>ti_drivers_power_PowerCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ti_drivers_power_PowerCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_list_8h" kindref="compound">ti/drivers/utils/List.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_power_8h" kindref="compound">ti/drivers/Power.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>driverlib<sp/>header<sp/>files<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/devices/cc32xx/inc/hw_types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/devices/cc32xx/driverlib/rom.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/devices/cc32xx/driverlib/rom_map.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/devices/cc32xx/driverlib/pin.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>latency<sp/>values<sp/>were<sp/>measured<sp/>with<sp/>a<sp/>logic<sp/>analyzer,<sp/>and<sp/>rounded<sp/>up<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_power_c_c32_x_x_8h_1a528f8e6597a7317f4314ff42f45bee4a" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_RESUMETIMELPDS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_power_c_c32_x_x_8h_1adb1afc85435996fda4859a122342ed4b" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_TOTALTIMELPDS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="_power_c_c32_x_x_8h_1a7277518bc0764d35bc429db6b027a677" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_TOTALTIMESHUTDOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>500000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Power<sp/>resources<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_power_c_c32_x_x_8h_1a15304ae92de241614ab83dec83672670" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_CAMERA<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_power_c_c32_x_x_8h_1a6c9a2b0d0c5eb13b780a6a86059ca3ae" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_I2S<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="_power_c_c32_x_x_8h_1a4bcdd9efa6f8f2ca8869acb2ef0f4b32" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_SDHOST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="_power_c_c32_x_x_8h_1a820927c5bb17385de411adce16e6773d" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_GSPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="_power_c_c32_x_x_8h_1a8e1cf65d2c6c77b2e88889070fd8ada3" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_LSPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="_power_c_c32_x_x_8h_1a93eb7cbb4b3eda55e8154fcd4c8927d5" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_UDMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="_power_c_c32_x_x_8h_1a61230f895821ed7eed10cbc59e20c49f" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_GPIOA0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="_power_c_c32_x_x_8h_1a05b7ab3a242c5b9618913dfa4415e382" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_GPIOA1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="_power_c_c32_x_x_8h_1acd49fff952e4131e7f1c11f4fb87ae46" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_GPIOA2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="_power_c_c32_x_x_8h_1a5f680126084d0d402ab7c4ee2b8f63dc" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_GPIOA3<sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="_power_c_c32_x_x_8h_1a0b2bc3b127aed5b2b4194154ec0b0bc6" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_GPIOA4<sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="_power_c_c32_x_x_8h_1aadbc8aa8d470467d95cbf189bf6afb4d" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_WDT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="_power_c_c32_x_x_8h_1ae953dbd38336d7f11217f892c011ce40" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_UARTA0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="_power_c_c32_x_x_8h_1a48ab28f7fddb29508949caa25a46cf1b" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_UARTA1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="_power_c_c32_x_x_8h_1a35ccb58cbe3c9478f0684b06920e4240" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_TIMERA0<sp/><sp/><sp/><sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="_power_c_c32_x_x_8h_1acd53e008454a1ac2f1733e46aaae3936" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_TIMERA1<sp/><sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="_power_c_c32_x_x_8h_1aa3b3c5254e1c805e1c93ca670d60e3f3" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_TIMERA2<sp/><sp/><sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="_power_c_c32_x_x_8h_1acb8adb699e8da6d7af415f4a9c0a4ae9" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_TIMERA3<sp/><sp/><sp/><sp/><sp/><sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="_power_c_c32_x_x_8h_1a12f726f1a0b3932a78b3a8298f005fe6" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_DTHE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="_power_c_c32_x_x_8h_1acac0b50e887e5553c3c2c7c3bd4aec41" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_SSPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="_power_c_c32_x_x_8h_1a84adb37d2fa4887ad909f34b9d87a1aa" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_PERIPH_I2CA0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="comment">/*<sp/>\cond<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_NUMRESOURCES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>21<sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>resources<sp/>in<sp/>database<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>\endcond<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/><sp/>Power<sp/>constraints<sp/>on<sp/>the<sp/>CC32XX<sp/>device</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="_power_c_c32_x_x_8h_1a28c1b9d61722626ebbf4b396cfe01f2b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_DISALLOW_LPDS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="_power_c_c32_x_x_8h_1abe813e65b883356bfb391db56f1a74a9" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_DISALLOW_SHUTDOWN<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="comment">/*<sp/>\cond<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_NUMCONSTRAINTS<sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>\endcond<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*<sp/><sp/>Power<sp/>events<sp/>on<sp/>the<sp/>CC32XX<sp/>device</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/>*<sp/><sp/>Each<sp/>event<sp/>must<sp/>be<sp/>a<sp/>power<sp/>of<sp/>two,<sp/>and<sp/>the<sp/>event<sp/>IDs<sp/>must<sp/>be<sp/>sequential</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/>*<sp/><sp/>without<sp/>any<sp/>gaps.</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="_power_c_c32_x_x_8h_1a6d957905530048108aa0d1426e605aaf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_ENTERING_LPDS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="_power_c_c32_x_x_8h_1a59e51a0e61a9a9c6e92d365126c8d419" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_ENTERING_SHUTDOWN<sp/><sp/><sp/>0x2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="_power_c_c32_x_x_8h_1affc28b42aa5baf96df3cbc40277569a2" refkind="member"><highlight class="preprocessor">#define<sp/>PowerCC32XX_AWAKE_LPDS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="comment">/*<sp/>\cond<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_NUMEVENTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>\endcond<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Power<sp/>sleep<sp/>states<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="_power_c_c32_x_x_8h_1a2f4e9817ec80977d198669c08d72518b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_LPDS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1<sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>\cond<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Use<sp/>by<sp/>NVIC<sp/>Register<sp/>structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_numNVICSetEnableRegs<sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_numNVICIntPriority<sp/><sp/><sp/><sp/><sp/><sp/>49</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>\endcond<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>\cond<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>pins<sp/>that<sp/>can<sp/>be<sp/>parked<sp/>in<sp/>LPDS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PowerCC32XX_NUMPINS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>34</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>\endcond<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="struct_power_c_c32_x_x___park_info" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_power_c_c32_x_x___park_info" kindref="compound">PowerCC32XX_ParkInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="203" refid="struct_power_c_c32_x_x___park_info_1accc07ff476224c453e9c86b5128d5013" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___park_info_1accc07ff476224c453e9c86b5128d5013" kindref="member">pin</ref>;</highlight></codeline>
+<codeline lineno="205" refid="struct_power_c_c32_x_x___park_info_1a6ff9c226811f204d28e4d4408f35fa9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___park_info_1a6ff9c226811f204d28e4d4408f35fa9b" kindref="member">parkState</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}<sp/><ref refid="_power_c_c32_x_x_8h_1ad19a48f33c9c65eae2386a4e50fb38bc" kindref="member">PowerCC32XX_ParkInfo</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="struct_power_c_c32_x_x___config_v1" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_power_c_c32_x_x___config_v1" kindref="compound">PowerCC32XX_ConfigV1</ref><sp/>{</highlight></codeline>
+<codeline lineno="212" refid="struct_power_c_c32_x_x___config_v1_1a781bf126e3071442438491903eec8890" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_8h_1a435fdeb71d13ea6be86f599c9b6a0d78" kindref="member">Power_PolicyInitFxn</ref><sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a781bf126e3071442438491903eec8890" kindref="member">policyInitFxn</ref>;</highlight></codeline>
+<codeline lineno="214" refid="struct_power_c_c32_x_x___config_v1_1a5291041b1a84651542674e5402d809af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_8h_1a333038d1e9cd5f93dda7b83f8a1afa8b" kindref="member">Power_PolicyFxn</ref><sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a5291041b1a84651542674e5402d809af" kindref="member">policyFxn</ref>;</highlight></codeline>
+<codeline lineno="221" refid="struct_power_c_c32_x_x___config_v1_1aba9887d0411d02dec98145a552cb40ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*enterLPDSHookFxn)(void);</highlight></codeline>
+<codeline lineno="228" refid="struct_power_c_c32_x_x___config_v1_1aa27819273461bca77c5d77bb422b32fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*resumeLPDSHookFxn)(void);</highlight></codeline>
+<codeline lineno="230" refid="struct_power_c_c32_x_x___config_v1_1ad5877b98d1851d42d111716bae11a141" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_power_c_c32_x_x___config_v1_1ad5877b98d1851d42d111716bae11a141" kindref="member">enablePolicy</ref>;</highlight></codeline>
+<codeline lineno="232" refid="struct_power_c_c32_x_x___config_v1_1ab261edd8765e42e3d220e831b165a87d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_power_c_c32_x_x___config_v1_1ab261edd8765e42e3d220e831b165a87d" kindref="member">enableGPIOWakeupLPDS</ref>;</highlight></codeline>
+<codeline lineno="234" refid="struct_power_c_c32_x_x___config_v1_1a83a42e8dd00e9991f70d88b4c208e944" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a83a42e8dd00e9991f70d88b4c208e944" kindref="member">enableGPIOWakeupShutdown</ref>;</highlight></codeline>
+<codeline lineno="236" refid="struct_power_c_c32_x_x___config_v1_1a2c54abc4c0629475191ccf850f297f94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a2c54abc4c0629475191ccf850f297f94" kindref="member">enableNetworkWakeupLPDS</ref>;</highlight></codeline>
+<codeline lineno="246" refid="struct_power_c_c32_x_x___config_v1_1af4447d531bdb2469aaa4fe22ea79d130" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___config_v1_1af4447d531bdb2469aaa4fe22ea79d130" kindref="member">wakeupGPIOSourceLPDS</ref>;</highlight></codeline>
+<codeline lineno="254" refid="struct_power_c_c32_x_x___config_v1_1a0b742ffcffcace592a104d46ae653c47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a0b742ffcffcace592a104d46ae653c47" kindref="member">wakeupGPIOTypeLPDS</ref>;</highlight></codeline>
+<codeline lineno="275" refid="struct_power_c_c32_x_x___config_v1_1a635c1689316aa991a93515dee9bb2171" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*wakeupGPIOFxnLPDS)(uint_least8_t<sp/>argument);</highlight></codeline>
+<codeline lineno="279" refid="struct_power_c_c32_x_x___config_v1_1a31eca3e54677aea0c43aec9abdc38638" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint_least8_t<sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a31eca3e54677aea0c43aec9abdc38638" kindref="member">wakeupGPIOFxnLPDSArg</ref>;</highlight></codeline>
+<codeline lineno="289" refid="struct_power_c_c32_x_x___config_v1_1a155bddbf8cef6a9b2dcad7878f9edb5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a155bddbf8cef6a9b2dcad7878f9edb5d" kindref="member">wakeupGPIOSourceShutdown</ref>;</highlight></codeline>
+<codeline lineno="297" refid="struct_power_c_c32_x_x___config_v1_1a79734ee6c2bf7fc4b88655f8fa17a7ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a79734ee6c2bf7fc4b88655f8fa17a7ec" kindref="member">wakeupGPIOTypeShutdown</ref>;</highlight></codeline>
+<codeline lineno="305" refid="struct_power_c_c32_x_x___config_v1_1a8f8ffd184f86a7c28b629eb2a141b107" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a8f8ffd184f86a7c28b629eb2a141b107" kindref="member">ramRetentionMaskLPDS</ref>;</highlight></codeline>
+<codeline lineno="315" refid="struct_power_c_c32_x_x___config_v1_1ace5b9463c9d0bfa7e9dada9c5ca3b01c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_power_c_c32_x_x___config_v1_1ace5b9463c9d0bfa7e9dada9c5ca3b01c" kindref="member">keepDebugActiveDuringLPDS</ref>;</highlight></codeline>
+<codeline lineno="323" refid="struct_power_c_c32_x_x___config_v1_1a7d60c228158f0a984a04a44f6bbb300b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a7d60c228158f0a984a04a44f6bbb300b" kindref="member">ioRetentionShutdown</ref>;</highlight></codeline>
+<codeline lineno="329" refid="struct_power_c_c32_x_x___config_v1_1a8973743b0bec33370e6d46a5fa6e70ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_power_c_c32_x_x___park_info" kindref="compound">PowerCC32XX_ParkInfo</ref><sp/>*<sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a8973743b0bec33370e6d46a5fa6e70ea" kindref="member">pinParkDefs</ref>;</highlight></codeline>
+<codeline lineno="333" refid="struct_power_c_c32_x_x___config_v1_1a4740436e5bf7f74e988c5cf0b2b218b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___config_v1_1a4740436e5bf7f74e988c5cf0b2b218b9" kindref="member">numPins</ref>;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}<sp/><ref refid="_power_c_c32_x_x_8h_1a52336503f4da4c88c9db390fef6c0853" kindref="member">PowerCC32XX_ConfigV1</ref>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PowerCC32XX_NVICRegisters<sp/>{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>vectorTable;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>auxCtrl;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>intCtrlState;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>appInt;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sysCtrl;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>configCtrl;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sysPri1;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sysPri2;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sysPri3;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sysHcrs;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>systickCtrl;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>systickReload;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>systickCalib;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>intSetEn[PowerCC32XX_numNVICSetEnableRegs];</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>intPriority[PowerCC32XX_numNVICIntPriority];</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}<sp/>PowerCC32XX_NVICRegisters;</highlight></codeline>
+<codeline lineno="363"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PowerCC32XX_MCURegisters<sp/>{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>msp;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>psp;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>psr;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>primask;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>faultmask;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>basepri;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>control;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal">}<sp/>PowerCC32XX_MCURegisters;</highlight></codeline>
+<codeline lineno="378"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PowerCC32XX_SaveRegisters<sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>PowerCC32XX_MCURegisters<sp/>m4Regs;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>PowerCC32XX_NVICRegisters<sp/>nvicRegs;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal">}<sp/>PowerCC32XX_SaveRegisters;</highlight></codeline>
+<codeline lineno="385" refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0f" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="387" refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fa3b1792d7242c007685f745bd6cefb595" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fa3b1792d7242c007685f745bd6cefb595" kindref="member">PowerCC32XX_NO_PULL_HIZ</ref><sp/>=<sp/>PIN_TYPE_STD,</highlight></codeline>
+<codeline lineno="389" refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0faad59e18a80fa084707cbcef6fb9c7bfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0faad59e18a80fa084707cbcef6fb9c7bfc" kindref="member">PowerCC32XX_WEAK_PULL_UP_STD</ref><sp/>=<sp/>PIN_TYPE_STD_PU,</highlight></codeline>
+<codeline lineno="391" refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fad33d4f815b552912e0b14242686968b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fad33d4f815b552912e0b14242686968b8" kindref="member">PowerCC32XX_WEAK_PULL_DOWN_STD</ref><sp/>=<sp/>PIN_TYPE_STD_PD,</highlight></codeline>
+<codeline lineno="393" refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fae21a71872210a127ac0e0c88a5ac527b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fae21a71872210a127ac0e0c88a5ac527b" kindref="member">PowerCC32XX_WEAK_PULL_UP_OPENDRAIN</ref><sp/>=<sp/>PIN_TYPE_OD_PU,</highlight></codeline>
+<codeline lineno="395" refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fa9d784d43cfb717602e0fb2f5e8ef2765" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fa9d784d43cfb717602e0fb2f5e8ef2765" kindref="member">PowerCC32XX_WEAK_PULL_DOWN_OPENDRAIN</ref><sp/>=<sp/>PIN_TYPE_OD_PD,</highlight></codeline>
+<codeline lineno="397" refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0faa1f59990c0db454c5e3882e00f047d01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0faa1f59990c0db454c5e3882e00f047d01" kindref="member">PowerCC32XX_DRIVE_LOW</ref>,</highlight></codeline>
+<codeline lineno="399" refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fad6e4bdd22a0b10b1537499ccd8e3e430" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fad6e4bdd22a0b10b1537499ccd8e3e430" kindref="member">PowerCC32XX_DRIVE_HIGH</ref>,</highlight></codeline>
+<codeline lineno="401" refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fa69cd18ca49c0cacbc8b5274782862133" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0fa69cd18ca49c0cacbc8b5274782862133" kindref="member">PowerCC32XX_DONT_PARK</ref></highlight></codeline>
+<codeline lineno="402"><highlight class="normal">}<sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0f" kindref="member">PowerCC32XX_ParkState</ref>;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="407" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daa6d530286e7c6edff15c8357701ee6cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daa6d530286e7c6edff15c8357701ee6cd" kindref="member">PowerCC32XX_PIN01</ref><sp/>=<sp/>PIN_01,</highlight></codeline>
+<codeline lineno="409" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da80040b908cd70e980569d82bce8321cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da80040b908cd70e980569d82bce8321cd" kindref="member">PowerCC32XX_PIN02</ref><sp/>=<sp/>PIN_02,</highlight></codeline>
+<codeline lineno="411" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da3ca9fe82daaa32eaad88f8dea71e9989" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da3ca9fe82daaa32eaad88f8dea71e9989" kindref="member">PowerCC32XX_PIN03</ref><sp/>=<sp/>PIN_03,</highlight></codeline>
+<codeline lineno="413" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da69ed41767c56a527bd25edb2e2f71669" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da69ed41767c56a527bd25edb2e2f71669" kindref="member">PowerCC32XX_PIN04</ref><sp/>=<sp/>PIN_04,</highlight></codeline>
+<codeline lineno="415" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dac8e8798adbf836e12448c2a775bf4337" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dac8e8798adbf836e12448c2a775bf4337" kindref="member">PowerCC32XX_PIN05</ref><sp/>=<sp/>PIN_05,</highlight></codeline>
+<codeline lineno="417" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da94b2c84eac0041457288bc03aede4b54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da94b2c84eac0041457288bc03aede4b54" kindref="member">PowerCC32XX_PIN06</ref><sp/>=<sp/>PIN_06,</highlight></codeline>
+<codeline lineno="419" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dacbe68681f64cad240c53b1e630fbc4e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dacbe68681f64cad240c53b1e630fbc4e2" kindref="member">PowerCC32XX_PIN07</ref><sp/>=<sp/>PIN_07,</highlight></codeline>
+<codeline lineno="421" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dac0fc8f80f97992a2377de95fbae25e93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dac0fc8f80f97992a2377de95fbae25e93" kindref="member">PowerCC32XX_PIN08</ref><sp/>=<sp/>PIN_08,</highlight></codeline>
+<codeline lineno="423" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da5baa1d1e6797552bd1f8d1cf555b854e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da5baa1d1e6797552bd1f8d1cf555b854e" kindref="member">PowerCC32XX_PIN11</ref><sp/>=<sp/>PIN_11,</highlight></codeline>
+<codeline lineno="425" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daa4dbe22b8bf795ef072405289dec100e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daa4dbe22b8bf795ef072405289dec100e" kindref="member">PowerCC32XX_PIN12</ref><sp/>=<sp/>PIN_12,</highlight></codeline>
+<codeline lineno="427" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dae4bd63df193de87427f665fac2357a2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dae4bd63df193de87427f665fac2357a2d" kindref="member">PowerCC32XX_PIN13</ref><sp/>=<sp/>PIN_13,</highlight></codeline>
+<codeline lineno="429" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da188008b66779aa65443641b8146e5798" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da188008b66779aa65443641b8146e5798" kindref="member">PowerCC32XX_PIN14</ref><sp/>=<sp/>PIN_14,</highlight></codeline>
+<codeline lineno="431" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daf6fece79ad36246a1a88cd3209e45120" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daf6fece79ad36246a1a88cd3209e45120" kindref="member">PowerCC32XX_PIN15</ref><sp/>=<sp/>PIN_15,</highlight></codeline>
+<codeline lineno="433" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da6fc93fe72819acc6eb0a39d1c988af72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da6fc93fe72819acc6eb0a39d1c988af72" kindref="member">PowerCC32XX_PIN16</ref><sp/>=<sp/>PIN_16,</highlight></codeline>
+<codeline lineno="435" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da7d47f85656b9f77f1b6f69c72ec7f478" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da7d47f85656b9f77f1b6f69c72ec7f478" kindref="member">PowerCC32XX_PIN17</ref><sp/>=<sp/>PIN_17,</highlight></codeline>
+<codeline lineno="437" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da66d7117689a861f9ade5a6899d11ae5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da66d7117689a861f9ade5a6899d11ae5e" kindref="member">PowerCC32XX_PIN18</ref><sp/>=<sp/>PIN_18,</highlight></codeline>
+<codeline lineno="439" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da4e8b4e04c82921acdc686b81a760c897" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da4e8b4e04c82921acdc686b81a760c897" kindref="member">PowerCC32XX_PIN19</ref><sp/>=<sp/>PIN_19,</highlight></codeline>
+<codeline lineno="441" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da97111a58b8907c05128b039143c8546c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da97111a58b8907c05128b039143c8546c" kindref="member">PowerCC32XX_PIN20</ref><sp/>=<sp/>PIN_20,</highlight></codeline>
+<codeline lineno="443" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dabc9a47127e0e43d1c5238c5eca014cd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dabc9a47127e0e43d1c5238c5eca014cd5" kindref="member">PowerCC32XX_PIN21</ref><sp/>=<sp/>PIN_21,</highlight></codeline>
+<codeline lineno="445" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da8cf8196700c1f6465124f79b220b8b93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da8cf8196700c1f6465124f79b220b8b93" kindref="member">PowerCC32XX_PIN29</ref><sp/>=<sp/>0x1C,</highlight></codeline>
+<codeline lineno="447" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dae9f99709cb82edbb3609ba6f0a6c0713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dae9f99709cb82edbb3609ba6f0a6c0713" kindref="member">PowerCC32XX_PIN30</ref><sp/>=<sp/>0x1D,</highlight></codeline>
+<codeline lineno="449" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da6282e54ba25937f84013e1a574f97f4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da6282e54ba25937f84013e1a574f97f4a" kindref="member">PowerCC32XX_PIN45</ref><sp/>=<sp/>PIN_45,</highlight></codeline>
+<codeline lineno="451" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dafb479f020e210c0fe174abed8673ea51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dafb479f020e210c0fe174abed8673ea51" kindref="member">PowerCC32XX_PIN50</ref><sp/>=<sp/>PIN_50,</highlight></codeline>
+<codeline lineno="453" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dae0a58c3afc142220469ab14827ffc00d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dae0a58c3afc142220469ab14827ffc00d" kindref="member">PowerCC32XX_PIN52</ref><sp/>=<sp/>PIN_52,</highlight></codeline>
+<codeline lineno="455" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da4c459376dd7656028c55209721aac831" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da4c459376dd7656028c55209721aac831" kindref="member">PowerCC32XX_PIN53</ref><sp/>=<sp/>PIN_53,</highlight></codeline>
+<codeline lineno="457" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daf3cc88c0eb38f49958bb864d256733a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86daf3cc88c0eb38f49958bb864d256733a1" kindref="member">PowerCC32XX_PIN55</ref><sp/>=<sp/>PIN_55,</highlight></codeline>
+<codeline lineno="459" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da3205333b26472c2c4b5f049188920f30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da3205333b26472c2c4b5f049188920f30" kindref="member">PowerCC32XX_PIN57</ref><sp/>=<sp/>PIN_57,</highlight></codeline>
+<codeline lineno="461" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da15fa91abf1a0536f2df9d2bf5b9adff4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da15fa91abf1a0536f2df9d2bf5b9adff4" kindref="member">PowerCC32XX_PIN58</ref><sp/>=<sp/>PIN_58,</highlight></codeline>
+<codeline lineno="463" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da64329ca809b721bcc7aad063c05c0bce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da64329ca809b721bcc7aad063c05c0bce" kindref="member">PowerCC32XX_PIN59</ref><sp/>=<sp/>PIN_59,</highlight></codeline>
+<codeline lineno="465" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da46f94a1e0a3f5116506e250baf6fa827" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da46f94a1e0a3f5116506e250baf6fa827" kindref="member">PowerCC32XX_PIN60</ref><sp/>=<sp/>PIN_60,</highlight></codeline>
+<codeline lineno="467" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da952673c30d5c153ee9e2d570f7c4890a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da952673c30d5c153ee9e2d570f7c4890a" kindref="member">PowerCC32XX_PIN61</ref><sp/>=<sp/>PIN_61,</highlight></codeline>
+<codeline lineno="469" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da885a5c27dd804b7a7f19f17f5c1bd37c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da885a5c27dd804b7a7f19f17f5c1bd37c" kindref="member">PowerCC32XX_PIN62</ref><sp/>=<sp/>PIN_62,</highlight></codeline>
+<codeline lineno="471" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da37cb6875ed3fc921e39b06f78c6c050b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86da37cb6875ed3fc921e39b06f78c6c050b" kindref="member">PowerCC32XX_PIN63</ref><sp/>=<sp/>PIN_63,</highlight></codeline>
+<codeline lineno="473" refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dad0bf37a3c62608011c74f7de5ad12a28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86dad0bf37a3c62608011c74f7de5ad12a28" kindref="member">PowerCC32XX_PIN64</ref><sp/>=<sp/>PIN_64</highlight></codeline>
+<codeline lineno="474"><highlight class="normal">}<sp/><ref refid="_power_c_c32_x_x_8h_1a724af10ff20ec56ef488e8f78593b86d" kindref="member">PowerCC32XX_Pin</ref>;</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484" refid="struct_power_c_c32_x_x___wakeup" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_power_c_c32_x_x___wakeup" kindref="compound">PowerCC32XX_Wakeup</ref><sp/>{</highlight></codeline>
+<codeline lineno="486" refid="struct_power_c_c32_x_x___wakeup_1a15af01c898a575aa6edf95a6b6d2a7de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_power_c_c32_x_x___wakeup_1a15af01c898a575aa6edf95a6b6d2a7de" kindref="member">enableGPIOWakeupLPDS</ref>;</highlight></codeline>
+<codeline lineno="488" refid="struct_power_c_c32_x_x___wakeup_1a161150e52fceca43483d2260818ddbdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_power_c_c32_x_x___wakeup_1a161150e52fceca43483d2260818ddbdd" kindref="member">enableGPIOWakeupShutdown</ref>;</highlight></codeline>
+<codeline lineno="490" refid="struct_power_c_c32_x_x___wakeup_1a79000b9e72280e4d3cf8411eaf4aecc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_power_c_c32_x_x___wakeup_1a79000b9e72280e4d3cf8411eaf4aecc2" kindref="member">enableNetworkWakeupLPDS</ref>;</highlight></codeline>
+<codeline lineno="500" refid="struct_power_c_c32_x_x___wakeup_1a2fd7c55017d91a918c507f524a72f65d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___wakeup_1a2fd7c55017d91a918c507f524a72f65d" kindref="member">wakeupGPIOSourceLPDS</ref>;</highlight></codeline>
+<codeline lineno="508" refid="struct_power_c_c32_x_x___wakeup_1a5d6b52275ed1f0afee4a6b7affa210c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___wakeup_1a5d6b52275ed1f0afee4a6b7affa210c5" kindref="member">wakeupGPIOTypeLPDS</ref>;</highlight></codeline>
+<codeline lineno="529" refid="struct_power_c_c32_x_x___wakeup_1a6cedba49c732a17599edc38d35dcbb5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*wakeupGPIOFxnLPDS)(uint_least8_t<sp/>argument);</highlight></codeline>
+<codeline lineno="533" refid="struct_power_c_c32_x_x___wakeup_1a57623b57ceaca85db85c2e1b5154e65d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint_least8_t<sp/><ref refid="struct_power_c_c32_x_x___wakeup_1a57623b57ceaca85db85c2e1b5154e65d" kindref="member">wakeupGPIOFxnLPDSArg</ref>;</highlight></codeline>
+<codeline lineno="543" refid="struct_power_c_c32_x_x___wakeup_1a57ea736e36f120b44b7ba85e3afedaa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___wakeup_1a57ea736e36f120b44b7ba85e3afedaa1" kindref="member">wakeupGPIOSourceShutdown</ref>;</highlight></codeline>
+<codeline lineno="551" refid="struct_power_c_c32_x_x___wakeup_1af33690995518ebc4a29775ab2e25c691" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_power_c_c32_x_x___wakeup_1af33690995518ebc4a29775ab2e25c691" kindref="member">wakeupGPIOTypeShutdown</ref>;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal">}<sp/><ref refid="_power_c_c32_x_x_8h_1acac0277deebc9040bdfb319db47e510a" kindref="member">PowerCC32XX_Wakeup</ref>;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PowerCC32XX_ModuleState<sp/>{</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_list___list" kindref="compound">List_List</ref><sp/>notifyList;</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>constraintMask;</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>state;</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>dbRecords[PowerCC32XX_NUMRESOURCES];</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enablePolicy;</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initialized;</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>refCount[PowerCC32XX_NUMRESOURCES];</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>constraintCounts[PowerCC32XX_NUMCONSTRAINTS];</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_8h_1a333038d1e9cd5f93dda7b83f8a1afa8b" kindref="member">Power_PolicyFxn</ref><sp/>policyFxn;</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>pinType[PowerCC32XX_NUMPINS];</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>pinDir[PowerCC32XX_NUMPINS];</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>pinMode[PowerCC32XX_NUMPINS];</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>stateAntPin29;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>stateAntPin30;</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>pinLockMask;</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_power_c_c32_x_x___wakeup" kindref="compound">PowerCC32XX_Wakeup</ref><sp/>wakeupConfig;</highlight></codeline>
+<codeline lineno="575"><highlight class="normal">}<sp/>PowerCC32XX_ModuleState;</highlight></codeline>
+<codeline lineno="588"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_power_c_c32_x_x_8h_1a986d0b70b32014ef782c87c0bce288f1" kindref="member">PowerCC32XX_configureWakeup</ref>(<ref refid="struct_power_c_c32_x_x___wakeup" kindref="compound">PowerCC32XX_Wakeup</ref><sp/>*wakeup);</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_power_c_c32_x_x_8h_1aefc92ad91252600e93d738cebd5c1280" kindref="member">PowerCC32XX_initPolicy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="601"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_power_c_c32_x_x_8h_1aa3bc904695aaecb0ff1a97ab6875310b" kindref="member">PowerCC32XX_getWakeup</ref>(<ref refid="struct_power_c_c32_x_x___wakeup" kindref="compound">PowerCC32XX_Wakeup</ref><sp/>*wakeup);</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight></codeline>
+<codeline lineno="604"><highlight class="normal">PowerCC32XX_ParkState<sp/><ref refid="_power_c_c32_x_x_8h_1aee13ddd0470aadaa329f813d2807c82b" kindref="member">PowerCC32XX_getParkState</ref>(PowerCC32XX_Pin<sp/><ref refid="struct_power_c_c32_x_x___park_info_1accc07ff476224c453e9c86b5128d5013" kindref="member">pin</ref>);</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_power_c_c32_x_x_8h_1a6f43293db9723019d14a869f781d230b" kindref="member">PowerCC32XX_restoreParkState</ref>(PowerCC32XX_Pin<sp/>pin,</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/>PowerCC32XX_ParkState<sp/>state);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="611"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_power_c_c32_x_x_8h_1adeb2a87aaee02601bda2c9e155c5c76d" kindref="member">PowerCC32XX_setParkState</ref>(PowerCC32XX_Pin<sp/>pin,<sp/>uint32_t<sp/>level);</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_power_c_c32_x_x_8h_1aacdb475d318a3e7bd68452d0915e621a" kindref="member">PowerCC32XX_disableIORetention</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>groupFlags);</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_power_c_c32_x_x_8h_1a1eb16630d968dac31b60a3b698205cb1" kindref="member">PowerCC32XX_sleepPolicy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/>int_fast16_t<sp/><ref refid="_power_c_c32_x_x_8h_1af8f4614a7beca2f02c65679bb98e7a4f" kindref="member">PowerCC32XX_reset</ref>(uint_fast16_t<sp/>resourceId);</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>\cond<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Power_getPerformanceLevel(void)<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Power_setPerformanceLevel(level)<sp/><sp/>Power_EFAIL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>\endcond<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="655"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="657"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ti_drivers_power_PowerCC32XX__include<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h"/>
+  </compounddef>
+</doxygen>

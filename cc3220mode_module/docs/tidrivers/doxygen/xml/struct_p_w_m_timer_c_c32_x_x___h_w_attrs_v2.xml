@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2" kind="struct" language="C++" prot="public">
+    <compoundname>PWMTimerCC32XX_HWAttrsV2</compoundname>
+    <includes refid="_p_w_m_timer_c_c32_x_x_8h" local="no">PWMTimerCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2_1a9b4f342c57b063fceb50b237ce5520de" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PWMTimerCC32XX_HWAttrsV2::pwmPin</definition>
+        <argsstring></argsstring>
+        <name>pwmPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pin to output PWM signal on (see <ref refid="group__pwm_pin_identifiers_c_c32_x_x" kindref="compound">PWMTimerCC32XX_HWAttrs &apos;pwmPin&apos; field options</ref>) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="294" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PWMTimerCC32XX Hardware attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>The &apos;pwmPin&apos; field identifies which physical pin to use for a particular PWM channel as well as the corresponding Timer resource used to source the PWM signal. The encoded pin identifier macros for initializing the &apos;pwmPin&apos; field must be selected from the <ref refid="group__pwm_pin_identifiers_c_c32_x_x" kindref="compound">PWMTimerCC32XX_HWAttrs &apos;pwmPin&apos; field options</ref> macros.</para><para>A sample structure is shown below: <programlisting><codeline><highlight class="normal">const<sp/>PWMTimerCC32XX_HWAttrsV2<sp/>pwmTimerCC32XXHWAttrs[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pwmPin<sp/>=<sp/>PWMTimerCC32XX_PIN_01,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pwmPin<sp/>=<sp/>PWMTimerCC32XX_PIN_02,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="293" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="293" bodyend="296"/>
+    <listofallmembers>
+      <member refid="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2_1a9b4f342c57b063fceb50b237ce5520de" prot="public" virt="non-virtual"><scope>PWMTimerCC32XX_HWAttrsV2</scope><name>pwmPin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="union_crypto_c_c32_x_x___encrypt_params" kind="union" language="C++" prot="public">
+    <compoundname>CryptoCC32XX_EncryptParams</compoundname>
+    <includes refid="_crypto_c_c32_x_x_8h" local="no">CryptoCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_crypto_c_c32_x_x___encrypt_params_1adc3bd4be259de3a607c1de69e15dfbed" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_crypto_c_c32_x_x___aes_params" kindref="compound">CryptoCC32XX_AesParams</ref></type>
+        <definition>CryptoCC32XX_AesParams CryptoCC32XX_EncryptParams::aes</definition>
+        <argsstring></argsstring>
+        <name>aes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="315" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_crypto_c_c32_x_x___encrypt_params_1a8f9dc1e4b36168c868612a44583bac5e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_crypto_c_c32_x_x___des_params" kindref="compound">CryptoCC32XX_DesParams</ref></type>
+        <definition>CryptoCC32XX_DesParams CryptoCC32XX_EncryptParams::des</definition>
+        <argsstring></argsstring>
+        <name>des</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="316" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cryptography Parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>This union defines the AES and DES Cryptographic types </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="65">
+        <label>CryptoCC32XX_AesParams</label>
+        <link refid="struct_crypto_c_c32_x_x___aes_params"/>
+        <childnode refid="66" relation="usage">
+          <edgelabel>aadParams</edgelabel>
+        </childnode>
+      </node>
+      <node id="64">
+        <label>CryptoCC32XX_EncryptParams</label>
+        <link refid="union_crypto_c_c32_x_x___encrypt_params"/>
+        <childnode refid="65" relation="usage">
+          <edgelabel>aes</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>des</edgelabel>
+        </childnode>
+      </node>
+      <node id="68">
+        <label>CryptoCC32XX_DesParams</label>
+        <link refid="struct_crypto_c_c32_x_x___des_params"/>
+      </node>
+      <node id="66">
+        <label>CryptoCC32XX_AesAadParams</label>
+        <link refid="union_crypto_c_c32_x_x___aes_aad_params"/>
+        <childnode refid="67" relation="usage">
+          <edgelabel>input</edgelabel>
+        </childnode>
+      </node>
+      <node id="67">
+        <label>CryptoCC32XX_AesAadInputParams</label>
+        <link refid="struct_crypto_c_c32_x_x___aes_aad_input_params"/>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="314" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="313" bodyend="317"/>
+    <listofallmembers>
+      <member refid="union_crypto_c_c32_x_x___encrypt_params_1adc3bd4be259de3a607c1de69e15dfbed" prot="public" virt="non-virtual"><scope>CryptoCC32XX_EncryptParams</scope><name>aes</name></member>
+      <member refid="union_crypto_c_c32_x_x___encrypt_params_1a8f9dc1e4b36168c868612a44583bac5e" prot="public" virt="non-virtual"><scope>CryptoCC32XX_EncryptParams</scope><name>des</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

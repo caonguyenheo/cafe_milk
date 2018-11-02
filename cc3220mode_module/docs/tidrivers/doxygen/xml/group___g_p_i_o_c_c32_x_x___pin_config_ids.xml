@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="group___g_p_i_o_c_c32_x_x___pin_config_ids" kind="group">
+    <compoundname>GPIOCC32XX_PinConfigIds</compoundname>
+    <title>GPIO pin identification macros used to configure GPIO pins</title>
+      <sectiondef kind="user-defined">
+      <header>Device specific GPIO port/pin identifiers to be used within the board&apos;s GPIO_PinConfig table.</header>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gaf51e71d53bee1689ca94447f0a203446" prot="public" static="no">
+        <name>GPIOCC32XX_EMPTY_PIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="213" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga66c5e06961dde0e35aa21aad4a39007d" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_00</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="215" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gab74ecf0b1dc2503343eb75a8d2b92e06" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_01</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="216" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga5bfae7c21db05d71a287cc8d3d346c4c" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_02</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="217" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga8f6b4bc9a89034d93418c3abd10043d2" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_03</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="218" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gaa909ccf5ac289cf70a1cd4871d47f7f3" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_04</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="219" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga054dc451d2c1c78ad0d1bbd6bcb71f82" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_05</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="220" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga04353d72534d9fc0fe734979273cce31" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_06</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="221" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gaeab3712581a5799dc5ecefb750a18df4" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_07</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="222" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga1000d5aec64eaaa83312960c58382417" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_08</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="224" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga97d27cf77d13a4bc0bd6bb7fce8841c8" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_09</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="225" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gaa6b23d6bc6e6500ed2c6d3682ce860e0" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="226" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga290cb2051ced416f4648a37e5e81bdc9" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="227" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga4d01d74e6136bc8fcd7e88b7daeedc0d" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="228" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga3b47fcbc24e39daac60d9597c7d9809b" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="229" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga605a3a7fbd2a02b498130df909f30e38" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_14</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="230" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga72c8cc238b2a732ebbfdb1e1843618c5" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="231" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gaf843db0af8bd59983e1bbaca484f51a8" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="233" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga49771649b024dd040f94e7c58c083146" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="234" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gaed3b842467af76448b6bb36424d43927" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="235" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gacd47d2ef240fd1f5393fc6a33b55b5ab" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_23</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="236" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga17d47034e903846b6eacb38845fbe268" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_24</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="238" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga9cc07e8692514c1d4bbd3f52640057cd" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_25</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="239" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga81e6b1f3630c7f0dd7339a2e6cf3457a" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_26</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="240" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gaf9e28ebb77e0c0d835775586cca6ac52" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_27</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="241" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga7cdaec1fbdec4241fdaab8716ad4a20e" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_28</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="242" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga25ffb67bdab2e98ef1fa1f2915d77ae8" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_29</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="243" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga16c596c6a80c55c1b8073823f4525e95" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_30</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="244" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gadab844d3954882a6af78b1c7429692a3" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="245" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1ga0faf3ed7f29dc8b8f874213f31318f1b" prot="public" static="no">
+        <name>GPIOCC32XX_GPIO_32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="247" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CC32xx device specific GPIO_PinConfig macros</header>
+      <memberdef kind="define" id="group___g_p_i_o_c_c32_x_x___pin_config_ids_1gabfa67fcbdc5c5304f95ef46853638395" prot="public" static="no">
+        <name>GPIOCC32XX_USE_STATIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>use statically-defined parking state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" line="254" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/gpio/GPIOCC32XX.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

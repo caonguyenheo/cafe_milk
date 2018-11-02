@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1" kind="struct" language="C++" prot="public">
+    <compoundname>I2SCC32XXDMA_HWAttrsV1</compoundname>
+    <includes refid="_i2_s_c_c32_x_x_d_m_a_8h" local="no">I2SCC32XXDMA.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a2a2748d31c1f48eb702aa9f98736feb8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2SCC32XXDMA_HWAttrsV1::baseAddr</definition>
+        <argsstring></argsstring>
+        <name>baseAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S Peripheral&apos;s base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="190" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1ab31114815749902c330af2da0c98b42c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2SCC32XXDMA_HWAttrsV1::intNum</definition>
+        <argsstring></argsstring>
+        <name>intNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S Peripheral&apos;s interrupt vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="192" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a1ee0e7a62abfa3aa62438cc97293b153" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2SCC32XXDMA_HWAttrsV1::intPriority</definition>
+        <argsstring></argsstring>
+        <name>intPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S Peripheral&apos;s interrupt priority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="194" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1acd1558ae3dc540984ec57570b7d0562d" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long I2SCC32XXDMA_HWAttrsV1::rxChannelIndex</definition>
+        <argsstring></argsstring>
+        <name>rxChannelIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uDMA controlTable receive channel index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="196" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1ad531ba73b7eac84beb7976b63614c43f" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long I2SCC32XXDMA_HWAttrsV1::txChannelIndex</definition>
+        <argsstring></argsstring>
+        <name>txChannelIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uDMA controlTable transmit channel index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="198" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a668b625f5b7370b8a927e8a435b0c00c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2SCC32XXDMA_HWAttrsV1::xr0Pin</definition>
+        <argsstring></argsstring>
+        <name>xr0Pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S audio port data 0 pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="200" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1ab59c01bdc2b6d6af68efd1f4af3171f1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2SCC32XXDMA_HWAttrsV1::xr1Pin</definition>
+        <argsstring></argsstring>
+        <name>xr1Pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S audio port data 1 pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="202" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a33d9bf8ae078a88e0f0ee80db54f6e37" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2SCC32XXDMA_HWAttrsV1::clkxPin</definition>
+        <argsstring></argsstring>
+        <name>clkxPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S audio port clock O pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="204" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a69cf47685fb9ae42e2e0e69a67c33669" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2SCC32XXDMA_HWAttrsV1::clkPin</definition>
+        <argsstring></argsstring>
+        <name>clkPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S audio port data pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="206" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1aef9b06f40bf528b6f83fcf240705e711" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2SCC32XXDMA_HWAttrsV1::fsxPin</definition>
+        <argsstring></argsstring>
+        <name>fsxPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S audio port frame sync </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="208" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2SCC32XXDMA Hardware attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>These fields, with the exception of intPriority, are used by driverlib APIs and therefore must be populated by driverlib macro definitions. For CC32XXWare these definitions are found in:<itemizedlist>
+<listitem><para>inc/hw_memmap.h</para></listitem><listitem><para>inc/hw_ints.h</para></listitem></itemizedlist>
+</para><para>intPriority is the I2S peripheral&apos;s interrupt priority, as defined by the underlying OS. It is passed unmodified to the underlying OS&apos;s interrupt handler creation code, so you need to refer to the OS documentation for usage. For example, for SYS/BIOS applications, refer to the ti.sysbios.family.arm.m3.Hwi documentation for SYS/BIOS usage of interrupt priorities. If the driver uses the ti.dpl interface instead of making OS calls directly, then the HwiP port handles the interrupt priority in an OS specific way. In the case of the SYS/BIOS port, intPriority is passed unmodified to Hwi_create().</para><para>A sample structure is shown below: <programlisting><codeline><highlight class="normal">const<sp/>I2SCC32XXDMA_HWAttrsV1<sp/>i2sCC32XXHWAttrs[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.baseAddr<sp/>=<sp/>I2S_BASE,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intNum<sp/>=<sp/>INT_I2S,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intPriority<sp/>=<sp/>(~0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.rxChannelIndex<sp/>=<sp/>UDMA_CH4_I2S_RX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.txChannelIndex<sp/>=<sp/>UDMA_CH5_I2S_TX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.xr0Pin<sp/>=<sp/>I2SCC32XXDMA_PIN_64_McAXR0,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.xr1Pin<sp/>=<sp/>I2SCC32XXDMA_PIN_50_McAXR1,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.clkxPin<sp/>=<sp/>I2SCC32XXDMA_PIN_62_McACLKX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.clkPin<sp/>=<sp/>I2SCC32XXDMA_PIN_53_McACLK,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.fsxPin<sp/>=<sp/>I2SCC32XXDMA_PIN_63_McAFSX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="188" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="188" bodyend="209"/>
+    <listofallmembers>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a2a2748d31c1f48eb702aa9f98736feb8" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>baseAddr</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a69cf47685fb9ae42e2e0e69a67c33669" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>clkPin</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a33d9bf8ae078a88e0f0ee80db54f6e37" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>clkxPin</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1aef9b06f40bf528b6f83fcf240705e711" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>fsxPin</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1ab31114815749902c330af2da0c98b42c" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>intNum</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a1ee0e7a62abfa3aa62438cc97293b153" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>intPriority</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1acd1558ae3dc540984ec57570b7d0562d" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>rxChannelIndex</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1ad531ba73b7eac84beb7976b63614c43f" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>txChannelIndex</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1a668b625f5b7370b8a927e8a435b0c00c" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>xr0Pin</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___h_w_attrs_v1_1ab59c01bdc2b6d6af68efd1f4af3171f1" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_HWAttrsV1</scope><name>xr1Pin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

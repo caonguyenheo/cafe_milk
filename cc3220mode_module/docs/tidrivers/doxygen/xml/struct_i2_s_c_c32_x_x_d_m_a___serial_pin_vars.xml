@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars" kind="struct" language="C++" prot="public">
+    <compoundname>I2SCC32XXDMA_SerialPinVars</compoundname>
+    <includes refid="_i2_s_c_c32_x_x_d_m_a_8h" local="no">I2SCC32XXDMA.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars_1a10ec958288fe42747a31c4212c853779" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a6a13d8bc9ec9d061c003bb5cb9917057" kindref="member">I2S_DataMode</ref></type>
+        <definition>I2S_DataMode I2SCC32XXDMA_SerialPinVars::readWriteMode</definition>
+        <argsstring></argsstring>
+        <name>readWriteMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="242" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars_1acb0b306e14233fa6242ed903189bb1bf" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a760fd8eb272890d42560bcb494a3e2c0" kindref="member">I2S_Callback</ref></type>
+        <definition>I2S_Callback I2SCC32XXDMA_SerialPinVars::readWriteCallback</definition>
+        <argsstring></argsstring>
+        <name>readWriteCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="244" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars_1a2fdcd9d7599504126adb01e37a983c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2SCC32XXDMA_SerialPinVars::readWriteTimeout</definition>
+        <argsstring></argsstring>
+        <name>readWriteTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="246" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2SCC32XXDMA Serial pin variables. </para>    </briefdescription>
+    <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="148">
+        <label>I2SCC32XXDMA_SerialPinVars</label>
+        <link refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars"/>
+        <childnode refid="149" relation="usage">
+          <edgelabel>readWriteCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="149">
+        <label>I2S_Config_</label>
+        <link refid="struct_i2_s___config__"/>
+        <childnode refid="150" relation="usage">
+          <edgelabel>fxnTablePtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="150">
+        <label>I2S_FxnTable_</label>
+        <link refid="struct_i2_s___fxn_table__"/>
+        <childnode refid="149" relation="usage">
+          <edgelabel>readIssueFxn</edgelabel>
+          <edgelabel>closeFxn</edgelabel>
+          <edgelabel>writeIssueFxn</edgelabel>
+          <edgelabel>writeReclaimFxn</edgelabel>
+          <edgelabel>initFxn</edgelabel>
+          <edgelabel>readReclaimFxn</edgelabel>
+          <edgelabel>controlFxn</edgelabel>
+          <edgelabel>openFxn</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="241" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="241" bodyend="248"/>
+    <listofallmembers>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars_1acb0b306e14233fa6242ed903189bb1bf" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_SerialPinVars</scope><name>readWriteCallback</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars_1a10ec958288fe42747a31c4212c853779" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_SerialPinVars</scope><name>readWriteMode</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars_1a2fdcd9d7599504126adb01e37a983c8e" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_SerialPinVars</scope><name>readWriteTimeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

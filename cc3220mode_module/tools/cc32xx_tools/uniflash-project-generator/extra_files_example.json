@@ -1,0 +1,17 @@
+[
+  {
+    "local_file": "C:\\test\\style.css",
+    "fs_path": "/www/css/style.css",
+    "flags": "failsafe,secure,publicwrite,nosignaturetest"
+  },
+  {
+    "local_file": "C:\\test\\help.png",
+    "fs_path": "/www/images/help.png",
+    "flags": "failsafe"
+  },
+  {
+    "local_file": "C:\\test\\ota.dat",
+    "fs_path": "ota.dat",
+    "flags": null
+  }
+]

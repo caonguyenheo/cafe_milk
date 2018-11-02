@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_4a6f0cb122b245ec44040c22e8acea4d" kind="dir">
+    <compoundname>dma</compoundname>
+    <innerfile refid="_u_d_m_a_c_c32_x_x_8h">UDMACC32XX.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/"/>
+  </compounddef>
+</doxygen>

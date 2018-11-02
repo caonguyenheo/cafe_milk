@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_i2_s___buf_desc__" kind="struct" language="C++" prot="public">
+    <compoundname>I2S_BufDesc_</compoundname>
+    <includes refid="_i2_s_8h" local="no">I2S.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_s___buf_desc___1a7bca4a171985e2e79823d7a50497aaac" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_list___elem" kindref="compound">List_Elem</ref></type>
+        <definition>List_Elem I2S_BufDesc_::qElem</definition>
+        <argsstring></argsstring>
+        <name>qElem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used internally to link descriptors together </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="350" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___buf_desc___1ad38661a5fd618a6431cd41aad3600e2d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* I2S_BufDesc_::bufPtr</definition>
+        <argsstring></argsstring>
+        <name>bufPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="353" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___buf_desc___1a30fc85c2b2ecda3dc62139ba2234a00b" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t I2S_BufDesc_::bufSize</definition>
+        <argsstring></argsstring>
+        <name>bufSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of the buffer (target MAUs). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="356" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___buf_desc___1a7f532142040f5118cab4d5826a9d26f4" prot="public" static="no" mutable="no">
+        <type>uintptr_t</type>
+        <definition>uintptr_t I2S_BufDesc_::descArg</definition>
+        <argsstring></argsstring>
+        <name>descArg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional argument associated with the descriptor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="359" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2S buffer descriptor for issue/reclaim mode. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="119">
+        <label>I2S_BufDesc_</label>
+        <link refid="struct_i2_s___buf_desc__"/>
+        <childnode refid="120" relation="usage">
+          <edgelabel>qElem</edgelabel>
+        </childnode>
+      </node>
+      <node id="120">
+        <label>List_Elem</label>
+        <link refid="struct_list___elem"/>
+        <childnode refid="120" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="347" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="347" bodyend="360"/>
+    <listofallmembers>
+      <member refid="struct_i2_s___buf_desc___1ad38661a5fd618a6431cd41aad3600e2d" prot="public" virt="non-virtual"><scope>I2S_BufDesc_</scope><name>bufPtr</name></member>
+      <member refid="struct_i2_s___buf_desc___1a30fc85c2b2ecda3dc62139ba2234a00b" prot="public" virt="non-virtual"><scope>I2S_BufDesc_</scope><name>bufSize</name></member>
+      <member refid="struct_i2_s___buf_desc___1a7f532142040f5118cab4d5826a9d26f4" prot="public" virt="non-virtual"><scope>I2S_BufDesc_</scope><name>descArg</name></member>
+      <member refid="struct_i2_s___buf_desc___1a7bca4a171985e2e79823d7a50497aaac" prot="public" virt="non-virtual"><scope>I2S_BufDesc_</scope><name>qElem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

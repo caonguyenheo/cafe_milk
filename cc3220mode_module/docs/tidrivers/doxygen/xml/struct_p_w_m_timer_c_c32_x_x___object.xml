@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_p_w_m_timer_c_c32_x_x___object" kind="struct" language="C++" prot="public">
+    <compoundname>PWMTimerCC32XX_Object</compoundname>
+    <includes refid="_p_w_m_timer_c_c32_x_x_8h" local="no">PWMTimerCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_p_w_m_timer_c_c32_x_x___object_1a67c1603c655c379610acc0034d3998f0" prot="public" static="no" mutable="no">
+        <type><ref refid="_power_8h_1a380d08b754e6f3f096349ab5fc464209" kindref="member">Power_NotifyObj</ref></type>
+        <definition>Power_NotifyObj PWMTimerCC32XX_Object::postNotify</definition>
+        <argsstring></argsstring>
+        <name>postNotify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="304" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_m_timer_c_c32_x_x___object_1ad1e6ce6bc52478afd5aa3aea726cfefa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PWMTimerCC32XX_Object::duty</definition>
+        <argsstring></argsstring>
+        <name>duty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="305" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_m_timer_c_c32_x_x___object_1acd6c89fea0ac448356fa7de7619b03d0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PWMTimerCC32XX_Object::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="306" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_m_timer_c_c32_x_x___object_1a429617ba3a57bb14a6dff2e65bd972dc" prot="public" static="no" mutable="no">
+        <type><ref refid="_p_w_m_8h_1aad6f03b40ae1ba4362b264598c947e4c" kindref="member">PWM_Duty_Units</ref></type>
+        <definition>PWM_Duty_Units PWMTimerCC32XX_Object::dutyUnits</definition>
+        <argsstring></argsstring>
+        <name>dutyUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="307" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_m_timer_c_c32_x_x___object_1aa95d589427aea557081b40f55eac3e39" prot="public" static="no" mutable="no">
+        <type><ref refid="_p_w_m_8h_1ac03072b64ddec3014d28e3bdcf6f84cb" kindref="member">PWM_Period_Units</ref></type>
+        <definition>PWM_Period_Units PWMTimerCC32XX_Object::periodUnits</definition>
+        <argsstring></argsstring>
+        <name>periodUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="308" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_m_timer_c_c32_x_x___object_1a2c93faff2f211dcc5462e6a37ad1549c" prot="public" static="no" mutable="no">
+        <type><ref refid="_p_w_m_8h_1aac611844d55b6be24f8a56902df9412f" kindref="member">PWM_IdleLevel</ref></type>
+        <definition>PWM_IdleLevel PWMTimerCC32XX_Object::idleLevel</definition>
+        <argsstring></argsstring>
+        <name>idleLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="309" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_m_timer_c_c32_x_x___object_1a534de3f76b8648411daf6b56ecdd9581" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PWMTimerCC32XX_Object::pwmStarted</definition>
+        <argsstring></argsstring>
+        <name>pwmStarted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="310" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_w_m_timer_c_c32_x_x___object_1a2ae2d2bbe265220e6f297bd65f98cbfc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PWMTimerCC32XX_Object::isOpen</definition>
+        <argsstring></argsstring>
+        <name>isOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="311" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PWMTimerCC32XX Object. </para>    </briefdescription>
+    <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="201">
+        <label>List_Elem</label>
+        <link refid="struct_list___elem"/>
+        <childnode refid="201" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="200">
+        <label>Power_NotifyObj_</label>
+        <link refid="struct_power___notify_obj__"/>
+        <childnode refid="201" relation="usage">
+          <edgelabel>link</edgelabel>
+        </childnode>
+      </node>
+      <node id="199">
+        <label>PWMTimerCC32XX_Object</label>
+        <link refid="struct_p_w_m_timer_c_c32_x_x___object"/>
+        <childnode refid="200" relation="usage">
+          <edgelabel>postNotify</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="303" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="303" bodyend="312"/>
+    <listofallmembers>
+      <member refid="struct_p_w_m_timer_c_c32_x_x___object_1ad1e6ce6bc52478afd5aa3aea726cfefa" prot="public" virt="non-virtual"><scope>PWMTimerCC32XX_Object</scope><name>duty</name></member>
+      <member refid="struct_p_w_m_timer_c_c32_x_x___object_1a429617ba3a57bb14a6dff2e65bd972dc" prot="public" virt="non-virtual"><scope>PWMTimerCC32XX_Object</scope><name>dutyUnits</name></member>
+      <member refid="struct_p_w_m_timer_c_c32_x_x___object_1a2c93faff2f211dcc5462e6a37ad1549c" prot="public" virt="non-virtual"><scope>PWMTimerCC32XX_Object</scope><name>idleLevel</name></member>
+      <member refid="struct_p_w_m_timer_c_c32_x_x___object_1a2ae2d2bbe265220e6f297bd65f98cbfc" prot="public" virt="non-virtual"><scope>PWMTimerCC32XX_Object</scope><name>isOpen</name></member>
+      <member refid="struct_p_w_m_timer_c_c32_x_x___object_1acd6c89fea0ac448356fa7de7619b03d0" prot="public" virt="non-virtual"><scope>PWMTimerCC32XX_Object</scope><name>period</name></member>
+      <member refid="struct_p_w_m_timer_c_c32_x_x___object_1aa95d589427aea557081b40f55eac3e39" prot="public" virt="non-virtual"><scope>PWMTimerCC32XX_Object</scope><name>periodUnits</name></member>
+      <member refid="struct_p_w_m_timer_c_c32_x_x___object_1a67c1603c655c379610acc0034d3998f0" prot="public" virt="non-virtual"><scope>PWMTimerCC32XX_Object</scope><name>postNotify</name></member>
+      <member refid="struct_p_w_m_timer_c_c32_x_x___object_1a534de3f76b8648411daf6b56ecdd9581" prot="public" virt="non-virtual"><scope>PWMTimerCC32XX_Object</scope><name>pwmStarted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

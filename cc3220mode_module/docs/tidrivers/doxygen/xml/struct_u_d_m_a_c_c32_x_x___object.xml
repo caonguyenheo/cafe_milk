@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_u_d_m_a_c_c32_x_x___object" kind="struct" language="C++" prot="public">
+    <compoundname>UDMACC32XX_Object</compoundname>
+    <includes refid="_u_d_m_a_c_c32_x_x_8h" local="no">UDMACC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_d_m_a_c_c32_x_x___object_1a34aef42cac317d10aabdd2efaf7b0e4f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UDMACC32XX_Object::isOpen</definition>
+        <argsstring></argsstring>
+        <name>isOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="149" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_d_m_a_c_c32_x_x___object_1a819f3a9582e463286227760b1d769ab0" prot="public" static="no" mutable="no">
+        <type>HwiP_Handle</type>
+        <definition>HwiP_Handle UDMACC32XX_Object::hwiHandle</definition>
+        <argsstring></argsstring>
+        <name>hwiHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="150" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UDMACC32XX object. </para>    </briefdescription>
+    <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="148" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" bodystart="148" bodyend="151"/>
+    <listofallmembers>
+      <member refid="struct_u_d_m_a_c_c32_x_x___object_1a819f3a9582e463286227760b1d769ab0" prot="public" virt="non-virtual"><scope>UDMACC32XX_Object</scope><name>hwiHandle</name></member>
+      <member refid="struct_u_d_m_a_c_c32_x_x___object_1a34aef42cac317d10aabdd2efaf7b0e4f" prot="public" virt="non-virtual"><scope>UDMACC32XX_Object</scope><name>isOpen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

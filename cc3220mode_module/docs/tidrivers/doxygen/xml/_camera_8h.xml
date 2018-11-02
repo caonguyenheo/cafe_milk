@@ -1,0 +1,1160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_camera_8h" kind="file" language="C++">
+    <compoundname>Camera.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includedby refid="_camera_c_c32_x_x_d_m_a_8h" local="no">CameraCC32XXDMA.h</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stdint.h</label>
+      </node>
+      <node id="14">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16">
+        <label>CameraCC32XXDMA.h</label>
+        <link refid="_camera_c_c32_x_x_d_m_a_8h"/>
+      </node>
+      <node id="15">
+        <label>Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_camera___params__" prot="public">Camera_Params_</innerclass>
+    <innerclass refid="struct_camera___fxn_table__" prot="public">Camera_FxnTable_</innerclass>
+    <innerclass refid="struct_camera___config__" prot="public">Camera_Config_</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_a_m_e_r_a___c_o_n_t_r_o_l_1gaed2b3df48a75ec7e6e78320bb3a48eb9" prot="public" static="no">
+        <name>CAMERA_CMD_RESERVED</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Common Camera_control command code reservation offset. Camera driver implementations should offset command codes with CAMERA_CMD_RESERVED growing positively</para><para>Example implementation specific command codes: <programlisting><codeline><highlight class="normal">#define<sp/>CAMERAXYZ_CMD_COMMAND0<sp/><sp/><sp/>CAMERA_CMD_RESERVED<sp/>+<sp/>0</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>CAMERAXYZ_CMD_COMMAND1<sp/><sp/><sp/>CAMERA_CMD_RESERVED<sp/>+<sp/>1</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="199" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_m_e_r_a___c_o_n_t_r_o_l_1ga13b3728d2673d72db6cc71744a0cbedf" prot="public" static="no">
+        <name>CAMERA_STATUS_RESERVED</name>
+        <initializer>(-32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Common Camera_control status code reservation offset. Camera driver implementations should offset status codes with CAMERA_STATUS_RESERVED growing negatively.</para><para>Example implementation specific status codes: <programlisting><codeline><highlight class="normal">#define<sp/>CAMERAXYZ_STATUS_ERROR0<sp/><sp/>CAMERA_STATUS_RESERVED<sp/>-<sp/>0</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>CAMERAXYZ_STATUS_ERROR1<sp/><sp/>CAMERA_STATUS_RESERVED<sp/>-<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>CAMERAXYZ_STATUS_ERROR2<sp/><sp/>CAMERA_STATUS_RESERVED<sp/>-<sp/>2</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="213" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___camera___s_t_a_t_u_s_1gaa4d73b4da4ce113c8fb545d1f2649257" prot="public" static="no">
+        <name>CAMERA_STATUS_SUCCESS</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+<para>Successful status code returned by <ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref> returns CAMERA_STATUS_SUCCESS if the control code was executed successfully. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="228" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___camera___s_t_a_t_u_s_1ga2863402eca66d26cf447fc02340a0d45" prot="public" static="no">
+        <name>CAMERA_STATUS_ERROR</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+<para>Generic error status code returned by <ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref> returns CAMERA_STATUS_ERROR if the control code was not executed successfully. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="236" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___camera___s_t_a_t_u_s_1gaae8cae4253d68cc8ae921b63a74d1cb9" prot="public" static="no">
+        <name>CAMERA_STATUS_UNDEFINEDCMD</name>
+        <initializer>(-2)</initializer>
+        <briefdescription>
+<para>An error status code returned by <ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref> for undefined command codes. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref> returns CAMERA_STATUS_UNDEFINEDCMD if the control code is not recognized by the driver implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="245" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_camera_8h_1a1b85e579e68cecb09d1e2be70a6c56a9" prot="public" static="no">
+        <name>Camera_WAIT_FOREVER</name>
+        <initializer>(~(0U))</initializer>
+        <briefdescription>
+<para>Wait forever define. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="265" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8" prot="public" static="no">
+        <name>Camera_CaptureMode_</name>
+        <enumvalue id="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8aad6127b321c6b22ffe1a50caee5a4fe1" prot="public">
+          <name>Camera_MODE_BLOCKING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Uses a semaphore to block while data is being sent. Context of the call must be a Task. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8ae2f15a1a358226aa81d59509f5a31191" prot="public">
+          <name>Camera_MODE_CALLBACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Non-blocking and will return immediately. When the capture by the interrupt is finished the configured callback function is called. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera capture mode settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the capture mode for the configured Camera. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="292" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="292" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="enum" id="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1d" prot="public" static="no">
+        <name>Camera_HSyncPolarity_</name>
+        <enumvalue id="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1daf152b2a7d9da944fe46858efe055d095" prot="public">
+          <name>Camera_HSYNC_POLARITY_HIGH</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1dabcb1c81f87d7738515cd6b22afc09cc5" prot="public">
+          <name>Camera_HSYNC_POLARITY_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera HSync polarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the polarity of the HSync signal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="312" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="312" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="enum" id="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bca" prot="public" static="no">
+        <name>Camera_VSyncPolarity_</name>
+        <enumvalue id="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bcaacde960b001c2a12b75b7fad97bf7ec54" prot="public">
+          <name>Camera_VSYNC_POLARITY_HIGH</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bcaa3f3b042b294fe98c91a6d50c7989db35" prot="public">
+          <name>Camera_VSYNC_POLARITY_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera VSync polarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the polarity of the VSync signal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="322" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="322" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="enum" id="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2" prot="public" static="no">
+        <name>Camera_PixelClkConfig_</name>
+        <enumvalue id="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2ade970e1c835dea0c6d00f94fcf2abdca" prot="public">
+          <name>Camera_PCLK_CONFIG_RISING_EDGE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2a2cab0af65ebc5fd82af8bd118d20a6da" prot="public">
+          <name>Camera_PCLK_CONFIG_FALLING_EDGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera pixel clock configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the pixel clock configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="332" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="332" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="enum" id="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3" prot="public" static="no">
+        <name>Camera_ByteOrder_</name>
+        <enumvalue id="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3a819196064eea1c6f65a0aeaee5f99acb" prot="public">
+          <name>Camera_BYTE_ORDER_NORMAL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3a90cfebe886cda289023a577c9b2cc831" prot="public">
+          <name>Camera_BYTE_ORDER_SWAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera byte order. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the byte order of camera capture.</para><para>In normal mode, the byte order is: | byte3 | byte2 | byte1 | byte0 |</para><para>In swap mode, the bytes are ordered as: | byte2 | byte3 | byte0 | byte1 | </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="348" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="348" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="enum" id="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923" prot="public" static="no">
+        <name>Camera_IfSynchoronisation_</name>
+        <enumvalue id="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923aebefaa79a8ad8c68d84f3e0839dd7ef8" prot="public">
+          <name>Camera_INTERFACE_SYNC_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923ab3f554e1d669f4d87917f3f43a45727b" prot="public">
+          <name>Camera_INTERFACE_SYNC_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera interface synchronization. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the sensor to camera interface synchronization configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="359" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="359" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="enum" id="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20" prot="public" static="no">
+        <name>Camera_StopCaptureConfig_</name>
+        <enumvalue id="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20a95410e8c6eb0a0ae4488f722931d4150" prot="public">
+          <name>Camera_STOP_CAPTURE_IMMEDIATE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20a949d55caf973f4e50fbf1fa3e4246718" prot="public">
+          <name>Camera_STOP_CAPTURE_FRAME_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera stop capture configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the stop capture configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="369" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="369" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="enum" id="_camera_8h_1a066eb5512cf425ea7bed78747973b880" prot="public" static="no">
+        <name>Camera_StartCaptureConfig_</name>
+        <enumvalue id="_camera_8h_1a066eb5512cf425ea7bed78747973b880a2e7b7db227fef9bf1d1083f1d167c3f0" prot="public">
+          <name>Camera_START_CAPTURE_IMMEDIATE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_camera_8h_1a066eb5512cf425ea7bed78747973b880a5f6f496192b849174e7b652df2ca1823" prot="public">
+          <name>Camera_START_CAPTURE_FRAME_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera start capture configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the start capture configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="379" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="379" bodyend="382"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_camera_8h_1a95f2d51c0199015feef82e93ee545f98" prot="public" static="no">
+        <type>struct <ref refid="struct_camera___config__" kindref="compound">Camera_Config_</ref> *</type>
+        <definition>typedef struct Camera_Config_* Camera_Handle</definition>
+        <argsstring></argsstring>
+        <name>Camera_Handle</name>
+        <briefdescription>
+<para>A handle that is returned from a <ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref> call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="270" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1aba0b8eb4e05a4adb316be6390d7c3ade" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* Camera_Callback) (Camera_Handle handle, void *buf, size_t frameLength)</definition>
+        <argsstring>)(Camera_Handle handle, void *buf, size_t frameLength)</argsstring>
+        <name>Camera_Callback</name>
+        <briefdescription>
+<para>The definition of a callback function used by the Camera driver when used in <ref refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8ae2f15a1a358226aa81d59509f5a31191" kindref="member">Camera_MODE_CALLBACK</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Camera_Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to capture buffer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frameLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of frame </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="283" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1ab0c490ea8eed1057d4f3fb49ad225ed3" prot="public" static="no">
+        <type>enum <ref refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8" kindref="member">Camera_CaptureMode_</ref></type>
+        <definition>typedef enum Camera_CaptureMode_  Camera_CaptureMode</definition>
+        <argsstring></argsstring>
+        <name>Camera_CaptureMode</name>
+        <briefdescription>
+<para>Camera capture mode settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the capture mode for the configured Camera. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="305" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1ac2e4d70952352fcd1a392eba7050e817" prot="public" static="no">
+        <type>enum <ref refid="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1d" kindref="member">Camera_HSyncPolarity_</ref></type>
+        <definition>typedef enum Camera_HSyncPolarity_  Camera_HSyncPolarity</definition>
+        <argsstring></argsstring>
+        <name>Camera_HSyncPolarity</name>
+        <briefdescription>
+<para>Camera HSync polarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the polarity of the HSync signal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a4134582008331f78da620373471b3f47" prot="public" static="no">
+        <type>enum <ref refid="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bca" kindref="member">Camera_VSyncPolarity_</ref></type>
+        <definition>typedef enum Camera_VSyncPolarity_  Camera_VSyncPolarity</definition>
+        <argsstring></argsstring>
+        <name>Camera_VSyncPolarity</name>
+        <briefdescription>
+<para>Camera VSync polarity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the polarity of the VSync signal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1ac82e6614a925786c34753fdbed151a76" prot="public" static="no">
+        <type>enum <ref refid="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2" kindref="member">Camera_PixelClkConfig_</ref></type>
+        <definition>typedef enum Camera_PixelClkConfig_  Camera_PixelClkConfig</definition>
+        <argsstring></argsstring>
+        <name>Camera_PixelClkConfig</name>
+        <briefdescription>
+<para>Camera pixel clock configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the pixel clock configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a009045aae94c935631fca06b19c1c4c7" prot="public" static="no">
+        <type>enum <ref refid="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3" kindref="member">Camera_ByteOrder_</ref></type>
+        <definition>typedef enum Camera_ByteOrder_  Camera_ByteOrder</definition>
+        <argsstring></argsstring>
+        <name>Camera_ByteOrder</name>
+        <briefdescription>
+<para>Camera byte order. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the byte order of camera capture.</para><para>In normal mode, the byte order is: | byte3 | byte2 | byte1 | byte0 |</para><para>In swap mode, the bytes are ordered as: | byte2 | byte3 | byte0 | byte1 | </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="351" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a613bc527a31c6ab4e5308d726acc65b3" prot="public" static="no">
+        <type>enum <ref refid="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923" kindref="member">Camera_IfSynchoronisation_</ref></type>
+        <definition>typedef enum Camera_IfSynchoronisation_  Camera_IfSynchoronisation</definition>
+        <argsstring></argsstring>
+        <name>Camera_IfSynchoronisation</name>
+        <briefdescription>
+<para>Camera interface synchronization. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the sensor to camera interface synchronization configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="362" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a27ced664362a420a1be17e27cfa1be68" prot="public" static="no">
+        <type>enum <ref refid="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20" kindref="member">Camera_StopCaptureConfig_</ref></type>
+        <definition>typedef enum Camera_StopCaptureConfig_  Camera_StopCaptureConfig</definition>
+        <argsstring></argsstring>
+        <name>Camera_StopCaptureConfig</name>
+        <briefdescription>
+<para>Camera stop capture configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the stop capture configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="372" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a7c32fd39cf315087e588bbb62e4eba00" prot="public" static="no">
+        <type>enum <ref refid="_camera_8h_1a066eb5512cf425ea7bed78747973b880" kindref="member">Camera_StartCaptureConfig_</ref></type>
+        <definition>typedef enum Camera_StartCaptureConfig_  Camera_StartCaptureConfig</definition>
+        <argsstring></argsstring>
+        <name>Camera_StartCaptureConfig</name>
+        <briefdescription>
+<para>Camera start capture configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the start capture configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="382" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a3edeb123e2218656118daed5a196b81b" prot="public" static="no">
+        <type>struct <ref refid="struct_camera___params__" kindref="compound">Camera_Params_</ref></type>
+        <definition>typedef struct Camera_Params_  Camera_Params</definition>
+        <argsstring></argsstring>
+        <name>Camera_Params</name>
+        <briefdescription>
+<para>Camera Parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para>Camera parameters are used to with the <ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref> call. Default values for these parameters are set using <ref refid="_camera_8h_1a522620ae3e5fb202b1f46f5535619564" kindref="member">Camera_Params_init()</ref>.</para><para>If Camera_CaptureMode is set to Camera_MODE_BLOCKING then Camera_capture function calls will block thread execution until the capture has completed.</para><para>If Camera_CaptureMode is set to Camera_MODE_CALLBACK then Camera_capture will not block thread execution and it will call the function specified by captureCallbackFxn.</para><para><simplesect kind="see"><para><ref refid="_camera_8h_1a522620ae3e5fb202b1f46f5535619564" kindref="member">Camera_Params_init()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="435" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1ae6f2789af3ea253197fd2ce98db352f4" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* Camera_CloseFxn) (Camera_Handle handle)</definition>
+        <argsstring>)(Camera_Handle handle)</argsstring>
+        <name>Camera_CloseFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_camera_8h_1a132c638e5ea994c1f06124f5762470b4" kindref="member">Camera_close()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="441" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a9ce2e2dcde1d32bd25059ce6284ff6e3" prot="public" static="no">
+        <type>int_fast16_t(*</type>
+        <definition>typedef int_fast16_t(* Camera_ControlFxn) (Camera_Handle handle, uint_fast16_t cmd, void *arg)</definition>
+        <argsstring>)(Camera_Handle handle, uint_fast16_t cmd, void *arg)</argsstring>
+        <name>Camera_ControlFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="447" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a3b6d043e96bfc1f1443521ef10ea01f3" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* Camera_InitFxn) (Camera_Handle handle)</definition>
+        <argsstring>)(Camera_Handle handle)</argsstring>
+        <name>Camera_InitFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="455" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a589bec3690a5b7c7890a0e411a1cad9f" prot="public" static="no">
+        <type><ref refid="_camera_8h_1a95f2d51c0199015feef82e93ee545f98" kindref="member">Camera_Handle</ref>(*</type>
+        <definition>typedef Camera_Handle(* Camera_OpenFxn) (Camera_Handle handle, Camera_Params *params)</definition>
+        <argsstring>)(Camera_Handle handle, Camera_Params *params)</argsstring>
+        <name>Camera_OpenFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="461" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a1eebbf7cd299fbe5eac8feed76659094" prot="public" static="no">
+        <type>int_fast16_t(*</type>
+        <definition>typedef int_fast16_t(* Camera_CaptureFxn) (Camera_Handle handle, void *buffer, size_t bufferlen, size_t *frameLen)</definition>
+        <argsstring>)(Camera_Handle handle, void *buffer, size_t bufferlen, size_t *frameLen)</argsstring>
+        <name>Camera_CaptureFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_camera_8h_1a0588184ada46a5ad668af0e685d943e8" kindref="member">Camera_capture()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="468" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a2955a2142d655c3c4ecc3b6f314dba4a" prot="public" static="no">
+        <type>struct <ref refid="struct_camera___fxn_table__" kindref="compound">Camera_FxnTable_</ref></type>
+        <definition>typedef struct Camera_FxnTable_  Camera_FxnTable</definition>
+        <argsstring></argsstring>
+        <name>Camera_FxnTable</name>
+        <briefdescription>
+<para>The definition of a Camera function table that contains the required set of functions to control a specific Camera driver implementation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="491" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_camera_8h_1a32ba4ebe191fe708a75cbe09023efddf" prot="public" static="no">
+        <type>struct <ref refid="struct_camera___config__" kindref="compound">Camera_Config_</ref></type>
+        <definition>typedef struct Camera_Config_  Camera_Config</definition>
+        <argsstring></argsstring>
+        <name>Camera_Config</name>
+        <briefdescription>
+<para>Camera Global configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>The Camera_Config structure contains a set of pointers used to characterize the Camera driver implementation.</para><para>This structure needs to be defined before calling <ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init()</ref> and it must not be changed thereafter.</para><para><simplesect kind="see"><para><ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="513" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_camera_8h_1a132c638e5ea994c1f06124f5762470b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Camera_close</definition>
+        <argsstring>(Camera_Handle handle)</argsstring>
+        <name>Camera_close</name>
+        <param>
+          <type><ref refid="_camera_8h_1a95f2d51c0199015feef82e93ee545f98" kindref="member">Camera_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Function to close a Camera peripheral specified by the Camera handle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para><ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref> had to be called first.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Camera_Handle returned from Camera_open</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="524" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int_fast16_t</type>
+        <definition>int_fast16_t Camera_control</definition>
+        <argsstring>(Camera_Handle handle, uint_fast16_t cmd, void *arg)</argsstring>
+        <name>Camera_control</name>
+        <param>
+          <type><ref refid="_camera_8h_1a95f2d51c0199015feef82e93ee545f98" kindref="member">Camera_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Function performs implementation specific features on a given Camera_Handle. </para>        </briefdescription>
+        <detaileddescription>
+<para>Commands for Camera_control can originate from <ref refid="_camera_8h" kindref="compound">Camera.h</ref> or from implementation specific Camera*.h (<emphasis>CameraCC32XX.h</emphasis>, etc.. ) files. While commands from <ref refid="_camera_8h" kindref="compound">Camera.h</ref> are API portable across driver implementations, not all implementations may support all these commands. Conversely, commands from driver implementation specific Camera*.h files add unique driver capabilities but are not API portable across all Camera driver implementations.</para><para>Commands supported by <ref refid="_camera_8h" kindref="compound">Camera.h</ref> follow a Camera_CMD_&lt;cmd&gt; naming convention.<linebreak/>
+ Commands supported by Camera*.h follow a Camera*_CMD_&lt;cmd&gt; naming convention.<linebreak/>
+ Each control command defines <bold>arg</bold> differently. The types of <bold>arg</bold> are documented with each command.</para><para>See <ref refid="group___camera___c_m_d" kindref="compound">Camera_control command codes</ref> for command codes.</para><para>See <ref refid="group___camera___s_t_a_t_u_s" kindref="compound">Camera_control return status codes</ref> for status codes.</para><para><simplesect kind="pre"><para><ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref> has to be called first.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Camera handle returned from <ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="_camera_8h" kindref="compound">Camera.h</ref> or Camera*.h commands.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional R/W (read/write) command argument accompanied with cmd</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Implementation specific return codes. Negative values indicate unsuccessful operations.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="563" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Camera_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>Camera_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to initializes the Camera module. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The Camera_config structure must exist and be persistent before this function can be called. This function must also be called before any other Camera driver APIs. This function call does not modify any peripheral registers. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="574" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_camera_8h_1a95f2d51c0199015feef82e93ee545f98" kindref="member">Camera_Handle</ref></type>
+        <definition>Camera_Handle Camera_open</definition>
+        <argsstring>(uint_least8_t index, Camera_Params *params)</argsstring>
+        <name>Camera_open</name>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="_camera_8h_1a3edeb123e2218656118daed5a196b81b" kindref="member">Camera_Params</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Function to initialize a given Camera peripheral specified by the particular index value. The parameter specifies which mode the Camera will operate. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>Camera controller has been initialized</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical peripheral number for the Camera indexed into the Camera_config table</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an parameter block, if NULL it will use default values. All the fields in this structure are RO (read-only).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Camera_Handle on success or a NULL on an error or if it has been opened already.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init()</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="_camera_8h_1a132c638e5ea994c1f06124f5762470b4" kindref="member">Camera_close()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="596" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_camera_8h_1a522620ae3e5fb202b1f46f5535619564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Camera_Params_init</definition>
+        <argsstring>(Camera_Params *params)</argsstring>
+        <name>Camera_Params_init</name>
+        <param>
+          <type><ref refid="_camera_8h_1a3edeb123e2218656118daed5a196b81b" kindref="member">Camera_Params</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Function to initialize the Camera_Params structure to its defaults. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An pointer to Camera_Params structure for initialization</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Defaults values are: captureMode = Camera_MODE_BLOCKING; outputClock = 24000000; hsyncPolarity = Camera_HSYNC_POLARITY_HIGH; vsyncPolarity = Camera_VSYNC_POLARITY_HIGH; pixelClkConfig = Camera_PCLK_CONFIG_RISING_EDGE; byteOrder = Camera_BYTE_ORDER_NORMAL; interfaceSync = Camera_INTERFACE_SYNC_ON; stopConfig = Camera_STOP_CAPTURE_FRAME_END; startConfig = Camera_START_CAPTURE_FRAME_START; captureTimeout = Camera_WAIT_FOREVER; captureCallback = NULL; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="617" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_camera_8h_1a0588184ada46a5ad668af0e685d943e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int_fast16_t</type>
+        <definition>int_fast16_t Camera_capture</definition>
+        <argsstring>(Camera_Handle handle, void *buffer, size_t bufferlen, size_t *frameLen)</argsstring>
+        <name>Camera_capture</name>
+        <param>
+          <type><ref refid="_camera_8h_1a95f2d51c0199015feef82e93ee545f98" kindref="member">Camera_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bufferlen</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>frameLen</declname>
+        </param>
+        <briefdescription>
+<para>Function that handles the Camera capture of a frame. </para>        </briefdescription>
+        <detaileddescription>
+<para>In Camera_MODE_BLOCKING, Camera_capture will block task execution until the capture is complete.</para><para>In Camera_MODE_CALLBACK, Camera_capture does not block task execution and calls a callback function specified by captureCallbackFxn. The Camera buffer must stay persistent until the Camera_capture function has completed!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Camera_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a WO (write-only) buffer into which the captured frame is placed</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bufferlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length (in bytes) of the capture buffer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frameLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to return number of bytes captured.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CAMERA_STATUS_SUCCESS on successful capture, CAMERA_STATUS_ERROR if if otherwise.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="644" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Camera driver interface. </para>    </briefdescription>
+    <detaileddescription>
+<para><hruler/>
+</para><para>The Camera header file should be included in an application as follows: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/Camera.h&gt;</highlight></codeline>
+</programlisting></para><para><heading level="1">Overview</heading>
+</para><para>The Camera driver is used to retrieve the data being transferred by the Camera sensor. This driver provides an API for capturing the image from the Camera sensor. The camera sensor control and implementation are the responsibility of the application using the interface.</para><para>The Camera driver has been designed to operate in an RTOS environment. It protects its transactions with OS primitives supplied by the underlying RTOS.</para><para><heading level="1">Usage</heading>
+</para><para>The Camera driver includes the following APIs:<itemizedlist>
+<listitem><para><ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init()</ref>: Initialize the Camera driver.</para></listitem><listitem><para><ref refid="_camera_8h_1a522620ae3e5fb202b1f46f5535619564" kindref="member">Camera_Params_init()</ref>: Initialize a <ref refid="_camera_8h_1a3edeb123e2218656118daed5a196b81b" kindref="member">Camera_Params</ref> structure with default vaules.</para></listitem><listitem><para><ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref>: Open an instance of the Camera driver.</para></listitem><listitem><para><ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref>: Performs implemenation-specific features on a given Camera peripheral.</para></listitem><listitem><para><ref refid="_camera_8h_1a0588184ada46a5ad668af0e685d943e8" kindref="member">Camera_capture()</ref>: Capture a frame.</para></listitem><listitem><para><ref refid="_camera_8h_1a132c638e5ea994c1f06124f5762470b4" kindref="member">Camera_close()</ref>: De-initialize a given Camera instance.</para></listitem></itemizedlist>
+</para><para><heading level="3">Camera Driver Configuration</heading>
+</para><para>In order to use the Camera APIs, the application is required to provide device-specific Camera configuration in the Board.c file. The Camera driver interface defines a configuration data structure:</para><para><programlisting><codeline><highlight class="normal">typedef<sp/>struct<sp/>Camera_Config_<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Camera_FxnTable<sp/>const<sp/><sp/>*fxnTablePtr;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*object;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/><sp/>*hwAttrs;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>Camera_Config;</highlight></codeline>
+</programlisting></para><para>The application must declare an array of Camera_Config elements, named Camera_config[]. Each element of Camera_config[] must be populated with pointers to a device specific Camera driver implementation&apos;s function table, driver object, and hardware attributes. The hardware attributes define properties such as the Camera peripheral&apos;s base address. Each element in Camera_config[] corresponds to a Camera instance, and none of the elements should have NULL pointers. There is no correlation between the index and the peripheral designation (such as Camera0 or Camera1). For example, it is possible to use Camera_config[0] for Camera1.</para><para>Because the Camera configuration is very device dependent, you will need to check the doxygen for the device specific Camera implementation. There you will find a description of the Camera hardware attributes. Please also refer to the Board.c file of any of your examples to see the Camera configuration.</para><para><heading level="3">Initializing the Camear Driver</heading>
+</para><para>The application initializes the Camera driver by calling <ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init()</ref>. This function must be called before any other Camera API. <ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init()</ref> iterates through the elements of the Camera_config[] array, calling the element&apos;s device implementation Camera initialization function. <heading level="3">Camera Parameters</heading>
+</para><para>The <ref refid="_camera_8h_1a3edeb123e2218656118daed5a196b81b" kindref="member">Camera_Params</ref> structure is passed to <ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref>. If NULL is passed for the parameters, <ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref> uses default parameters. A <ref refid="_camera_8h_1a3edeb123e2218656118daed5a196b81b" kindref="member">Camera_Params</ref> structure is initialized with default values by passing it to <ref refid="_camera_8h_1a522620ae3e5fb202b1f46f5535619564" kindref="member">Camera_Params_init()</ref>. Some of the Camera parameters are described below. To see brief descriptions of all the parameters, see <ref refid="_camera_8h_1a3edeb123e2218656118daed5a196b81b" kindref="member">Camera_Params</ref>.</para><para><heading level="4">Camera Modes</heading>
+</para><para>The Camera driver operates in either blocking mode or callback mode:<itemizedlist>
+<listitem><para><ref refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8aad6127b321c6b22ffe1a50caee5a4fe1" kindref="member">Camera_MODE_BLOCKING</ref>: The call to <ref refid="_camera_8h_1a0588184ada46a5ad668af0e685d943e8" kindref="member">Camera_capture()</ref> blocks until the capture has completed.</para></listitem><listitem><para><ref refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8ae2f15a1a358226aa81d59509f5a31191" kindref="member">Camera_MODE_CALLBACK</ref>: The call to <ref refid="_camera_8h_1a0588184ada46a5ad668af0e685d943e8" kindref="member">Camera_capture()</ref> returns immediately. When the capture completes, the Camera driver will call a user- specified callback function.</para></listitem></itemizedlist>
+</para><para>The capture mode is determined by the <ref refid="struct_camera___params___1a3422b4274c84222e0612abf8dde4b151" kindref="member">Camera_Params.captureMode</ref> parameter passed to <ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open()</ref>. The Camera driver defaults to blocking mode, if the application does not set it.</para><para>Once a Camera driver instance is opened, the only way to change the capture mode is to close and re-open the Camera instance with the new capture mode.</para><para><heading level="3">Opening the driver</heading>
+</para><para>The following example opens a Camera driver instance in blocking mode: <programlisting><codeline><highlight class="normal">Camera_Handle<sp/><sp/><sp/><sp/><sp/><sp/>handle;</highlight></codeline>
+<codeline><highlight class="normal">Camera_Params<sp/><sp/><sp/><sp/><sp/><sp/>params;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Camera_Params_init(&amp;params);</highlight></codeline>
+<codeline><highlight class="normal">params.captureMode<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>Camera_MODE_BLOCKING;</highlight></codeline>
+<codeline><highlight class="normal">&lt;<sp/>Change<sp/>any<sp/>other<sp/>params<sp/>as<sp/>required<sp/>&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">handle<sp/>=<sp/>Camera_open(someCamera_configIndexValue,<sp/>&amp;params);</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>(!handle)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Error<sp/>opening<sp/>the<sp/>Camera<sp/>driver</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><heading level="3">Capturing an Image</heading>
+</para><para>The following code example captures a frame.</para><para><programlisting><codeline><highlight class="normal">unsigned<sp/>char<sp/>captureBuffer[1920];</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ret<sp/>=<sp/>Camera_capture(handle,<sp/>&amp;captureBuffer,<sp/>sizeof(captureBuffer));</highlight></codeline>
+</programlisting></para><para><heading level="1">Implementation</heading>
+</para><para>This module serves as the main interface for RTOS applications. Its purpose is to redirect the module&apos;s APIs to specific peripheral implementations which are specified using a pointer to a <ref refid="_camera_8h_1a2955a2142d655c3c4ecc3b6f314dba4a" kindref="member">Camera_FxnTable</ref>.</para><para>The Camera driver interface module is joined (at link time) to an array of <ref refid="_camera_8h_1a32ba4ebe191fe708a75cbe09023efddf" kindref="member">Camera_Config</ref> data structures named <emphasis>Camera_config</emphasis>. <emphasis>Camera_config</emphasis> is implemented in the application with each entry being an instance of a Camera peripheral. Each entry in <emphasis>Camera_config</emphasis> contains a:<itemizedlist>
+<listitem><para>(Camera_FxnTable *) to a set of functions that implement a Camera peripheral</para></listitem><listitem><para>(void *) data object that is associated with the Camera_FxnTable</para></listitem><listitem><para>(void *) hardware attributes that are associated to the Camera_FxnTable </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015-2016,<sp/>Texas<sp/>Instruments<sp/>Incorporated</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*!*****************************************************************************</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/>@file<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Camera.h</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/>Camera<sp/>driver<sp/>interface</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Camera<sp/>header<sp/>file<sp/>should<sp/>be<sp/>included<sp/>in<sp/>an<sp/>application<sp/>as<sp/>follows:</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/>@code</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/>#include<sp/>&lt;ti/drivers/Camera.h&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/>#<sp/>Overview<sp/>#</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Camera<sp/>driver<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>the<sp/>data<sp/>being<sp/>transferred<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/><sp/>Camera<sp/>sensor.</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>driver<sp/>provides<sp/>an<sp/>API<sp/>for<sp/>capturing<sp/>the<sp/>image<sp/>from<sp/>the<sp/>Camera<sp/>sensor.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>camera<sp/>sensor<sp/>control<sp/>and<sp/>implementation<sp/>are<sp/>the<sp/>responsibility<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/>application<sp/>using<sp/>the<sp/>interface.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Camera<sp/>driver<sp/>has<sp/>been<sp/>designed<sp/>to<sp/>operate<sp/>in<sp/>an<sp/>RTOS<sp/>environment.<sp/><sp/>It</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/><sp/>protects<sp/>its<sp/>transactions<sp/>with<sp/>OS<sp/>primitives<sp/>supplied<sp/>by<sp/>the<sp/>underlying</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/><sp/>RTOS.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/><sp/>#<sp/>Usage<sp/>#</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Camera<sp/>driver<sp/>includes<sp/>the<sp/>following<sp/>APIs:</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>Camera_init():<sp/>Initialize<sp/>the<sp/>Camera<sp/>driver.</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>Camera_Params_init():<sp/><sp/>Initialize<sp/>a<sp/>#Camera_Params<sp/>structure<sp/>with<sp/>default</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>vaules.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>Camera_open():<sp/><sp/>Open<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>Camera<sp/>driver.</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>Camera_control():<sp/><sp/>Performs<sp/>implemenation-specific<sp/>features<sp/>on<sp/>a<sp/>given</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Camera<sp/>peripheral.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>Camera_capture():<sp/><sp/>Capture<sp/>a<sp/>frame.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>Camera_close():<sp/><sp/>De-initialize<sp/>a<sp/>given<sp/>Camera<sp/>instance.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>Camera<sp/>Driver<sp/>Configuration<sp/>#</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/><sp/>In<sp/>order<sp/>to<sp/>use<sp/>the<sp/>Camera<sp/>APIs,<sp/>the<sp/>application<sp/>is<sp/>required</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/><sp/>to<sp/>provide<sp/>device-specific<sp/>Camera<sp/>configuration<sp/>in<sp/>the<sp/>Board.c<sp/>file.</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Camera<sp/>driver<sp/>interface<sp/>defines<sp/>a<sp/>configuration<sp/>data<sp/>structure:</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/><sp/>@code</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/><sp/>typedef<sp/>struct<sp/>Camera_Config_<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Camera_FxnTable<sp/>const<sp/><sp/>*fxnTablePtr;</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*object;</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/><sp/>*hwAttrs;</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/>}<sp/>Camera_Config;</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>application<sp/>must<sp/>declare<sp/>an<sp/>array<sp/>of<sp/>Camera_Config<sp/>elements,<sp/>named</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/><sp/>Camera_config[].<sp/><sp/>Each<sp/>element<sp/>of<sp/>Camera_config[]<sp/>must<sp/>be<sp/>populated<sp/>with</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/><sp/>pointers<sp/>to<sp/>a<sp/>device<sp/>specific<sp/>Camera<sp/>driver<sp/>implementation&apos;s<sp/>function</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/><sp/>table,<sp/>driver<sp/>object,<sp/>and<sp/>hardware<sp/>attributes.<sp/><sp/>The<sp/>hardware<sp/>attributes</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*<sp/><sp/>define<sp/>properties<sp/>such<sp/>as<sp/>the<sp/>Camera<sp/>peripheral&apos;s<sp/>base<sp/>address.</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*<sp/><sp/>Each<sp/>element<sp/>in<sp/>Camera_config[]<sp/>corresponds<sp/>to</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/><sp/>a<sp/>Camera<sp/>instance,<sp/>and<sp/>none<sp/>of<sp/>the<sp/>elements<sp/>should<sp/>have<sp/>NULL<sp/>pointers.</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/><sp/>There<sp/>is<sp/>no<sp/>correlation<sp/>between<sp/>the<sp/>index<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*<sp/><sp/>peripheral<sp/>designation<sp/>(such<sp/>as<sp/>Camera0<sp/>or<sp/>Camera1).<sp/><sp/>For<sp/>example,<sp/>it</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*<sp/><sp/>is<sp/>possible<sp/>to<sp/>use<sp/>Camera_config[0]<sp/>for<sp/>Camera1.</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/><sp/>Because<sp/>the<sp/>Camera<sp/>configuration<sp/>is<sp/>very<sp/>device<sp/>dependent,<sp/>you<sp/>will<sp/>need<sp/>to</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*<sp/><sp/>check<sp/>the<sp/>doxygen<sp/>for<sp/>the<sp/>device<sp/>specific<sp/>Camera<sp/>implementation.<sp/><sp/>There<sp/>you</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*<sp/><sp/>will<sp/>find<sp/>a<sp/>description<sp/>of<sp/>the<sp/>Camera<sp/>hardware<sp/>attributes.<sp/><sp/>Please<sp/>also</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/><sp/>refer<sp/>to<sp/>the<sp/>Board.c<sp/>file<sp/>of<sp/>any<sp/>of<sp/>your<sp/>examples<sp/>to<sp/>see<sp/>the<sp/>Camera</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/><sp/>configuration.</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>Initializing<sp/>the<sp/>Camear<sp/>Driver<sp/>#</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>application<sp/>initializes<sp/>the<sp/>Camera<sp/>driver<sp/>by<sp/>calling<sp/>Camera_init().</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>function<sp/>must<sp/>be<sp/>called<sp/>before<sp/>any<sp/>other<sp/>Camera<sp/>API.<sp/><sp/>Camera_init()</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/><sp/>iterates<sp/>through<sp/>the<sp/>elements<sp/>of<sp/>the<sp/>Camera_config[]<sp/>array,<sp/>calling</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>element&apos;s<sp/>device<sp/>implementation<sp/>Camera<sp/>initialization<sp/>function.</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>Camera<sp/>Parameters</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>#Camera_Params<sp/>structure<sp/>is<sp/>passed<sp/>to<sp/>Camera_open().<sp/><sp/>If<sp/>NULL</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/><sp/>is<sp/>passed<sp/>for<sp/>the<sp/>parameters,<sp/>Camera_open()<sp/>uses<sp/>default<sp/>parameters.</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*<sp/><sp/>A<sp/>#Camera_Params<sp/>structure<sp/>is<sp/>initialized<sp/>with<sp/>default<sp/>values<sp/>by<sp/>passing</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/><sp/>it<sp/>to<sp/>Camera_Params_init().</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*<sp/><sp/>Some<sp/>of<sp/>the<sp/>Camera<sp/>parameters<sp/>are<sp/>described<sp/>below.<sp/><sp/>To<sp/>see<sp/>brief<sp/>descriptions</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/><sp/>of<sp/>all<sp/>the<sp/>parameters,<sp/>see<sp/>#Camera_Params.</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/><sp/>####<sp/>Camera<sp/>Modes</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Camera<sp/>driver<sp/>operates<sp/>in<sp/>either<sp/>blocking<sp/>mode<sp/>or<sp/>callback<sp/>mode:</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>#Camera_MODE_BLOCKING:<sp/>The<sp/>call<sp/>to<sp/>Camera_capture()<sp/>blocks<sp/>until<sp/>the</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>capture<sp/>has<sp/>completed.</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>#Camera_MODE_CALLBACK:<sp/>The<sp/>call<sp/>to<sp/>Camera_capture()<sp/>returns<sp/>immediately.</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>When<sp/>the<sp/>capture<sp/>completes,<sp/>the<sp/>Camera<sp/>driver<sp/>will<sp/>call<sp/>a<sp/>user-</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>specified<sp/>callback<sp/>function.</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>capture<sp/>mode<sp/>is<sp/>determined<sp/>by<sp/>the<sp/>#Camera_Params.captureMode<sp/>parameter</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*<sp/><sp/>passed<sp/>to<sp/>Camera_open().<sp/><sp/>The<sp/>Camera<sp/>driver<sp/>defaults<sp/>to<sp/>blocking<sp/>mode,<sp/>if<sp/>the</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*<sp/><sp/>application<sp/>does<sp/>not<sp/>set<sp/>it.</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*<sp/><sp/>Once<sp/>a<sp/>Camera<sp/>driver<sp/>instance<sp/>is<sp/>opened,<sp/>the<sp/>only<sp/>way</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/>*<sp/><sp/>to<sp/>change<sp/>the<sp/>capture<sp/>mode<sp/>is<sp/>to<sp/>close<sp/>and<sp/>re-open<sp/>the<sp/>Camera</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*<sp/><sp/>instance<sp/>with<sp/>the<sp/>new<sp/>capture<sp/>mode.</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>Opening<sp/>the<sp/>driver<sp/>#</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>following<sp/>example<sp/>opens<sp/>a<sp/>Camera<sp/>driver<sp/>instance<sp/>in<sp/>blocking<sp/>mode:</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*<sp/><sp/>@code</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*<sp/><sp/>Camera_Handle<sp/><sp/><sp/><sp/><sp/><sp/>handle;</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*<sp/><sp/>Camera_Params<sp/><sp/><sp/><sp/><sp/><sp/>params;</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*<sp/><sp/>Camera_Params_init(&amp;params);</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/>*<sp/><sp/>params.captureMode<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>Camera_MODE_BLOCKING;</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/>*<sp/><sp/>&lt;<sp/>Change<sp/>any<sp/>other<sp/>params<sp/>as<sp/>required<sp/>&gt;</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*<sp/><sp/>handle<sp/>=<sp/>Camera_open(someCamera_configIndexValue,<sp/>&amp;params);</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*<sp/><sp/>if<sp/>(!handle)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Error<sp/>opening<sp/>the<sp/>Camera<sp/>driver</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*<sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*<sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>Capturing<sp/>an<sp/>Image<sp/>#</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>following<sp/>code<sp/>example<sp/>captures<sp/>a<sp/>frame.</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/>*<sp/><sp/>@code</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/>*<sp/><sp/>unsigned<sp/>char<sp/>captureBuffer[1920];</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/>*<sp/><sp/>ret<sp/>=<sp/>Camera_capture(handle,<sp/>&amp;captureBuffer,<sp/>sizeof(captureBuffer));</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/>*<sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*<sp/><sp/>#<sp/>Implementation<sp/>#</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>module<sp/>serves<sp/>as<sp/>the<sp/>main<sp/>interface<sp/>for<sp/>RTOS</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/><sp/>applications.<sp/>Its<sp/>purpose<sp/>is<sp/>to<sp/>redirect<sp/>the<sp/>module&apos;s<sp/>APIs<sp/>to<sp/>specific</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*<sp/><sp/>peripheral<sp/>implementations<sp/>which<sp/>are<sp/>specified<sp/>using<sp/>a<sp/>pointer<sp/>to<sp/>a</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/>*<sp/><sp/>#Camera_FxnTable.</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>Camera<sp/>driver<sp/>interface<sp/>module<sp/>is<sp/>joined<sp/>(at<sp/>link<sp/>time)<sp/>to<sp/>an</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/>*<sp/><sp/>array<sp/>of<sp/>#Camera_Config<sp/>data<sp/>structures<sp/>named<sp/>*Camera_config*.</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/>*<sp/><sp/>*Camera_config*<sp/>is<sp/>implemented<sp/>in<sp/>the<sp/>application<sp/>with<sp/>each<sp/>entry<sp/>being<sp/>an</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*<sp/><sp/>instance<sp/>of<sp/>a<sp/>Camera<sp/>peripheral.<sp/>Each<sp/>entry<sp/>in<sp/>*Camera_config*<sp/>contains<sp/>a:</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>(Camera_FxnTable<sp/>*)<sp/>to<sp/>a<sp/>set<sp/>of<sp/>functions<sp/>that<sp/>implement<sp/>a<sp/>Camera</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>peripheral</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>(void<sp/>*)<sp/>data<sp/>object<sp/>that<sp/>is<sp/>associated<sp/>with<sp/>the<sp/>Camera_FxnTable</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>(void<sp/>*)<sp/>hardware<sp/>attributes<sp/>that<sp/>are<sp/>associated<sp/>to<sp/>the<sp/>Camera_FxnTable</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ti_drivers_Camera__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ti_drivers_Camera__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="group___c_a_m_e_r_a___c_o_n_t_r_o_l_1gaed2b3df48a75ec7e6e78320bb3a48eb9" refkind="member"><highlight class="preprocessor">#define<sp/>CAMERA_CMD_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="group___c_a_m_e_r_a___c_o_n_t_r_o_l_1ga13b3728d2673d72db6cc71744a0cbedf" refkind="member"><highlight class="preprocessor">#define<sp/>CAMERA_STATUS_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/>(-32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="group___camera___s_t_a_t_u_s_1gaa4d73b4da4ce113c8fb545d1f2649257" refkind="member"><highlight class="preprocessor">#define<sp/>CAMERA_STATUS_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="group___camera___s_t_a_t_u_s_1ga2863402eca66d26cf447fc02340a0d45" refkind="member"><highlight class="preprocessor">#define<sp/>CAMERA_STATUS_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="group___camera___s_t_a_t_u_s_1gaae8cae4253d68cc8ae921b63a74d1cb9" refkind="member"><highlight class="preprocessor">#define<sp/>CAMERA_STATUS_UNDEFINEDCMD<sp/>(-2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="comment">/*<sp/>Add<sp/>Camera_CMD_&lt;commands&gt;<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="_camera_8h_1a1b85e579e68cecb09d1e2be70a6c56a9" refkind="member"><highlight class="preprocessor">#define<sp/>Camera_WAIT_FOREVER<sp/>(~(0U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="_camera_8h_1a95f2d51c0199015feef82e93ee545f98" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_camera___config__" kindref="compound">Camera_Config_</ref><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="_camera_8h_1a95f2d51c0199015feef82e93ee545f98" kindref="member">Camera_Handle</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="_camera_8h_1aba0b8eb4e05a4adb316be6390d7c3ade" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="_camera_8h_1aba0b8eb4e05a4adb316be6390d7c3ade" kindref="member">Camera_Callback</ref>)<sp/>(Camera_Handle<sp/>handle,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>frameLength);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8" kindref="member">Camera_CaptureMode_</ref><sp/>{</highlight></codeline>
+<codeline lineno="297" refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8aad6127b321c6b22ffe1a50caee5a4fe1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8aad6127b321c6b22ffe1a50caee5a4fe1" kindref="member">Camera_MODE_BLOCKING</ref>,</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8ae2f15a1a358226aa81d59509f5a31191" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1adb278a7a097d89564b3bfc56a62e13a8ae2f15a1a358226aa81d59509f5a31191" kindref="member">Camera_MODE_CALLBACK</ref></highlight></codeline>
+<codeline lineno="305"><highlight class="normal">}<sp/><ref refid="_camera_8h_1ab0c490ea8eed1057d4f3fb49ad225ed3" kindref="member">Camera_CaptureMode</ref>;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1d" kindref="member">Camera_HSyncPolarity_</ref><sp/>{</highlight></codeline>
+<codeline lineno="313" refid="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1daf152b2a7d9da944fe46858efe055d095" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1daf152b2a7d9da944fe46858efe055d095" kindref="member">Camera_HSYNC_POLARITY_HIGH</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="314" refid="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1dabcb1c81f87d7738515cd6b22afc09cc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1ac5e726c9cbcd93fae83cd289a734cf1dabcb1c81f87d7738515cd6b22afc09cc5" kindref="member">Camera_HSYNC_POLARITY_LOW</ref></highlight></codeline>
+<codeline lineno="315"><highlight class="normal">}<sp/><ref refid="_camera_8h_1ac2e4d70952352fcd1a392eba7050e817" kindref="member">Camera_HSyncPolarity</ref>;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bca" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bca" kindref="member">Camera_VSyncPolarity_</ref><sp/>{</highlight></codeline>
+<codeline lineno="323" refid="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bcaacde960b001c2a12b75b7fad97bf7ec54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bcaacde960b001c2a12b75b7fad97bf7ec54" kindref="member">Camera_VSYNC_POLARITY_HIGH</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="324" refid="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bcaa3f3b042b294fe98c91a6d50c7989db35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1ad8f13cda799bd79cf190b35c2a299bcaa3f3b042b294fe98c91a6d50c7989db35" kindref="member">Camera_VSYNC_POLARITY_LOW</ref></highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}<sp/><ref refid="_camera_8h_1a4134582008331f78da620373471b3f47" kindref="member">Camera_VSyncPolarity</ref>;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2" kindref="member">Camera_PixelClkConfig_</ref><sp/>{</highlight></codeline>
+<codeline lineno="333" refid="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2ade970e1c835dea0c6d00f94fcf2abdca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2ade970e1c835dea0c6d00f94fcf2abdca" kindref="member">Camera_PCLK_CONFIG_RISING_EDGE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="334" refid="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2a2cab0af65ebc5fd82af8bd118d20a6da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1af5862d7d63e23cbab6f67b1a9be5b3f2a2cab0af65ebc5fd82af8bd118d20a6da" kindref="member">Camera_PCLK_CONFIG_FALLING_EDGE</ref></highlight></codeline>
+<codeline lineno="335"><highlight class="normal">}<sp/><ref refid="_camera_8h_1ac82e6614a925786c34753fdbed151a76" kindref="member">Camera_PixelClkConfig</ref>;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3" kindref="member">Camera_ByteOrder_</ref><sp/>{</highlight></codeline>
+<codeline lineno="349" refid="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3a819196064eea1c6f65a0aeaee5f99acb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3a819196064eea1c6f65a0aeaee5f99acb" kindref="member">Camera_BYTE_ORDER_NORMAL</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="350" refid="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3a90cfebe886cda289023a577c9b2cc831" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1ad98df67408cd0945fdcb71ec647ba9d3a90cfebe886cda289023a577c9b2cc831" kindref="member">Camera_BYTE_ORDER_SWAP</ref></highlight></codeline>
+<codeline lineno="351"><highlight class="normal">}<sp/><ref refid="_camera_8h_1a009045aae94c935631fca06b19c1c4c7" kindref="member">Camera_ByteOrder</ref>;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923" kindref="member">Camera_IfSynchoronisation_</ref><sp/>{</highlight></codeline>
+<codeline lineno="360" refid="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923aebefaa79a8ad8c68d84f3e0839dd7ef8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923aebefaa79a8ad8c68d84f3e0839dd7ef8" kindref="member">Camera_INTERFACE_SYNC_OFF</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="361" refid="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923ab3f554e1d669f4d87917f3f43a45727b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1ab6c46e1747e7958baa83c84817aa2923ab3f554e1d669f4d87917f3f43a45727b" kindref="member">Camera_INTERFACE_SYNC_ON</ref></highlight></codeline>
+<codeline lineno="362"><highlight class="normal">}<sp/><ref refid="_camera_8h_1a613bc527a31c6ab4e5308d726acc65b3" kindref="member">Camera_IfSynchoronisation</ref>;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369" refid="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20" kindref="member">Camera_StopCaptureConfig_</ref><sp/>{</highlight></codeline>
+<codeline lineno="370" refid="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20a95410e8c6eb0a0ae4488f722931d4150" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20a95410e8c6eb0a0ae4488f722931d4150" kindref="member">Camera_STOP_CAPTURE_IMMEDIATE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="371" refid="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20a949d55caf973f4e50fbf1fa3e4246718" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1a9dfa0fede2c72a59a3e7eadcc45b6b20a949d55caf973f4e50fbf1fa3e4246718" kindref="member">Camera_STOP_CAPTURE_FRAME_END</ref></highlight></codeline>
+<codeline lineno="372"><highlight class="normal">}<sp/><ref refid="_camera_8h_1a27ced664362a420a1be17e27cfa1be68" kindref="member">Camera_StopCaptureConfig</ref>;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="_camera_8h_1a066eb5512cf425ea7bed78747973b880" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1a066eb5512cf425ea7bed78747973b880" kindref="member">Camera_StartCaptureConfig_</ref><sp/>{</highlight></codeline>
+<codeline lineno="380" refid="_camera_8h_1a066eb5512cf425ea7bed78747973b880a2e7b7db227fef9bf1d1083f1d167c3f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1a066eb5512cf425ea7bed78747973b880a2e7b7db227fef9bf1d1083f1d167c3f0" kindref="member">Camera_START_CAPTURE_IMMEDIATE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="381" refid="_camera_8h_1a066eb5512cf425ea7bed78747973b880a5f6f496192b849174e7b652df2ca1823" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1a066eb5512cf425ea7bed78747973b880a5f6f496192b849174e7b652df2ca1823" kindref="member">Camera_START_CAPTURE_FRAME_START</ref></highlight></codeline>
+<codeline lineno="382"><highlight class="normal">}<sp/><ref refid="_camera_8h_1a7c32fd39cf315087e588bbb62e4eba00" kindref="member">Camera_StartCaptureConfig</ref>;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399" refid="struct_camera___params__" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_camera___params__" kindref="compound">Camera_Params_</ref><sp/>{</highlight></codeline>
+<codeline lineno="401" refid="struct_camera___params___1a3422b4274c84222e0612abf8dde4b151" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Camera_CaptureMode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___params___1a3422b4274c84222e0612abf8dde4b151" kindref="member">captureMode</ref>;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404" refid="struct_camera___params___1a26a15633a8f02796934981983ed18380" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___params___1a26a15633a8f02796934981983ed18380" kindref="member">outputClock</ref>;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407" refid="struct_camera___params___1ac991a7e4a9f4d0b9fa05398e98e2b910" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Camera_HSyncPolarity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___params___1ac991a7e4a9f4d0b9fa05398e98e2b910" kindref="member">hsyncPolarity</ref>;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410" refid="struct_camera___params___1a5e5cc7debcfa2e116d244789ac166afc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Camera_VSyncPolarity<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___params___1a5e5cc7debcfa2e116d244789ac166afc" kindref="member">vsyncPolarity</ref>;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="struct_camera___params___1af6b26a684b44dd053f0a743fa6aa98bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Camera_PixelClkConfig<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___params___1af6b26a684b44dd053f0a743fa6aa98bd" kindref="member">pixelClkConfig</ref>;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416" refid="struct_camera___params___1a0e4156a294a28dcf92dc9e5e65abaef4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Camera_ByteOrder<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___params___1a0e4156a294a28dcf92dc9e5e65abaef4" kindref="member">byteOrder</ref>;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419" refid="struct_camera___params___1a8578d641a1a2ab2f0b9d13f29f84bc04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Camera_IfSynchoronisation<sp/><sp/><ref refid="struct_camera___params___1a8578d641a1a2ab2f0b9d13f29f84bc04" kindref="member">interfaceSync</ref>;</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422" refid="struct_camera___params___1a7a02ba7cc2f3ae4a96bc64dd9467039b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Camera_StopCaptureConfig<sp/><sp/><sp/><ref refid="struct_camera___params___1a7a02ba7cc2f3ae4a96bc64dd9467039b" kindref="member">stopConfig</ref>;</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425" refid="struct_camera___params___1ac74e0c5253123405438fd7dfbfb4c7d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Camera_StartCaptureConfig<sp/><sp/><ref refid="struct_camera___params___1ac74e0c5253123405438fd7dfbfb4c7d2" kindref="member">startConfig</ref>;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428" refid="struct_camera___params___1a762a4fcdb223e1b392be155891cd72af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___params___1a762a4fcdb223e1b392be155891cd72af" kindref="member">captureTimeout</ref>;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431" refid="struct_camera___params___1ac0bf0256ea6744f1e407cfff8ab712ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1aba0b8eb4e05a4adb316be6390d7c3ade" kindref="member">Camera_Callback</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___params___1ac0bf0256ea6744f1e407cfff8ab712ca" kindref="member">captureCallback</ref>;</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434" refid="struct_camera___params___1aedb722013377ff9f51dc639dbca4dee5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_camera___params___1aedb722013377ff9f51dc639dbca4dee5" kindref="member">custom</ref>;</highlight></codeline>
+<codeline lineno="435"><highlight class="normal">}<sp/><ref refid="_camera_8h_1a3edeb123e2218656118daed5a196b81b" kindref="member">Camera_Params</ref>;</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441" refid="_camera_8h_1ae6f2789af3ea253197fd2ce98db352f4" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*<ref refid="_camera_8h_1ae6f2789af3ea253197fd2ce98db352f4" kindref="member">Camera_CloseFxn</ref>)<sp/><sp/><sp/><sp/>(Camera_Handle<sp/>handle);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447" refid="_camera_8h_1a9ce2e2dcde1d32bd25059ce6284ff6e3" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int_fast16_t<sp/>(*<ref refid="_camera_8h_1a9ce2e2dcde1d32bd25059ce6284ff6e3" kindref="member">Camera_ControlFxn</ref>)<sp/><sp/>(Camera_Handle<sp/>handle,</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_fast16_t<sp/>cmd,</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455" refid="_camera_8h_1a3b6d043e96bfc1f1443521ef10ea01f3" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*<ref refid="_camera_8h_1a3b6d043e96bfc1f1443521ef10ea01f3" kindref="member">Camera_InitFxn</ref>)<sp/><sp/><sp/><sp/><sp/>(Camera_Handle<sp/>handle);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461" refid="_camera_8h_1a589bec3690a5b7c7890a0e411a1cad9f" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1a95f2d51c0199015feef82e93ee545f98" kindref="member">Camera_Handle</ref><sp/>(*<ref refid="_camera_8h_1a589bec3690a5b7c7890a0e411a1cad9f" kindref="member">Camera_OpenFxn</ref>)<sp/>(Camera_Handle<sp/>handle,</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_camera___params__" kindref="compound">Camera_Params</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468" refid="_camera_8h_1a1eebbf7cd299fbe5eac8feed76659094" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int_fast16_t<sp/>(*<ref refid="_camera_8h_1a1eebbf7cd299fbe5eac8feed76659094" kindref="member">Camera_CaptureFxn</ref>)<sp/>(Camera_Handle<sp/>handle,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buffer,</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bufferlen,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*frameLen);</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476" refid="struct_camera___fxn_table__" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_camera___fxn_table__" kindref="compound">Camera_FxnTable_</ref><sp/>{</highlight></codeline>
+<codeline lineno="478" refid="struct_camera___fxn_table___1a30686810bdf091a210c3fa817b5fec1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1ae6f2789af3ea253197fd2ce98db352f4" kindref="member">Camera_CloseFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___fxn_table___1a30686810bdf091a210c3fa817b5fec1f" kindref="member">closeFxn</ref>;</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481" refid="struct_camera___fxn_table___1a4c5ac3946bd2784c88ea4e6ac1a69dd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1a9ce2e2dcde1d32bd25059ce6284ff6e3" kindref="member">Camera_ControlFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___fxn_table___1a4c5ac3946bd2784c88ea4e6ac1a69dd0" kindref="member">controlFxn</ref>;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484" refid="struct_camera___fxn_table___1aa672ee650232be7572bea79cfbd3769b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1a3b6d043e96bfc1f1443521ef10ea01f3" kindref="member">Camera_InitFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___fxn_table___1aa672ee650232be7572bea79cfbd3769b" kindref="member">initFxn</ref>;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487" refid="struct_camera___fxn_table___1a981548d844b2ceb135d8632da7bea65c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1a589bec3690a5b7c7890a0e411a1cad9f" kindref="member">Camera_OpenFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___fxn_table___1a981548d844b2ceb135d8632da7bea65c" kindref="member">openFxn</ref>;</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490" refid="struct_camera___fxn_table___1a499bd6621a5873afbf1dddcddd71c4fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_camera_8h_1a1eebbf7cd299fbe5eac8feed76659094" kindref="member">Camera_CaptureFxn</ref><sp/><sp/><sp/><sp/><sp/><ref refid="struct_camera___fxn_table___1a499bd6621a5873afbf1dddcddd71c4fd" kindref="member">captureFxn</ref>;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal">}<sp/><ref refid="_camera_8h_1a2955a2142d655c3c4ecc3b6f314dba4a" kindref="member">Camera_FxnTable</ref>;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504" refid="struct_camera___config__" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_camera___config__" kindref="compound">Camera_Config_</ref><sp/>{</highlight></codeline>
+<codeline lineno="506" refid="struct_camera___config___1ac55c2e97997d3e63cfa837837e923eba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_camera___fxn_table__" kindref="compound">Camera_FxnTable</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="struct_camera___config___1ac55c2e97997d3e63cfa837837e923eba" kindref="member">fxnTablePtr</ref>;</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509" refid="struct_camera___config___1ad285eec36a93303bffb2255c3a1aec40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_camera___config___1ad285eec36a93303bffb2255c3a1aec40" kindref="member">object</ref>;</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512" refid="struct_camera___config___1a218992e03eed02ea8695e910d6ccf0bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="struct_camera___config___1a218992e03eed02ea8695e910d6ccf0bb" kindref="member">hwAttrs</ref>;</highlight></codeline>
+<codeline lineno="513"><highlight class="normal">}<sp/><ref refid="_camera_8h_1a32ba4ebe191fe708a75cbe09023efddf" kindref="member">Camera_Config</ref>;</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1a132c638e5ea994c1f06124f5762470b4" kindref="member">Camera_close</ref>(Camera_Handle<sp/>handle);</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int_fast16_t<sp/><ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control</ref>(Camera_Handle<sp/>handle,<sp/>uint_fast16_t<sp/>cmd,</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>Camera_Handle<sp/><ref refid="_camera_8h_1a6efd7498899d107ce3c92b96fbaec3c0" kindref="member">Camera_open</ref>(uint_least8_t<sp/>index,<sp/><ref refid="struct_camera___params__" kindref="compound">Camera_Params</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_camera_8h_1a522620ae3e5fb202b1f46f5535619564" kindref="member">Camera_Params_init</ref>(<ref refid="struct_camera___params__" kindref="compound">Camera_Params</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int_fast16_t<sp/><ref refid="_camera_8h_1a0588184ada46a5ad668af0e685d943e8" kindref="member">Camera_capture</ref>(Camera_Handle<sp/>handle,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buffer,</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bufferlen,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*frameLen);</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ti_drivers_Camera__include<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h"/>
+  </compounddef>
+</doxygen>

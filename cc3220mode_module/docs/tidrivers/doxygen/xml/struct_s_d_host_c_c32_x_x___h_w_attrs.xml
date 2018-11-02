@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_s_d_host_c_c32_x_x___h_w_attrs" kind="struct" language="C++" prot="public">
+    <compoundname>SDHostCC32XX_HWAttrs</compoundname>
+    <includes refid="_s_d_host_c_c32_x_x_8h" local="no">SDHostCC32XX.h</includes>
+    <briefdescription>
+<para>SDHostCC32XX Hardware attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>The SDHostCC32XX configuration structure is passed to the SDHostCC32XX driver implementation with hardware specifics regarding GPIO Pins and Ports to be used.</para><para>The SDHostCC32XX driver uses this information to:<itemizedlist>
+<listitem><para>Configure and reconfigure specific ports/pins to initialize the SD Card for SD mode</para></listitem><listitem><para>Identify which GPIO port and pin is used for the SDHost clock, data and command lines</para></listitem></itemizedlist>
+</para><para>These fields are used by driverlib APIs and therefore must be populated by driverlib macro definitions. For CC32xxWare these definitions are found in:<itemizedlist>
+<listitem><para>inc/hw_memmap.h</para></listitem><listitem><para>driverlib/pin.h</para></listitem></itemizedlist>
+</para><para>An example configuration structure could look as the following: <programlisting><codeline><highlight class="normal">const<sp/>SDHostCC32XX_HWAttrsV1<sp/>sdhostCC32XXHWattrs[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.clkRate<sp/>=<sp/>8000000,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intPriority<sp/>=<sp/>~0,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.baseAddr<sp/>=<sp/>SDHOST_BASE,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.rxChIdx<sp/>=<sp/>UDMA_CH23_SDHOST_RX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.txChIdx<sp/>=<sp/>UDMA_CH24_SDHOST_TX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.dataPin<sp/>=<sp/>SDHostCC32XX_PIN_06_SDCARD_DATA,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cmdPin<sp/>=<sp/>SDHostCC32XX_PIN_08_SDCARD_CMD,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.clkPin<sp/>=<sp/>SDHostCC32XX_PIN_07_SDCARD_CLK,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="117" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

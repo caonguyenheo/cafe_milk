@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_timer_c_c32_x_x___object__" kind="struct" language="C++" prot="public">
+    <compoundname>TimerCC32XX_Object_</compoundname>
+    <includes refid="_timer_c_c32_x_x_8h" local="no">TimerCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_timer_c_c32_x_x___object___1aa6a5b628af49f714c633b92eb79107a5" prot="public" static="no" mutable="no">
+        <type>HwiP_Handle</type>
+        <definition>HwiP_Handle TimerCC32XX_Object_::hwiHandle</definition>
+        <argsstring></argsstring>
+        <name>hwiHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="186" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_timer_c_c32_x_x___object___1a97023c870779f72a740578a7c651e312" prot="public" static="no" mutable="no">
+        <type><ref refid="_power_8h_1a380d08b754e6f3f096349ab5fc464209" kindref="member">Power_NotifyObj</ref></type>
+        <definition>Power_NotifyObj TimerCC32XX_Object_::notifyObj</definition>
+        <argsstring></argsstring>
+        <name>notifyObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="187" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_timer_c_c32_x_x___object___1a5604f115ae730bb728395abc0e9c11ea" prot="public" static="no" mutable="no">
+        <type>SemaphoreP_Handle</type>
+        <definition>SemaphoreP_Handle TimerCC32XX_Object_::timerSem</definition>
+        <argsstring></argsstring>
+        <name>timerSem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="188" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_timer_c_c32_x_x___object___1a6d3d46ec67e0cc8561fd215a6ea7f05c" prot="public" static="no" mutable="no">
+        <type><ref refid="_timer_8h_1a051eb2c54ff6e078655c8bf575384cc4" kindref="member">Timer_CallBackFxn</ref></type>
+        <definition>Timer_CallBackFxn TimerCC32XX_Object_::callBack</definition>
+        <argsstring></argsstring>
+        <name>callBack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="189" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_timer_c_c32_x_x___object___1ac4af23b759b06d1116241b5202e196ef" prot="public" static="no" mutable="no">
+        <type><ref refid="_timer_8h_1a9bdf0bac4961e11704f2bf087eefed4e" kindref="member">Timer_Mode</ref></type>
+        <definition>Timer_Mode TimerCC32XX_Object_::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="190" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_timer_c_c32_x_x___object___1a344adafaced7266c14f79f856a496e4a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TimerCC32XX_Object_::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="191" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_timer_c_c32_x_x___object___1acb63e5372f5e99dbe019999a3ad8ccf7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TimerCC32XX_Object_::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="192" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_timer_c_c32_x_x___object___1a3ae57ee64060016f2da2e949e615831f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TimerCC32XX_Object_::prescaler</definition>
+        <argsstring></argsstring>
+        <name>prescaler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="193" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_timer_c_c32_x_x___object___1a358dfba6765b9356a2480ac8dab12022" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TimerCC32XX_Object_::isRunning</definition>
+        <argsstring></argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="194" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>TimerCC32XX_Object. </para>    </briefdescription>
+    <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="290">
+        <label>TimerCC32XX_Object_</label>
+        <link refid="struct_timer_c_c32_x_x___object__"/>
+        <childnode refid="291" relation="usage">
+          <edgelabel>notifyObj</edgelabel>
+        </childnode>
+        <childnode refid="293" relation="usage">
+          <edgelabel>callBack</edgelabel>
+        </childnode>
+      </node>
+      <node id="292">
+        <label>List_Elem</label>
+        <link refid="struct_list___elem"/>
+        <childnode refid="292" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="291">
+        <label>Power_NotifyObj_</label>
+        <link refid="struct_power___notify_obj__"/>
+        <childnode refid="292" relation="usage">
+          <edgelabel>link</edgelabel>
+        </childnode>
+      </node>
+      <node id="294">
+        <label>Timer_FxnTable_</label>
+        <link refid="struct_timer___fxn_table__"/>
+        <childnode refid="293" relation="usage">
+          <edgelabel>closeFxn</edgelabel>
+          <edgelabel>stopFxn</edgelabel>
+          <edgelabel>initFxn</edgelabel>
+          <edgelabel>startFxn</edgelabel>
+          <edgelabel>controlFxn</edgelabel>
+          <edgelabel>openFxn</edgelabel>
+          <edgelabel>getCountFxn</edgelabel>
+        </childnode>
+      </node>
+      <node id="293">
+        <label>Timer_Config_</label>
+        <link refid="struct_timer___config__"/>
+        <childnode refid="294" relation="usage">
+          <edgelabel>fxnTablePtr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" line="185" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/timer/TimerCC32XX.h" bodystart="185" bodyend="195"/>
+    <listofallmembers>
+      <member refid="struct_timer_c_c32_x_x___object___1a6d3d46ec67e0cc8561fd215a6ea7f05c" prot="public" virt="non-virtual"><scope>TimerCC32XX_Object_</scope><name>callBack</name></member>
+      <member refid="struct_timer_c_c32_x_x___object___1aa6a5b628af49f714c633b92eb79107a5" prot="public" virt="non-virtual"><scope>TimerCC32XX_Object_</scope><name>hwiHandle</name></member>
+      <member refid="struct_timer_c_c32_x_x___object___1a358dfba6765b9356a2480ac8dab12022" prot="public" virt="non-virtual"><scope>TimerCC32XX_Object_</scope><name>isRunning</name></member>
+      <member refid="struct_timer_c_c32_x_x___object___1ac4af23b759b06d1116241b5202e196ef" prot="public" virt="non-virtual"><scope>TimerCC32XX_Object_</scope><name>mode</name></member>
+      <member refid="struct_timer_c_c32_x_x___object___1a97023c870779f72a740578a7c651e312" prot="public" virt="non-virtual"><scope>TimerCC32XX_Object_</scope><name>notifyObj</name></member>
+      <member refid="struct_timer_c_c32_x_x___object___1acb63e5372f5e99dbe019999a3ad8ccf7" prot="public" virt="non-virtual"><scope>TimerCC32XX_Object_</scope><name>period</name></member>
+      <member refid="struct_timer_c_c32_x_x___object___1a3ae57ee64060016f2da2e949e615831f" prot="public" virt="non-virtual"><scope>TimerCC32XX_Object_</scope><name>prescaler</name></member>
+      <member refid="struct_timer_c_c32_x_x___object___1a344adafaced7266c14f79f856a496e4a" prot="public" virt="non-virtual"><scope>TimerCC32XX_Object_</scope><name>timer</name></member>
+      <member refid="struct_timer_c_c32_x_x___object___1a5604f115ae730bb728395abc0e9c11ea" prot="public" virt="non-virtual"><scope>TimerCC32XX_Object_</scope><name>timerSem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

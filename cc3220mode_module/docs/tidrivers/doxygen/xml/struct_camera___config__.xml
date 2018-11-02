@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_camera___config__" kind="struct" language="C++" prot="public">
+    <compoundname>Camera_Config_</compoundname>
+    <includes refid="_camera_8h" local="no">Camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_camera___config___1ac55c2e97997d3e63cfa837837e923eba" prot="public" static="no" mutable="no">
+        <type><ref refid="_camera_8h_1a2955a2142d655c3c4ecc3b6f314dba4a" kindref="member">Camera_FxnTable</ref> const  *</type>
+        <definition>Camera_FxnTable const* Camera_Config_::fxnTablePtr</definition>
+        <argsstring></argsstring>
+        <name>fxnTablePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a table of driver-specific implementations of Camera APIs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="506" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera___config___1ad285eec36a93303bffb2255c3a1aec40" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Camera_Config_::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a driver specific data object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="509" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera___config___1a218992e03eed02ea8695e910d6ccf0bb" prot="public" static="no" mutable="no">
+        <type>void const  *</type>
+        <definition>void const* Camera_Config_::hwAttrs</definition>
+        <argsstring></argsstring>
+        <name>hwAttrs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a driver specific hardware attributes structure </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="512" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Camera Global configuration. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Camera_Config structure contains a set of pointers used to characterize the Camera driver implementation.</para><para>This structure needs to be defined before calling <ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init()</ref> and it must not be changed thereafter.</para><para><simplesect kind="see"><para><ref refid="_camera_8h_1ab0208c74b70ac5b50cb26c36f1f3ebad" kindref="member">Camera_init()</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="17">
+        <label>Camera_Config_</label>
+        <link refid="struct_camera___config__"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>fxnTablePtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Camera_FxnTable_</label>
+        <link refid="struct_camera___fxn_table__"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>closeFxn</edgelabel>
+          <edgelabel>initFxn</edgelabel>
+          <edgelabel>captureFxn</edgelabel>
+          <edgelabel>controlFxn</edgelabel>
+          <edgelabel>openFxn</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="504" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="504" bodyend="513"/>
+    <listofallmembers>
+      <member refid="struct_camera___config___1ac55c2e97997d3e63cfa837837e923eba" prot="public" virt="non-virtual"><scope>Camera_Config_</scope><name>fxnTablePtr</name></member>
+      <member refid="struct_camera___config___1a218992e03eed02ea8695e910d6ccf0bb" prot="public" virt="non-virtual"><scope>Camera_Config_</scope><name>hwAttrs</name></member>
+      <member refid="struct_camera___config___1ad285eec36a93303bffb2255c3a1aec40" prot="public" virt="non-virtual"><scope>Camera_Config_</scope><name>object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

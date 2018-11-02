@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_crypto_c_c32_x_x___des_params" kind="struct" language="C++" prot="public">
+    <compoundname>CryptoCC32XX_DesParams</compoundname>
+    <includes refid="_crypto_c_c32_x_x_8h" local="no">CryptoCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___des_params_1a827c2b816124360b67d13502459beedb" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* CryptoCC32XX_DesParams::pKey</definition>
+        <argsstring></argsstring>
+        <name>pKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointer to DES key </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="303" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___des_params_1a724bb6ed14be439aa3f4382e49bf0539" prot="public" static="no" mutable="no">
+        <type><ref refid="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5" kindref="member">CryptoCC32XX_DesKeySize</ref></type>
+        <definition>CryptoCC32XX_DesKeySize CryptoCC32XX_DesParams::keySize</definition>
+        <argsstring></argsstring>
+        <name>keySize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DES Key size type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="304" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___des_params_1a9819a3e1bde4596795d38d932dec6ea6" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* CryptoCC32XX_DesParams::pIV</definition>
+        <argsstring></argsstring>
+        <name>pIV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to DES Initialization Vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="305" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DES Parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines the DES parameters used in CryptoCC32XX_encrypt and CryptoCC32XX_decrypt functions. </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="302" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="301" bodyend="306"/>
+    <listofallmembers>
+      <member refid="struct_crypto_c_c32_x_x___des_params_1a724bb6ed14be439aa3f4382e49bf0539" prot="public" virt="non-virtual"><scope>CryptoCC32XX_DesParams</scope><name>keySize</name></member>
+      <member refid="struct_crypto_c_c32_x_x___des_params_1a9819a3e1bde4596795d38d932dec6ea6" prot="public" virt="non-virtual"><scope>CryptoCC32XX_DesParams</scope><name>pIV</name></member>
+      <member refid="struct_crypto_c_c32_x_x___des_params_1a827c2b816124360b67d13502459beedb" prot="public" virt="non-virtual"><scope>CryptoCC32XX_DesParams</scope><name>pKey</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

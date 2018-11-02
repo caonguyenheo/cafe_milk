@@ -1,0 +1,1376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_i2_s_8h" kind="file" language="C++">
+    <compoundname>I2S.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_list_8h" local="no">ti/drivers/utils/List.h</includes>
+    <includedby refid="_i2_s_c_c32_x_x_d_m_a_8h" local="no">I2SCC32XXDMA.h</includedby>
+    <incdepgraph>
+      <node id="116">
+        <label>stdbool.h</label>
+      </node>
+      <node id="114">
+        <label>stdint.h</label>
+      </node>
+      <node id="115">
+        <label>ti/drivers/utils/List.h</label>
+        <link refid="_list_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>stddef.h</label>
+      </node>
+      <node id="112">
+        <label>I2S.h</label>
+        <link refid="_i2_s_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="118">
+        <label>I2SCC32XXDMA.h</label>
+        <link refid="_i2_s_c_c32_x_x_d_m_a_8h"/>
+      </node>
+      <node id="117">
+        <label>I2S.h</label>
+        <link refid="_i2_s_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_i2_s___buf_desc__" prot="public">I2S_BufDesc_</innerclass>
+    <innerclass refid="struct_i2_s___params__" prot="public">I2S_Params_</innerclass>
+    <innerclass refid="struct_i2_s___fxn_table__" prot="public">I2S_FxnTable_</innerclass>
+    <innerclass refid="struct_i2_s___config__" prot="public">I2S_Config_</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_s___c_o_n_t_r_o_l_1gaf919ac4341fca59988c28e16058fa819" prot="public" static="no">
+        <name>I2S_CMD_RESERVED</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Common I2S_control command code reservation offset. I2S driver implementations should offset command codes with I2S_CMD_RESERVED growing positively</para><para>Example implementation specific command codes: <programlisting><codeline><highlight class="normal">#define<sp/>I2SXYZ_CMD_COMMAND0<sp/><sp/><sp/><sp/><sp/>I2S_CMD_RESERVED<sp/>+<sp/>0</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>I2SXYZ_CMD_COMMAND1<sp/><sp/><sp/><sp/><sp/>I2S_CMD_RESERVED<sp/>+<sp/>1</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="269" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___c_o_n_t_r_o_l_1ga3fad4fcf6773f3c5946c4881631f838d" prot="public" static="no">
+        <name>I2S_STATUS_RESERVED</name>
+        <initializer>(-32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Common I2S_control status code reservation offset. I2S driver implementations should offset status codes with I2S_STATUS_RESERVED growing negatively.</para><para>Example implementation specific status codes: <programlisting><codeline><highlight class="normal">#define<sp/>I2SXYZ_STATUS_ERROR0<sp/><sp/><sp/><sp/>I2S_STATUS_RESERVED<sp/>-<sp/>0</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>I2SXYZ_STATUS_ERROR1<sp/><sp/><sp/><sp/>I2S_STATUS_RESERVED<sp/>-<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>I2SXYZ_STATUS_ERROR2<sp/><sp/><sp/><sp/>I2S_STATUS_RESERVED<sp/>-<sp/>2</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="283" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___s_t_a_t_u_s_1ga23118b46858671b6537d3a68721f0282" prot="public" static="no">
+        <name>I2S_STATUS_SUCCESS</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+<para>Successful status code returned by <ref refid="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" kindref="member">I2S_control()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" kindref="member">I2S_control()</ref> returns I2S_STATUS_SUCCESS if the control code was executed successfully. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="298" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___s_t_a_t_u_s_1ga775a6dc5aa644d4cca2179afbafb63ad" prot="public" static="no">
+        <name>I2S_STATUS_ERROR</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+<para>Generic error status code returned by <ref refid="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" kindref="member">I2S_control()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" kindref="member">I2S_control()</ref> returns I2S_STATUS_ERROR if the control code was not executed successfully. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="306" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___s_t_a_t_u_s_1ga649cf0c869381728fc9b56dfdbbd3e3d" prot="public" static="no">
+        <name>I2S_STATUS_UNDEFINEDCMD</name>
+        <initializer>(-2)</initializer>
+        <briefdescription>
+<para>An error status code returned by <ref refid="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" kindref="member">I2S_control()</ref> for undefined command codes. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" kindref="member">I2S_control()</ref> returns I2S_STATUS_UNDEFINEDCMD if the control code is not recognized by the driver implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="315" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i2_s_8h_1a81d0dd9da59128b28cb23c59fe57c939" prot="public" static="no">
+        <name>I2S_ERROR</name>
+        <initializer>(<ref refid="group___i2_s___s_t_a_t_u_s_1ga775a6dc5aa644d4cca2179afbafb63ad" kindref="member">I2S_STATUS_ERROR</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="332" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i2_s_8h_1a8fd310c110b6a9425cf61753f3e956ab" prot="public" static="no">
+        <name>I2S_WAIT_FOREVER</name>
+        <initializer>(~(0U))</initializer>
+        <briefdescription>
+<para>Wait forever define. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="337" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3b" prot="public" static="no">
+        <name>I2S_DataMode_</name>
+        <enumvalue id="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3ba2c7b409c7185250bef51c0e6de600d08" prot="public">
+          <name>I2S_MODE_CALLBACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Non-blocking and will return immediately. When the transfer by the intr is finished the configured callback function is called. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3ba294b93c8f4917e45ac62b7c12b017f85" prot="public">
+          <name>I2S_MODE_ISSUERECLAIM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use I2S_readIssue, I2S_writeIssue calls to queue buffers to the I2S. <ref refid="_i2_s_8h_1a5678bf72e1d1954179d2a0db5c45eca8" kindref="member">I2S_readReclaim()</ref> blocks until a buffer of data is available. <ref refid="_i2_s_8h_1aa04de09198983b7bc17a000fc003ab1a" kindref="member">I2S_writeReclaim()</ref> blocks until a buffer of data has been written and the descriptor can be returned back to the caller. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>I2S mode settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the read and write modes for the configured I2S. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="380" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="380" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="enum" id="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2" prot="public" static="no">
+        <name>I2S_OpMode_</name>
+        <enumvalue id="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a314552b49ae8d2f1d03c17e9dbf165d0" prot="public">
+          <name>I2S_OPMODE_TX_ONLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only Transmit enabled </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a053d6506ed5a619c4ac829fe685091e0" prot="public">
+          <name>I2S_OPMODE_RX_ONLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only Receive enabled </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a0c2c408585299080663f8eb6cc289c04" prot="public">
+          <name>I2S_OPMODE_TX_RX_SYNC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive and Transmit are enabled in Sync </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>I2S mode settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enumeration defines the mode for I2S operation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="401" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="401" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="enum" id="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9b" prot="public" static="no">
+        <name>I2S_SerInActiveConfig_</name>
+        <enumvalue id="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9ba66aeb3fe813ed8c66e3e9e145068cdbd" prot="public">
+          <name>I2S_SERCONFIG_INACT_TRI_STATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Inactive state to tristate </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9bab0f78819f591a0100ecef46f97e0c7d9" prot="public">
+          <name>I2S_SERCONFIG_INACT_LOW_LEVEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Inactive state to low </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9ba5fd9b84daf2b878932e3a28a6c21ea57" prot="public">
+          <name>I2S_SERCONFIG_INACT_HIGH_LEVEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Inactive state to high </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>I2S Serializer InActive state settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enumeration defines the Serializer configuration in inactive state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="413" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="413" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="enum" id="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5d" prot="public" static="no">
+        <name>I2S_PinMode_</name>
+        <enumvalue id="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5da581622afe5daeecf01b66fb9c07c026b" prot="public">
+          <name>I2S_PINMODE_RX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operate the pin in Rx mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5da70c2a974a0b4fe247127546c4583cdfc" prot="public">
+          <name>I2S_PINMODE_TX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operate the pin in Tx mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5dace52223cb7a46097543160547d9ff35d" prot="public">
+          <name>I2S_PINMODE_INACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pin in inactive mode </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>I2S serial pin mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enumeration defines the Serial pin configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="424" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="424" bodyend="428"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" prot="public" static="no">
+        <type>struct <ref refid="struct_i2_s___config__" kindref="compound">I2S_Config_</ref> *</type>
+        <definition>typedef struct I2S_Config_* I2S_Handle</definition>
+        <argsstring></argsstring>
+        <name>I2S_Handle</name>
+        <briefdescription>
+<para>A handle that is returned from a <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="342" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" prot="public" static="no">
+        <type>struct <ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc_</ref></type>
+        <definition>typedef struct I2S_BufDesc_  I2S_BufDesc</definition>
+        <argsstring></argsstring>
+        <name>I2S_BufDesc</name>
+        <briefdescription>
+<para>I2S buffer descriptor for issue/reclaim mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="360" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a760fd8eb272890d42560bcb494a3e2c0" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* I2S_Callback) (I2S_Handle handle, I2S_BufDesc *desc)</definition>
+        <argsstring>)(I2S_Handle handle, I2S_BufDesc *desc)</argsstring>
+        <name>I2S_Callback</name>
+        <briefdescription>
+<para>The definition of a callback function used by the I2S driver when used in <ref refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3ba2c7b409c7185250bef51c0e6de600d08" kindref="member">I2S_MODE_CALLBACK</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I2S_Handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2S_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to read/write buffer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements read/written </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="372" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a6a13d8bc9ec9d061c003bb5cb9917057" prot="public" static="no">
+        <type>enum <ref refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3b" kindref="member">I2S_DataMode_</ref></type>
+        <definition>typedef enum I2S_DataMode_  I2S_DataMode</definition>
+        <argsstring></argsstring>
+        <name>I2S_DataMode</name>
+        <briefdescription>
+<para>I2S mode settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the read and write modes for the configured I2S. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="394" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a2ec2f2e9bdb87f5d2ff1b23bcbfef416" prot="public" static="no">
+        <type>enum <ref refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2" kindref="member">I2S_OpMode_</ref></type>
+        <definition>typedef enum I2S_OpMode_  I2S_OpMode</definition>
+        <argsstring></argsstring>
+        <name>I2S_OpMode</name>
+        <briefdescription>
+<para>I2S mode settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enumeration defines the mode for I2S operation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="405" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1af1308040949263df5bd0e6862d20c034" prot="public" static="no">
+        <type>enum <ref refid="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9b" kindref="member">I2S_SerInActiveConfig_</ref></type>
+        <definition>typedef enum I2S_SerInActiveConfig_  I2S_SerInActiveConfig</definition>
+        <argsstring></argsstring>
+        <name>I2S_SerInActiveConfig</name>
+        <briefdescription>
+<para>I2S Serializer InActive state settings. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enumeration defines the Serializer configuration in inactive state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="417" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a4d65c38ae0ec5612527f112c34bec287" prot="public" static="no">
+        <type>enum <ref refid="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5d" kindref="member">I2S_PinMode_</ref></type>
+        <definition>typedef enum I2S_PinMode_  I2S_PinMode</definition>
+        <argsstring></argsstring>
+        <name>I2S_PinMode</name>
+        <briefdescription>
+<para>I2S serial pin mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enumeration defines the Serial pin configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a7f4e84de95edef54fd2415eaa3f62022" prot="public" static="no">
+        <type>struct <ref refid="struct_i2_s___params__" kindref="compound">I2S_Params_</ref></type>
+        <definition>typedef struct I2S_Params_  I2S_Params</definition>
+        <argsstring></argsstring>
+        <name>I2S_Params</name>
+        <briefdescription>
+<para>Basic I2S Parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para>I2S parameters are used to with the <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> call. Default values for these parameters are set using <ref refid="_i2_s_8h_1a961c116273a6e8d4581278b2666f13b5" kindref="member">I2S_Params_init()</ref>.</para><para><simplesect kind="see"><para><ref refid="_i2_s_8h_1a961c116273a6e8d4581278b2666f13b5" kindref="member">I2S_Params_init()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="474" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a91bfa91197cb8ff2388744088177dde8" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* I2S_CloseFxn) (I2S_Handle handle)</definition>
+        <argsstring>)(I2S_Handle handle)</argsstring>
+        <name>I2S_CloseFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_i2_s_8h_1a91bfa91197cb8ff2388744088177dde8" kindref="member">I2S_CloseFxn()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="480" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1aab9f7e31e9e8eea04f7072c0f00f1482" prot="public" static="no">
+        <type>int_fast16_t(*</type>
+        <definition>typedef int_fast16_t(* I2S_ControlFxn) (I2S_Handle handle, uint_fast16_t cmd, void *arg)</definition>
+        <argsstring>)(I2S_Handle handle, uint_fast16_t cmd, void *arg)</argsstring>
+        <name>I2S_ControlFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" kindref="member">I2S_control()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="486" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a17f21fcbc2627ef97044ee7ff6cfdee6" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* I2S_InitFxn) (I2S_Handle handle)</definition>
+        <argsstring>)(I2S_Handle handle)</argsstring>
+        <name>I2S_InitFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_i2_s_8h_1a79e8fdf40ee80c49b2cac09a3e428a82" kindref="member">I2S_init()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="494" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a0a8c4787b4a5a262dc86d9dfa7da2840" prot="public" static="no">
+        <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref>(*</type>
+        <definition>typedef I2S_Handle(* I2S_OpenFxn) (I2S_Handle handle, I2S_Params *params)</definition>
+        <argsstring>)(I2S_Handle handle, I2S_Params *params)</argsstring>
+        <name>I2S_OpenFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_i2_s_8h_1a0a8c4787b4a5a262dc86d9dfa7da2840" kindref="member">I2S_OpenFxn()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="500" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1ada70240cf4484f0817c7104ac6564c9c" prot="public" static="no">
+        <type>int_fast16_t(*</type>
+        <definition>typedef int_fast16_t(* I2S_IssueFxn) (I2S_Handle handle, I2S_BufDesc *desc)</definition>
+        <argsstring>)(I2S_Handle handle, I2S_BufDesc *desc)</argsstring>
+        <name>I2S_IssueFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_i2_s_8h_1ada70240cf4484f0817c7104ac6564c9c" kindref="member">I2S_IssueFxn()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="506" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1aeb85638443d9071ae1e46233cb7ed82c" prot="public" static="no">
+        <type>size_t(*</type>
+        <definition>typedef size_t(* I2S_ReclaimFxn) (I2S_Handle handle, I2S_BufDesc **desc)</definition>
+        <argsstring>)(I2S_Handle handle, I2S_BufDesc **desc)</argsstring>
+        <name>I2S_ReclaimFxn</name>
+        <briefdescription>
+<para>A function pointer to a driver specific implementation of <ref refid="_i2_s_8h_1aeb85638443d9071ae1e46233cb7ed82c" kindref="member">I2S_ReclaimFxn()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="512" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a0959b5a766682daea9bd3a0a0b803800" prot="public" static="no">
+        <type>struct <ref refid="struct_i2_s___fxn_table__" kindref="compound">I2S_FxnTable_</ref></type>
+        <definition>typedef struct I2S_FxnTable_  I2S_FxnTable</definition>
+        <argsstring></argsstring>
+        <name>I2S_FxnTable</name>
+        <briefdescription>
+<para>The definition of a I2S function table that contains the required set of functions to control a specific I2S driver implementation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="544" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_i2_s_8h_1a519615f3b1ef24ac6c1f952539dbf6d4" prot="public" static="no">
+        <type>struct <ref refid="struct_i2_s___config__" kindref="compound">I2S_Config_</ref></type>
+        <definition>typedef struct I2S_Config_  I2S_Config</definition>
+        <argsstring></argsstring>
+        <name>I2S_Config</name>
+        <briefdescription>
+<para>I2S Global configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>The I2S_Config structure contains a set of pointers used to characterize the I2S driver implementation.</para><para>This structure needs to be defined before calling <ref refid="_i2_s_8h_1a79e8fdf40ee80c49b2cac09a3e428a82" kindref="member">I2S_init()</ref> and it must not be changed thereafter.</para><para><simplesect kind="see"><para><ref refid="_i2_s_8h_1a79e8fdf40ee80c49b2cac09a3e428a82" kindref="member">I2S_init()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="566" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_i2_s_8h_1a111a6b44f868cf90f7b25ced9f22ae1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2S_close</definition>
+        <argsstring>(I2S_Handle handle)</argsstring>
+        <name>I2S_close</name>
+        <param>
+          <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Function to close a given I2S peripheral specified by the I2S handle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para><ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> had to be called first.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A I2S_Handle returned from I2S_open</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="578" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int_fast16_t</type>
+        <definition>int_fast16_t I2S_control</definition>
+        <argsstring>(I2S_Handle handle, uint_fast16_t cmd, void *arg)</argsstring>
+        <name>I2S_control</name>
+        <param>
+          <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Function performs implementation specific features on a given I2S_Handle. </para>        </briefdescription>
+        <detaileddescription>
+<para>Commands for I2S_control can originate from <ref refid="_i2_s_8h" kindref="compound">I2S.h</ref> or from implementation specific I2S*.h (<emphasis>I2SCC32XX.h</emphasis>, etc.. ) files. While commands from <ref refid="_i2_s_8h" kindref="compound">I2S.h</ref> are API portable across driver implementations, not all implementations may support all these commands. Conversely, commands from driver implementation specific I2S*.h files add unique driver capabilities but are not API portable across all I2S driver implementations.</para><para>Commands supported by <ref refid="_i2_s_8h" kindref="compound">I2S.h</ref> follow a I2S_CMD_&lt;cmd&gt; naming convention.<linebreak/>
+ Commands supported by I2S*.h follow a I2S*_CMD_&lt;cmd&gt; naming convention.<linebreak/>
+ Each control command defines <bold>arg</bold> differently. The types of <bold>arg</bold> are documented with each command.</para><para>See <ref refid="group___i2_s___c_m_d" kindref="compound">I2S_control command codes</ref> for command codes.</para><para>See <ref refid="group___i2_s___s_t_a_t_u_s" kindref="compound">I2S_control return status codes</ref> for status codes.</para><para><simplesect kind="pre"><para><ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> has to be called first.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A I2S handle returned from <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="_i2_s_8h" kindref="compound">I2S.h</ref> or I2S*.h commands.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional R/W (read/write) command argument accompanied with cmd</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Implementation specific return codes. Negative values indicate unsuccessful operations.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="617" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1a79e8fdf40ee80c49b2cac09a3e428a82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2S_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>I2S_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to initializes the I2S module. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The I2S_config structure must exist and be persistent before this function can be called. This function must also be called before any other I2S driver APIs. This function call does not modify any peripheral registers. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="629" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref></type>
+        <definition>I2S_Handle I2S_open</definition>
+        <argsstring>(uint_least8_t index, I2S_Params *params)</argsstring>
+        <name>I2S_open</name>
+        <param>
+          <type>uint_least8_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="_i2_s_8h_1a7f4e84de95edef54fd2415eaa3f62022" kindref="member">I2S_Params</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Function to initialize a given I2S peripheral specified by the particular index value. The parameter specifies which mode the I2S will operate. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>I2S controller has been initialized</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical peripheral number for the I2S indexed into the I2S_config table</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an parameter block, if NULL it will use default values. All the fields in this structure are RO (read-only).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A I2S_Handle on success or a NULL on an error or if it has been opened already.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_i2_s_8h_1a79e8fdf40ee80c49b2cac09a3e428a82" kindref="member">I2S_init()</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="_i2_s_8h_1a111a6b44f868cf90f7b25ced9f22ae1b" kindref="member">I2S_close()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="651" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1a961c116273a6e8d4581278b2666f13b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2S_Params_init</definition>
+        <argsstring>(I2S_Params *params)</argsstring>
+        <name>I2S_Params_init</name>
+        <param>
+          <type><ref refid="_i2_s_8h_1a7f4e84de95edef54fd2415eaa3f62022" kindref="member">I2S_Params</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Function to initialize the I2S_Params struct to its defaults. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An pointer to I2S_Params structure for initialization</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Defaults values are: <programlisting><codeline><highlight class="normal">params.operationMode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>#I2S_OPMODE_TX_RX_SYNC;</highlight></codeline>
+<codeline><highlight class="normal">params.samplingFrequency<sp/><sp/><sp/><sp/>=<sp/>16000;</highlight></codeline>
+<codeline><highlight class="normal">params.slotLength<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>16;</highlight></codeline>
+<codeline><highlight class="normal">params.bitsPerSample<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>16;</highlight></codeline>
+<codeline><highlight class="normal">params.numChannels<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2;</highlight></codeline>
+<codeline><highlight class="normal">params.readMode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>#I2S_MODE_ISSUERECLAIM;</highlight></codeline>
+<codeline><highlight class="normal">params.readCallback<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">params.readTimeout<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>#I2S_WAIT_FOREVER;</highlight></codeline>
+<codeline><highlight class="normal">params.writeMode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>#I2S_MODE_ISSUERECLAIM;</highlight></codeline>
+<codeline><highlight class="normal">params.writeCallback<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">params.writeTimeout<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>#I2S_WAIT_FOREVER;</highlight></codeline>
+<codeline><highlight class="normal">params.customParams<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter structure to initialize </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="677" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1a1d8d386660de8651645b727affcc6f58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int_fast16_t</type>
+        <definition>int_fast16_t I2S_read</definition>
+        <argsstring>(I2S_Handle handle, I2S_BufDesc *desc)</argsstring>
+        <name>I2S_read</name>
+        <param>
+          <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+<para>Function to queue a buffer of data to the I2S in callback mode for reading. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A I2S_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a I2S_BufDesc object. The bufPtr and bufSize fields must be set to a buffer and the size of the buffer before passing to this function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns 0 if successful else would return I2S_STATUS_UNDEFINEDCMD on an error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="691" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1a18ccba1da6bd7447dbf38760fa8551f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int_fast16_t</type>
+        <definition>int_fast16_t I2S_readIssue</definition>
+        <argsstring>(I2S_Handle handle, I2S_BufDesc *desc)</argsstring>
+        <name>I2S_readIssue</name>
+        <param>
+          <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+<para>Function to queue a buffer of data to the I2S in Issue/Reclaim mode for reading. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A I2S_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a I2S_BufDesc object. The bufPtr and bufSize fields must be set to a buffer and the size of the buffer before passing to this function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns 0 if successful else would return I2S_STATUS_UNDEFINEDCMD on an error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="707" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1a5678bf72e1d1954179d2a0db5c45eca8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t I2S_readReclaim</definition>
+        <argsstring>(I2S_Handle handle, I2S_BufDesc **pDesc)</argsstring>
+        <name>I2S_readReclaim</name>
+        <param>
+          <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> **</type>
+          <declname>pDesc</declname>
+        </param>
+        <briefdescription>
+<para>Function to retrieve a full buffer of data read by the I2S. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A I2S_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pDesc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a I2S_BufDesc pointer.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the number of bytes read from the I2S, or 0 on timeout. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="718" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1adaff75bca871ee2d2f6ab4863819bc5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int_fast16_t</type>
+        <definition>int_fast16_t I2S_write</definition>
+        <argsstring>(I2S_Handle handle, I2S_BufDesc *desc)</argsstring>
+        <name>I2S_write</name>
+        <param>
+          <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+<para>Function to queue a buffer of data to the I2S in callback mode for writing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A I2S_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a I2S_BufDesc object. The bufPtr and bufSize fields must be set to a buffer and the size of the buffer before passing to this function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns 0 if successful else would return I2S_STATUS_UNDEFINEDCMD on an error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="732" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1a7449bb1fa51a85ffe9422e0b3490a246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int_fast16_t</type>
+        <definition>int_fast16_t I2S_writeIssue</definition>
+        <argsstring>(I2S_Handle handle, I2S_BufDesc *desc)</argsstring>
+        <name>I2S_writeIssue</name>
+        <param>
+          <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+<para>Function to queue a buffer of data to the I2S in Issue/Reclaim mode for writing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A I2S_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a I2S_BufDesc object. The bufPtr and bufSize fields must be set to a buffer and the size of the buffer before passing to this function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns 0 if successful else would return I2S_STATUS_UNDEFINEDCMD on an error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="746" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_i2_s_8h_1aa04de09198983b7bc17a000fc003ab1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t I2S_writeReclaim</definition>
+        <argsstring>(I2S_Handle handle, I2S_BufDesc **pDesc)</argsstring>
+        <name>I2S_writeReclaim</name>
+        <param>
+          <type><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> **</type>
+          <declname>pDesc</declname>
+        </param>
+        <briefdescription>
+<para>Function to retrieve a buffer that the I2S has finished writing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A I2S_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pDesc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a I2S_BufDesc pointer.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the number of bytes that have been written to the I2S, 0 on timeout. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="758" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2S driver interface. </para>    </briefdescription>
+    <detaileddescription>
+<para><hruler/>
+</para><para>The I2S header file should be included in an application as follows: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/I2S.h&gt;</highlight></codeline>
+</programlisting></para><para><heading level="1">Overview</heading>
+</para><para>The I2S driver facilitates the use of Inter-IC Sound (I2S), which is used to connect digital audio devices so that audio signals can be communicated between devices. The I2S driver simplifies reading and writing to any of the Multichannel Audio Serial Port (McASP) peripherals on the board with Receive and Transmit support. These include blocking, non-blocking, read and write characters on the McASP peripheral.</para><para>The APIs in this driver serve as an interface to a typical RTOS application. Its purpose is to redirect the I2S APIs to specific driver implementations which are specified using a pointer to an <ref refid="_i2_s_8h_1a0959b5a766682daea9bd3a0a0b803800" kindref="member">I2S_FxnTable</ref>. The specific peripheral implementations are responsible for creating all the RTOS specific primitives to allow for thread-safe operation.</para><para><heading level="1">Usage</heading>
+</para><para>To use the I2S driver for reaading and writing data to the I2S peripheral, the application calls the following APIs:<itemizedlist>
+<listitem><para><ref refid="_i2_s_8h_1a79e8fdf40ee80c49b2cac09a3e428a82" kindref="member">I2S_init()</ref>: Initialize the I2S driver.</para></listitem><listitem><para><ref refid="_i2_s_8h_1a961c116273a6e8d4581278b2666f13b5" kindref="member">I2S_Params_init()</ref>: Initialize a <ref refid="_i2_s_8h_1a7f4e84de95edef54fd2415eaa3f62022" kindref="member">I2S_Params</ref> structure with default vaules. Then change the parameters from non-default values as needed.</para></listitem><listitem><para><ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref>: Open an instance of the I2S driver, passing the initialized parameters, or NULL, and an index (described later).</para></listitem><listitem><para>If using callback mode, <ref refid="_i2_s_8h_1a1d8d386660de8651645b727affcc6f58" kindref="member">I2S_read()</ref> and <ref refid="_i2_s_8h_1adaff75bca871ee2d2f6ab4863819bc5d" kindref="member">I2S_write()</ref>.</para></listitem><listitem><para>If using issue/reclaim mode, <ref refid="_i2_s_8h_1a18ccba1da6bd7447dbf38760fa8551f3" kindref="member">I2S_readIssue()</ref>, <ref refid="_i2_s_8h_1a5678bf72e1d1954179d2a0db5c45eca8" kindref="member">I2S_readReclaim()</ref>, <ref refid="_i2_s_8h_1a7449bb1fa51a85ffe9422e0b3490a246" kindref="member">I2S_writeIssue()</ref> and <ref refid="_i2_s_8h_1aa04de09198983b7bc17a000fc003ab1a" kindref="member">I2S_writeReclaim()</ref>.</para></listitem><listitem><para><ref refid="_i2_s_8h_1a111a6b44f868cf90f7b25ced9f22ae1b" kindref="member">I2S_close()</ref>: De-initialize the I2S instance.</para></listitem></itemizedlist>
+</para><para><heading level="3">I2S Driver Configuration</heading>
+</para><para>In order to use the I2S APIs, the application is required to provide device-specific I2S configuration in the Board.c file. The I2S driver interface defines a configuration data structure:</para><para><programlisting><codeline><highlight class="normal">typedef<sp/>struct<sp/>I2S_Config_<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Pointer<sp/>to<sp/>driver-specific<sp/>implementation<sp/>of<sp/>I2S<sp/>functions</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>I2S_FxnTable<sp/>const<sp/>*fxnTablePtr;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*object;<sp/><sp/><sp/>//<sp/>Driver<sp/>specific<sp/>data<sp/>object</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>*hwAttrs;<sp/><sp/>//<sp/>Driver<sp/>specific<sp/>hardware<sp/>attributes</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>I2S_Config;</highlight></codeline>
+</programlisting></para><para>The application must declare an array of I2S_Config elements, named I2S_config[]. Each element of I2S_config[] must be populated with pointers to a device specific I2S driver implementation&apos;s function table, driver object, and hardware attributes. The hardware attributes define properties such as the I2S peripheral&apos;s base address and pins. Each element in I2S_config[] corresponds to an I2S instance, and and none of the elements should have NULL pointers. There is no correlation between the index and the peripheral designation (such as I2S0 or I2S1). For example, it is possible to use I2S_config[0] for I2S1.</para><para>Because I2S configuration is very device dependent, you will need to check the doxygen for the device specific I2S implementation. There you will find a description of the I2S hardware attributes. Please also refer to the board.c file of any of your examples to see the I2S configuration.</para><para><heading level="3">Initializing the I2S Driver</heading>
+</para><para><ref refid="_i2_s_8h_1a79e8fdf40ee80c49b2cac09a3e428a82" kindref="member">I2S_init()</ref> must be called before any other I2S APIs. This function iterates through the elements of the I2S_config[] array, calling the element&apos;s device implementation I2S initialization function.</para><para><heading level="3">I2S Parameters</heading>
+</para><para>The <ref refid="_i2_s_8h_1a7f4e84de95edef54fd2415eaa3f62022" kindref="member">I2S_Params</ref> structure is passed to the <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> call. If NULL is passed for the parameters, <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> uses default parameters. An <ref refid="_i2_s_8h_1a7f4e84de95edef54fd2415eaa3f62022" kindref="member">I2S_Params</ref> structure is initialized with default values by passing it to <ref refid="_i2_s_8h_1a961c116273a6e8d4581278b2666f13b5" kindref="member">I2S_Params_init()</ref>. Some of the I2S parameters are described below. To see brief descriptions of all the parameters, see <ref refid="_i2_s_8h_1a7f4e84de95edef54fd2415eaa3f62022" kindref="member">I2S_Params</ref>.</para><para><heading level="4">I2S Operation Mode</heading>
+</para><para>The I2S operation mode determines whether transmit and/or receive modes are enabled. The mode is specified with one of the following constants:<itemizedlist>
+<listitem><para><ref refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a314552b49ae8d2f1d03c17e9dbf165d0" kindref="member">I2S_OPMODE_TX_ONLY</ref>: Enable transmit only.</para></listitem><listitem><para><ref refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a053d6506ed5a619c4ac829fe685091e0" kindref="member">I2S_OPMODE_RX_ONLY</ref>: Enable receive only.</para></listitem><listitem><para><ref refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a0c2c408585299080663f8eb6cc289c04" kindref="member">I2S_OPMODE_TX_RX_SYNC</ref>: Enable both receive and transmit.</para></listitem></itemizedlist>
+</para><para><heading level="4">I2S Data Mode</heading>
+</para><para>A separate data mode may be specified for read calls and write calls. The available modes are:<itemizedlist>
+<listitem><para><ref refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3ba2c7b409c7185250bef51c0e6de600d08" kindref="member">I2S_MODE_CALLBACK</ref>: This mode is non-blocking. Calls to <ref refid="_i2_s_8h_1a1d8d386660de8651645b727affcc6f58" kindref="member">I2S_read()</ref> or <ref refid="_i2_s_8h_1adaff75bca871ee2d2f6ab4863819bc5d" kindref="member">I2S_write()</ref> return immediately. When the transfer is finished, the user configured callback function is called.</para></listitem><listitem><para><ref refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3ba294b93c8f4917e45ac62b7c12b017f85" kindref="member">I2S_MODE_ISSUERECLAIM</ref>: Call <ref refid="_i2_s_8h_1a18ccba1da6bd7447dbf38760fa8551f3" kindref="member">I2S_readIssue()</ref> and <ref refid="_i2_s_8h_1a7449bb1fa51a85ffe9422e0b3490a246" kindref="member">I2S_writeIssue()</ref> to queue buffers to the I2S. <ref refid="_i2_s_8h_1a5678bf72e1d1954179d2a0db5c45eca8" kindref="member">I2S_readReclaim()</ref> blocks until a buffer of data is available. <ref refid="_i2_s_8h_1aa04de09198983b7bc17a000fc003ab1a" kindref="member">I2S_writeReclaim()</ref> blocks until a buffer of data has been issued and the descriptor can be returned back to the caller.</para></listitem></itemizedlist>
+</para><para><heading level="3">Opening the I2S Driver</heading>
+</para><para>After initializing the I2S driver by calling <ref refid="_i2_s_8h_1a79e8fdf40ee80c49b2cac09a3e428a82" kindref="member">I2S_init()</ref>, the application can open an I2S instance by calling <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref>. This function takes an index into the I2S_config[] array, and an I2S parameters data structure. The I2S instance is specified by the index of the I2S in I2S_config[]. Only one I2S index can be used at a time; calling <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> a second time with the same index previosly passed to <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> will result in an error. You can, though, re-use the index if the instance is closed via <ref refid="_i2_s_8h_1a111a6b44f868cf90f7b25ced9f22ae1b" kindref="member">I2S_close()</ref>.</para><para>If NULL is passed for the I2S_Params structure to <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref>, default values are used. If the open call is successful, it returns a non-NULL value.</para><para>Example opening an I2S driver instance: <programlisting><codeline><highlight class="normal">I2S_Handle<sp/><sp/><sp/><sp/><sp/><sp/>handle;</highlight></codeline>
+<codeline><highlight class="normal">I2S_Params<sp/><sp/><sp/><sp/><sp/><sp/>params;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">I2S_Params_init(&amp;params);</highlight></codeline>
+<codeline><highlight class="normal">params.operationMode<sp/>=<sp/>I2S_MODE_TX_RX_SYNC;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">handle<sp/>=<sp/>I2S_open(Board_I2S0,<sp/>&amp;params);</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>(handle<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Error<sp/>opening<sp/>I2S</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>while<sp/>(1);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><heading level="3">Writing Data</heading>
+</para><para>The following example calls <ref refid="_i2_s_8h_1a7449bb1fa51a85ffe9422e0b3490a246" kindref="member">I2S_writeIssue()</ref> to write to an I2S driver instance that has been opened. It first queues up two buffers of text. Within an infinite loop, it calls <ref refid="_i2_s_8h_1aa04de09198983b7bc17a000fc003ab1a" kindref="member">I2S_writeReclaim()</ref> to retrieve a buffer and then re-queues the buffer.</para><para><programlisting><codeline><highlight class="normal">const<sp/>unsigned<sp/>char<sp/>hello[]<sp/>=<sp/>&quot;Hello<sp/>World\n&quot;;</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>unsigned<sp/>char<sp/>hello1[]<sp/>=<sp/>&quot;Hello<sp/>World1\n&quot;;</highlight></codeline>
+<codeline><highlight class="normal">I2S_BufDesc<sp/>writeBuffer1;</highlight></codeline>
+<codeline><highlight class="normal">I2S_BufDesc<sp/>writeBuffer2;</highlight></codeline>
+<codeline><highlight class="normal">I2S_BufDesc<sp/>*pDesc<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">writeBuffer1.bufPtr<sp/><sp/>=<sp/>&amp;hello;</highlight></codeline>
+<codeline><highlight class="normal">writeBuffer1.bufSize<sp/>=<sp/>sizeof(hello);</highlight></codeline>
+<codeline><highlight class="normal">writeBuffer2.bufPtr<sp/><sp/>=<sp/>&amp;hello1;</highlight></codeline>
+<codeline><highlight class="normal">writeBuffer2.bufSize<sp/>=<sp/>sizeof(hello1);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ret<sp/>=<sp/>I2S_writeIssue(handle,<sp/>&amp;writeBuffer1);</highlight></codeline>
+<codeline><highlight class="normal">ret<sp/>=<sp/>I2S_writeIssue(handle,<sp/>&amp;writeBuffer2);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">while(1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>I2S_writeReclaim(handle,<sp/>&amp;pDesc);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pDesc-&gt;bufPtr<sp/><sp/>=<sp/>&amp;hello;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pDesc-&gt;bufSize<sp/>=<sp/>sizeof(hello);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>I2S_writeIssue(handle,<sp/>pDesc);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><heading level="3">Reading Data</heading>
+</para><para>The following example calls <ref refid="_i2_s_8h_1a18ccba1da6bd7447dbf38760fa8551f3" kindref="member">I2S_readIssue()</ref> to queue a buffer for reading from an I2S driver instance. It first queues up two buffers of text. Within an infinite loop, it then calls <ref refid="_i2_s_8h_1a5678bf72e1d1954179d2a0db5c45eca8" kindref="member">I2S_readReclaim()</ref> to retrieve a full buffer of data.</para><para><programlisting><codeline><highlight class="normal">unsigned<sp/>char<sp/>rxBuffer[20];</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>char<sp/>rxBuffer1[20];</highlight></codeline>
+<codeline><highlight class="normal">I2S_BufDesc<sp/>readBuffer1;</highlight></codeline>
+<codeline><highlight class="normal">I2S_BufDesc<sp/>readBuffer2;</highlight></codeline>
+<codeline><highlight class="normal">I2S_BufDesc<sp/>*pDesc<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">readBuffer1.bufPtr<sp/>=<sp/>&amp;rxBuffer;</highlight></codeline>
+<codeline><highlight class="normal">readBuffer1.bufSize<sp/>=<sp/>20;</highlight></codeline>
+<codeline><highlight class="normal">readBuffer2.bufPtr<sp/>=<sp/>&amp;rxBuffer1;</highlight></codeline>
+<codeline><highlight class="normal">readBuffer2.bufSize<sp/>=<sp/>20;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ret<sp/>=<sp/>I2S_readIssue(handle,<sp/>&amp;readBuffer1);</highlight></codeline>
+<codeline><highlight class="normal">ret<sp/>=<sp/>I2S_readIssue(handle,<sp/>&amp;readBuffer2);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">while(1)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>I2S_readReclaim(handle,<sp/>&amp;pDesc);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pDesc-&gt;bufPtr<sp/>=<sp/>&amp;rxBuffer;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pDesc-&gt;bufSize<sp/>=<sp/>20;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>I2S_readIssue(handle,<sp/>pDesc);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><heading level="1">Implementation</heading>
+</para><para>The I2S driver interface module is joined (at link time) to an array of I2S_Config data structures named <emphasis>I2S_config</emphasis>. <emphasis>I2S_config</emphasis> is implemented in the application with each entry being an instance of a I2S peripheral. Each entry in <emphasis>I2S_config</emphasis> contains a:<itemizedlist>
+<listitem><para>(I2S_FxnTable *) to a set of functions that implement a I2S peripheral</para></listitem><listitem><para>(void *) data object that is associated with the I2S_FxnTable</para></listitem><listitem><para>(void *) hardware attributes that are associated to the I2S_FxnTable </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015-2018,<sp/>Texas<sp/>Instruments<sp/>Incorporated</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*!*****************************************************************************</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/>@file<sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2S.h</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/>I2S<sp/>driver<sp/>interface</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>I2S<sp/>header<sp/>file<sp/>should<sp/>be<sp/>included<sp/>in<sp/>an<sp/>application<sp/>as<sp/>follows:</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/>@code</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/>#include<sp/>&lt;ti/drivers/I2S.h&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/>#<sp/>Overview<sp/>#</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>I2S<sp/>driver<sp/>facilitates<sp/>the<sp/>use<sp/>of<sp/>Inter-IC<sp/>Sound<sp/>(I2S),<sp/>which<sp/>is</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/><sp/>used<sp/>to<sp/>connect<sp/>digital<sp/>audio<sp/>devices<sp/>so<sp/>that<sp/>audio<sp/>signals<sp/>can<sp/>be</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/>communicated<sp/>between<sp/>devices.<sp/>The<sp/>I2S<sp/>driver<sp/>simplifies<sp/>reading<sp/>and</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/><sp/>writing<sp/>to<sp/>any<sp/>of<sp/>the<sp/>Multichannel<sp/>Audio<sp/>Serial<sp/>Port<sp/>(McASP)<sp/>peripherals</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/>on<sp/>the<sp/>board<sp/>with<sp/>Receive<sp/>and<sp/>Transmit<sp/>support.<sp/>These<sp/>include<sp/>blocking,</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/><sp/>non-blocking,<sp/>read<sp/>and<sp/>write<sp/>characters<sp/>on<sp/>the<sp/>McASP<sp/>peripheral.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>APIs<sp/>in<sp/>this<sp/>driver<sp/>serve<sp/>as<sp/>an<sp/>interface<sp/>to<sp/>a<sp/>typical<sp/>RTOS</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/><sp/>application.<sp/><sp/>Its<sp/>purpose<sp/>is<sp/>to<sp/>redirect<sp/>the<sp/>I2S<sp/>APIs<sp/>to<sp/>specific</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/><sp/>driver<sp/>implementations<sp/>which<sp/>are<sp/>specified<sp/>using<sp/>a<sp/>pointer<sp/>to<sp/>an</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/><sp/>#I2S_FxnTable.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>specific<sp/>peripheral<sp/>implementations<sp/>are<sp/>responsible</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/><sp/>for<sp/>creating<sp/>all<sp/>the<sp/>RTOS<sp/>specific<sp/>primitives<sp/>to<sp/>allow<sp/>for<sp/>thread-safe</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/><sp/>operation.</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/><sp/>#<sp/>Usage<sp/>#</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/><sp/>To<sp/>use<sp/>the<sp/>I2S<sp/>driver<sp/>for<sp/>reaading<sp/>and<sp/>writing<sp/>data<sp/>to<sp/>the<sp/>I2S<sp/>peripheral,</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>application<sp/>calls<sp/>the<sp/>following<sp/>APIs:</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>I2S_init():<sp/>Initialize<sp/>the<sp/>I2S<sp/>driver.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>I2S_Params_init():<sp/><sp/>Initialize<sp/>a<sp/>#I2S_Params<sp/>structure<sp/>with<sp/>default</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>vaules.<sp/><sp/>Then<sp/>change<sp/>the<sp/>parameters<sp/>from<sp/>non-default<sp/>values<sp/>as</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>needed.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>I2S_open():<sp/><sp/>Open<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>I2S<sp/>driver,<sp/>passing<sp/>the</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>initialized<sp/>parameters,<sp/>or<sp/>NULL,<sp/>and<sp/>an<sp/>index<sp/>(described<sp/>later).</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>If<sp/>using<sp/>callback<sp/>mode,<sp/>I2S_read()<sp/>and<sp/>I2S_write().</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>If<sp/>using<sp/>issue/reclaim<sp/>mode,<sp/>I2S_readIssue(),<sp/>I2S_readReclaim(),</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>I2S_writeIssue()<sp/>and<sp/>I2S_writeReclaim().</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>-<sp/>I2S_close():<sp/><sp/>De-initialize<sp/>the<sp/>I2S<sp/>instance.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>I2S<sp/>Driver<sp/>Configuration<sp/>#</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/><sp/>In<sp/>order<sp/>to<sp/>use<sp/>the<sp/>I2S<sp/>APIs,<sp/>the<sp/>application<sp/>is<sp/>required</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/>to<sp/>provide<sp/>device-specific<sp/>I2S<sp/>configuration<sp/>in<sp/>the<sp/>Board.c<sp/>file.</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>I2S<sp/>driver<sp/>interface<sp/>defines<sp/>a<sp/>configuration<sp/>data<sp/>structure:</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/><sp/>@code</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/>typedef<sp/>struct<sp/>I2S_Config_<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Pointer<sp/>to<sp/>driver-specific<sp/>implementation<sp/>of<sp/>I2S<sp/>functions</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>I2S_FxnTable<sp/>const<sp/>*fxnTablePtr;</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*object;<sp/><sp/><sp/>//<sp/>Driver<sp/>specific<sp/>data<sp/>object</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>*hwAttrs;<sp/><sp/>//<sp/>Driver<sp/>specific<sp/>hardware<sp/>attributes</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*<sp/><sp/>}<sp/>I2S_Config;</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>application<sp/>must<sp/>declare<sp/>an<sp/>array<sp/>of<sp/>I2S_Config<sp/>elements,<sp/>named</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*<sp/><sp/>I2S_config[].<sp/><sp/>Each<sp/>element<sp/>of<sp/>I2S_config[]<sp/>must<sp/>be<sp/>populated<sp/>with</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/><sp/>pointers<sp/>to<sp/>a<sp/>device<sp/>specific<sp/>I2S<sp/>driver<sp/>implementation&apos;s<sp/>function</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/><sp/>table,<sp/>driver<sp/>object,<sp/>and<sp/>hardware<sp/>attributes.<sp/><sp/>The<sp/>hardware<sp/>attributes</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*<sp/><sp/>define<sp/>properties<sp/>such<sp/>as<sp/>the<sp/>I2S<sp/>peripheral&apos;s<sp/>base<sp/>address<sp/>and<sp/>pins.</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*<sp/><sp/>Each<sp/>element<sp/>in<sp/>I2S_config[]<sp/>corresponds<sp/>to<sp/>an<sp/>I2S<sp/>instance,<sp/>and</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/><sp/>and<sp/>none<sp/>of<sp/>the<sp/>elements<sp/>should<sp/>have<sp/>NULL<sp/>pointers.</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/><sp/>There<sp/>is<sp/>no<sp/>correlation<sp/>between<sp/>the<sp/>index<sp/>and<sp/>the<sp/>peripheral</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/><sp/>designation<sp/>(such<sp/>as<sp/>I2S0<sp/>or<sp/>I2S1).<sp/><sp/>For<sp/>example,<sp/>it<sp/>is<sp/>possible</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*<sp/><sp/>to<sp/>use<sp/>I2S_config[0]<sp/>for<sp/>I2S1.</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/><sp/>Because<sp/>I2S<sp/>configuration<sp/>is<sp/>very<sp/>device<sp/>dependent,<sp/>you<sp/>will<sp/>need<sp/>to</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/><sp/>check<sp/>the<sp/>doxygen<sp/>for<sp/>the<sp/>device<sp/>specific<sp/>I2S<sp/>implementation.<sp/><sp/>There<sp/>you</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/><sp/>will<sp/>find<sp/>a<sp/>description<sp/>of<sp/>the<sp/>I2S<sp/>hardware<sp/>attributes.<sp/><sp/>Please<sp/>also</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/><sp/>refer<sp/>to<sp/>the<sp/>board.c<sp/>file<sp/>of<sp/>any<sp/>of<sp/>your<sp/>examples<sp/>to<sp/>see<sp/>the<sp/>I2S</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/><sp/>configuration.</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>Initializing<sp/>the<sp/>I2S<sp/>Driver<sp/>#</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/><sp/>I2S_init()<sp/>must<sp/>be<sp/>called<sp/>before<sp/>any<sp/>other<sp/>I2S<sp/>APIs.<sp/><sp/>This<sp/>function</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*<sp/><sp/>iterates<sp/>through<sp/>the<sp/>elements<sp/>of<sp/>the<sp/>I2S_config[]<sp/>array,<sp/>calling</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>element&apos;s<sp/>device<sp/>implementation<sp/>I2S<sp/>initialization<sp/>function.</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>I2S<sp/>Parameters</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>#I2S_Params<sp/>structure<sp/>is<sp/>passed<sp/>to<sp/>the<sp/>I2S_open()<sp/>call.<sp/><sp/>If<sp/>NULL</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*<sp/><sp/>is<sp/>passed<sp/>for<sp/>the<sp/>parameters,<sp/>I2S_open()<sp/>uses<sp/>default<sp/>parameters.</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*<sp/><sp/>An<sp/>#I2S_Params<sp/>structure<sp/>is<sp/>initialized<sp/>with<sp/>default<sp/>values<sp/>by<sp/>passing</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*<sp/><sp/>it<sp/>to<sp/>I2S_Params_init().</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*<sp/><sp/>Some<sp/>of<sp/>the<sp/>I2S<sp/>parameters<sp/>are<sp/>described<sp/>below.<sp/><sp/>To<sp/>see<sp/>brief<sp/>descriptions</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/><sp/>of<sp/>all<sp/>the<sp/>parameters,<sp/>see<sp/>#I2S_Params.</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*<sp/><sp/>####<sp/>I2S<sp/>Operation<sp/>Mode</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>I2S<sp/>operation<sp/>mode<sp/>determines<sp/>whether<sp/>transmit<sp/>and/or<sp/>receive<sp/>modes</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*<sp/><sp/>are<sp/>enabled.<sp/>The<sp/>mode<sp/>is<sp/>specified<sp/>with<sp/>one<sp/>of<sp/>the<sp/>following<sp/>constants:</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>#I2S_OPMODE_TX_ONLY:<sp/>Enable<sp/>transmit<sp/>only.</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>#I2S_OPMODE_RX_ONLY:<sp/>Enable<sp/>receive<sp/>only.</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>#I2S_OPMODE_TX_RX_SYNC:<sp/>Enable<sp/>both<sp/>receive<sp/>and<sp/>transmit.</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/><sp/>####<sp/>I2S<sp/>Data<sp/>Mode</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/><sp/>A<sp/>separate<sp/>data<sp/>mode<sp/>may<sp/>be<sp/>specified<sp/>for<sp/>read<sp/>calls<sp/>and<sp/>write<sp/>calls.</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>available<sp/>modes<sp/>are:</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>#I2S_MODE_CALLBACK:<sp/>This<sp/>mode<sp/>is<sp/>non-blocking.<sp/>Calls<sp/>to<sp/>I2S_read()<sp/>or</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>I2S_write()<sp/>return<sp/>immediately.<sp/>When<sp/>the<sp/>transfer<sp/>is<sp/>finished,<sp/>the</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>user<sp/>configured<sp/>callback<sp/>function<sp/>is<sp/>called.</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>#I2S_MODE_ISSUERECLAIM:<sp/>Call<sp/>I2S_readIssue()<sp/>and<sp/>I2S_writeIssue()<sp/>to</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>queue<sp/>buffers<sp/>to<sp/>the<sp/>I2S.<sp/><sp/>I2S_readReclaim()<sp/>blocks<sp/>until<sp/>a<sp/>buffer</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>of<sp/>data<sp/>is<sp/>available.<sp/>I2S_writeReclaim()<sp/>blocks<sp/>until<sp/>a<sp/>buffer<sp/>of</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>data<sp/>has<sp/>been<sp/>issued<sp/>and<sp/>the<sp/>descriptor<sp/>can<sp/>be<sp/>returned<sp/>back<sp/>to<sp/>the</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>caller.</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>Opening<sp/>the<sp/>I2S<sp/>Driver<sp/>#</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*<sp/><sp/>After<sp/>initializing<sp/>the<sp/>I2S<sp/>driver<sp/>by<sp/>calling<sp/>I2S_init(),<sp/>the<sp/>application</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*<sp/><sp/>can<sp/>open<sp/>an<sp/>I2S<sp/>instance<sp/>by<sp/>calling<sp/>I2S_open().<sp/><sp/>This<sp/>function</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*<sp/><sp/>takes<sp/>an<sp/>index<sp/>into<sp/>the<sp/>I2S_config[]<sp/>array,<sp/>and<sp/>an<sp/>I2S<sp/>parameters<sp/>data</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*<sp/><sp/>structure.<sp/><sp/><sp/>The<sp/>I2S<sp/>instance<sp/>is<sp/>specified<sp/>by<sp/>the<sp/>index<sp/>of<sp/>the<sp/>I2S<sp/>in</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>*<sp/><sp/>I2S_config[].<sp/><sp/>Only<sp/>one<sp/>I2S<sp/>index<sp/>can<sp/>be<sp/>used<sp/>at<sp/>a<sp/>time;</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>*<sp/><sp/>calling<sp/>I2S_open()<sp/>a<sp/>second<sp/>time<sp/>with<sp/>the<sp/>same<sp/>index<sp/>previosly</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/>*<sp/><sp/>passed<sp/>to<sp/>I2S_open()<sp/>will<sp/>result<sp/>in<sp/>an<sp/>error.<sp/><sp/>You<sp/>can,</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/>*<sp/><sp/>though,<sp/>re-use<sp/>the<sp/>index<sp/>if<sp/>the<sp/>instance<sp/>is<sp/>closed<sp/>via<sp/>I2S_close().</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>NULL<sp/>is<sp/>passed<sp/>for<sp/>the<sp/>I2S_Params<sp/>structure<sp/>to<sp/>I2S_open(),<sp/>default<sp/>values</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/>*<sp/><sp/>are<sp/>used.<sp/>If<sp/>the<sp/>open<sp/>call<sp/>is<sp/>successful,<sp/>it<sp/>returns<sp/>a<sp/>non-NULL<sp/>value.</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/>*<sp/><sp/>Example<sp/>opening<sp/>an<sp/>I2S<sp/>driver<sp/>instance:</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*<sp/><sp/>@code</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*<sp/><sp/>I2S_Handle<sp/><sp/><sp/><sp/><sp/><sp/>handle;</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/>*<sp/><sp/>I2S_Params<sp/><sp/><sp/><sp/><sp/><sp/>params;</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*<sp/><sp/>I2S_Params_init(&amp;params);</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/>*<sp/><sp/>params.operationMode<sp/>=<sp/>I2S_MODE_TX_RX_SYNC;</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/>*<sp/><sp/>handle<sp/>=<sp/>I2S_open(Board_I2S0,<sp/>&amp;params);</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/>*<sp/><sp/>if<sp/>(handle<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Error<sp/>opening<sp/>I2S</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>while<sp/>(1);</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*<sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*<sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>Writing<sp/>Data<sp/>#</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>following<sp/>example<sp/>calls<sp/>I2S_writeIssue()<sp/>to<sp/>write<sp/>to<sp/>an<sp/>I2S<sp/>driver</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*<sp/><sp/>instance<sp/>that<sp/>has<sp/>been<sp/>opened.<sp/>It<sp/>first<sp/>queues<sp/>up<sp/>two<sp/>buffers<sp/>of<sp/>text.</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*<sp/><sp/>Within<sp/>an<sp/>infinite<sp/>loop,<sp/>it<sp/>calls<sp/>I2S_writeReclaim()<sp/>to<sp/>retrieve<sp/>a</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/>*<sp/><sp/>buffer<sp/>and<sp/>then<sp/>re-queues<sp/>the<sp/>buffer.</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>*<sp/><sp/>@code</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/>*<sp/><sp/>const<sp/>unsigned<sp/>char<sp/>hello[]<sp/>=<sp/>&quot;Hello<sp/>World\n&quot;;</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/>*<sp/><sp/>const<sp/>unsigned<sp/>char<sp/>hello1[]<sp/>=<sp/>&quot;Hello<sp/>World1\n&quot;;</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/>*<sp/><sp/>I2S_BufDesc<sp/>writeBuffer1;</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/>*<sp/><sp/>I2S_BufDesc<sp/>writeBuffer2;</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/><sp/>I2S_BufDesc<sp/>*pDesc<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*<sp/><sp/>writeBuffer1.bufPtr<sp/><sp/>=<sp/>&amp;hello;</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/><sp/>writeBuffer1.bufSize<sp/>=<sp/>sizeof(hello);</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*<sp/><sp/>writeBuffer2.bufPtr<sp/><sp/>=<sp/>&amp;hello1;</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*<sp/><sp/>writeBuffer2.bufSize<sp/>=<sp/>sizeof(hello1);</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/>*<sp/><sp/>ret<sp/>=<sp/>I2S_writeIssue(handle,<sp/>&amp;writeBuffer1);</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/><sp/>ret<sp/>=<sp/>I2S_writeIssue(handle,<sp/>&amp;writeBuffer2);</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/>*<sp/><sp/>while(1)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>I2S_writeReclaim(handle,<sp/>&amp;pDesc);</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>pDesc-&gt;bufPtr<sp/><sp/>=<sp/>&amp;hello;;</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>pDesc-&gt;bufSize<sp/>=<sp/>sizeof(hello);</highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>I2S_writeIssue(handle,<sp/>pDesc);</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/>*<sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/>*<sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="196"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="197"><highlight class="comment"><sp/>*<sp/><sp/>###<sp/>Reading<sp/>Data<sp/>#</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>following<sp/>example<sp/>calls<sp/>I2S_readIssue()<sp/>to<sp/>queue<sp/>a<sp/>buffer<sp/>for</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/>*<sp/><sp/>reading<sp/>from<sp/>an<sp/>I2S<sp/>driver<sp/>instance.<sp/>It<sp/>first<sp/>queues<sp/>up<sp/>two<sp/>buffers<sp/>of</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/>*<sp/><sp/>text.<sp/>Within<sp/>an<sp/>infinite<sp/>loop,<sp/>it<sp/>then<sp/>calls<sp/>I2S_readReclaim()<sp/>to<sp/>retrieve</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/>*<sp/><sp/>a<sp/>full<sp/>buffer<sp/>of<sp/>data.</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="203"><highlight class="comment"><sp/>*<sp/><sp/>@code</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/>*<sp/><sp/>unsigned<sp/>char<sp/>rxBuffer[20];</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"><sp/>*<sp/><sp/>unsigned<sp/>char<sp/>rxBuffer1[20];</highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/>*<sp/><sp/>I2S_BufDesc<sp/>readBuffer1;</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/>*<sp/><sp/>I2S_BufDesc<sp/>readBuffer2;</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/>*<sp/><sp/>I2S_BufDesc<sp/>*pDesc<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="209"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"><sp/>*<sp/><sp/>readBuffer1.bufPtr<sp/>=<sp/>&amp;rxBuffer;</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/>*<sp/><sp/>readBuffer1.bufSize<sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/>*<sp/><sp/>readBuffer2.bufPtr<sp/>=<sp/>&amp;rxBuffer1;</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/>*<sp/><sp/>readBuffer2.bufSize<sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/>*<sp/><sp/>ret<sp/>=<sp/>I2S_readIssue(handle,<sp/>&amp;readBuffer1);</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/>*<sp/><sp/>ret<sp/>=<sp/>I2S_readIssue(handle,<sp/>&amp;readBuffer2);</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/>*<sp/><sp/>while(1)</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"><sp/>*<sp/><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>I2S_readReclaim(handle,<sp/>&amp;pDesc);</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>pDesc-&gt;bufPtr<sp/>=<sp/>&amp;rxBuffer;</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>pDesc-&gt;bufSize<sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>I2S_readIssue(handle,<sp/>pDesc);</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/>*<sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/>*<sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*<sp/><sp/>#<sp/>Implementation<sp/>#</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>I2S<sp/>driver<sp/>interface<sp/>module<sp/>is<sp/>joined<sp/>(at<sp/>link<sp/>time)<sp/>to<sp/>an</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/>*<sp/><sp/>array<sp/>of<sp/>I2S_Config<sp/>data<sp/>structures<sp/>named<sp/>*I2S_config*.</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>*<sp/><sp/>*I2S_config*<sp/>is<sp/>implemented<sp/>in<sp/>the<sp/>application<sp/>with<sp/>each<sp/>entry<sp/>being<sp/>an</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/>*<sp/><sp/>instance<sp/>of<sp/>a<sp/>I2S<sp/>peripheral.<sp/>Each<sp/>entry<sp/>in<sp/>*I2S_config*<sp/>contains<sp/>a:</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>(I2S_FxnTable<sp/>*)<sp/>to<sp/>a<sp/>set<sp/>of<sp/>functions<sp/>that<sp/>implement<sp/>a<sp/>I2S<sp/>peripheral</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>(void<sp/>*)<sp/>data<sp/>object<sp/>that<sp/>is<sp/>associated<sp/>with<sp/>the<sp/>I2S_FxnTable</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>(void<sp/>*)<sp/>hardware<sp/>attributes<sp/>that<sp/>are<sp/>associated<sp/>to<sp/>the<sp/>I2S_FxnTable</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ti_drivers_I2S__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ti_drivers_I2S__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_list_8h" kindref="compound">ti/drivers/utils/List.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="group___i2_s___c_o_n_t_r_o_l_1gaf919ac4341fca59988c28e16058fa819" refkind="member"><highlight class="preprocessor">#define<sp/>I2S_CMD_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="group___i2_s___c_o_n_t_r_o_l_1ga3fad4fcf6773f3c5946c4881631f838d" refkind="member"><highlight class="preprocessor">#define<sp/>I2S_STATUS_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="group___i2_s___s_t_a_t_u_s_1ga23118b46858671b6537d3a68721f0282" refkind="member"><highlight class="preprocessor">#define<sp/>I2S_STATUS_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="group___i2_s___s_t_a_t_u_s_1ga775a6dc5aa644d4cca2179afbafb63ad" refkind="member"><highlight class="preprocessor">#define<sp/>I2S_STATUS_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="group___i2_s___s_t_a_t_u_s_1ga649cf0c869381728fc9b56dfdbbd3e3d" refkind="member"><highlight class="preprocessor">#define<sp/>I2S_STATUS_UNDEFINEDCMD<sp/><sp/><sp/>(-2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="comment">/*<sp/>Add<sp/>I2S_CMD_&lt;commands&gt;<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="_i2_s_8h_1a81d0dd9da59128b28cb23c59fe57c939" refkind="member"><highlight class="preprocessor">#define<sp/>I2S_ERROR<sp/><sp/>(I2S_STATUS_ERROR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="_i2_s_8h_1a8fd310c110b6a9425cf61753f3e956ab" refkind="member"><highlight class="preprocessor">#define<sp/>I2S_WAIT_FOREVER<sp/>(~(0U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_i2_s___config__" kindref="compound">I2S_Config_</ref><sp/>*<ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref>;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="struct_i2_s___buf_desc__" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc_</ref><sp/>{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350" refid="struct_i2_s___buf_desc___1a7bca4a171985e2e79823d7a50497aaac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_list___elem" kindref="compound">List_Elem</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___buf_desc___1a7bca4a171985e2e79823d7a50497aaac" kindref="member">qElem</ref>;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="struct_i2_s___buf_desc___1ad38661a5fd618a6431cd41aad3600e2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_i2_s___buf_desc___1ad38661a5fd618a6431cd41aad3600e2d" kindref="member">bufPtr</ref>;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356" refid="struct_i2_s___buf_desc___1a30fc85c2b2ecda3dc62139ba2234a00b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___buf_desc___1a30fc85c2b2ecda3dc62139ba2234a00b" kindref="member">bufSize</ref>;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="struct_i2_s___buf_desc___1a7f532142040f5118cab4d5826a9d26f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uintptr_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___buf_desc___1a7f532142040f5118cab4d5826a9d26f4" kindref="member">descArg</ref>;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal">}<sp/><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref>;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372" refid="_i2_s_8h_1a760fd8eb272890d42560bcb494a3e2c0" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="_i2_s_8h_1a760fd8eb272890d42560bcb494a3e2c0" kindref="member">I2S_Callback</ref>)(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc</ref><sp/>*desc);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3b" kindref="member">I2S_DataMode_</ref><sp/>{</highlight></codeline>
+<codeline lineno="385" refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3ba2c7b409c7185250bef51c0e6de600d08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3ba2c7b409c7185250bef51c0e6de600d08" kindref="member">I2S_MODE_CALLBACK</ref>,</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393" refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3ba294b93c8f4917e45ac62b7c12b017f85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a144dbc75ebdd15a8f89f50e5100cff3ba294b93c8f4917e45ac62b7c12b017f85" kindref="member">I2S_MODE_ISSUERECLAIM</ref></highlight></codeline>
+<codeline lineno="394"><highlight class="normal">}<sp/><ref refid="_i2_s_8h_1a6a13d8bc9ec9d061c003bb5cb9917057" kindref="member">I2S_DataMode</ref>;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401" refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2" kindref="member">I2S_OpMode_</ref><sp/>{</highlight></codeline>
+<codeline lineno="402" refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a314552b49ae8d2f1d03c17e9dbf165d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a314552b49ae8d2f1d03c17e9dbf165d0" kindref="member">I2S_OPMODE_TX_ONLY</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="403" refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a053d6506ed5a619c4ac829fe685091e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a053d6506ed5a619c4ac829fe685091e0" kindref="member">I2S_OPMODE_RX_ONLY</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="404" refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a0c2c408585299080663f8eb6cc289c04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a8a7ee986496f241530f25ab28e6365c2a0c2c408585299080663f8eb6cc289c04" kindref="member">I2S_OPMODE_TX_RX_SYNC</ref><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="405"><highlight class="normal">}<sp/><ref refid="_i2_s_8h_1a2ec2f2e9bdb87f5d2ff1b23bcbfef416" kindref="member">I2S_OpMode</ref>;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9b" kindref="member">I2S_SerInActiveConfig_</ref><sp/>{</highlight></codeline>
+<codeline lineno="414" refid="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9ba66aeb3fe813ed8c66e3e9e145068cdbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9ba66aeb3fe813ed8c66e3e9e145068cdbd" kindref="member">I2S_SERCONFIG_INACT_TRI_STATE</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="415" refid="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9bab0f78819f591a0100ecef46f97e0c7d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9bab0f78819f591a0100ecef46f97e0c7d9" kindref="member">I2S_SERCONFIG_INACT_LOW_LEVEL</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="416" refid="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9ba5fd9b84daf2b878932e3a28a6c21ea57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1ab608da1add7b2277407d7c219ff0bb9ba5fd9b84daf2b878932e3a28a6c21ea57" kindref="member">I2S_SERCONFIG_INACT_HIGH_LEVEL</ref><sp/><sp/></highlight></codeline>
+<codeline lineno="417"><highlight class="normal">}<sp/><ref refid="_i2_s_8h_1af1308040949263df5bd0e6862d20c034" kindref="member">I2S_SerInActiveConfig</ref>;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424" refid="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5d" kindref="member">I2S_PinMode_</ref><sp/>{</highlight></codeline>
+<codeline lineno="425" refid="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5da581622afe5daeecf01b66fb9c07c026b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5da581622afe5daeecf01b66fb9c07c026b" kindref="member">I2S_PINMODE_RX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="426" refid="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5da70c2a974a0b4fe247127546c4583cdfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5da70c2a974a0b4fe247127546c4583cdfc" kindref="member">I2S_PINMODE_TX</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="427" refid="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5dace52223cb7a46097543160547d9ff35d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a77ff3b910cfb328b2449ab9a1fcccc5dace52223cb7a46097543160547d9ff35d" kindref="member">I2S_PINMODE_INACTIVE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="428"><highlight class="normal">}<sp/><ref refid="_i2_s_8h_1a4d65c38ae0ec5612527f112c34bec287" kindref="member">I2S_PinMode</ref>;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438" refid="struct_i2_s___params__" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_i2_s___params__" kindref="compound">I2S_Params_</ref><sp/>{</highlight></codeline>
+<codeline lineno="439" refid="struct_i2_s___params___1aa8e2628b50d7c1881dd6576a39002337" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>I2S_OpMode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1aa8e2628b50d7c1881dd6576a39002337" kindref="member">operationMode</ref>;</highlight></codeline>
+<codeline lineno="442" refid="struct_i2_s___params___1a9da18ece35f03dfbf5a68667f3587240" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1a9da18ece35f03dfbf5a68667f3587240" kindref="member">samplingFrequency</ref>;</highlight></codeline>
+<codeline lineno="445" refid="struct_i2_s___params___1a3bc2b7031a2ab4a422caa927d560282a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1a3bc2b7031a2ab4a422caa927d560282a" kindref="member">slotLength</ref>;</highlight></codeline>
+<codeline lineno="448" refid="struct_i2_s___params___1ac8067233eab0cc761558a0962bc513e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1ac8067233eab0cc761558a0962bc513e2" kindref="member">bitsPerSample</ref>;</highlight></codeline>
+<codeline lineno="451" refid="struct_i2_s___params___1a7dbc42c31318433c6da65070b34b4e44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1a7dbc42c31318433c6da65070b34b4e44" kindref="member">numChannels</ref>;</highlight></codeline>
+<codeline lineno="454" refid="struct_i2_s___params___1ab0727ebd99085c33e8862c9039f65fd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>I2S_DataMode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1ab0727ebd99085c33e8862c9039f65fd3" kindref="member">readMode</ref>;</highlight></codeline>
+<codeline lineno="457" refid="struct_i2_s___params___1abcd538ba2de411afbbfcdbb6278d08f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a760fd8eb272890d42560bcb494a3e2c0" kindref="member">I2S_Callback</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1abcd538ba2de411afbbfcdbb6278d08f8" kindref="member">readCallback</ref>;</highlight></codeline>
+<codeline lineno="460" refid="struct_i2_s___params___1a65bb94be2fc7be08852b518d80dfe244" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1a65bb94be2fc7be08852b518d80dfe244" kindref="member">readTimeout</ref>;</highlight></codeline>
+<codeline lineno="463" refid="struct_i2_s___params___1a792d9637b3a6e97192cd9e48cf075c83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>I2S_DataMode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1a792d9637b3a6e97192cd9e48cf075c83" kindref="member">writeMode</ref>;</highlight></codeline>
+<codeline lineno="466" refid="struct_i2_s___params___1a4392adb6b38a71d18a40f4383d90529d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a760fd8eb272890d42560bcb494a3e2c0" kindref="member">I2S_Callback</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1a4392adb6b38a71d18a40f4383d90529d" kindref="member">writeCallback</ref>;</highlight></codeline>
+<codeline lineno="469" refid="struct_i2_s___params___1ad9896c5bf8cac7146379cd58cc02c706" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___params___1ad9896c5bf8cac7146379cd58cc02c706" kindref="member">writeTimeout</ref>;</highlight></codeline>
+<codeline lineno="472" refid="struct_i2_s___params___1a94d0c88eab1b762489f9ecd7389b2e06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_i2_s___params___1a94d0c88eab1b762489f9ecd7389b2e06" kindref="member">customParams</ref>;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal">}<sp/><ref refid="_i2_s_8h_1a7f4e84de95edef54fd2415eaa3f62022" kindref="member">I2S_Params</ref>;</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480" refid="_i2_s_8h_1a91bfa91197cb8ff2388744088177dde8" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="_i2_s_8h_1a91bfa91197cb8ff2388744088177dde8" kindref="member">I2S_CloseFxn</ref>)<sp/>(I2S_Handle<sp/>handle);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486" refid="_i2_s_8h_1aab9f7e31e9e8eea04f7072c0f00f1482" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int_fast16_t<sp/>(*<ref refid="_i2_s_8h_1aab9f7e31e9e8eea04f7072c0f00f1482" kindref="member">I2S_ControlFxn</ref>)(I2S_Handle<sp/>handle,</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_fast16_t<sp/>cmd,</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494" refid="_i2_s_8h_1a17f21fcbc2627ef97044ee7ff6cfdee6" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="_i2_s_8h_1a17f21fcbc2627ef97044ee7ff6cfdee6" kindref="member">I2S_InitFxn</ref>)(I2S_Handle<sp/>handle);</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500" refid="_i2_s_8h_1a0a8c4787b4a5a262dc86d9dfa7da2840" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1ada845645663caf2bc9dc5816cb7f7c1c" kindref="member">I2S_Handle</ref><sp/>(*<ref refid="_i2_s_8h_1a0a8c4787b4a5a262dc86d9dfa7da2840" kindref="member">I2S_OpenFxn</ref>)(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___params__" kindref="compound">I2S_Params</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506" refid="_i2_s_8h_1ada70240cf4484f0817c7104ac6564c9c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int_fast16_t<sp/>(*<ref refid="_i2_s_8h_1ada70240cf4484f0817c7104ac6564c9c" kindref="member">I2S_IssueFxn</ref>)(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc</ref><sp/>*desc);</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512" refid="_i2_s_8h_1aeb85638443d9071ae1e46233cb7ed82c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>size_t<sp/>(*<ref refid="_i2_s_8h_1aeb85638443d9071ae1e46233cb7ed82c" kindref="member">I2S_ReclaimFxn</ref>)(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc</ref><sp/>**desc);</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519" refid="struct_i2_s___fxn_table__" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_i2_s___fxn_table__" kindref="compound">I2S_FxnTable_</ref><sp/>{</highlight></codeline>
+<codeline lineno="521" refid="struct_i2_s___fxn_table___1a2b8c0cffbb491cd410c330e4aaeb9bbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a91bfa91197cb8ff2388744088177dde8" kindref="member">I2S_CloseFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___fxn_table___1a2b8c0cffbb491cd410c330e4aaeb9bbd" kindref="member">closeFxn</ref>;</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524" refid="struct_i2_s___fxn_table___1abc6337cafc2cb3a9010c27ffb48fe161" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1aab9f7e31e9e8eea04f7072c0f00f1482" kindref="member">I2S_ControlFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___fxn_table___1abc6337cafc2cb3a9010c27ffb48fe161" kindref="member">controlFxn</ref>;</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="527" refid="struct_i2_s___fxn_table___1acf16543f94f4cc7e71dd7100e707fe34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a17f21fcbc2627ef97044ee7ff6cfdee6" kindref="member">I2S_InitFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___fxn_table___1acf16543f94f4cc7e71dd7100e707fe34" kindref="member">initFxn</ref>;</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530" refid="struct_i2_s___fxn_table___1af5d22941e566d37e0e065b1dcff0f135" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1a0a8c4787b4a5a262dc86d9dfa7da2840" kindref="member">I2S_OpenFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___fxn_table___1af5d22941e566d37e0e065b1dcff0f135" kindref="member">openFxn</ref>;</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533" refid="struct_i2_s___fxn_table___1ac5fdb64147f083e7d86c811861a07fbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1ada70240cf4484f0817c7104ac6564c9c" kindref="member">I2S_IssueFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___fxn_table___1ac5fdb64147f083e7d86c811861a07fbb" kindref="member">readIssueFxn</ref>;</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536" refid="struct_i2_s___fxn_table___1a336ee449bd72a5abcd1491243a5cda70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1aeb85638443d9071ae1e46233cb7ed82c" kindref="member">I2S_ReclaimFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___fxn_table___1a336ee449bd72a5abcd1491243a5cda70" kindref="member">readReclaimFxn</ref>;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539" refid="struct_i2_s___fxn_table___1a1e858f6467d5cae9d6ebe8e451ff7f91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1ada70240cf4484f0817c7104ac6564c9c" kindref="member">I2S_IssueFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___fxn_table___1a1e858f6467d5cae9d6ebe8e451ff7f91" kindref="member">writeIssueFxn</ref>;</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="542" refid="struct_i2_s___fxn_table___1a7ba463f594f6114ec9e959fd196cfe45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_i2_s_8h_1aeb85638443d9071ae1e46233cb7ed82c" kindref="member">I2S_ReclaimFxn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___fxn_table___1a7ba463f594f6114ec9e959fd196cfe45" kindref="member">writeReclaimFxn</ref>;</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="544"><highlight class="normal">}<sp/><ref refid="_i2_s_8h_1a0959b5a766682daea9bd3a0a0b803800" kindref="member">I2S_FxnTable</ref>;</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556" refid="struct_i2_s___config__" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_i2_s___config__" kindref="compound">I2S_Config_</ref><sp/>{</highlight></codeline>
+<codeline lineno="559" refid="struct_i2_s___config___1a50ac0d573cdbfccb611b2dce4c0e3283" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_i2_s___fxn_table__" kindref="compound">I2S_FxnTable</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="struct_i2_s___config___1a50ac0d573cdbfccb611b2dce4c0e3283" kindref="member">fxnTablePtr</ref>;</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="562" refid="struct_i2_s___config___1a932c69ee3828da7ab143a571118521b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_i2_s___config___1a932c69ee3828da7ab143a571118521b1" kindref="member">object</ref>;</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565" refid="struct_i2_s___config___1a95ba4b746375e69ef43e51cc5c8b966a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="struct_i2_s___config___1a95ba4b746375e69ef43e51cc5c8b966a" kindref="member">hwAttrs</ref>;</highlight></codeline>
+<codeline lineno="566"><highlight class="normal">}<sp/><ref refid="_i2_s_8h_1a519615f3b1ef24ac6c1f952539dbf6d4" kindref="member">I2S_Config</ref>;</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1a111a6b44f868cf90f7b25ced9f22ae1b" kindref="member">I2S_close</ref>(I2S_Handle<sp/>handle);</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int_fast16_t<sp/><ref refid="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" kindref="member">I2S_control</ref>(I2S_Handle<sp/>handle,</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint_fast16_t<sp/>cmd,</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1a79e8fdf40ee80c49b2cac09a3e428a82" kindref="member">I2S_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>I2S_Handle<sp/><ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open</ref>(uint_least8_t<sp/>index,<sp/><ref refid="struct_i2_s___params__" kindref="compound">I2S_Params</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight></codeline>
+<codeline lineno="677"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1a961c116273a6e8d4581278b2666f13b5" kindref="member">I2S_Params_init</ref>(<ref refid="struct_i2_s___params__" kindref="compound">I2S_Params</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int_fast16_t<sp/><ref refid="_i2_s_8h_1a1d8d386660de8651645b727affcc6f58" kindref="member">I2S_read</ref>(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc</ref><sp/>*desc);</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int_fast16_t<sp/><ref refid="_i2_s_8h_1a18ccba1da6bd7447dbf38760fa8551f3" kindref="member">I2S_readIssue</ref>(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc</ref><sp/>*desc);</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1a5678bf72e1d1954179d2a0db5c45eca8" kindref="member">I2S_readReclaim</ref>(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc</ref><sp/>**pDesc);</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight></codeline>
+<codeline lineno="732"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int_fast16_t<sp/><ref refid="_i2_s_8h_1adaff75bca871ee2d2f6ab4863819bc5d" kindref="member">I2S_write</ref>(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc</ref><sp/>*desc);</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"></highlight></codeline>
+<codeline lineno="746"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int_fast16_t<sp/><ref refid="_i2_s_8h_1a7449bb1fa51a85ffe9422e0b3490a246" kindref="member">I2S_writeIssue</ref>(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc</ref><sp/>*desc);</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="_i2_s_8h_1aa04de09198983b7bc17a000fc003ab1a" kindref="member">I2S_writeReclaim</ref>(I2S_Handle<sp/>handle,<sp/><ref refid="struct_i2_s___buf_desc__" kindref="compound">I2S_BufDesc</ref><sp/>**pDesc);</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight></codeline>
+<codeline lineno="760"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="761"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"></highlight></codeline>
+<codeline lineno="764"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ti_drivers_I2S__include<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h"/>
+  </compounddef>
+</doxygen>

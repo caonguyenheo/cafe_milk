@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="struct">
+    <name>CdnClient_t</name>
+    <filename>struct_cdn_client__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>Json_Filename_t</name>
+    <filename>struct_json___filename__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>OTA_memBlock</name>
+    <filename>struct_o_t_a__mem_block.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>Ota_optServerInfo</name>
+    <filename>struct_ota__opt_server_info.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>Ota_optVersionsInfo</name>
+    <filename>struct_ota__opt_versions_info.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>OtaArchive_BundleCmdTable_t</name>
+    <filename>struct_ota_archive___bundle_cmd_table__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>OtaArchive_BundleFileInfo_t</name>
+    <filename>struct_ota_archive___bundle_file_info__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>OtaArchive_t</name>
+    <filename>struct_ota_archive__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>OtaDirData_t</name>
+    <filename>struct_ota_dir_data__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>OtaFileInfo_t</name>
+    <filename>struct_ota_file_info__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>OtaJson</name>
+    <filename>struct_ota_json.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>OtaLib_t</name>
+    <filename>struct_ota_lib__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>OtaVersionFile_t</name>
+    <filename>struct_ota_version_file__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>TarObj_t</name>
+    <filename>struct_tar_obj__t.html</filename>
+  </compound>
+  <compound kind="group">
+    <name>OTA</name>
+    <title>OTA</title>
+    <filename>group___o_t_a.html</filename>
+    <member kind="function">
+      <type>int16_t</type>
+      <name>OTA_init</name>
+      <anchorfile>group___o_t_a.html</anchorfile>
+      <anchor>ga0dfcd395bf1bb26daff9a0e046bf129c</anchor>
+      <arglist>(OTA_runningMode runningMode, OTA_memBlock *pMemBlock, OTA_eventHandler eventHandler)</arglist>
+    </member>
+    <member kind="function">
+      <type>int16_t</type>
+      <name>OTA_run</name>
+      <anchorfile>group___o_t_a.html</anchorfile>
+      <anchor>ga86ce4394cd2240d90aa2eb70dfbc58c6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int16_t</type>
+      <name>OTA_set</name>
+      <anchorfile>group___o_t_a.html</anchorfile>
+      <anchor>ga9b76dab56b7831eaa50c8cc1f622ad40</anchor>
+      <arglist>(OTA_option option, int32_t optionLen, uint8_t *pOptionVal, int32_t flags)</arglist>
+    </member>
+    <member kind="function">
+      <type>int16_t</type>
+      <name>OTA_get</name>
+      <anchorfile>group___o_t_a.html</anchorfile>
+      <anchor>gaf4bdeee052426ffad36def271c04d926</anchor>
+      <arglist>(OTA_option option, int32_t *pOptionLen, uint8_t *pOptionVal)</arglist>
+    </member>
+  </compound>
+</tagfile>

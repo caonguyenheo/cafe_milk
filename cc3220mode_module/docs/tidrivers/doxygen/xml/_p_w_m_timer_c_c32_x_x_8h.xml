@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_p_w_m_timer_c_c32_x_x_8h" kind="file" language="C++">
+    <compoundname>PWMTimerCC32XX.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="_power_8h" local="no">ti/drivers/Power.h</includes>
+    <includes refid="_p_w_m_8h" local="no">ti/drivers/PWM.h</includes>
+    <incdepgraph>
+      <node id="198">
+        <label>stdbool.h</label>
+      </node>
+      <node id="200">
+        <label>stdint.h</label>
+      </node>
+      <node id="201">
+        <label>ti/drivers/utils/List.h</label>
+        <link refid="_list_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>stddef.h</label>
+      </node>
+      <node id="203">
+        <label>ti/drivers/PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>ti/drivers/Power.h</label>
+        <link refid="_power_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>PWMTimerCC32XX.h</label>
+        <link refid="_p_w_m_timer_c_c32_x_x_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2" prot="public">PWMTimerCC32XX_HWAttrsV2</innerclass>
+    <innerclass refid="struct_p_w_m_timer_c_c32_x_x___object" prot="public">PWMTimerCC32XX_Object</innerclass>
+      <sectiondef kind="user-defined">
+      <header>PIN 01, GPIO10, uses Timer3A for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1ga3618e170f0375e7f4c41263559d1282f" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_01</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="207" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 02, GPIO11, uses Timer3B for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1gaf155150099317e188cd7de403c210bf5" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_02</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="213" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 17, GPIO24, uses Timer0A for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1ga26150cae31df21ab2940bc1197ad9d89" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="219" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 19, uses Timer1B for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1ga0494fc4c430672164f9da33123e552c3" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_19</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="225" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 21, GPIO25, uses Timer1A for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1gaf825b711c08749fa231f21ebd4dc393d" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_21</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="231" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 64, GPIO9, uses Timer2B for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1ga8f18fefd94a4a5f08ae3ad0d620c8c97" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="237" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_p_w_m_timer_c_c32_x_x_8h_1a795e2ff7179b44e50d9623dd54c5894c" prot="public" static="no">
+        <type>struct <ref refid="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2" kindref="compound">PWMTimerCC32XX_HWAttrsV2</ref></type>
+        <definition>typedef struct PWMTimerCC32XX_HWAttrsV2  PWMTimerCC32XX_HWAttrsV2</definition>
+        <argsstring></argsstring>
+        <name>PWMTimerCC32XX_HWAttrsV2</name>
+        <briefdescription>
+<para>PWMTimerCC32XX Hardware attributes. </para>        </briefdescription>
+        <detaileddescription>
+<para>The &apos;pwmPin&apos; field identifies which physical pin to use for a particular PWM channel as well as the corresponding Timer resource used to source the PWM signal. The encoded pin identifier macros for initializing the &apos;pwmPin&apos; field must be selected from the <ref refid="group__pwm_pin_identifiers_c_c32_x_x" kindref="compound">PWMTimerCC32XX_HWAttrs &apos;pwmPin&apos; field options</ref> macros.</para><para>A sample structure is shown below: <programlisting><codeline><highlight class="normal">const<sp/>PWMTimerCC32XX_HWAttrsV2<sp/>pwmTimerCC32XXHWAttrs[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pwmPin<sp/>=<sp/>PWMTimerCC32XX_PIN_01,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pwmPin<sp/>=<sp/>PWMTimerCC32XX_PIN_02,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_p_w_m_timer_c_c32_x_x_8h_1acba8b9deeea6841f1c71f8a082f9eb1b" prot="public" static="no">
+        <type>struct <ref refid="struct_p_w_m_timer_c_c32_x_x___object" kindref="compound">PWMTimerCC32XX_Object</ref></type>
+        <definition>typedef struct PWMTimerCC32XX_Object  PWMTimerCC32XX_Object</definition>
+        <argsstring></argsstring>
+        <name>PWMTimerCC32XX_Object</name>
+        <briefdescription>
+<para>PWMTimerCC32XX Object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="312" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_p_w_m_timer_c_c32_x_x_8h_1aa0467f4acf73bc378b6964164d0065dc" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_p_w_m_8h_1a1c3809a9bd3c63a04edc1bafa78cc2e2" kindref="member">PWM_FxnTable</ref></type>
+        <definition>const PWM_FxnTable PWMTimerCC32XX_fxnTable</definition>
+        <argsstring></argsstring>
+        <name>PWMTimerCC32XX_fxnTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="270" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PWM driver implementation using CC32XX General Purpose Timers. </para>    </briefdescription>
+    <detaileddescription>
+<para>============================================================================</para><para>The PWM header file should be included in an application as follows: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/PWM.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/pwm/PWMTimerCC32XX.h&gt;</highlight></codeline>
+</programlisting></para><para>Refer to <ref refid="_p_w_m_8h" kindref="compound">PWM.h</ref> for a complete description of the PWM driver APIs provided and examples of their use.</para><para><heading level="2">Overview</heading>
+</para><para>This driver configures a CC32XX General Purpose Timer (GPT) in PWM mode. When in PWM mode, each GPT is divided into 2 PWM outputs. This driver manages each output as an independent PWM instance. The timer is automatically configured in count-down mode using the system clock as the source.</para><para>The timers operate at the system clock frequency (80 MHz). So each timer tick is 12.5 ns. The period and duty registers are 16 bits wide; thus 8-bit prescalars are used to extend period and duty registers. The maximum value supported is 16777215 timer counts ((2^24) - 1) or 209715 microseconds. Updates to a PWM&apos;s period or duty will occur instantaneously (GPT peripherals do not have shadow registers).</para><para>When stopped, the driver will configure the pin in GPIO mode &amp; set the output to the PWM_IdleLevel specified in the params used during open. Users need be aware that while PIN 19 can be used for PWM it is not GPIO capable, so it cannot be set to the PWM_IdleLevel. Output voltage will be PWM output at the moment it is stopped.</para><para>Finally, when this driver is opened, it automatically changes the PWM pin&apos;s parking configuration (used when entering low power modes) to correspond with the PWM_IDLE_LEVEL set in the PWM_params. However, this setting is not reverted once the driver is closed, it is the users responsibility to change the parking configuration if necessary.</para><para><heading level="3">CC32xx PWM Driver Configuration</heading>
+</para><para>In order to use the PWM APIs, the application is required to define 4 configuration items in the application Board.c file:</para><para><orderedlist>
+<listitem><para>An array of <ref refid="struct_p_w_m_timer_c_c32_x_x___object" kindref="compound">PWMTimerCC32XX_Object</ref> elements, which will be used by by the driver to maintain instance state. Below is an example <ref refid="struct_p_w_m_timer_c_c32_x_x___object" kindref="compound">PWMTimerCC32XX_Object</ref> array appropriate for the CC3220SF LaunchPad board: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/PWM.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/pwm/PWMTimerCC32XX.h&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PWMTimerCC32XX_Object<sp/>pwmTimerCC3220SObjects[CC3220SF_LAUNCHXL_PWMCOUNT];</highlight></codeline>
+</programlisting></para></listitem><listitem><para>An array of <ref refid="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2" kindref="compound">PWMTimerCC32XX_HWAttrsV2</ref> elements that defines which pin will be used by the corresponding PWM instance (see <ref refid="group__pwm_pin_identifiers_c_c32_x_x" kindref="compound">PWMTimerCC32XX_HWAttrs &apos;pwmPin&apos; field options</ref>). Below is an example <ref refid="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2" kindref="compound">PWMTimerCC32XX_HWAttrsV2</ref> array appropriate for the CC3220SF LaunchPad board: <programlisting><codeline><highlight class="normal">const<sp/>PWMTimerCC32XX_HWAttrsV2<sp/>pwmTimerCC3220SHWAttrs[CC3220SF_LAUNCHXL_PWMCOUNT]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pwmPin<sp/>=<sp/>PWMTimerCC32XX_PIN_01</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pwmPin<sp/>=<sp/>PWMTimerCC32XX_PIN_02</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para></listitem><listitem><para>An array of <ref refid="_p_w_m_8h_1af4fdcd36077e2aba99d6996ae1ea64ec" kindref="member">PWM_Config</ref> elements, one for each PWM instance. Each element of this array identifies the device-specific API function table, the device specific PWM object instance, and the device specific Hardware Attributes to be used for each PWM channel. Below is an example <ref refid="_p_w_m_8h_1af4fdcd36077e2aba99d6996ae1ea64ec" kindref="member">PWM_Config</ref> array appropriate for the CC3220SF LaunchPad board: <programlisting><codeline><highlight class="normal">const<sp/>PWM_Config<sp/>PWM_config[CC3220SF_LAUNCHXL_PWMCOUNT]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.fxnTablePtr<sp/>=<sp/>&amp;PWMTimerCC32XX_fxnTable,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.object<sp/>=<sp/>&amp;pwmTimerCC3220SObjects[CC3220SF_LAUNCHXL_PWM6],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.hwAttrs<sp/>=<sp/>&amp;pwmTimerCC3220SHWAttrs[CC3220SF_LAUNCHXL_PWM6]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.fxnTablePtr<sp/>=<sp/>&amp;PWMTimerCC32XX_fxnTable,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.object<sp/>=<sp/>&amp;pwmTimerCC3220SObjects[CC3220SF_LAUNCHXL_PWM7],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.hwAttrs<sp/>=<sp/>&amp;pwmTimerCC3220SHWAttrs[CC3220SF_LAUNCHXL_PWM7]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para></listitem><listitem><para>A global variable, PWM_count, that informs the driver how many PWM instances are defined: <programlisting><codeline><highlight class="normal">const<sp/>uint_least8_t<sp/>PWM_count<sp/>=<sp/>CC3220SF_LAUNCHXL_PWMCOUNT;</highlight></codeline>
+</programlisting></para></listitem></orderedlist>
+</para><para><heading level="3">Power Management</heading>
+</para><para>The TI-RTOS power management framework will try to put the device into the most power efficient mode whenever possible. Please see the technical reference manual for further details on each power mode.</para><para>The PWMTimerCC32XX driver explicitly sets a power constraint when the PWM is running to prevent LPDS. The following statements are valid:<itemizedlist>
+<listitem><para>After <ref refid="_p_w_m_8h_1ae97f12cfc5530577069f76813504da3a" kindref="member">PWM_open()</ref>: Clocks are enabled to the timer resource and the configured pwmPin. The device is still allowed to enter LPDS.</para></listitem><listitem><para>After <ref refid="_p_w_m_8h_1aa1bd0cc3f0fa52879422fca74d254378" kindref="member">PWM_start()</ref>: LPDS is disabled when PWM is running.</para></listitem><listitem><para>After <ref refid="_p_w_m_8h_1ae83a4cd327a07d6037ff1a8d72fb3ae6" kindref="member">PWM_stop()</ref>: Conditions are equal as for after PWM_open</para></listitem><listitem><para>After <ref refid="_p_w_m_8h_1a0e0f5899b067d27653db566fb148db11" kindref="member">PWM_close()</ref>: The underlying GPTimer is turned off, and the clocks to the timer and pin are disabled.. <hruler/>
+ </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015-2018,<sp/>Texas<sp/>Instruments<sp/>Incorporated</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor">#ifndef<sp/>ti_driver_pwm_PWMTimerCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ti_driver_pwm_PWMTimerCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_power_8h" kindref="compound">ti/drivers/Power.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_p_w_m_8h" kindref="compound">ti/drivers/PWM.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*<sp/><sp/>PWMTimer<sp/>port/pin<sp/>defines<sp/>for<sp/>pin<sp/>configuration.</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>timer<sp/>id<sp/>(0,<sp/>1,<sp/>2,<sp/>or<sp/>3)<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>31<sp/>-<sp/>28</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>timer<sp/>half<sp/>(0<sp/>=<sp/>A,<sp/>1<sp/>=<sp/>B)<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>27<sp/>-<sp/>24</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>GPIO<sp/>port<sp/>(0,<sp/>1,<sp/>2,<sp/>or<sp/>3)<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>23<sp/>-<sp/>20</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>GPIO<sp/>pin<sp/>index<sp/>within<sp/>the<sp/>port<sp/>(0<sp/>-<sp/>7)<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>19<sp/>-<sp/>16</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>pin<sp/>mode<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>11<sp/>-<sp/>8</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>pin<sp/>number<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>7<sp/>-<sp/>0</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>31<sp/>-<sp/>28<sp/><sp/><sp/><sp/><sp/>27<sp/>-<sp/>24<sp/><sp/><sp/><sp/><sp/><sp/>23<sp/>-<sp/>20<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>19<sp/>-<sp/>16<sp/><sp/><sp/><sp/><sp/><sp/><sp/>11<sp/>-<sp/>8<sp/><sp/><sp/>7<sp/>-<sp/>0</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/>*<sp/><sp/>-----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/>*<sp/><sp/>|<sp/>Timer<sp/>id<sp/>|<sp/>Timer<sp/>half<sp/>|<sp/>GPIO<sp/>port<sp/>|<sp/>GPIO<sp/>pin<sp/>index<sp/>|<sp/>pin<sp/>mode<sp/>|<sp/>pin<sp/>|</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/>*<sp/><sp/>-----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>CC32XX<sp/>has<sp/>fixed<sp/>GPIO<sp/>assignments<sp/>and<sp/>pin<sp/>modes<sp/>for<sp/>a<sp/>given<sp/>pin.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*<sp/><sp/>A<sp/>PWM<sp/>pin<sp/>mode<sp/>for<sp/>a<sp/>given<sp/>pin<sp/>has<sp/>a<sp/>fixed<sp/>timer/timer-half.</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_T0A<sp/><sp/>(0x00<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_T0B<sp/><sp/>(0x01<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_T1A<sp/><sp/>(0x10<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_T1B<sp/><sp/>(0x11<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_T2A<sp/><sp/>(0x20<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_T2B<sp/><sp/>(0x21<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_T3A<sp/><sp/>(0x30<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_T3B<sp/><sp/>(0x31<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_GPIO9<sp/><sp/><sp/>(0x11<sp/>&lt;&lt;<sp/>16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_GPIO10<sp/><sp/>(0x12<sp/>&lt;&lt;<sp/>16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_GPIO11<sp/><sp/>(0x13<sp/>&lt;&lt;<sp/>16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_GPIO24<sp/><sp/>(0x30<sp/>&lt;&lt;<sp/>16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_GPIO25<sp/><sp/>(0x31<sp/>&lt;&lt;<sp/>16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_GPIONONE<sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="group__pwm_pin_identifiers_c_c32_x_x_1ga3618e170f0375e7f4c41263559d1282f" refkind="member"><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_PIN_01<sp/><sp/>(PWMTimerCC32XX_T3A<sp/>|<sp/>PWMTimerCC32XX_GPIO10<sp/>|<sp/>0x0300)<sp/></highlight></codeline>
+<codeline lineno="213" refid="group__pwm_pin_identifiers_c_c32_x_x_1gaf155150099317e188cd7de403c210bf5" refkind="member"><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_PIN_02<sp/><sp/>(PWMTimerCC32XX_T3B<sp/>|<sp/>PWMTimerCC32XX_GPIO11<sp/>|<sp/>0x0301)<sp/></highlight></codeline>
+<codeline lineno="219" refid="group__pwm_pin_identifiers_c_c32_x_x_1ga26150cae31df21ab2940bc1197ad9d89" refkind="member"><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_PIN_17<sp/><sp/>(PWMTimerCC32XX_T0A<sp/>|<sp/>PWMTimerCC32XX_GPIO24<sp/>|<sp/>0x0510)<sp/></highlight></codeline>
+<codeline lineno="225" refid="group__pwm_pin_identifiers_c_c32_x_x_1ga0494fc4c430672164f9da33123e552c3" refkind="member"><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_PIN_19<sp/><sp/>(PWMTimerCC32XX_T1B<sp/>|<sp/>PWMTimerCC32XX_GPIONONE<sp/>|<sp/>0x0812)<sp/></highlight></codeline>
+<codeline lineno="231" refid="group__pwm_pin_identifiers_c_c32_x_x_1gaf825b711c08749fa231f21ebd4dc393d" refkind="member"><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_PIN_21<sp/><sp/>(PWMTimerCC32XX_T1A<sp/>|<sp/>PWMTimerCC32XX_GPIO25<sp/>|<sp/>0x0914)<sp/></highlight></codeline>
+<codeline lineno="237" refid="group__pwm_pin_identifiers_c_c32_x_x_1ga8f18fefd94a4a5f08ae3ad0d620c8c97" refkind="member"><highlight class="preprocessor">#define<sp/>PWMTimerCC32XX_PIN_64<sp/><sp/>(PWMTimerCC32XX_T2B<sp/>|<sp/>PWMTimerCC32XX_GPIO9<sp/>|<sp/>0x033F)<sp/><sp/></highlight></codeline>
+<codeline lineno="251"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Add<sp/>PWMTimerCC32XX_STATUS_*<sp/>macros<sp/>here<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="comment">/*<sp/>Add<sp/>PWMTimerCC32XX_CMD_*<sp/>macros<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="comment">/*<sp/>PWM<sp/>function<sp/>table<sp/>pointer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_p_w_m___fxn_table__" kindref="compound">PWM_FxnTable</ref><sp/><ref refid="_p_w_m_timer_c_c32_x_x_8h_1aa0467f4acf73bc378b6964164d0065dc" kindref="member">PWMTimerCC32XX_fxnTable</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2" kindref="compound">PWMTimerCC32XX_HWAttrsV2</ref><sp/>{</highlight></codeline>
+<codeline lineno="294" refid="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2_1a9b4f342c57b063fceb50b237ce5520de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_p_w_m_timer_c_c32_x_x___h_w_attrs_v2_1a9b4f342c57b063fceb50b237ce5520de" kindref="member">pwmPin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}<sp/><ref refid="_p_w_m_timer_c_c32_x_x_8h_1a795e2ff7179b44e50d9623dd54c5894c" kindref="member">PWMTimerCC32XX_HWAttrsV2</ref>;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="struct_p_w_m_timer_c_c32_x_x___object" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_p_w_m_timer_c_c32_x_x___object" kindref="compound">PWMTimerCC32XX_Object</ref><sp/>{</highlight></codeline>
+<codeline lineno="304" refid="struct_p_w_m_timer_c_c32_x_x___object_1a67c1603c655c379610acc0034d3998f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_power___notify_obj__" kindref="compound">Power_NotifyObj</ref><sp/><sp/><ref refid="struct_p_w_m_timer_c_c32_x_x___object_1a67c1603c655c379610acc0034d3998f0" kindref="member">postNotify</ref>;</highlight></codeline>
+<codeline lineno="305" refid="struct_p_w_m_timer_c_c32_x_x___object_1ad1e6ce6bc52478afd5aa3aea726cfefa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_p_w_m_timer_c_c32_x_x___object_1ad1e6ce6bc52478afd5aa3aea726cfefa" kindref="member">duty</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Current<sp/>duty<sp/>cycle<sp/>in<sp/>Duty_Unites<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="struct_p_w_m_timer_c_c32_x_x___object_1acd6c89fea0ac448356fa7de7619b03d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_p_w_m_timer_c_c32_x_x___object_1acd6c89fea0ac448356fa7de7619b03d0" kindref="member">period</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Current<sp/>period<sp/>PERIOD_Units<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="struct_p_w_m_timer_c_c32_x_x___object_1a429617ba3a57bb14a6dff2e65bd972dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_w_m_8h_1aad6f03b40ae1ba4362b264598c947e4c" kindref="member">PWM_Duty_Units</ref><sp/><sp/><sp/><ref refid="struct_p_w_m_timer_c_c32_x_x___object_1a429617ba3a57bb14a6dff2e65bd972dc" kindref="member">dutyUnits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Current<sp/>duty<sp/>cycle<sp/>unit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="struct_p_w_m_timer_c_c32_x_x___object_1aa95d589427aea557081b40f55eac3e39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_w_m_8h_1ac03072b64ddec3014d28e3bdcf6f84cb" kindref="member">PWM_Period_Units</ref><sp/><ref refid="struct_p_w_m_timer_c_c32_x_x___object_1aa95d589427aea557081b40f55eac3e39" kindref="member">periodUnits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Current<sp/>period<sp/>unit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="struct_p_w_m_timer_c_c32_x_x___object_1a2c93faff2f211dcc5462e6a37ad1549c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_w_m_8h_1aac611844d55b6be24f8a56902df9412f" kindref="member">PWM_IdleLevel</ref><sp/><sp/><sp/><sp/><ref refid="struct_p_w_m_timer_c_c32_x_x___object_1a2c93faff2f211dcc5462e6a37ad1549c" kindref="member">idleLevel</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>PWM<sp/>idle<sp/>level<sp/>when<sp/>stopped<sp/>/<sp/>not<sp/>started<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="struct_p_w_m_timer_c_c32_x_x___object_1a534de3f76b8648411daf6b56ecdd9581" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_p_w_m_timer_c_c32_x_x___object_1a534de3f76b8648411daf6b56ecdd9581" kindref="member">pwmStarted</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Used<sp/>to<sp/>gate<sp/>Power_set/releaseConstraint()<sp/>calls<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="struct_p_w_m_timer_c_c32_x_x___object_1a2ae2d2bbe265220e6f297bd65f98cbfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_p_w_m_timer_c_c32_x_x___object_1a2ae2d2bbe265220e6f297bd65f98cbfc" kindref="member">isOpen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>open<sp/>flag<sp/>used<sp/>to<sp/>check<sp/>if<sp/>PWM<sp/>is<sp/>opened<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}<sp/><ref refid="_p_w_m_timer_c_c32_x_x_8h_1acba8b9deeea6841f1c71f8a082f9eb1b" kindref="member">PWMTimerCC32XX_Object</ref>;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ti_driver_pwm_PWMTimerCC32XX__include<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h"/>
+  </compounddef>
+</doxygen>

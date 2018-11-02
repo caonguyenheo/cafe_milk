@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="group___u_a_r_t___c_m_d" kind="group">
+    <compoundname>UART_CMD</compoundname>
+    <title>Command Codes</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1ga38c3c7e9cdb00e0a717a4f326490e3e7" prot="public" static="no">
+        <name>UARTCC32XX_CMD_IS_BUSY</name>
+        <initializer>(<ref refid="group___u_a_r_t___c_o_n_t_r_o_l_1ga0f5a809e0884da33fef102236eb51644" kindref="member">UART_CMD_RESERVED</ref> + 0)</initializer>
+        <briefdescription>
+<para>Command used by UART_control to determines whether the UART transmitter is busy or not. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if the UART is transmitting, else <computeroutput>false</computeroutput> if all transmissions are complete. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="169" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1gab87e5a568435493f272b07bdbca9fb3b" prot="public" static="no">
+        <name>UARTCC32XX_CMD_IS_RX_DATA_AVAILABLE</name>
+        <initializer>(<ref refid="group___u_a_r_t___c_o_n_t_r_o_l_1ga0f5a809e0884da33fef102236eb51644" kindref="member">UART_CMD_RESERVED</ref> + 1)</initializer>
+        <briefdescription>
+<para>Command used by UART_control to determines if there are any characters in the receive FIFO. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if there is data in the receive FIFO, or <computeroutput>false</computeroutput> if there is no data in the receive FIFO. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="180" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1ga40a5ff3e171620cb3fa6288a56acb433" prot="public" static="no">
+        <name>UARTCC32XX_CMD_IS_TX_SPACE_AVAILABLE</name>
+        <initializer>(<ref refid="group___u_a_r_t___c_o_n_t_r_o_l_1ga0f5a809e0884da33fef102236eb51644" kindref="member">UART_CMD_RESERVED</ref> + 2)</initializer>
+        <briefdescription>
+<para>Command used by UART_control to determines if there is any space in the transmit FIFO. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if there is space available in the transmit FIFO, or <computeroutput>false</computeroutput> if there is no space available in the transmit FIFO. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="191" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1ga8901b84c7e2b48425c195150cee2c1bc" prot="public" static="no">
+        <name>UARTCC32XXDMA_CMD_IS_BUSY</name>
+        <initializer>(<ref refid="group___u_a_r_t___c_o_n_t_r_o_l_1ga0f5a809e0884da33fef102236eb51644" kindref="member">UART_CMD_RESERVED</ref> + 0)</initializer>
+        <briefdescription>
+<para>Command used by UART_control to determines whether the UART transmitter is busy or not. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if the UART is transmitting, else <computeroutput>false</computeroutput> if all transmissions are complete. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XXDMA.h" line="171" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XXDMA.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1ga767f57c3d3cc972d6dfbfe06b6be0a23" prot="public" static="no">
+        <name>UARTCC32XXDMA_CMD_IS_RX_DATA_AVAILABLE</name>
+        <initializer>(<ref refid="group___u_a_r_t___c_o_n_t_r_o_l_1ga0f5a809e0884da33fef102236eb51644" kindref="member">UART_CMD_RESERVED</ref> + 1)</initializer>
+        <briefdescription>
+<para>Command used by UART_control to determines if there are any characters in the receive FIFO. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if there is data in the receive FIFO, or <computeroutput>false</computeroutput> if there is no data in the receive FIFO. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XXDMA.h" line="182" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XXDMA.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1gabbb4459dc6b30b24df7363a63c04f1e4" prot="public" static="no">
+        <name>UARTCC32XXDMA_CMD_IS_TX_SPACE_AVAILABLE</name>
+        <initializer>(<ref refid="group___u_a_r_t___c_o_n_t_r_o_l_1ga0f5a809e0884da33fef102236eb51644" kindref="member">UART_CMD_RESERVED</ref> + 2)</initializer>
+        <briefdescription>
+<para>Command used by UART_control to determines if there is any space in the transmit FIFO. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if there is space available in the transmit FIFO, or <computeroutput>false</computeroutput> if there is no space available in the transmit FIFO. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XXDMA.h" line="193" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XXDMA.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1ga942596a37cb2109ae021f88f3d907bdc" prot="public" static="no">
+        <name>UART_CMD_PEEK</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+<para>Command code used by <ref refid="_u_a_r_t_8h_1a5ce79dc51ddc3ef73e8f08983bfee2c7" kindref="member">UART_control()</ref> to read the next unsigned char. </para>        </briefdescription>
+        <detaileddescription>
+<para>This command is used to read the next unsigned char from the UART&apos;s circular buffer without removing it. With this command code, <bold>arg</bold> is a pointer to an integer. <bold>*arg</bold> contains the next <computeroutput>unsigned</computeroutput> <computeroutput>char</computeroutput> read if data is present, else <bold>*arg</bold> is set to <ref refid="group___u_a_r_t___s_t_a_t_u_s_1ga2ae076f4aae13ca8e2aea674207df0ad" kindref="member">UART_STATUS_ERROR</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" line="348" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1gaf5be6db621c5b048637dc93b26797693" prot="public" static="no">
+        <name>UART_CMD_ISAVAILABLE</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+<para>Command code used by <ref refid="_u_a_r_t_8h_1a5ce79dc51ddc3ef73e8f08983bfee2c7" kindref="member">UART_control()</ref> to determine if the read buffer is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para>This command is used to determine if there are any unsigned chars available to read from the UART&apos;s circular buffer using <ref refid="_u_a_r_t_8h_1a15d77f489566ff9f7c9c28d25e9a0135" kindref="member">UART_read()</ref>. With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if data is available, else <computeroutput>false</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" line="359" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1ga470321cbd9eccf137ffbe6553ae7f35f" prot="public" static="no">
+        <name>UART_CMD_GETRXCOUNT</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+<para>Command code used by <ref refid="_u_a_r_t_8h_1a5ce79dc51ddc3ef73e8f08983bfee2c7" kindref="member">UART_control()</ref> to determine how many unsigned chars are in the read buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>This command is used to determine how many <computeroutput>unsigned</computeroutput> <computeroutput>chars</computeroutput> are available to read from the UART&apos;s circular buffer using <ref refid="_u_a_r_t_8h_1a15d77f489566ff9f7c9c28d25e9a0135" kindref="member">UART_read()</ref>. With this command code, <bold>arg</bold> is a pointer to an <emphasis>integer</emphasis>. <bold>*arg</bold> contains the number of <computeroutput>unsigned</computeroutput> <computeroutput>chars</computeroutput> available to read. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" line="370" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1gad67d01fa376f25bb28141d819647e8d3" prot="public" static="no">
+        <name>UART_CMD_RXENABLE</name>
+        <initializer>(3)</initializer>
+        <briefdescription>
+<para>Command code used by <ref refid="_u_a_r_t_8h_1a5ce79dc51ddc3ef73e8f08983bfee2c7" kindref="member">UART_control()</ref> to enable data receive by the UART. </para>        </briefdescription>
+        <detaileddescription>
+<para>This command is used to enable the UART in such a way that it stores received unsigned chars into the circular buffer. For drivers that support power management, this typically means that the UART will set a power constraint while receive is enabled. <ref refid="_u_a_r_t_8h_1ab6d1d6b7b1f9922484f9b8a0f78ed030" kindref="member">UART_open()</ref> will always have this option enabled. With this command code, <bold>arg</bold> is <emphasis>don&apos;t</emphasis> <emphasis>care</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" line="382" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_a_r_t___c_m_d_1gac0b19ce2fa9f43d3fe255bcdbd3cda7b" prot="public" static="no">
+        <name>UART_CMD_RXDISABLE</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+<para>Command code used by <ref refid="_u_a_r_t_8h_1a5ce79dc51ddc3ef73e8f08983bfee2c7" kindref="member">UART_control()</ref> to disable data received by the UART. </para>        </briefdescription>
+        <detaileddescription>
+<para>This command is used to disable the UART in such a way that ignores the data it receives. For drivers that support power management, this typically means that the driver will release any power constraints, to permit the system to enter low power modes. With this command code, <bold>arg</bold> is <emphasis>don&apos;t</emphasis> <emphasis>care</emphasis>.</para><para><simplesect kind="warning"><para>A call to <ref refid="_u_a_r_t_8h_1a15d77f489566ff9f7c9c28d25e9a0135" kindref="member">UART_read()</ref> does <bold>NOT</bold> re-enable receive. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" line="395" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/UART.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>UART_CMD_* macros are general command codes for <ref refid="_u_a_r_t_8h_1a5ce79dc51ddc3ef73e8f08983bfee2c7" kindref="member">UART_control()</ref>. Not all UART driver implementations support these command codes.</para><para>UARTCC32XX_CMD_* macros are command codes only defined in the <ref refid="_u_a_r_t_c_c32_x_x_8h" kindref="compound">UARTCC32XX.h</ref> driver implementation and need to: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/uart/UARTCC32XX.h&gt;</highlight></codeline>
+</programlisting></para><para>UARTCC32XXDMA_CMD_* macros are command codes only defined in the <ref refid="_u_a_r_t_c_c32_x_x_d_m_a_8h" kindref="compound">UARTCC32XXDMA.h</ref> driver implementation and need to: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/uart/UARTCC32XXDMA.h&gt;</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

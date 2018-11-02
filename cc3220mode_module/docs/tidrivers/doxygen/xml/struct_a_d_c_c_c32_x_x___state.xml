@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_a_d_c_c_c32_x_x___state" kind="struct" language="C++" prot="public">
+    <compoundname>ADCCC32XX_State</compoundname>
+    <includes refid="_a_d_c_c_c32_x_x_8h" local="no">ADCCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_d_c_c_c32_x_x___state_1ae608531d5facb94f70a3abd4a479cb9b" prot="public" static="no" mutable="no">
+        <type>uint_fast32_t</type>
+        <definition>uint_fast32_t ADCCC32XX_State::baseAddr</definition>
+        <argsstring></argsstring>
+        <name>baseAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" line="103" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c_c_c32_x_x___state_1a4243f13d0e34a969d4728af6c0aa212c" prot="public" static="no" mutable="no">
+        <type>uint_least8_t</type>
+        <definition>uint_least8_t ADCCC32XX_State::numOpenChannels</definition>
+        <argsstring></argsstring>
+        <name>numOpenChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" line="104" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ADCCC32XX_Status. </para>    </briefdescription>
+    <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" line="102" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" bodystart="102" bodyend="105"/>
+    <listofallmembers>
+      <member refid="struct_a_d_c_c_c32_x_x___state_1ae608531d5facb94f70a3abd4a479cb9b" prot="public" virt="non-virtual"><scope>ADCCC32XX_State</scope><name>baseAddr</name></member>
+      <member refid="struct_a_d_c_c_c32_x_x___state_1a4243f13d0e34a969d4728af6c0aa212c" prot="public" virt="non-virtual"><scope>ADCCC32XX_State</scope><name>numOpenChannels</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

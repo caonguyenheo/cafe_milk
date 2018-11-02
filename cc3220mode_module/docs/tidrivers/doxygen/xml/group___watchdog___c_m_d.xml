@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="group___watchdog___c_m_d" kind="group">
+    <compoundname>Watchdog_CMD</compoundname>
+    <title>Command Codes</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___watchdog___c_m_d_1ga2180fa0accdea4b379edd12a3a5d9113" prot="public" static="no">
+        <name>WatchdogCC32XX_CMD_IS_TIMER_ENABLE</name>
+        <initializer>(<ref refid="group___watchdog___c_o_n_t_r_o_l_1ga4d1b16e67bf555b8fe49182eb8a28b97" kindref="member">Watchdog_CMD_RESERVED</ref> + 0)</initializer>
+        <briefdescription>
+<para>Command used by Watchdog_control to determines whether the watchdog timer is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if the watchdog timer is enabled, else <computeroutput>false</computeroutput> if it is not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="138" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___watchdog___c_m_d_1ga5ef077bbc3ab4392e24fc13282993d8e" prot="public" static="no">
+        <name>WatchdogCC32XX_CMD_GET_TIMER_VALUE</name>
+        <initializer>(<ref refid="group___watchdog___c_o_n_t_r_o_l_1ga4d1b16e67bf555b8fe49182eb8a28b97" kindref="member">Watchdog_CMD_RESERVED</ref> + 1)</initializer>
+        <briefdescription>
+<para>Command used by Watchdog_control to gets the current watchdog timer value. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to an <emphasis>integer</emphasis>. <bold>*arg</bold> contains the current value of the watchdog timer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="148" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___watchdog___c_m_d_1ga8a2cadcd075a2a23fcfa9d980adf09a6" prot="public" static="no">
+        <name>WatchdogCC32XX_CMD_IS_TIMER_LOCKED</name>
+        <initializer>(<ref refid="group___watchdog___c_o_n_t_r_o_l_1ga4d1b16e67bf555b8fe49182eb8a28b97" kindref="member">Watchdog_CMD_RESERVED</ref> + 2)</initializer>
+        <briefdescription>
+<para>Command used by Watchdog_control to determines whether the watchdog timer is locked. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if the watchdog timer is locked, else <computeroutput>false</computeroutput> if it is not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="159" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___watchdog___c_m_d_1ga1d0226cc406f566d7832552edd06bc28" prot="public" static="no">
+        <name>WatchdogCC32XX_CMD_GET_TIMER_RELOAD_VALUE</name>
+        <initializer>(<ref refid="group___watchdog___c_o_n_t_r_o_l_1ga4d1b16e67bf555b8fe49182eb8a28b97" kindref="member">Watchdog_CMD_RESERVED</ref> + 3)</initializer>
+        <briefdescription>
+<para>Command used by Watchdog_control to gets the current watchdog timer reload value. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to an <emphasis>integer</emphasis>. <bold>*arg</bold> contains the current value loaded into the watchdog timer when the count reaches zero for the first time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="170" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Watchdog_CMD_* macros are general command codes for <ref refid="_watchdog_8h_1a513c121c62f277318a7c35b0b2bdc869" kindref="member">Watchdog_control()</ref>. Not all Watchdog driver implementations support these command codes.</para><para>WatchdogCC32XX_CMD_* macros are command codes only defined in the <ref refid="_watchdog_c_c32_x_x_8h" kindref="compound">WatchdogCC32XX.h</ref> driver implementation and need to: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/watchdog/WatchdogCC32XX.h&gt;</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

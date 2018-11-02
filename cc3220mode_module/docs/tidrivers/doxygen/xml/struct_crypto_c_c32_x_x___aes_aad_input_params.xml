@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_crypto_c_c32_x_x___aes_aad_input_params" kind="struct" language="C++" prot="public">
+    <compoundname>CryptoCC32XX_AesAadInputParams</compoundname>
+    <includes refid="_crypto_c_c32_x_x_8h" local="no">CryptoCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___aes_aad_input_params_1ae0cf3710fc1ed77b35c64fe837df79f0" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* CryptoCC32XX_AesAadInputParams::pKey2</definition>
+        <argsstring></argsstring>
+        <name>pKey2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointer to AES second key (CryptoCC32XX_AES_CCM) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="266" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___aes_aad_input_params_1a2294f21e519eb332f0385935f9ea0559" prot="public" static="no" mutable="no">
+        <type><ref refid="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5ca" kindref="member">CryptoCC32XX_AesKeySize</ref></type>
+        <definition>CryptoCC32XX_AesKeySize CryptoCC32XX_AesAadInputParams::key2Size</definition>
+        <argsstring></argsstring>
+        <name>key2Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AES second Key size type (CryptoCC32XX_AES_CCM) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="267" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___aes_aad_input_params_1ae02b19c042acb7036e165e4738efd73d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CryptoCC32XX_AesAadInputParams::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the additional authentication data in bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="268" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AES Additional Authentication Data input parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines the AES Additional Authentication Data input parameters used for CryptoCC32XX_AES_GCM and CryptoCC32XX_AES_CCM </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="265" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="264" bodyend="269"/>
+    <listofallmembers>
+      <member refid="struct_crypto_c_c32_x_x___aes_aad_input_params_1a2294f21e519eb332f0385935f9ea0559" prot="public" virt="non-virtual"><scope>CryptoCC32XX_AesAadInputParams</scope><name>key2Size</name></member>
+      <member refid="struct_crypto_c_c32_x_x___aes_aad_input_params_1ae02b19c042acb7036e165e4738efd73d" prot="public" virt="non-virtual"><scope>CryptoCC32XX_AesAadInputParams</scope><name>len</name></member>
+      <member refid="struct_crypto_c_c32_x_x___aes_aad_input_params_1ae0cf3710fc1ed77b35c64fe837df79f0" prot="public" virt="non-virtual"><scope>CryptoCC32XX_AesAadInputParams</scope><name>pKey2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_34019caba3b073e333e09e0636dc1306" kind="dir">
+    <compoundname>camera</compoundname>
+    <innerfile refid="_camera_c_c32_x_x_d_m_a_8h">CameraCC32XXDMA.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/"/>
+  </compounddef>
+</doxygen>

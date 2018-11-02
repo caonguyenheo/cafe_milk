@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_s_d_host_c_c32_x_x_8h" kind="file" language="C++">
+    <compoundname>SDHostCC32XX.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_s_d_8h" local="no">ti/drivers/SD.h</includes>
+    <includes local="no">ti/drivers/dpl/HwiP.h</includes>
+    <includes local="no">ti/drivers/dpl/SemaphoreP.h</includes>
+    <includes refid="_power_8h" local="no">ti/drivers/Power.h</includes>
+    <includes refid="_power_c_c32_x_x_8h" local="no">ti/drivers/power/PowerCC32XX.h</includes>
+    <includes refid="_u_d_m_a_c_c32_x_x_8h" local="no">ti/drivers/dma/UDMACC32XX.h</includes>
+    <incdepgraph>
+      <node id="229">
+        <label>stdbool.h</label>
+      </node>
+      <node id="225">
+        <label>ti/drivers/SD.h</label>
+        <link refid="_s_d_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>stdint.h</label>
+      </node>
+      <node id="230">
+        <label>ti/drivers/utils/List.h</label>
+        <link refid="_list_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>ti/devices/cc32xx/driverlib/rom_map.h</label>
+      </node>
+      <node id="237">
+        <label>ti/drivers/dma/UDMACC32XX.h</label>
+        <link refid="_u_d_m_a_c_c32_x_x_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>ti/drivers/dpl/SemaphoreP.h</label>
+      </node>
+      <node id="223">
+        <label>SDHostCC32XX.h</label>
+        <link refid="_s_d_host_c_c32_x_x_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>stddef.h</label>
+      </node>
+      <node id="234">
+        <label>ti/devices/cc32xx/driverlib/rom.h</label>
+      </node>
+      <node id="226">
+        <label>ti/drivers/dpl/HwiP.h</label>
+      </node>
+      <node id="233">
+        <label>ti/devices/cc32xx/inc/hw_types.h</label>
+      </node>
+      <node id="228">
+        <label>ti/drivers/Power.h</label>
+        <link refid="_power_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>ti/devices/cc32xx/driverlib/pin.h</label>
+      </node>
+      <node id="232">
+        <label>ti/drivers/power/PowerCC32XX.h</label>
+        <link refid="_power_c_c32_x_x_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1" prot="public">SDHostCC32XX_HWAttrsV1</innerclass>
+    <innerclass refid="struct_s_d_host_c_c32_x_x___object" prot="public">SDHostCC32XX_Object</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_s_d_host_c_c32_x_x_8h_1a5d50e6d11c9fb365978f31f1dcbd28a9" prot="public" static="no">
+        <name>SDHostCC32XX_PIN_06_SDCARD_DATA</name>
+        <initializer>0x0805</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="89" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_d_host_c_c32_x_x_8h_1aeec49bac201a171f8244737d9955adae" prot="public" static="no">
+        <name>SDHostCC32XX_PIN_07_SDCARD_CLK</name>
+        <initializer>0x0806</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="90" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_d_host_c_c32_x_x_8h_1a76bf7fa53044c6b0ad130d1de5e7846d" prot="public" static="no">
+        <name>SDHostCC32XX_PIN_08_SDCARD_CMD</name>
+        <initializer>0x0807</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="91" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_d_host_c_c32_x_x_8h_1ae9bd15604a3ae321ab181d7cb8fdc3bf" prot="public" static="no">
+        <name>SDHostCC32XX_PIN_01_SDCARD_CLK</name>
+        <initializer>0x0600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="92" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_d_host_c_c32_x_x_8h_1ac51233874d54441436061dd5ea2c8c71" prot="public" static="no">
+        <name>SDHostCC32XX_PIN_02_SDCARD_CMD</name>
+        <initializer>0x0601</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="93" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_d_host_c_c32_x_x_8h_1a309a157f81ed4f7d2c289964f0fd1150" prot="public" static="no">
+        <name>SDHostCC32XX_PIN_64_SDCARD_DATA</name>
+        <initializer>0x063f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="94" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_s_d_host_c_c32_x_x_8h_1ada5d01a779f64c2b41b3c058e29242fb" prot="public" static="no">
+        <type>struct <ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1" kindref="compound">SDHostCC32XX_HWAttrsV1</ref></type>
+        <definition>typedef struct SDHostCC32XX_HWAttrsV1  SDHostCC32XX_HWAttrsV1</definition>
+        <argsstring></argsstring>
+        <name>SDHostCC32XX_HWAttrsV1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_s_d_host_c_c32_x_x_8h_1a5eefa9286c87eb906e27af982d57234a" prot="public" static="no">
+        <type>struct <ref refid="struct_s_d_host_c_c32_x_x___object" kindref="compound">SDHostCC32XX_Object</ref></type>
+        <definition>typedef struct SDHostCC32XX_Object  SDHostCC32XX_Object</definition>
+        <argsstring></argsstring>
+        <name>SDHostCC32XX_Object</name>
+        <briefdescription>
+<para>SDHostCC32XX Object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="201" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_s_d_host_c_c32_x_x_8h_1ab3299949b2aa757aa4bac868d413b18d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_s_d_8h_1a0b2af1f4f88d5b6619cc659c01c99c61" kindref="member">SD_FxnTable</ref></type>
+        <definition>const SD_FxnTable sdHostCC32XX_fxnTable</definition>
+        <argsstring></argsstring>
+        <name>sdHostCC32XX_fxnTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SDHost driver implementation for CC32XX devices. </para>    </briefdescription>
+    <detaileddescription>
+<para>============================================================================</para><para>The SDHost header file should be included in an application as follows: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/SD.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/sd/SDHostCC32XX.h&gt;</highlight></codeline>
+</programlisting></para><para>Refer to <ref refid="_s_d_8h" kindref="compound">SD.h</ref> for a complete description of APIs &amp; example of use.</para><para>This SDHost driver implementation is designed to operate on a CC32XX SD Host controller using a micro DMA controller.</para><para>Note: The driver API&apos;s are not thread safe and must not be accessed through multiple threads without the use of mutexes.</para><para><heading level="2">DMA buffer alignment</heading>
+</para><para>When performing disk operations with a word aligned buffer the driver will make transfers using the DMA controller. Alternatively, if the buffer is not aligned, the data will be copied to the internal SD Host controller buffer using a polling method.</para><para><heading level="2">DMA Interrupts</heading>
+</para><para>When DMA is used, the micro DMA controller generates and IRQ on the perpheral&apos;s interrupt vector. This implementation automatically installs a DMA interrupt to service the assigned micro DMA channels.</para><para><heading level="2">DMA accessible memory</heading>
+</para><para>When DMA is used, it is the responsibility of the application to ensure that read/write buffers reside in memory that is accessible by the DMA. <hruler/>
+ </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2016-2018,<sp/>Texas<sp/>Instruments<sp/>Incorporated</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor">#ifndef<sp/>ti_drivers_sd_SDHostCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ti_drivers_sd_SDHostCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_s_d_8h" kindref="compound">ti/drivers/SD.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/drivers/dpl/HwiP.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/drivers/dpl/SemaphoreP.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_power_8h" kindref="compound">ti/drivers/Power.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_power_c_c32_x_x_8h" kindref="compound">ti/drivers/power/PowerCC32XX.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_u_d_m_a_c_c32_x_x_8h" kindref="compound">ti/drivers/dma/UDMACC32XX.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_s_d_host_c_c32_x_x_8h_1a5d50e6d11c9fb365978f31f1dcbd28a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDHostCC32XX_PIN_06_SDCARD_DATA<sp/><sp/>0x0805</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_s_d_host_c_c32_x_x_8h_1aeec49bac201a171f8244737d9955adae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDHostCC32XX_PIN_07_SDCARD_CLK<sp/><sp/><sp/>0x0806</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_s_d_host_c_c32_x_x_8h_1a76bf7fa53044c6b0ad130d1de5e7846d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDHostCC32XX_PIN_08_SDCARD_CMD<sp/><sp/><sp/>0x0807</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="_s_d_host_c_c32_x_x_8h_1ae9bd15604a3ae321ab181d7cb8fdc3bf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDHostCC32XX_PIN_01_SDCARD_CLK<sp/><sp/><sp/>0x0600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_s_d_host_c_c32_x_x_8h_1ac51233874d54441436061dd5ea2c8c71" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDHostCC32XX_PIN_02_SDCARD_CMD<sp/><sp/><sp/>0x0601</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="_s_d_host_c_c32_x_x_8h_1a309a157f81ed4f7d2c289964f0fd1150" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDHostCC32XX_PIN_64_SDCARD_DATA<sp/><sp/>0x063f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SDHost<sp/>function<sp/>table<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_s_d___fxn_table__" kindref="compound">SD_FxnTable</ref><sp/><ref refid="_s_d_host_c_c32_x_x_8h_1ab3299949b2aa757aa4bac868d413b18d" kindref="member">sdHostCC32XX_fxnTable</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1" kindref="compound">SDHostCC32XX_HWAttrsV1</ref><sp/>{</highlight></codeline>
+<codeline lineno="136" refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a8927631618c1dddff2d31b7b6e381c91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint_fast32_t<sp/><ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a8927631618c1dddff2d31b7b6e381c91" kindref="member">clkRate</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1afb1234183a776ea76fd4783b4f3f61f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int_fast32_t<sp/><ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1afb1234183a776ea76fd4783b4f3f61f5" kindref="member">intPriority</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1aca47b5691607142cf044dcebc800a4aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint_fast32_t<sp/><ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1aca47b5691607142cf044dcebc800a4aa" kindref="member">baseAddr</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a1ce7b2626d014f97978c286d2413a47f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a1ce7b2626d014f97978c286d2413a47f" kindref="member">rxChIdx</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a5b6329c66c64cca258e3b4e9c5d23fe6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a5b6329c66c64cca258e3b4e9c5d23fe6" kindref="member">txChIdx</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a2bebaf808520a4609084b03c919d08a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a2bebaf808520a4609084b03c919d08a6" kindref="member">dataPin</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1aa1e041e47ae623cb913717db93522d8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1aa1e041e47ae623cb913717db93522d8a" kindref="member">cmdPin</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a27f71f7078f2855f1dc528b9f7e042a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a27f71f7078f2855f1dc528b9f7e042a1" kindref="member">clkPin</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}<sp/><ref refid="_s_d_host_c_c32_x_x_8h_1ada5d01a779f64c2b41b3c058e29242fb" kindref="member">SDHostCC32XX_HWAttrsV1</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="struct_s_d_host_c_c32_x_x___object" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_s_d_host_c_c32_x_x___object" kindref="compound">SDHostCC32XX_Object</ref><sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Relative<sp/>Card<sp/>Address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="struct_s_d_host_c_c32_x_x___object_1aac4b18afc17797d3cc590947b073ccd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint_fast32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1aac4b18afc17797d3cc590947b073ccd1" kindref="member">rca</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>data<sp/>pointer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="struct_s_d_host_c_c32_x_x___object_1a8b8bc23f78070d96eafdd35d3d893243" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint_fast32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_s_d_host_c_c32_x_x___object_1a8b8bc23f78070d96eafdd35d3d893243" kindref="member">writeBuf</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>sectors<sp/>written<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="struct_s_d_host_c_c32_x_x___object_1a4190af51cfca8bbe21c14813414dc614" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint_fast32_t<sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1a4190af51cfca8bbe21c14813414dc614" kindref="member">writeSecCount</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>data<sp/>pointer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="struct_s_d_host_c_c32_x_x___object_1a4b784a9f033e348202f353ba412473a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint_fast32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_s_d_host_c_c32_x_x___object_1a4b784a9f033e348202f353ba412473a0" kindref="member">readBuf</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>sectors<sp/>read<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="struct_s_d_host_c_c32_x_x___object_1a46039abdfe619e8eaa1e8e53899ce850" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint_fast32_t<sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1a46039abdfe619e8eaa1e8e53899ce850" kindref="member">readSecCount</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>Semaphore<sp/>to<sp/>suspend<sp/>thread<sp/>execution<sp/>when<sp/>waiting<sp/>for<sp/>SD<sp/>Commands</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>or<sp/>data<sp/>transfers<sp/>to<sp/>complete.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="struct_s_d_host_c_c32_x_x___object_1a3bb48e74eb2696f0cf56b7bb4b2d4339" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SemaphoreP_Handle<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1a3bb48e74eb2696f0cf56b7bb4b2d4339" kindref="member">cmdSem</ref>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>SD<sp/>Card<sp/>interrupt<sp/>handle.</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="struct_s_d_host_c_c32_x_x___object_1a9a33d4b058de0312297881fb239865b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HwiP_Handle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1a9a33d4b058de0312297881fb239865b1" kindref="member">hwiHandle</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Determined<sp/>from<sp/>base<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="struct_s_d_host_c_c32_x_x___object_1ad5a03dbc4fd4b8269f7c1666a69eb130" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1ad5a03dbc4fd4b8269f7c1666a69eb130" kindref="member">powerMgrId</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LPDS<sp/>wake-up<sp/>notify<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="struct_s_d_host_c_c32_x_x___object_1a344a75d8e3384db6e03fb583c3b6b05d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_power___notify_obj__" kindref="compound">Power_NotifyObj</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1a344a75d8e3384db6e03fb583c3b6b05d" kindref="member">postNotify</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Previous<sp/>park<sp/>state<sp/>SDCARD_CLK<sp/>pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="struct_s_d_host_c_c32_x_x___object_1abf2893807f8a0390bb02028025107ce8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0f" kindref="member">PowerCC32XX_ParkState</ref><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1abf2893807f8a0390bb02028025107ce8" kindref="member">prevParkCLK</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SDCARD_CLK<sp/>pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="struct_s_d_host_c_c32_x_x___object_1a0106038a8879f79b093f404328ff8cad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1a0106038a8879f79b093f404328ff8cad" kindref="member">clkPin</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>UDMA<sp/>Handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="struct_s_d_host_c_c32_x_x___object_1ad4330f75f1baa786cbcc353e6b9c538e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_u_d_m_a_c_c32_x_x___config" kindref="compound">UDMACC32XX_Handle</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1ad4330f75f1baa786cbcc353e6b9c538e" kindref="member">dmaHandle</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SD<sp/>Card<sp/>command<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="struct_s_d_host_c_c32_x_x___object_1a4703f5b851b47bbef1b8f122ab7ce4c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>int_fast8_t<sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1a4703f5b851b47bbef1b8f122ab7ce4c4" kindref="member">stat</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>State<sp/>of<sp/>the<sp/>driver<sp/>(open<sp/>or<sp/>closed)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="struct_s_d_host_c_c32_x_x___object_1a6fbba81dc56fa44767d79e87fd3f074c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1a6fbba81dc56fa44767d79e87fd3f074c" kindref="member">isOpen</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SDCard<sp/>Card<sp/>Command<sp/>Class(CCC)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="struct_s_d_host_c_c32_x_x___object_1ac4ba856e5f5d0d3ed767b1f208467e49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_d_8h_1a8c1e950f850d3b40ed19b7a9898fe7d3" kindref="member">SD_CardType</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_d_host_c_c32_x_x___object_1ac4ba856e5f5d0d3ed767b1f208467e49" kindref="member">cardType</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}<sp/><ref refid="_s_d_host_c_c32_x_x_8h_1a5eefa9286c87eb906e27af982d57234a" kindref="member">SDHostCC32XX_Object</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ti_drivers_sd_SDHostCC32XX__include<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="group__pwm_pin_identifiers_c_c32_x_x" kind="group">
+    <compoundname>pwmPinIdentifiersCC32XX</compoundname>
+    <title>PWMTimerCC32XX_HWAttrs &apos;pwmPin&apos; field options</title>
+      <sectiondef kind="user-defined">
+      <header>PIN 01, GPIO10, uses Timer3A for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1ga3618e170f0375e7f4c41263559d1282f" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_01</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="207" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 02, GPIO11, uses Timer3B for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1gaf155150099317e188cd7de403c210bf5" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_02</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="213" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 17, GPIO24, uses Timer0A for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1ga26150cae31df21ab2940bc1197ad9d89" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="219" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 19, uses Timer1B for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1ga0494fc4c430672164f9da33123e552c3" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_19</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="225" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 21, GPIO25, uses Timer1A for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1gaf825b711c08749fa231f21ebd4dc393d" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_21</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="231" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 64, GPIO9, uses Timer2B for PWM.</header>
+      <memberdef kind="define" id="group__pwm_pin_identifiers_c_c32_x_x_1ga8f18fefd94a4a5f08ae3ad0d620c8c97" prot="public" static="no">
+        <name>PWMTimerCC32XX_PIN_64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" line="237" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/pwm/PWMTimerCC32XX.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

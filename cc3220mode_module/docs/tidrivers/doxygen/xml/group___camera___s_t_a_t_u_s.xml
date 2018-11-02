@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="group___camera___s_t_a_t_u_s" kind="group">
+    <compoundname>Camera_STATUS</compoundname>
+    <title>Status Codes</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___camera___s_t_a_t_u_s_1gaa4d73b4da4ce113c8fb545d1f2649257" prot="public" static="no">
+        <name>CAMERA_STATUS_SUCCESS</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+<para>Successful status code returned by <ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref> returns CAMERA_STATUS_SUCCESS if the control code was executed successfully. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="228" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___camera___s_t_a_t_u_s_1ga2863402eca66d26cf447fc02340a0d45" prot="public" static="no">
+        <name>CAMERA_STATUS_ERROR</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+<para>Generic error status code returned by <ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref> returns CAMERA_STATUS_ERROR if the control code was not executed successfully. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="236" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___camera___s_t_a_t_u_s_1gaae8cae4253d68cc8ae921b63a74d1cb9" prot="public" static="no">
+        <name>CAMERA_STATUS_UNDEFINEDCMD</name>
+        <initializer>(-2)</initializer>
+        <briefdescription>
+<para>An error status code returned by <ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref> for undefined command codes. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref> returns CAMERA_STATUS_UNDEFINEDCMD if the control code is not recognized by the driver implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" line="245" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/Camera.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Camera_STATUS_* macros are general status codes returned by <ref refid="_camera_8h_1a24e145b3a8c57337dedcdeb2e6a9ece6" kindref="member">Camera_control()</ref></para><para>CameraCC32XXDMA_STATUS_* macros are command codes only defined in the <ref refid="_camera_c_c32_x_x_d_m_a_8h" kindref="compound">CameraCC32XXDMA.h</ref> driver implementation and need to: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/camera/CameraCC32XXDMA.h&gt;</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>
