@@ -107,10 +107,10 @@ void spi_tranfer_handler()
 	{
 		memset((void *)rx_buffer_spi, 0x0, SPI_SIZE);
 
-		memcpy(tx_buffer_spi, gBuff_rx, SPI_SIZE/2);
+		memcpy(tx_buffer_spi, gBuff_rx, SPI_SIZE);
 
 
-		transaction1.count = 818;
+		transaction1.count = 816;
 		transaction1.txBuf = (void *)(tx_buffer_spi);
 		transaction1.rxBuf = (void *)(rx_buffer_spi);
 
