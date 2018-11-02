@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_s_d_host_c_c32_x_x___object" kind="struct" language="C++" prot="public">
+    <compoundname>SDHostCC32XX_Object</compoundname>
+    <includes refid="_s_d_host_c_c32_x_x_8h" local="no">SDHostCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1aac4b18afc17797d3cc590947b073ccd1" prot="public" static="no" mutable="no">
+        <type>uint_fast32_t</type>
+        <definition>uint_fast32_t SDHostCC32XX_Object::rca</definition>
+        <argsstring></argsstring>
+        <name>rca</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="167" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a8b8bc23f78070d96eafdd35d3d893243" prot="public" static="no" mutable="no">
+        <type>const uint_fast32_t *</type>
+        <definition>const uint_fast32_t* SDHostCC32XX_Object::writeBuf</definition>
+        <argsstring></argsstring>
+        <name>writeBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="169" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a4190af51cfca8bbe21c14813414dc614" prot="public" static="no" mutable="no">
+        <type>uint_fast32_t</type>
+        <definition>volatile uint_fast32_t SDHostCC32XX_Object::writeSecCount</definition>
+        <argsstring></argsstring>
+        <name>writeSecCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="171" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a4b784a9f033e348202f353ba412473a0" prot="public" static="no" mutable="no">
+        <type>uint_fast32_t *</type>
+        <definition>uint_fast32_t* SDHostCC32XX_Object::readBuf</definition>
+        <argsstring></argsstring>
+        <name>readBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="173" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a46039abdfe619e8eaa1e8e53899ce850" prot="public" static="no" mutable="no">
+        <type>uint_fast32_t</type>
+        <definition>volatile uint_fast32_t SDHostCC32XX_Object::readSecCount</definition>
+        <argsstring></argsstring>
+        <name>readSecCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="175" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a3bb48e74eb2696f0cf56b7bb4b2d4339" prot="public" static="no" mutable="no">
+        <type>SemaphoreP_Handle</type>
+        <definition>SemaphoreP_Handle SDHostCC32XX_Object::cmdSem</definition>
+        <argsstring></argsstring>
+        <name>cmdSem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="180" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a9a33d4b058de0312297881fb239865b1" prot="public" static="no" mutable="no">
+        <type>HwiP_Handle</type>
+        <definition>HwiP_Handle SDHostCC32XX_Object::hwiHandle</definition>
+        <argsstring></argsstring>
+        <name>hwiHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="184" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1ad5a03dbc4fd4b8269f7c1666a69eb130" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int SDHostCC32XX_Object::powerMgrId</definition>
+        <argsstring></argsstring>
+        <name>powerMgrId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="186" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a344a75d8e3384db6e03fb583c3b6b05d" prot="public" static="no" mutable="no">
+        <type><ref refid="_power_8h_1a380d08b754e6f3f096349ab5fc464209" kindref="member">Power_NotifyObj</ref></type>
+        <definition>Power_NotifyObj SDHostCC32XX_Object::postNotify</definition>
+        <argsstring></argsstring>
+        <name>postNotify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="188" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1abf2893807f8a0390bb02028025107ce8" prot="public" static="no" mutable="no">
+        <type><ref refid="_power_c_c32_x_x_8h_1aed4c2508d1c416af97dbd8a8cb4d2f0f" kindref="member">PowerCC32XX_ParkState</ref></type>
+        <definition>PowerCC32XX_ParkState SDHostCC32XX_Object::prevParkCLK</definition>
+        <argsstring></argsstring>
+        <name>prevParkCLK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="190" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a0106038a8879f79b093f404328ff8cad" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SDHostCC32XX_Object::clkPin</definition>
+        <argsstring></argsstring>
+        <name>clkPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="192" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1ad4330f75f1baa786cbcc353e6b9c538e" prot="public" static="no" mutable="no">
+        <type><ref refid="_u_d_m_a_c_c32_x_x_8h_1af59f3e7aaf41ab38389b3978751486b0" kindref="member">UDMACC32XX_Handle</ref></type>
+        <definition>UDMACC32XX_Handle SDHostCC32XX_Object::dmaHandle</definition>
+        <argsstring></argsstring>
+        <name>dmaHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="194" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a4703f5b851b47bbef1b8f122ab7ce4c4" prot="public" static="no" mutable="no">
+        <type>int_fast8_t</type>
+        <definition>volatile int_fast8_t SDHostCC32XX_Object::stat</definition>
+        <argsstring></argsstring>
+        <name>stat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="196" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1a6fbba81dc56fa44767d79e87fd3f074c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SDHostCC32XX_Object::isOpen</definition>
+        <argsstring></argsstring>
+        <name>isOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="198" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___object_1ac4ba856e5f5d0d3ed767b1f208467e49" prot="public" static="no" mutable="no">
+        <type><ref refid="_s_d_8h_1a8c1e950f850d3b40ed19b7a9898fe7d3" kindref="member">SD_CardType</ref></type>
+        <definition>SD_CardType SDHostCC32XX_Object::cardType</definition>
+        <argsstring></argsstring>
+        <name>cardType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="200" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SDHostCC32XX Object. </para>    </briefdescription>
+    <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="225">
+        <label>List_Elem</label>
+        <link refid="struct_list___elem"/>
+        <childnode refid="225" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="224">
+        <label>Power_NotifyObj_</label>
+        <link refid="struct_power___notify_obj__"/>
+        <childnode refid="225" relation="usage">
+          <edgelabel>link</edgelabel>
+        </childnode>
+      </node>
+      <node id="226">
+        <label>UDMACC32XX_Config</label>
+        <link refid="struct_u_d_m_a_c_c32_x_x___config"/>
+      </node>
+      <node id="223">
+        <label>SDHostCC32XX_Object</label>
+        <link refid="struct_s_d_host_c_c32_x_x___object"/>
+        <childnode refid="224" relation="usage">
+          <edgelabel>postNotify</edgelabel>
+        </childnode>
+        <childnode refid="226" relation="usage">
+          <edgelabel>dmaHandle</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="165" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="165" bodyend="201"/>
+    <listofallmembers>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1ac4ba856e5f5d0d3ed767b1f208467e49" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>cardType</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a0106038a8879f79b093f404328ff8cad" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>clkPin</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a3bb48e74eb2696f0cf56b7bb4b2d4339" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>cmdSem</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1ad4330f75f1baa786cbcc353e6b9c538e" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>dmaHandle</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a9a33d4b058de0312297881fb239865b1" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>hwiHandle</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a6fbba81dc56fa44767d79e87fd3f074c" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>isOpen</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a344a75d8e3384db6e03fb583c3b6b05d" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>postNotify</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1ad5a03dbc4fd4b8269f7c1666a69eb130" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>powerMgrId</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1abf2893807f8a0390bb02028025107ce8" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>prevParkCLK</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1aac4b18afc17797d3cc590947b073ccd1" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>rca</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a4b784a9f033e348202f353ba412473a0" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>readBuf</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a46039abdfe619e8eaa1e8e53899ce850" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>readSecCount</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a4703f5b851b47bbef1b8f122ab7ce4c4" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>stat</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a8b8bc23f78070d96eafdd35d3d893243" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>writeBuf</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___object_1a4190af51cfca8bbe21c14813414dc614" prot="public" virt="non-virtual"><scope>SDHostCC32XX_Object</scope><name>writeSecCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="group__capture_pin_identifiers_c_c32_x_x" kind="group">
+    <compoundname>capturePinIdentifiersCC32XX</compoundname>
+    <title>CaptureCC32XX_HWAttrs &apos;capturePin&apos;</title>
+      <sectiondef kind="user-defined">
+      <header>PIN 01, GPIO10, uses Timer0B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaab6f92096fe054b126140412c4aca3fd" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_01</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="130" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 02, GPIO11, uses Timer1A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga89546c923e06750d54018fa7ca400cbe" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_02</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="136" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 03, GPIO12, uses Timer1B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga03bd2e7d3aea434e577df20537563dc8" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_03</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="142" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 04, GPIO13, uses Timer2A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaa4906df49fe0732139dce8f1f8ee723d" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_04</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="148" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 05, GPIO14, uses Timer2B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaf2b1e61b620b825511af385ef5a3f9ad" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_05</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="154" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 06, GPIO15, uses Timer3A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gad83dbb82c35acc6a2b1804d386bca3de" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_06</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="160" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 07, GPIO16, uses Timer3B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gab5f47fc3b13c4444838eca9a6d2cdc32" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_07</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="166" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 15, GPIO22, uses Timer2A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaa5354f8a446fe1c99c33a08d59d038c6" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="172" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 17, GPIO24 (TDO), uses Timer3A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaa92ca8344ad77c6c2003713301533193" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="178" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 50, GPIO0, uses Timer0A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gab0cdb9a66537366b684b714a091b2f91" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_50</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="184" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 53, GPIO30, uses Timer2B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga97028e10717b482f1761b7688d79dc2a" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_53</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="190" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 55, GPIO1, uses Timer0B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga93ea1364563c9c42e85016b6bc41b7a3" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_55</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="196" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 57, GPIO2, uses Timer1A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga78d1d540dbbd4998a6d229e5e5c72f62" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_57</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="202" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 60, GPIO5, uses Timer2B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga73ed11859cb1948650013bfd9f798b0c" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_60</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="208" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 61, GPIO6, uses Timer3A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaa0013ba561bdc94f115ae0dc1efa107e" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_61</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="214" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 63, GPIO8, uses Timer3A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gafda041247ad55e7d661d3a15e4a7be29" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_63</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="220" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 64, GPIO9, uses Timer0A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga3ebeec1d545d6a20399d2d1555022677" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="226" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>field options. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

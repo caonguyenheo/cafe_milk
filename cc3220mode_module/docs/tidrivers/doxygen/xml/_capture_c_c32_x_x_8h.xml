@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_capture_c_c32_x_x_8h" kind="file" language="C++">
+    <compoundname>CaptureCC32XX.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_capture_8h" local="no">ti/drivers/Capture.h</includes>
+    <includes refid="_power_8h" local="no">ti/drivers/Power.h</includes>
+    <includes local="no">ti/drivers/dpl/HwiP.h</includes>
+    <includes local="no">ti/devices/cc32xx/inc/hw_ints.h</includes>
+    <includes local="no">ti/devices/cc32xx/inc/hw_ocp_shared.h</includes>
+    <incdepgraph>
+      <node id="30">
+        <label>stdbool.h</label>
+      </node>
+      <node id="32">
+        <label>ti/drivers/Capture.h</label>
+        <link refid="_capture_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>stdint.h</label>
+      </node>
+      <node id="34">
+        <label>ti/drivers/utils/List.h</label>
+        <link refid="_list_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>stddef.h</label>
+      </node>
+      <node id="37">
+        <label>ti/devices/cc32xx/inc/hw_ints.h</label>
+      </node>
+      <node id="36">
+        <label>ti/drivers/dpl/HwiP.h</label>
+      </node>
+      <node id="33">
+        <label>ti/drivers/Power.h</label>
+        <link refid="_power_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>CaptureCC32XX.h</label>
+        <link refid="_capture_c_c32_x_x_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>ti/devices/cc32xx/inc/hw_ocp_shared.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_capture_c_c32_x_x___h_w_attrs__" prot="public">CaptureCC32XX_HWAttrs_</innerclass>
+    <innerclass refid="struct_capture_c_c32_x_x___object__" prot="public">CaptureCC32XX_Object_</innerclass>
+      <sectiondef kind="user-defined">
+      <header>PIN 01, GPIO10, uses Timer0B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaab6f92096fe054b126140412c4aca3fd" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_01</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="130" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 02, GPIO11, uses Timer1A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga89546c923e06750d54018fa7ca400cbe" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_02</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="136" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 03, GPIO12, uses Timer1B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga03bd2e7d3aea434e577df20537563dc8" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_03</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="142" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 04, GPIO13, uses Timer2A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaa4906df49fe0732139dce8f1f8ee723d" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_04</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="148" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 05, GPIO14, uses Timer2B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaf2b1e61b620b825511af385ef5a3f9ad" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_05</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="154" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 06, GPIO15, uses Timer3A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gad83dbb82c35acc6a2b1804d386bca3de" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_06</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="160" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 07, GPIO16, uses Timer3B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gab5f47fc3b13c4444838eca9a6d2cdc32" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_07</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="166" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 15, GPIO22, uses Timer2A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaa5354f8a446fe1c99c33a08d59d038c6" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="172" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 17, GPIO24 (TDO), uses Timer3A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaa92ca8344ad77c6c2003713301533193" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="178" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 50, GPIO0, uses Timer0A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gab0cdb9a66537366b684b714a091b2f91" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_50</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="184" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 53, GPIO30, uses Timer2B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga97028e10717b482f1761b7688d79dc2a" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_53</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="190" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 55, GPIO1, uses Timer0B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga93ea1364563c9c42e85016b6bc41b7a3" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_55</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="196" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 57, GPIO2, uses Timer1A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga78d1d540dbbd4998a6d229e5e5c72f62" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_57</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="202" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 60, GPIO5, uses Timer2B for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga73ed11859cb1948650013bfd9f798b0c" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_60</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="208" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 61, GPIO6, uses Timer3A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gaa0013ba561bdc94f115ae0dc1efa107e" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_61</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="214" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 63, GPIO8, uses Timer3A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1gafda041247ad55e7d661d3a15e4a7be29" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_63</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="220" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PIN 64, GPIO9, uses Timer0A for Capture.</header>
+      <memberdef kind="define" id="group__capture_pin_identifiers_c_c32_x_x_1ga3ebeec1d545d6a20399d2d1555022677" prot="public" static="no">
+        <name>CaptureCC32XX_PIN_64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="226" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_capture_c_c32_x_x_8h_1a9cf000c7c9d9c730dfeee4fb112cdd25" prot="public" static="no">
+        <type>struct <ref refid="struct_capture_c_c32_x_x___h_w_attrs__" kindref="compound">CaptureCC32XX_HWAttrs_</ref></type>
+        <definition>typedef struct CaptureCC32XX_HWAttrs_  CaptureCC32XX_HWAttrs</definition>
+        <argsstring></argsstring>
+        <name>CaptureCC32XX_HWAttrs</name>
+        <briefdescription>
+<para>CaptureCC32XX Hardware Attributes. </para>        </briefdescription>
+        <detaileddescription>
+<para>Timer hardware attributes that tell the CaptureCC32XX driver specific hardware configurations and interrupt/priority settings.</para><para>A sample structure is shown below: <programlisting><codeline><highlight class="normal">const<sp/>CaptureCC32XX_HWAttrs<sp/>captureCC32XXHWAttrs[]<sp/>=</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.capturePin<sp/>=<sp/>CaptureCC32XX_PIN_04,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intPriority<sp/>=<sp/>~0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.capturePin<sp/>=<sp/>CaptureCC32XX_PIN_05,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intPriority<sp/>=<sp/>~0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_capture_c_c32_x_x_8h_1a0ed3781712e06624cdcfd857e9e8e1f9" prot="public" static="no">
+        <type>struct <ref refid="struct_capture_c_c32_x_x___object__" kindref="compound">CaptureCC32XX_Object_</ref></type>
+        <definition>typedef struct CaptureCC32XX_Object_  CaptureCC32XX_Object</definition>
+        <argsstring></argsstring>
+        <name>CaptureCC32XX_Object</name>
+        <briefdescription>
+<para>CaptureCC32XX_Object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="279" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_capture_c_c32_x_x_8h_1a81fe931b79083ddc02c1c86fcd4a70f6" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_capture_8h_1a380ecaf2d95c0696e90c43090768e31b" kindref="member">Capture_FxnTable</ref></type>
+        <definition>const Capture_FxnTable CaptureCC32XX_fxnTable</definition>
+        <argsstring></argsstring>
+        <name>CaptureCC32XX_fxnTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h" line="230" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Capture driver interface for CC32XX devices. </para>    </briefdescription>
+    <detaileddescription>
+<para><hruler/>
+</para><para><heading level="1">Operation</heading>
+</para><para>This driver uses a general purpose timer hardware peripheral to implement the capture functionality. The capture driver only uses half of a timer peripheral (16-bit timer). This is not a software limitation but due to the general purpose timer hardware implementation. For CC32XX devices, the system clock is 80 MHz. A 16-bit timer peripheral has 24-bits of resolution when the prescaler register is used as an 8-bit linear extension.</para><para><heading level="1">Resource Allocation</heading>
+</para><para>Each general purpose timer block contains two timers, Timer A and Timer B, that can be configured to operate independently. This behavior is managed through a set of resource allocation APIs. For example, the TimerCC32XX_allocateTimerResource API will allocate a timer for exclusive use. Any attempt to re-allocate this resource by the TimerCC32XX, PWMCC32XX, or CaptureCC32xx drivers will result in a false value being returned from the allocation API. To free a timer resource, the TimerCC32XX_freeTimerResource is used. The application is not responsible for calling these allocation APIs directly. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017-2018,<sp/>Texas<sp/>Instruments<sp/>Incorporated</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*!*****************************************************************************</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/>@file<sp/><sp/><sp/><sp/><sp/><sp/><sp/>CaptureCC32XX.h</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/>Capture<sp/>driver<sp/>interface<sp/>for<sp/>CC32XX<sp/>devices</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/>#<sp/>Operation<sp/>#</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>driver<sp/>uses<sp/>a<sp/>general<sp/>purpose<sp/>timer<sp/>hardware<sp/>peripheral<sp/>to<sp/>implement</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>capture<sp/>functionality.<sp/>The<sp/>capture<sp/>driver<sp/>only<sp/>uses<sp/>half<sp/>of<sp/>a<sp/>timer</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/>peripheral<sp/>(16-bit<sp/>timer).<sp/>This<sp/>is<sp/>not<sp/>a<sp/>software<sp/>limitation<sp/>but<sp/>due<sp/>to<sp/>the</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/><sp/>general<sp/>purpose<sp/>timer<sp/>hardware<sp/>implementation.<sp/>For<sp/>CC32XX<sp/>devices,<sp/>the</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/><sp/>system<sp/>clock<sp/>is<sp/>80<sp/>MHz.<sp/>A<sp/>16-bit<sp/>timer<sp/>peripheral<sp/>has<sp/>24-bits<sp/>of</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/>resolution<sp/>when<sp/>the<sp/>prescaler<sp/>register<sp/>is<sp/>used<sp/>as<sp/>an<sp/>8-bit<sp/>linear<sp/>extension.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/><sp/>#<sp/>Resource<sp/>Allocation<sp/>#</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/>Each<sp/>general<sp/>purpose<sp/>timer<sp/>block<sp/>contains<sp/>two<sp/>timers,<sp/>Timer<sp/>A<sp/>and<sp/>Timer<sp/>B,</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/><sp/>that<sp/>can<sp/>be<sp/>configured<sp/>to<sp/>operate<sp/>independently.<sp/>This<sp/>behavior<sp/>is<sp/>managed</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/>through<sp/>a<sp/>set<sp/>of<sp/>resource<sp/>allocation<sp/>APIs.<sp/>For<sp/>example,<sp/>the</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/><sp/>TimerCC32XX_allocateTimerResource<sp/>API<sp/>will<sp/>allocate<sp/>a<sp/>timer<sp/>for<sp/>exclusive</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/><sp/>use.<sp/>Any<sp/>attempt<sp/>to<sp/>re-allocate<sp/>this<sp/>resource<sp/>by<sp/>the<sp/>TimerCC32XX,<sp/>PWMCC32XX,</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/><sp/>or<sp/>CaptureCC32xx<sp/>drivers<sp/>will<sp/>result<sp/>in<sp/>a<sp/>false<sp/>value<sp/>being<sp/>returned<sp/>from</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>allocation<sp/>API.<sp/>To<sp/>free<sp/>a<sp/>timer<sp/>resource,<sp/>the</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/><sp/>TimerCC32XX_freeTimerResource<sp/>is<sp/>used.<sp/>The<sp/>application<sp/>is<sp/>not<sp/>responsible</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/><sp/>for<sp/>calling<sp/>these<sp/>allocation<sp/>APIs<sp/>directly.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ti_drivers_capture_CaptureCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ti_drivers_capture_CaptureCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_capture_8h" kindref="compound">ti/drivers/Capture.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_power_8h" kindref="compound">ti/drivers/Power.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/drivers/dpl/HwiP.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/devices/cc32xx/inc/hw_ints.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/devices/cc32xx/inc/hw_ocp_shared.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/>Capture<sp/>port/pin<sp/>defines<sp/>for<sp/>pin<sp/>configuration.</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>timer<sp/>id<sp/>(0,<sp/>1,<sp/>2,<sp/>or<sp/>3)<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>31<sp/>-<sp/>30</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>timer<sp/>half<sp/>(1<sp/>=<sp/>A,<sp/>2<sp/>=<sp/>B)<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>29<sp/>-<sp/>28</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>interrupt<sp/>number<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>27<sp/>-<sp/>20</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>GPIO<sp/>port<sp/>(0,<sp/>1,<sp/>2,<sp/>or<sp/>3)<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>19<sp/>-<sp/>16</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>GPIO<sp/>pad<sp/>offset<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>15<sp/>-<sp/>4</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>pin<sp/>mode<sp/>is<sp/>stored<sp/>in<sp/>bits<sp/>3<sp/>-<sp/>0</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>31<sp/>-<sp/>30<sp/><sp/><sp/><sp/>29<sp/>-<sp/>28<sp/><sp/><sp/><sp/>27<sp/>-<sp/>20<sp/><sp/><sp/><sp/>19<sp/>-<sp/>16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15<sp/>-<sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/>-<sp/>0</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/><sp/>--------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/><sp/>|<sp/>TimerId<sp/>|<sp/>Timer<sp/>half<sp/>|<sp/>IntNum<sp/>|<sp/>GPIO<sp/>Port<sp/>|<sp/>GPIO<sp/>Pad<sp/>Offset<sp/>|<sp/>Pin<sp/>Mode<sp/>|</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*<sp/><sp/>--------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>CC32XX<sp/>has<sp/>fixed<sp/>GPIO<sp/>assignments<sp/>and<sp/>pin<sp/>modes<sp/>for<sp/>a<sp/>given<sp/>pin.</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/><sp/>A<sp/>Capture<sp/>pin<sp/>mode<sp/>for<sp/>a<sp/>given<sp/>pin<sp/>has<sp/>a<sp/>fixed<sp/>timer/timer-half.</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_T0A<sp/><sp/><sp/><sp/>(0x10000000<sp/>|<sp/>(INT_TIMERA0A<sp/>&lt;&lt;<sp/>20))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_T0B<sp/><sp/><sp/><sp/>(0x20000000<sp/>|<sp/>(INT_TIMERA0B<sp/>&lt;&lt;<sp/>20))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_T1A<sp/><sp/><sp/><sp/>(0x50000000<sp/>|<sp/>(INT_TIMERA1A<sp/>&lt;&lt;<sp/>20))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_T1B<sp/><sp/><sp/><sp/>(0x60000000<sp/>|<sp/>(INT_TIMERA1B<sp/>&lt;&lt;<sp/>20))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_T2A<sp/><sp/><sp/><sp/>(0x90000000<sp/>|<sp/>(INT_TIMERA2A<sp/>&lt;&lt;<sp/>20))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_T2B<sp/><sp/><sp/><sp/>(0xA0000000<sp/>|<sp/>(INT_TIMERA2B<sp/>&lt;&lt;<sp/>20))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_T3A<sp/><sp/><sp/><sp/>(0xD0000000<sp/>|<sp/>(INT_TIMERA3A<sp/>&lt;&lt;<sp/>20))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_T3B<sp/><sp/><sp/><sp/>(0xE0000000<sp/>|<sp/>(INT_TIMERA3B<sp/>&lt;&lt;<sp/>20))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO0<sp/><sp/>(0x00000000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_0<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO1<sp/><sp/>(0x00000000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_1<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO2<sp/><sp/>(0x00000000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_2<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO5<sp/><sp/>(0x00000000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_5<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO6<sp/><sp/>(0x00000000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_6<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO8<sp/><sp/>(0x00010000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_8<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO9<sp/><sp/>(0x00010000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_9<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO10<sp/>(0x00010000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_10<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO11<sp/>(0x00010000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_11<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO12<sp/>(0x00010000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_12<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO13<sp/>(0x00010000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_13<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO14<sp/>(0x00010000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_14<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO15<sp/>(0x00010000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_15<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO16<sp/>(0x00020000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_16<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO22<sp/>(0x00020000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_22<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO24<sp/>(0x00030000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_24<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CaptureCC32XX_GPIO30<sp/>(0x00030000<sp/>|<sp/>(OCP_SHARED_O_GPIO_PAD_CONFIG_30<sp/>&lt;&lt;<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="group__capture_pin_identifiers_c_c32_x_x_1gaab6f92096fe054b126140412c4aca3fd" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_01<sp/><sp/>CaptureCC32XX_T0B<sp/>|<sp/>CaptureCC32XX_GPIO10<sp/>|<sp/>0xC<sp/></highlight></codeline>
+<codeline lineno="136" refid="group__capture_pin_identifiers_c_c32_x_x_1ga89546c923e06750d54018fa7ca400cbe" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_02<sp/><sp/>CaptureCC32XX_T1A<sp/>|<sp/>CaptureCC32XX_GPIO11<sp/>|<sp/>0xC<sp/></highlight></codeline>
+<codeline lineno="142" refid="group__capture_pin_identifiers_c_c32_x_x_1ga03bd2e7d3aea434e577df20537563dc8" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_03<sp/><sp/>CaptureCC32XX_T1B<sp/>|<sp/>CaptureCC32XX_GPIO12<sp/>|<sp/>0xC<sp/></highlight></codeline>
+<codeline lineno="148" refid="group__capture_pin_identifiers_c_c32_x_x_1gaa4906df49fe0732139dce8f1f8ee723d" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_04<sp/><sp/>CaptureCC32XX_T2A<sp/>|<sp/>CaptureCC32XX_GPIO13<sp/>|<sp/>0xC<sp/></highlight></codeline>
+<codeline lineno="154" refid="group__capture_pin_identifiers_c_c32_x_x_1gaf2b1e61b620b825511af385ef5a3f9ad" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_05<sp/><sp/>CaptureCC32XX_T2B<sp/>|<sp/>CaptureCC32XX_GPIO14<sp/>|<sp/>0xC<sp/></highlight></codeline>
+<codeline lineno="160" refid="group__capture_pin_identifiers_c_c32_x_x_1gad83dbb82c35acc6a2b1804d386bca3de" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_06<sp/><sp/>CaptureCC32XX_T3A<sp/>|<sp/>CaptureCC32XX_GPIO15<sp/>|<sp/>0xD<sp/></highlight></codeline>
+<codeline lineno="166" refid="group__capture_pin_identifiers_c_c32_x_x_1gab5f47fc3b13c4444838eca9a6d2cdc32" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_07<sp/><sp/>CaptureCC32XX_T3B<sp/>|<sp/>CaptureCC32XX_GPIO16<sp/>|<sp/>0xD<sp/></highlight></codeline>
+<codeline lineno="172" refid="group__capture_pin_identifiers_c_c32_x_x_1gaa5354f8a446fe1c99c33a08d59d038c6" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_15<sp/><sp/>CaptureCC32XX_T2A<sp/>|<sp/>CaptureCC32XX_GPIO22<sp/>|<sp/>0x5<sp/><sp/></highlight></codeline>
+<codeline lineno="178" refid="group__capture_pin_identifiers_c_c32_x_x_1gaa92ca8344ad77c6c2003713301533193" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_17<sp/><sp/>CaptureCC32XX_T3A<sp/>|<sp/>CaptureCC32XX_GPIO24<sp/>|<sp/>0x4<sp/><sp/></highlight></codeline>
+<codeline lineno="184" refid="group__capture_pin_identifiers_c_c32_x_x_1gab0cdb9a66537366b684b714a091b2f91" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_50<sp/><sp/>CaptureCC32XX_T0A<sp/>|<sp/>CaptureCC32XX_GPIO0<sp/>|<sp/>0x7<sp/><sp/></highlight></codeline>
+<codeline lineno="190" refid="group__capture_pin_identifiers_c_c32_x_x_1ga97028e10717b482f1761b7688d79dc2a" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_53<sp/><sp/>CaptureCC32XX_T2B<sp/>|<sp/>CaptureCC32XX_GPIO30<sp/>|<sp/>0x4<sp/><sp/></highlight></codeline>
+<codeline lineno="196" refid="group__capture_pin_identifiers_c_c32_x_x_1ga93ea1364563c9c42e85016b6bc41b7a3" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_55<sp/><sp/>CaptureCC32XX_T0B<sp/>|<sp/>CaptureCC32XX_GPIO1<sp/>|<sp/>0x7<sp/><sp/></highlight></codeline>
+<codeline lineno="202" refid="group__capture_pin_identifiers_c_c32_x_x_1ga78d1d540dbbd4998a6d229e5e5c72f62" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_57<sp/><sp/>CaptureCC32XX_T1A<sp/>|<sp/>CaptureCC32XX_GPIO2<sp/>|<sp/>0x7<sp/><sp/></highlight></codeline>
+<codeline lineno="208" refid="group__capture_pin_identifiers_c_c32_x_x_1ga73ed11859cb1948650013bfd9f798b0c" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_60<sp/><sp/>CaptureCC32XX_T2B<sp/>|<sp/>CaptureCC32XX_GPIO5<sp/>|<sp/>0x7<sp/><sp/></highlight></codeline>
+<codeline lineno="214" refid="group__capture_pin_identifiers_c_c32_x_x_1gaa0013ba561bdc94f115ae0dc1efa107e" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_61<sp/><sp/>CaptureCC32XX_T3A<sp/>|<sp/>CaptureCC32XX_GPIO6<sp/>|<sp/>0x7<sp/><sp/></highlight></codeline>
+<codeline lineno="220" refid="group__capture_pin_identifiers_c_c32_x_x_1gafda041247ad55e7d661d3a15e4a7be29" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_63<sp/><sp/>CaptureCC32XX_T3A<sp/>|<sp/>CaptureCC32XX_GPIO8<sp/>|<sp/>0xC<sp/><sp/></highlight></codeline>
+<codeline lineno="226" refid="group__capture_pin_identifiers_c_c32_x_x_1ga3ebeec1d545d6a20399d2d1555022677" refkind="member"><highlight class="preprocessor">#define<sp/>CaptureCC32XX_PIN_64<sp/><sp/>CaptureCC32XX_T0A<sp/>|<sp/>CaptureCC32XX_GPIO9<sp/>|<sp/>0xC<sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor">extern<sp/>const<sp/>Capture_FxnTable<sp/>CaptureCC32XX_fxnTable;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="struct_capture_c_c32_x_x___h_w_attrs__" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_capture_c_c32_x_x___h_w_attrs__" kindref="compound">CaptureCC32XX_HWAttrs_</ref><sp/>{</highlight></codeline>
+<codeline lineno="259" refid="struct_capture_c_c32_x_x___h_w_attrs___1a5b10049822a9d4cd6d2dca2729a82e0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___h_w_attrs___1a5b10049822a9d4cd6d2dca2729a82e0c" kindref="member">capturePin</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="struct_capture_c_c32_x_x___h_w_attrs___1a50b25e915ae856d51b594aca8e5e91d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___h_w_attrs___1a50b25e915ae856d51b594aca8e5e91d8" kindref="member">intPriority</ref>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}<sp/><ref refid="_capture_c_c32_x_x_8h_1a9cf000c7c9d9c730dfeee4fb112cdd25" kindref="member">CaptureCC32XX_HWAttrs</ref>;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="struct_capture_c_c32_x_x___object__" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_capture_c_c32_x_x___object__" kindref="compound">CaptureCC32XX_Object_</ref><sp/>{</highlight></codeline>
+<codeline lineno="271" refid="struct_capture_c_c32_x_x___object___1acc98d071b9f7ecf1bf1e22a800d1c021" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HwiP_Handle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___object___1acc98d071b9f7ecf1bf1e22a800d1c021" kindref="member">hwiHandle</ref>;</highlight></codeline>
+<codeline lineno="272" refid="struct_capture_c_c32_x_x___object___1aa4e739edd7579fb9c568c5a0abcd7da3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_power___notify_obj__" kindref="compound">Power_NotifyObj</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___object___1aa4e739edd7579fb9c568c5a0abcd7da3" kindref="member">notifyObj</ref>;</highlight></codeline>
+<codeline lineno="273" refid="struct_capture_c_c32_x_x___object___1ad8b4bb6032a8f1435bbafc807a9d299b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_capture_8h_1a1c76952161fb6646781648835c250626" kindref="member">Capture_CallBackFxn</ref><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___object___1ad8b4bb6032a8f1435bbafc807a9d299b" kindref="member">callBack</ref>;</highlight></codeline>
+<codeline lineno="274" refid="struct_capture_c_c32_x_x___object___1a6226a603d4125140662399f226683b9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_capture_8h_1a0179a1a6aa007381d609f7aba58a042f" kindref="member">Capture_PeriodUnits</ref><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___object___1a6226a603d4125140662399f226683b9a" kindref="member">periodUnits</ref>;</highlight></codeline>
+<codeline lineno="275" refid="struct_capture_c_c32_x_x___object___1acaf2aae960ee34e4a2f278d6ea7c3c36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___object___1acaf2aae960ee34e4a2f278d6ea7c3c36" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="276" refid="struct_capture_c_c32_x_x___object___1a4895800c616b56abd56ed1c2b89e7474" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___object___1a4895800c616b56abd56ed1c2b89e7474" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="277" refid="struct_capture_c_c32_x_x___object___1aedcd69c4165e57e9d8b3a27141d0f60b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___object___1aedcd69c4165e57e9d8b3a27141d0f60b" kindref="member">previousCount</ref>;</highlight></codeline>
+<codeline lineno="278" refid="struct_capture_c_c32_x_x___object___1a9ce4ad77c4f0a00071b23c10d7eca16d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_capture_c_c32_x_x___object___1a9ce4ad77c4f0a00071b23c10d7eca16d" kindref="member">isRunning</ref>;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}<sp/><ref refid="_capture_c_c32_x_x_8h_1a0ed3781712e06624cdcfd857e9e8e1f9" kindref="member">CaptureCC32XX_Object</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ti_drivers_capture_CaptureCC32XX__include<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/capture/CaptureCC32XX.h"/>
+  </compounddef>
+</doxygen>

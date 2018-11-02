@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_power_c_c32_x_x___config_v1" kind="struct" language="C++" prot="public">
+    <compoundname>PowerCC32XX_ConfigV1</compoundname>
+    <includes refid="_power_c_c32_x_x_8h" local="no">PowerCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a781bf126e3071442438491903eec8890" prot="public" static="no" mutable="no">
+        <type><ref refid="_power_8h_1a435fdeb71d13ea6be86f599c9b6a0d78" kindref="member">Power_PolicyInitFxn</ref></type>
+        <definition>Power_PolicyInitFxn PowerCC32XX_ConfigV1::policyInitFxn</definition>
+        <argsstring></argsstring>
+        <name>policyInitFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialization function for the power policy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="212" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a5291041b1a84651542674e5402d809af" prot="public" static="no" mutable="no">
+        <type><ref refid="_power_8h_1a333038d1e9cd5f93dda7b83f8a1afa8b" kindref="member">Power_PolicyFxn</ref></type>
+        <definition>Power_PolicyFxn PowerCC32XX_ConfigV1::policyFxn</definition>
+        <argsstring></argsstring>
+        <name>policyFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The power policy function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="214" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1aba9887d0411d02dec98145a552cb40ec" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* PowerCC32XX_ConfigV1::enterLPDSHookFxn) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>enterLPDSHookFxn</name>
+        <briefdescription>
+<para>Hook function called before entering LPDS. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is called after any notifications are complete, and before any pins are parked, just before entry to LPDS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="221" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1aa27819273461bca77c5d77bb422b32fb" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* PowerCC32XX_ConfigV1::resumeLPDSHookFxn) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>resumeLPDSHookFxn</name>
+        <briefdescription>
+<para>Hook function called when resuming from LPDS. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is called early in the wake sequence, before any notification functions are run. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="228" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1ad5877b98d1851d42d111716bae11a141" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PowerCC32XX_ConfigV1::enablePolicy</definition>
+        <argsstring></argsstring>
+        <name>enablePolicy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determines whether to run the power policy function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="230" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1ab261edd8765e42e3d220e831b165a87d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PowerCC32XX_ConfigV1::enableGPIOWakeupLPDS</definition>
+        <argsstring></argsstring>
+        <name>enableGPIOWakeupLPDS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable GPIO as a wakeup source for LPDS </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="232" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a83a42e8dd00e9991f70d88b4c208e944" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PowerCC32XX_ConfigV1::enableGPIOWakeupShutdown</definition>
+        <argsstring></argsstring>
+        <name>enableGPIOWakeupShutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable GPIO as a wakeup source for shutdown </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="234" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a2c54abc4c0629475191ccf850f297f94" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PowerCC32XX_ConfigV1::enableNetworkWakeupLPDS</definition>
+        <argsstring></argsstring>
+        <name>enableNetworkWakeupLPDS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Network activity as a wakeup source for LPDS </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="236" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1af4447d531bdb2469aaa4fe22ea79d130" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PowerCC32XX_ConfigV1::wakeupGPIOSourceLPDS</definition>
+        <argsstring></argsstring>
+        <name>wakeupGPIOSourceLPDS</name>
+        <briefdescription>
+<para>The GPIO source for wakeup from LPDS. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only one GPIO {2,4,11,13,17,24,26} can be specified as a wake source for LPDS. The GPIO must be specified as one of the following (as defined in driverlib/prcm.h): PRCM_LPDS_GPIO2, PRCM_LPDS_GPIO4, PRCM_LPDS_GPIO11, PRCM_LPDS_GPIO13, PRCM_LPDS_GPIO17, PRCM_LPDS_GPIO24, PRCM_LPDS_GPIO26 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="246" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a0b742ffcffcace592a104d46ae653c47" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PowerCC32XX_ConfigV1::wakeupGPIOTypeLPDS</definition>
+        <argsstring></argsstring>
+        <name>wakeupGPIOTypeLPDS</name>
+        <briefdescription>
+<para>The GPIO trigger type for wakeup from LPDS. </para>        </briefdescription>
+        <detaileddescription>
+<para>Value can be one of the following (defined in driverlib/prcm.h): PRCM_LPDS_LOW_LEVEL, PRCM_LPDS_HIGH_LEVEL, PRCM_LPDS_FALL_EDGE, PRCM_LPDS_RISE_EDGE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="254" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a635c1689316aa991a93515dee9bb2171" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* PowerCC32XX_ConfigV1::wakeupGPIOFxnLPDS) (uint_least8_t argument)</definition>
+        <argsstring>)(uint_least8_t argument)</argsstring>
+        <name>wakeupGPIOFxnLPDS</name>
+        <briefdescription>
+<para>Function to be called when the configured GPIO triggers wakeup from LPDS. </para>        </briefdescription>
+        <detaileddescription>
+<para>During LPDS the internal GPIO module is powered off, and special periphery logic is used instead to detect the trigger and wake the device. No GPIO interrupt service routine will be triggered in this case (even if an ISR is configured, and used normally to detect GPIO interrupts when not in LPDS). This function can be used in lieu of a GPIO ISR, to take specific action upon LPDS wakeup.</para><para>A value of NULL indicates no GPIO wakeup function will be called.</para><para>An argument for this wakeup function can be specified via wakeupGPIOFxnLPDSArg.</para><para>Note that this wakeup function will be called as one of the last steps in <ref refid="_power_8h_1a45e1e0f3168cc39a2309fce40c3e271d" kindref="member">Power_sleep()</ref>, after all notifications have been sent out, and after pins have been restored to their previous (non-parked) states. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="275" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a31eca3e54677aea0c43aec9abdc38638" prot="public" static="no" mutable="no">
+        <type>uint_least8_t</type>
+        <definition>uint_least8_t PowerCC32XX_ConfigV1::wakeupGPIOFxnLPDSArg</definition>
+        <argsstring></argsstring>
+        <name>wakeupGPIOFxnLPDSArg</name>
+        <briefdescription>
+<para>The argument to be passed to <ref refid="struct_power_c_c32_x_x___config_v1_1a635c1689316aa991a93515dee9bb2171" kindref="member">wakeupGPIOFxnLPDS()</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="279" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a155bddbf8cef6a9b2dcad7878f9edb5d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PowerCC32XX_ConfigV1::wakeupGPIOSourceShutdown</definition>
+        <argsstring></argsstring>
+        <name>wakeupGPIOSourceShutdown</name>
+        <briefdescription>
+<para>The GPIO sources for wakeup from shutdown. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only one GPIO {2,4,11,13,17,24,26} can be specified as a wake source for Shutdown. The GPIO must be specified as one of the following (as defined in driverlib/prcm.h): PRCM_HIB_GPIO2, PRCM_HIB_GPIO4, PRCM_HIB_GPIO11, PRCM_HIB_GPIO13, PRCM_HIB_GPIO17, PRCM_HIB_GPIO24, PRCM_HIB_GPIO26 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="289" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a79734ee6c2bf7fc4b88655f8fa17a7ec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PowerCC32XX_ConfigV1::wakeupGPIOTypeShutdown</definition>
+        <argsstring></argsstring>
+        <name>wakeupGPIOTypeShutdown</name>
+        <briefdescription>
+<para>The GPIO trigger type for wakeup from shutdown. </para>        </briefdescription>
+        <detaileddescription>
+<para>Value can be one of the following (defined in driverlib/prcm.h): PRCM_HIB_LOW_LEVEL, PRCM_HIB_HIGH_LEVEL, PRCM_HIB_FALL_EDGE, PRCM_HIB_RISE_EDGE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="297" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a8f8ffd184f86a7c28b629eb2a141b107" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PowerCC32XX_ConfigV1::ramRetentionMaskLPDS</definition>
+        <argsstring></argsstring>
+        <name>ramRetentionMaskLPDS</name>
+        <briefdescription>
+<para>SRAM retention mask for LPDS. </para>        </briefdescription>
+        <detaileddescription>
+<para>Value can be a mask of the following (defined in driverlib/prcm.h): PRCM_SRAM_COL_1, PRCM_SRAM_COL_2, PRCM_SRAM_COL_3, PRCM_SRAM_COL_4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="305" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1ace5b9463c9d0bfa7e9dada9c5ca3b01c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PowerCC32XX_ConfigV1::keepDebugActiveDuringLPDS</definition>
+        <argsstring></argsstring>
+        <name>keepDebugActiveDuringLPDS</name>
+        <briefdescription>
+<para>Keep debug interface active during LPDS. </para>        </briefdescription>
+        <detaileddescription>
+<para>This Boolean controls whether the debug interface will be left active when LPDS is entered. For best power savings this flag should be set to false. Setting the flag to true will enable better debug capability, but will prevent full LPDS, and will result in increased power consumption. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="315" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a7d60c228158f0a984a04a44f6bbb300b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PowerCC32XX_ConfigV1::ioRetentionShutdown</definition>
+        <argsstring></argsstring>
+        <name>ioRetentionShutdown</name>
+        <briefdescription>
+<para>IO retention mask for Shutdown. </para>        </briefdescription>
+        <detaileddescription>
+<para>Value can be a mask of the following (defined in driverlib/prcm.h): PRCM_IO_RET_GRP_0, PRCM_IO_RET_GRP_1, PRCM_IO_RET_GRP_2 PRCM_IO_RET_GRP_3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="323" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a8973743b0bec33370e6d46a5fa6e70ea" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_power_c_c32_x_x___park_info" kindref="compound">PowerCC32XX_ParkInfo</ref> *</type>
+        <definition>PowerCC32XX_ParkInfo* PowerCC32XX_ConfigV1::pinParkDefs</definition>
+        <argsstring></argsstring>
+        <name>pinParkDefs</name>
+        <briefdescription>
+<para>Pointer to an array of pins to be parked during LPDS. </para>        </briefdescription>
+        <detaileddescription>
+<para>A value of NULL will disable parking of any pins during LPDS </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="329" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___config_v1_1a4740436e5bf7f74e988c5cf0b2b218b9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PowerCC32XX_ConfigV1::numPins</definition>
+        <argsstring></argsstring>
+        <name>numPins</name>
+        <briefdescription>
+<para>Number of pins to be parked during LPDS. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="333" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Power global configuration. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="183">
+        <label>PowerCC32XX_ParkInfo</label>
+        <link refid="struct_power_c_c32_x_x___park_info"/>
+      </node>
+      <node id="182">
+        <label>PowerCC32XX_ConfigV1</label>
+        <link refid="struct_power_c_c32_x_x___config_v1"/>
+        <childnode refid="183" relation="usage">
+          <edgelabel>pinParkDefs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="210" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="210" bodyend="334"/>
+    <listofallmembers>
+      <member refid="struct_power_c_c32_x_x___config_v1_1ab261edd8765e42e3d220e831b165a87d" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>enableGPIOWakeupLPDS</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a83a42e8dd00e9991f70d88b4c208e944" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>enableGPIOWakeupShutdown</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a2c54abc4c0629475191ccf850f297f94" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>enableNetworkWakeupLPDS</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1ad5877b98d1851d42d111716bae11a141" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>enablePolicy</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1aba9887d0411d02dec98145a552cb40ec" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>enterLPDSHookFxn</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a7d60c228158f0a984a04a44f6bbb300b" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>ioRetentionShutdown</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1ace5b9463c9d0bfa7e9dada9c5ca3b01c" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>keepDebugActiveDuringLPDS</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a4740436e5bf7f74e988c5cf0b2b218b9" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>numPins</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a8973743b0bec33370e6d46a5fa6e70ea" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>pinParkDefs</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a5291041b1a84651542674e5402d809af" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>policyFxn</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a781bf126e3071442438491903eec8890" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>policyInitFxn</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a8f8ffd184f86a7c28b629eb2a141b107" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>ramRetentionMaskLPDS</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1aa27819273461bca77c5d77bb422b32fb" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>resumeLPDSHookFxn</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a635c1689316aa991a93515dee9bb2171" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>wakeupGPIOFxnLPDS</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a31eca3e54677aea0c43aec9abdc38638" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>wakeupGPIOFxnLPDSArg</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1af4447d531bdb2469aaa4fe22ea79d130" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>wakeupGPIOSourceLPDS</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a155bddbf8cef6a9b2dcad7878f9edb5d" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>wakeupGPIOSourceShutdown</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a0b742ffcffcace592a104d46ae653c47" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>wakeupGPIOTypeLPDS</name></member>
+      <member refid="struct_power_c_c32_x_x___config_v1_1a79734ee6c2bf7fc4b88655f8fa17a7ec" prot="public" virt="non-virtual"><scope>PowerCC32XX_ConfigV1</scope><name>wakeupGPIOTypeShutdown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

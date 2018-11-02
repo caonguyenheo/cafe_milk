@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="group___i2_s___c_m_d" kind="group">
+    <compoundname>I2S_CMD</compoundname>
+    <title>Command Codes</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_s___c_m_d_1ga3cb68a2258d36e3ccfe858f3f2b76e03" prot="public" static="no">
+        <name>I2SCC32XXDMA_CMD_SET_ZEROBUF_LEN</name>
+        <initializer>(<ref refid="group___i2_s___c_o_n_t_r_o_l_1gaf919ac4341fca59988c28e16058fa819" kindref="member">I2S_CMD_RESERVED</ref> + 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="117" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___c_m_d_1ga0fc65cb2f31c3a81a2c2f4d99f4c301d" prot="public" static="no">
+        <name>I2SCC32XXDMA_CMD_SET_EMPTYBUF_LEN</name>
+        <initializer>(<ref refid="group___i2_s___c_o_n_t_r_o_l_1gaf919ac4341fca59988c28e16058fa819" kindref="member">I2S_CMD_RESERVED</ref> + 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="118" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>I2S_CMD_* macros are general command codes for <ref refid="_i2_s_8h_1aec4eb7cbc23260b8993291d8f3ea1ab9" kindref="member">I2S_control()</ref>. Not all I2S driver implementations support these command codes.</para><para>I2SCC32XXDMA_CMD_* macros are command codes only defined in the <ref refid="_i2_s_c_c32_x_x_d_m_a_8h" kindref="compound">I2SCC32XXDMA.h</ref> driver implementation and need to: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/i2s/I2SCC32XXDMA.h&gt;</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

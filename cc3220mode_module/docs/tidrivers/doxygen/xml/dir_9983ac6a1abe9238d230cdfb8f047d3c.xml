@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_9983ac6a1abe9238d230cdfb8f047d3c" kind="dir">
+    <compoundname>drivers</compoundname>
+    <innerdir refid="dir_b88e217786eb39f513275e653ce90cde">adc</innerdir>
+    <innerdir refid="dir_34019caba3b073e333e09e0636dc1306">camera</innerdir>
+    <innerdir refid="dir_e3ae6695e6ec97b56ffed88505d69b68">capture</innerdir>
+    <innerdir refid="dir_ab74d8418006d4c9eb96c9c44cca14e1">crypto</innerdir>
+    <innerdir refid="dir_4a6f0cb122b245ec44040c22e8acea4d">dma</innerdir>
+    <innerdir refid="dir_f02b7a50d4bcc926153e119b082102dd">gpio</innerdir>
+    <innerdir refid="dir_52b1b84a65163325e32501fac5044489">i2c</innerdir>
+    <innerdir refid="dir_b4ea50a139f560b015a5197da845447f">i2s</innerdir>
+    <innerdir refid="dir_01c2082272b363714f1ef768f8017739">nvs</innerdir>
+    <innerdir refid="dir_765c9b6b7b2a54872991f3e4f0b432d8">power</innerdir>
+    <innerdir refid="dir_9033855ad95d6625ffd5feab50f23009">pwm</innerdir>
+    <innerdir refid="dir_37d3e565f11afd046b9854701688ae7b">sd</innerdir>
+    <innerdir refid="dir_6d471154ac90122d46790b33306e149d">spi</innerdir>
+    <innerdir refid="dir_faa2a6158c8e4369fe07ca9e5beb6134">timer</innerdir>
+    <innerdir refid="dir_177028d08b7629063b5e451e2d934b50">uart</innerdir>
+    <innerdir refid="dir_460cf935d4e52a66a4d15bc079422bda">utils</innerdir>
+    <innerdir refid="dir_f8c32769bd241a3055b36de9ccf5a9c1">watchdog</innerdir>
+    <innerfile refid="_a_d_c_8h">ADC.h</innerfile>
+    <innerfile refid="_camera_8h">Camera.h</innerfile>
+    <innerfile refid="_capture_8h">Capture.h</innerfile>
+    <innerfile refid="_g_p_i_o_8h">GPIO.h</innerfile>
+    <innerfile refid="_i2_c_8h">I2C.h</innerfile>
+    <innerfile refid="_i2_s_8h">I2S.h</innerfile>
+    <innerfile refid="_n_v_s_8h">NVS.h</innerfile>
+    <innerfile refid="_power_8h">Power.h</innerfile>
+    <innerfile refid="_p_w_m_8h">PWM.h</innerfile>
+    <innerfile refid="_s_d_8h">SD.h</innerfile>
+    <innerfile refid="_s_d_fat_f_s_8h">SDFatFS.h</innerfile>
+    <innerfile refid="_s_p_i_8h">SPI.h</innerfile>
+    <innerfile refid="_timer_8h">Timer.h</innerfile>
+    <innerfile refid="_u_a_r_t_8h">UART.h</innerfile>
+    <innerfile refid="_watchdog_8h">Watchdog.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/"/>
+  </compounddef>
+</doxygen>

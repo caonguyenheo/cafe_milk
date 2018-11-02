@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_watchdog_c_c32_x_x___object" kind="struct" language="C++" prot="public">
+    <compoundname>WatchdogCC32XX_Object</compoundname>
+    <includes refid="_watchdog_c_c32_x_x_8h" local="no">WatchdogCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_watchdog_c_c32_x_x___object_1a7a1810a1fd73af5afda05581cbba2d78" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool WatchdogCC32XX_Object::isOpen</definition>
+        <argsstring></argsstring>
+        <name>isOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="204" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Watchdog Object for CC32XX. </para>    </briefdescription>
+    <detaileddescription>
+<para>Not to be accessed by the user. </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="203" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="203" bodyend="205"/>
+    <listofallmembers>
+      <member refid="struct_watchdog_c_c32_x_x___object_1a7a1810a1fd73af5afda05581cbba2d78" prot="public" virt="non-virtual"><scope>WatchdogCC32XX_Object</scope><name>isOpen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

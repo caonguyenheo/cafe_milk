@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_u_d_m_a_c_c32_x_x___config" kind="struct" language="C++" prot="public">
+    <compoundname>UDMACC32XX_Config</compoundname>
+    <includes refid="_u_d_m_a_c_c32_x_x_8h" local="no">UDMACC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_d_m_a_c_c32_x_x___config_1a8162ba3b2732a507d1ed5f7a33b21923" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* UDMACC32XX_Config::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to UDMACC32XX object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="134" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_d_m_a_c_c32_x_x___config_1aed5ef00c889e6733881cd663ef20eebc" prot="public" static="no" mutable="no">
+        <type>void const  *</type>
+        <definition>void const* UDMACC32XX_Config::hwAttrs</definition>
+        <argsstring></argsstring>
+        <name>hwAttrs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to hardware attributes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="135" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UDMACC32XX Global configuration. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="struct_u_d_m_a_c_c32_x_x___config" kindref="compound">UDMACC32XX_Config</ref> structure contains pointers used by the UDMACC32XX driver.</para><para>This structure needs to be defined before calling <ref refid="_u_d_m_a_c_c32_x_x_8h_1a7940e6baeef1a2c121ca329680e147b9" kindref="member">UDMACC32XX_init()</ref> and it must not be changed thereafter. </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="133" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" bodystart="133" bodyend="136"/>
+    <listofallmembers>
+      <member refid="struct_u_d_m_a_c_c32_x_x___config_1aed5ef00c889e6733881cd663ef20eebc" prot="public" virt="non-virtual"><scope>UDMACC32XX_Config</scope><name>hwAttrs</name></member>
+      <member refid="struct_u_d_m_a_c_c32_x_x___config_1a8162ba3b2732a507d1ed5f7a33b21923" prot="public" virt="non-virtual"><scope>UDMACC32XX_Config</scope><name>object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

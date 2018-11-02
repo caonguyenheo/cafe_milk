@@ -1,0 +1,1205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_crypto_c_c32_x_x_8h" kind="file" language="C++">
+    <compoundname>CryptoCC32XX.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">ti/drivers/dpl/HwiP.h</includes>
+    <includes local="no">ti/drivers/dpl/SemaphoreP.h</includes>
+    <incdepgraph>
+      <node id="43">
+        <label>stdbool.h</label>
+      </node>
+      <node id="41">
+        <label>stdint.h</label>
+      </node>
+      <node id="45">
+        <label>ti/drivers/dpl/SemaphoreP.h</label>
+      </node>
+      <node id="42">
+        <label>stddef.h</label>
+      </node>
+      <node id="44">
+        <label>ti/drivers/dpl/HwiP.h</label>
+      </node>
+      <node id="40">
+        <label>CryptoCC32XX.h</label>
+        <link refid="_crypto_c_c32_x_x_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_crypto_c_c32_x_x___aes_aad_input_params" prot="public">CryptoCC32XX_AesAadInputParams</innerclass>
+    <innerclass refid="union_crypto_c_c32_x_x___aes_aad_params" prot="public">CryptoCC32XX_AesAadParams</innerclass>
+    <innerclass refid="struct_crypto_c_c32_x_x___aes_params" prot="public">CryptoCC32XX_AesParams</innerclass>
+    <innerclass refid="struct_crypto_c_c32_x_x___des_params" prot="public">CryptoCC32XX_DesParams</innerclass>
+    <innerclass refid="union_crypto_c_c32_x_x___encrypt_params" prot="public">CryptoCC32XX_EncryptParams</innerclass>
+    <innerclass refid="struct_crypto_c_c32_x_x___hmac_params" prot="public">CryptoCC32XX_HmacParams</innerclass>
+    <innerclass refid="struct_crypto_c_c32_x_x___object" prot="public">CryptoCC32XX_Object</innerclass>
+    <innerclass refid="struct_crypto_c_c32_x_x___config" prot="public">CryptoCC32XX_Config</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1a92c0453486dee140c2052c655563f434" prot="public" static="no">
+        <name>CryptoCC32XX_CMD_RESERVED</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="129" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1a8bcb9880f738627923d7880cde4eaf9c" prot="public" static="no">
+        <name>CryptoCC32XX_STATUS_RESERVED</name>
+        <initializer>-32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="131" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1ac467bcedd5da2e2a524b35312b26a729" prot="public" static="no">
+        <name>CryptoCC32XX_STATUS_SUCCESS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Successful status code returned by Crypto Common functions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="137" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1a8eaf905c38d00e30fd8f9e6f60fe48b4" prot="public" static="no">
+        <name>CryptoCC32XX_STATUS_ERROR</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+<para>Generic error status code returned by Crypto Common functions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="143" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1a45b4166204bb8da882597ccb95fe0637" prot="public" static="no">
+        <name>CryptoCC32XX_STATUS_UNDEFINEDCMD</name>
+        <initializer>-2</initializer>
+        <briefdescription>
+<para>An error status code returned by Crypto Common functions for undefined command codes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="150" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1ab386c59bb7f245ae3154ba245808eb78" prot="public" static="no">
+        <name>CryptoCC32XX_STATUS_ERROR_VERIFY</name>
+        <initializer>-3</initializer>
+        <briefdescription>
+<para>An error status code returned by CryptoCC32XX_verify for define error in verifying a given Hash value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="157" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1ae723482b9a81a38e219552c14cb0e825" prot="public" static="no">
+        <name>CryptoCC32XX_STATUS_ERROR_NOT_SUPPORTED</name>
+        <initializer>-4</initializer>
+        <briefdescription>
+<para>An error status code returned by Crypto Common functions for define cryptographic type not supported. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="164" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1adc106538a31a4cd5db6f88b495c3b6d9" prot="public" static="no">
+        <name>CryptoCC32XX_MAX_TYPES</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="167" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1acd388f6d67c169197ab055a687ca2e69" prot="public" static="no">
+        <name>CryptoCC32XX_MD5_BLOCK_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="169" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1a68e68dfdbfba6f97d502693503eadd22" prot="public" static="no">
+        <name>CryptoCC32XX_SHA1_BLOCK_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="170" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1aebef5761e1ee71db46568c77a111d444" prot="public" static="no">
+        <name>CryptoCC32XX_SHA256_BLOCK_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="171" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1a22c61979969cae8019dfaa3b34a4b51b" prot="public" static="no">
+        <name>CryptoCC32XX_MD5_DIGEST_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="173" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1aa37e48228b8700d78461c3197bbf24c1" prot="public" static="no">
+        <name>CryptoCC32XX_SHA1_DIGEST_SIZE</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="174" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1af611c112ed01c7b6e27dd9556ca66d0c" prot="public" static="no">
+        <name>CryptoCC32XX_SHA256_DIGEST_SIZE</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="175" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1ae06b568567100eaea9fb1053c86f8200" prot="public" static="no">
+        <name>CryptoCC32XX_MAX_DIGEST_SIZE</name>
+        <initializer><ref refid="_crypto_c_c32_x_x_8h_1af611c112ed01c7b6e27dd9556ca66d0c" kindref="member">CryptoCC32XX_SHA256_DIGEST_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="177" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_crypto_c_c32_x_x_8h_1a964c57864c3d46f6462cbc04f3a11bce" prot="public" static="no">
+        <name>CryptoCC32XX_MAX_BLOCK_SIZE</name>
+        <initializer><ref refid="_crypto_c_c32_x_x_8h_1aebef5761e1ee71db46568c77a111d444" kindref="member">CryptoCC32XX_SHA256_BLOCK_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="178" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3e" prot="public" static="no">
+        <name>CryptoCC32XX_Type</name>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3eac54409fdc8f1158b985529b320325d7b" prot="public">
+          <name>CryptoCC32XX_AES</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Advanced Encryption Standard </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3eab15ffdf5780f4e4d6946db0d276e5605" prot="public">
+          <name>CryptoCC32XX_DES</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data Encryption Standard </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3ead7a35216d18ce8239afc2a92dfd426f1" prot="public">
+          <name>CryptoCC32XX_HMAC</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Cryptographic hash function </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Cryptography types configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines bitwise Cryptography types. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="187" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="186" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="enum" id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7" prot="public" static="no">
+        <name>CryptoCC32XX_EncryptMethod</name>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a34ead2f5b7e05f3a0d79bebe8da67520" prot="public">
+          <name>CryptoCC32XX_AES_ECB</name>
+          <initializer>= (CryptoCC32XX_AES &lt;&lt; 8) | 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AES Electronic CodeBook </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a12bf6db085282fba65f64756e62d6033" prot="public">
+          <name>CryptoCC32XX_AES_CBC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AES Cipher Block Chaining </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a53ef12b433c92f60da3f43477b965fcf" prot="public">
+          <name>CryptoCC32XX_AES_CTR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AES Counter </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7ae428b04702c3a21eb2dabea650471492" prot="public">
+          <name>CryptoCC32XX_AES_ICM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AES Integer Counter Mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7aa22a84b6253ee9a79d73fcb1c315a898" prot="public">
+          <name>CryptoCC32XX_AES_CFB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AES Cipher FeedBack </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7ae1987d19b9307d7b24a604c2953b949a" prot="public">
+          <name>CryptoCC32XX_AES_GCM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AES Galois/Counter Mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a0bd97c898f7db438ac91fccd63137be1" prot="public">
+          <name>CryptoCC32XX_AES_CCM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>AES Counter with CBC-MAC Mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a3ca745ef7d637ccddd967352db59e193" prot="public">
+          <name>CryptoCC32XX_DES_ECB</name>
+          <initializer>= (CryptoCC32XX_DES &lt;&lt; 8) | 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DES Electronic CodeBook </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7aa679e2e406dc95100ef7fc43f1d13305" prot="public">
+          <name>CryptoCC32XX_DES_CBC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DES Cipher Block Chaining </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7aa5d70d96687f379594815802ad9710d6" prot="public">
+          <name>CryptoCC32XX_DES_CFB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DES Cipher FeedBack </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AES and DES Cryptography methods configuration Keep the Crypto method in the lower 8 bit and Crypto type in the upper 8 bits. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the AES and DES Cryptography modes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="201" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="200" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="enum" id="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52" prot="public" static="no">
+        <name>CryptoCC32XX_HmacMethod</name>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a71336928d74b7736b056078e2674c6cf" prot="public">
+          <name>CryptoCC32XX_HMAC_MD5</name>
+          <initializer>= (CryptoCC32XX_HMAC &lt;&lt; 8) | 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MD5 used keyed-hash message authentication code </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a8ee76eef6a147e203b81e82ce423df5a" prot="public">
+          <name>CryptoCC32XX_HMAC_SHA1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SHA1 used keyed-hash message authentication code </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a4d3a1b4671728039f89c32bab72ac714" prot="public">
+          <name>CryptoCC32XX_HMAC_SHA224</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SHA224 used keyed-hash message authentication code </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a4f12298bf66e2e168610c8c24f859faf" prot="public">
+          <name>CryptoCC32XX_HMAC_SHA256</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SHA256 used keyed-hash message authentication code </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>HMAC Cryptography methods configuration Keep the Crypto method in the lower 8 bit and Crypto type in the upper 8 bits. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the HMAC HASH algorithms modes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="224" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="223" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="enum" id="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5ca" prot="public" static="no">
+        <name>CryptoCC32XX_AesKeySize</name>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5caaf6862c735cb68f66057085b107e33582" prot="public">
+          <name>CryptoCC32XX_AES_KEY_SIZE_128BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5caa17d47b9931f9dcf05d5b7288473ad792" prot="public">
+          <name>CryptoCC32XX_AES_KEY_SIZE_192BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5caae3f924d0fd0394267ac6c00cf78704d2" prot="public">
+          <name>CryptoCC32XX_AES_KEY_SIZE_256BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AES Cryptography key size type configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the AES key size types </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="238" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="237" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="enum" id="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5" prot="public" static="no">
+        <name>CryptoCC32XX_DesKeySize</name>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5ad6b5ee54d07f9864f9566aede6b70f8a" prot="public">
+          <name>CryptoCC32XX_DES_KEY_SIZE_SINGLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5ad9d8048a04492517329927602d327547" prot="public">
+          <name>CryptoCC32XX_DES_KEY_SIZE_TRIPLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>DES Cryptography key size type configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the DES key size types </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="251" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="250" bodyend="255"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_crypto_c_c32_x_x_8h_1a07244a71f940f18ceb48e94c011d1f7c" prot="public" static="no">
+        <type>struct <ref refid="struct_crypto_c_c32_x_x___config" kindref="compound">CryptoCC32XX_Config</ref> *</type>
+        <definition>typedef struct CryptoCC32XX_Config* CryptoCC32XX_Handle</definition>
+        <argsstring></argsstring>
+        <name>CryptoCC32XX_Handle</name>
+        <briefdescription>
+<para>A handle that is returned from a <ref refid="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" kindref="member">CryptoCC32XX_open()</ref> call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="349" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_crypto_c_c32_x_x_8h_1abc949f413f7b8d5619a25444e1e77c9f" prot="public" static="no">
+        <type>struct <ref refid="struct_crypto_c_c32_x_x___object" kindref="compound">CryptoCC32XX_Object</ref></type>
+        <definition>typedef struct CryptoCC32XX_Object  CryptoCC32XX_Object</definition>
+        <argsstring></argsstring>
+        <name>CryptoCC32XX_Object</name>
+        <briefdescription>
+<para>CryptoCC32XX Object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="364" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_crypto_c_c32_x_x_8h_1abf024f24fe7e9035851738b194b490a9" prot="public" static="no">
+        <type>struct <ref refid="struct_crypto_c_c32_x_x___config" kindref="compound">CryptoCC32XX_Config</ref></type>
+        <definition>typedef struct CryptoCC32XX_Config  CryptoCC32XX_Config</definition>
+        <argsstring></argsstring>
+        <name>CryptoCC32XX_Config</name>
+        <briefdescription>
+<para>Crypto Global configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="struct_crypto_c_c32_x_x___config" kindref="compound">CryptoCC32XX_Config</ref> structure contains a set of pointers used to characterize the Crypto driver implementation.</para><para>This structure needs to be defined before calling <ref refid="_crypto_c_c32_x_x_8h_1afc604beb66b331d175456758a038f595" kindref="member">CryptoCC32XX_init()</ref> and it must not be changed thereafter.</para><para><simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1afc604beb66b331d175456758a038f595" kindref="member">CryptoCC32XX_init()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="383" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_crypto_c_c32_x_x_8h_1a5c702224da5a00669a7f3118bc597b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CryptoCC32XX_close</definition>
+        <argsstring>(CryptoCC32XX_Handle handle)</argsstring>
+        <name>CryptoCC32XX_close</name>
+        <param>
+          <type><ref refid="_crypto_c_c32_x_x_8h_1a07244a71f940f18ceb48e94c011d1f7c" kindref="member">CryptoCC32XX_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Function to close a given Crypto peripheral specified by the Crypto handle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para><ref refid="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" kindref="member">CryptoCC32XX_open()</ref> had to be called first.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A CryptoCC32XX_Handle returned from CryptoCC32XX_open</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" kindref="member">CryptoCC32XX_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="396" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_crypto_c_c32_x_x_8h_1afc604beb66b331d175456758a038f595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CryptoCC32XX_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>CryptoCC32XX_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Function to initializes the Crypto module. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The <ref refid="struct_crypto_c_c32_x_x___config" kindref="compound">CryptoCC32XX_Config</ref> structure must exist and be persistent before this function can be called. This function must also be called before any other Crypto driver APIs. This function call does not modify any peripheral registers. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="406" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_crypto_c_c32_x_x_8h_1a07244a71f940f18ceb48e94c011d1f7c" kindref="member">CryptoCC32XX_Handle</ref></type>
+        <definition>CryptoCC32XX_Handle CryptoCC32XX_open</definition>
+        <argsstring>(uint32_t index, uint32_t types)</argsstring>
+        <name>CryptoCC32XX_open</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>types</declname>
+        </param>
+        <briefdescription>
+<para>Opens a Crypto object with a given index and returns a CryptoCC32XX_Handle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>Crypto module has been initialized</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical peripheral number for the Crypto indexed into the CryptoCC32XX_config table</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>types</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Define bitwise Crypto Types to support</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A CryptoCC32XX_Handle on success or a NULL on an error or if it has been opened already.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1afc604beb66b331d175456758a038f595" kindref="member">CryptoCC32XX_init()</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1ab651fe16dd7acc2b616300fe8c5ed1cc" kindref="member">CryptoCC32XX_HmacParams_init()</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1a5c702224da5a00669a7f3118bc597b7b" kindref="member">CryptoCC32XX_close()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="425" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_crypto_c_c32_x_x_8h_1ab651fe16dd7acc2b616300fe8c5ed1cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CryptoCC32XX_HmacParams_init</definition>
+        <argsstring>(CryptoCC32XX_HmacParams *params)</argsstring>
+        <name>CryptoCC32XX_HmacParams_init</name>
+        <param>
+          <type><ref refid="struct_crypto_c_c32_x_x___hmac_params" kindref="compound">CryptoCC32XX_HmacParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Initialize params structure to default values. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default parameters are:<itemizedlist>
+<listitem><para>pKey: 0</para></listitem><listitem><para>moreData: 0</para></listitem><listitem><para>*pContext: 0</para></listitem><listitem><para>first: 1</para></listitem><listitem><para>digestCount: 0</para></listitem><listitem><para>innerDigest: 0</para></listitem><listitem><para>buff: 0</para></listitem><listitem><para>buffLen: 0</para></listitem><listitem><para>blockSize: CryptoCC32XX_SHA256_BLOCK_SIZE</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the instance configuration parameters. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="443" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_crypto_c_c32_x_x_8h_1a358670dff935e00bcbb7ebb3b8e34de3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t CryptoCC32XX_encrypt</definition>
+        <argsstring>(CryptoCC32XX_Handle handle, CryptoCC32XX_EncryptMethod method, void *pInBuff, size_t inLen, void *pOutBuff, size_t *outLen, CryptoCC32XX_EncryptParams *pParams)</argsstring>
+        <name>CryptoCC32XX_encrypt</name>
+        <param>
+          <type><ref refid="_crypto_c_c32_x_x_8h_1a07244a71f940f18ceb48e94c011d1f7c" kindref="member">CryptoCC32XX_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7" kindref="member">CryptoCC32XX_EncryptMethod</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pInBuff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>inLen</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pOutBuff</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>outLen</declname>
+        </param>
+        <param>
+          <type><ref refid="union_crypto_c_c32_x_x___encrypt_params" kindref="compound">CryptoCC32XX_EncryptParams</ref> *</type>
+          <declname>pParams</declname>
+        </param>
+        <briefdescription>
+<para>Function which encrypt given data by a given AES or DES method. relevant to CryptoCC32XX_AES and CryptoCC32XX_DES. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A CryptoCC32XX_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An AES or DES encryption method to use on a given plain data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pInBuff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to plain data to encrypt.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of plain data to encrypt.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pOutBuff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to encrypted data (cipher text).</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of encrypted data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specific parameters according to Crypto Type (AES or DES).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns CryptoCC32XX_STATUS_SUCCESS if successful else would return CryptoCC32XX_STATUS_ERROR on an error.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" kindref="member">CryptoCC32XX_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="469" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_crypto_c_c32_x_x_8h_1ad595e60ce5e3b1d9effc738df2a548c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t CryptoCC32XX_decrypt</definition>
+        <argsstring>(CryptoCC32XX_Handle handle, CryptoCC32XX_EncryptMethod method, void *pInBuff, size_t inLen, void *pOutBuff, size_t *outLen, CryptoCC32XX_EncryptParams *pParams)</argsstring>
+        <name>CryptoCC32XX_decrypt</name>
+        <param>
+          <type><ref refid="_crypto_c_c32_x_x_8h_1a07244a71f940f18ceb48e94c011d1f7c" kindref="member">CryptoCC32XX_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7" kindref="member">CryptoCC32XX_EncryptMethod</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pInBuff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>inLen</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pOutBuff</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>outLen</declname>
+        </param>
+        <param>
+          <type><ref refid="union_crypto_c_c32_x_x___encrypt_params" kindref="compound">CryptoCC32XX_EncryptParams</ref> *</type>
+          <declname>pParams</declname>
+        </param>
+        <briefdescription>
+<para>Function which decrypt given cipher data by a given AES or DES method. relevant to CryptoCC32XX_AES and CryptoCC32XX_DES. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A CryptoCC32XX_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An AES or DES decryption method to use on a given cipher data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pInBuff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to cipher data to decrypt.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of cipher data to decrypt.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pOutBuff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to decrypted data (plain text).</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outLen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of decrypted data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specific parameters according to Crypto Type (AES or DES).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns CryptoCC32XX_STATUS_SUCCESS if successful else would return CryptoCC32XX_STATUS_ERROR on an error.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" kindref="member">CryptoCC32XX_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="496" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_crypto_c_c32_x_x_8h_1ab240f1d5ed6f878db523b09902d466ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t CryptoCC32XX_sign</definition>
+        <argsstring>(CryptoCC32XX_Handle handle, CryptoCC32XX_HmacMethod method, void *pBuff, size_t len, uint8_t *pSignature, CryptoCC32XX_HmacParams *pParams)</argsstring>
+        <name>CryptoCC32XX_sign</name>
+        <param>
+          <type><ref refid="_crypto_c_c32_x_x_8h_1a07244a71f940f18ceb48e94c011d1f7c" kindref="member">CryptoCC32XX_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52" kindref="member">CryptoCC32XX_HmacMethod</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pBuff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pSignature</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_crypto_c_c32_x_x___hmac_params" kindref="compound">CryptoCC32XX_HmacParams</ref> *</type>
+          <declname>pParams</declname>
+        </param>
+        <briefdescription>
+<para>Function which generates the HMAC Hash value of given plain Text. relevant to CryptoCC32XX_HMAC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A CryptoCC32XX_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HMAC Hash algorithm to use in order to generates the hash value</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pBuff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to plain data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of plain data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pSignature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>As input pointer to the given HMAC Hash value in case the HMAC flag was set and as output pointer for the generated Hash value.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specific parameters according to HMAC algorithm</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns CryptoCC32XX_STATUS_SUCCESS if successful else would return CryptoCC32XX_STATUS_ERROR on an error.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" kindref="member">CryptoCC32XX_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="522" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_crypto_c_c32_x_x_8h_1ae90ba3618dfccfbaaa6942b476525c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t CryptoCC32XX_verify</definition>
+        <argsstring>(CryptoCC32XX_Handle handle, CryptoCC32XX_HmacMethod method, void *pBuff, size_t len, uint8_t *pSignature, CryptoCC32XX_HmacParams *pParams)</argsstring>
+        <name>CryptoCC32XX_verify</name>
+        <param>
+          <type><ref refid="_crypto_c_c32_x_x_8h_1a07244a71f940f18ceb48e94c011d1f7c" kindref="member">CryptoCC32XX_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52" kindref="member">CryptoCC32XX_HmacMethod</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pBuff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pSignature</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_crypto_c_c32_x_x___hmac_params" kindref="compound">CryptoCC32XX_HmacParams</ref> *</type>
+          <declname>pParams</declname>
+        </param>
+        <briefdescription>
+<para>Function which verify a given Hash value on given plain Text. relevant to CryptoCC32XX_HMAC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A CryptoCC32XX_Handle</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HMAC Hash algorithm to use in order to verify the hash value</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pBuff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to plain data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of plain data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pSignature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>As input pointer to the given HMAC Hash value in case the HMAC flag was set and as output pointer for the generated Hash value.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specific parameters according to HMAC algorithm.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns CryptoCC32XX_STATUS_SUCCESS if value was successfully verified else would return CryptoCC32XX_STATUS_ERROR.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" kindref="member">CryptoCC32XX_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="548" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Crypto driver implementation for a CC32XX Crypto controller. </para>    </briefdescription>
+    <detaileddescription>
+<para>============================================================================</para><para>The Crypto header file should be included in an application as follows: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/crypto/CryptoCC32XX.h&gt;</highlight></codeline>
+</programlisting></para><para><heading level="1">Operation</heading>
+</para><para>The CryptoCC32XX driver is used several security methods (AES, DES and HMAC Hash functions). This driver provides API for encrypt/decrypt (AES and DES) and sign/verify (HMAC hash)</para><para>The application initializes the CryptoCC32XX driver by calling <ref refid="_crypto_c_c32_x_x_8h_1afc604beb66b331d175456758a038f595" kindref="member">CryptoCC32XX_init()</ref> and is then ready to open a Crypto by calling <ref refid="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" kindref="member">CryptoCC32XX_open()</ref>.</para><para>The APIs in this driver serve as an interface to a typical TI-RTOS application. The specific peripheral implementations are responsible to create all the OSAL specific primitives to allow for thread-safe operation.</para><para><heading level="2">Opening the driver</heading>
+</para><para><programlisting><codeline><highlight class="normal">CryptoCC32XX_Handle<sp/><sp/><sp/><sp/><sp/><sp/>handle;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">handle<sp/>=<sp/>CryptoCC32XX_open(CryptoCC32XX_configIndexValue,<sp/><sp/><sp/>CryptoCC32XX_AES<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CryptoCC32XX_DES<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CryptoCC32XX_HMAC);</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>(!handle)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>System_printf(&quot;CryptoCC32XX<sp/>did<sp/>not<sp/>open&quot;);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><heading level="2">AES data encryption</heading>
+</para><para><programlisting><codeline><highlight class="normal">CryptoCC32XX_EncryptMethod<sp/><sp/>method<sp/>=<sp/>desiredMethod;</highlight></codeline>
+<codeline><highlight class="normal">CryptoCC32XX_Params<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>params;</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>char<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plainData[16]<sp/>=<sp/>&quot;whatsoever123456&quot;;</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>int<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plainDataLen<sp/>=<sp/>sizeof(plainData);</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>char<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cipherData[16];</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>int<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cipherDataLen;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">params.aes.keySize<sp/>=<sp/>desiredKeySize;</highlight></codeline>
+<codeline><highlight class="normal">params.aes.pKey<sp/>=<sp/>(CryptoCC32XX_KeyPtr)desiredKey;<sp/>//<sp/>desiredKey<sp/>length<sp/>should<sp/>be<sp/>as<sp/>the<sp/>desiredKeySize</highlight></codeline>
+<codeline><highlight class="normal">params.aes.pIV<sp/>=<sp/>(void<sp/>*)pointerToInitVector;</highlight></codeline>
+<codeline><highlight class="normal">ret<sp/>=<sp/>CryptoCC32XX_encrypt(handle,<sp/>method<sp/>,<sp/>plainData,<sp/>plainDataLen,<sp/>cipherData<sp/>,<sp/>&amp;cipherDataLen<sp/>,<sp/>&amp;params);</highlight></codeline>
+</programlisting></para><para><heading level="2">Generate HMAC Hash signature</heading>
+</para><para><programlisting><codeline><highlight class="normal">CryptoCC32XX_HmacMethod<sp/>hmacMethod<sp/>=<sp/>desiredHmacMethod;</highlight></codeline>
+<codeline><highlight class="normal">CryptoCC32XX_Params<sp/><sp/><sp/><sp/><sp/>params;</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>char<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataBuff[]<sp/>=<sp/>&quot;whatsoever&quot;;</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>int<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataLength<sp/>=<sp/>sizeof(dataBuff);</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>char<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signatureBuff[32];</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">params.pKey<sp/>=<sp/>pointerToHMACkey;</highlight></codeline>
+<codeline><highlight class="normal">params.moreData<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">ret<sp/>=<sp/>CryptoCC32XX_sign(handle,<sp/>hmacMethod<sp/>,<sp/>&amp;dataBuff,<sp/>dataLength,<sp/>&amp;signatureBuff,<sp/>&amp;params);</highlight></codeline>
+</programlisting></para><para><heading level="1">Implementation</heading>
+</para><para>The CryptoCC32XX driver interface module is joined (at link time) to a NULL-terminated array of <ref refid="struct_crypto_c_c32_x_x___config" kindref="compound">CryptoCC32XX_Config</ref> data structures named <emphasis>CryptoCC32XX_config</emphasis>. <emphasis>CryptoCC32XX_config</emphasis> is implemented in the application with each entry being an instance of a CryptoCC32XX peripheral. Each entry in <emphasis>CryptoCC32XX_config</emphasis> contains a:<itemizedlist>
+<listitem><para>(void *) data object that is pointed to <ref refid="struct_crypto_c_c32_x_x___object" kindref="compound">CryptoCC32XX_Object</ref></para></listitem></itemizedlist>
+</para><para><hruler/>
+ </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015-2016,<sp/>Texas<sp/>Instruments<sp/>Incorporated</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor">#ifndef<sp/>ti_drivers_crypto_CryptoCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ti_drivers_crypto_CryptoCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/drivers/dpl/HwiP.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/drivers/dpl/SemaphoreP.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="_crypto_c_c32_x_x_8h_1a92c0453486dee140c2052c655563f434" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_CMD_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="_crypto_c_c32_x_x_8h_1a8bcb9880f738627923d7880cde4eaf9c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_STATUS_RESERVED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="_crypto_c_c32_x_x_8h_1ac467bcedd5da2e2a524b35312b26a729" refkind="member"><highlight class="preprocessor">#define<sp/>CryptoCC32XX_STATUS_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="_crypto_c_c32_x_x_8h_1a8eaf905c38d00e30fd8f9e6f60fe48b4" refkind="member"><highlight class="preprocessor">#define<sp/>CryptoCC32XX_STATUS_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="_crypto_c_c32_x_x_8h_1a45b4166204bb8da882597ccb95fe0637" refkind="member"><highlight class="preprocessor">#define<sp/>CryptoCC32XX_STATUS_UNDEFINEDCMD<sp/><sp/><sp/><sp/><sp/><sp/>-2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="_crypto_c_c32_x_x_8h_1ab386c59bb7f245ae3154ba245808eb78" refkind="member"><highlight class="preprocessor">#define<sp/>CryptoCC32XX_STATUS_ERROR_VERIFY<sp/><sp/><sp/><sp/><sp/><sp/>-3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="_crypto_c_c32_x_x_8h_1ae723482b9a81a38e219552c14cb0e825" refkind="member"><highlight class="preprocessor">#define<sp/>CryptoCC32XX_STATUS_ERROR_NOT_SUPPORTED<sp/>-4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="_crypto_c_c32_x_x_8h_1adc106538a31a4cd5db6f88b495c3b6d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_MAX_TYPES<sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="_crypto_c_c32_x_x_8h_1acd388f6d67c169197ab055a687ca2e69" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_MD5_BLOCK_SIZE<sp/><sp/><sp/><sp/><sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="_crypto_c_c32_x_x_8h_1a68e68dfdbfba6f97d502693503eadd22" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_SHA1_BLOCK_SIZE<sp/><sp/><sp/><sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="_crypto_c_c32_x_x_8h_1aebef5761e1ee71db46568c77a111d444" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_SHA256_BLOCK_SIZE<sp/><sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="_crypto_c_c32_x_x_8h_1a22c61979969cae8019dfaa3b34a4b51b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_MD5_DIGEST_SIZE<sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="_crypto_c_c32_x_x_8h_1aa37e48228b8700d78461c3197bbf24c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_SHA1_DIGEST_SIZE<sp/><sp/><sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="_crypto_c_c32_x_x_8h_1af611c112ed01c7b6e27dd9556ca66d0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_SHA256_DIGEST_SIZE<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="_crypto_c_c32_x_x_8h_1ae06b568567100eaea9fb1053c86f8200" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_MAX_DIGEST_SIZE<sp/>CryptoCC32XX_SHA256_DIGEST_SIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="_crypto_c_c32_x_x_8h_1a964c57864c3d46f6462cbc04f3a11bce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CryptoCC32XX_MAX_BLOCK_SIZE<sp/><sp/>CryptoCC32XX_SHA256_BLOCK_SIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188" refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3eac54409fdc8f1158b985529b320325d7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3eac54409fdc8f1158b985529b320325d7b" kindref="member">CryptoCC32XX_AES</ref><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="189" refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3eab15ffdf5780f4e4d6946db0d276e5605" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3eab15ffdf5780f4e4d6946db0d276e5605" kindref="member">CryptoCC32XX_DES</ref><sp/><sp/>=<sp/>0x02,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="190" refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3ead7a35216d18ce8239afc2a92dfd426f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3ead7a35216d18ce8239afc2a92dfd426f1" kindref="member">CryptoCC32XX_HMAC</ref><sp/>=<sp/>0x04,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}<ref refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3e" kindref="member">CryptoCC32XX_Type</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a34ead2f5b7e05f3a0d79bebe8da67520" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a34ead2f5b7e05f3a0d79bebe8da67520" kindref="member">CryptoCC32XX_AES_ECB</ref><sp/>=<sp/>(<ref refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3eac54409fdc8f1158b985529b320325d7b" kindref="member">CryptoCC32XX_AES</ref><sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="203" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a12bf6db085282fba65f64756e62d6033" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a12bf6db085282fba65f64756e62d6033" kindref="member">CryptoCC32XX_AES_CBC</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a53ef12b433c92f60da3f43477b965fcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a53ef12b433c92f60da3f43477b965fcf" kindref="member">CryptoCC32XX_AES_CTR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7ae428b04702c3a21eb2dabea650471492" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7ae428b04702c3a21eb2dabea650471492" kindref="member">CryptoCC32XX_AES_ICM</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7aa22a84b6253ee9a79d73fcb1c315a898" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7aa22a84b6253ee9a79d73fcb1c315a898" kindref="member">CryptoCC32XX_AES_CFB</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7ae1987d19b9307d7b24a604c2953b949a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7ae1987d19b9307d7b24a604c2953b949a" kindref="member">CryptoCC32XX_AES_GCM</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a0bd97c898f7db438ac91fccd63137be1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a0bd97c898f7db438ac91fccd63137be1" kindref="member">CryptoCC32XX_AES_CCM</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a3ca745ef7d637ccddd967352db59e193" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7a3ca745ef7d637ccddd967352db59e193" kindref="member">CryptoCC32XX_DES_ECB</ref><sp/>=<sp/>(<ref refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3eab15ffdf5780f4e4d6946db0d276e5605" kindref="member">CryptoCC32XX_DES</ref><sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="211" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7aa679e2e406dc95100ef7fc43f1d13305" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7aa679e2e406dc95100ef7fc43f1d13305" kindref="member">CryptoCC32XX_DES_CBC</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212" refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7aa5d70d96687f379594815802ad9710d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7aa5d70d96687f379594815802ad9710d6" kindref="member">CryptoCC32XX_DES_CFB</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}<ref refid="_crypto_c_c32_x_x_8h_1a192d3aa3b4e70212f9aa0d02db20a0f7" kindref="member">CryptoCC32XX_EncryptMethod</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225" refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a71336928d74b7736b056078e2674c6cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a71336928d74b7736b056078e2674c6cf" kindref="member">CryptoCC32XX_HMAC_MD5</ref><sp/>=<sp/>(<ref refid="_crypto_c_c32_x_x_8h_1a19644d0a505aee6bc6e904a52cf1cd3ead7a35216d18ce8239afc2a92dfd426f1" kindref="member">CryptoCC32XX_HMAC</ref><sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>1,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226" refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a8ee76eef6a147e203b81e82ce423df5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a8ee76eef6a147e203b81e82ce423df5a" kindref="member">CryptoCC32XX_HMAC_SHA1</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227" refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a4d3a1b4671728039f89c32bab72ac714" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a4d3a1b4671728039f89c32bab72ac714" kindref="member">CryptoCC32XX_HMAC_SHA224</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228" refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a4f12298bf66e2e168610c8c24f859faf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52a4f12298bf66e2e168610c8c24f859faf" kindref="member">CryptoCC32XX_HMAC_SHA256</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}<ref refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52" kindref="member">CryptoCC32XX_HmacMethod</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5ca" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239" refid="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5caaf6862c735cb68f66057085b107e33582" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5caaf6862c735cb68f66057085b107e33582" kindref="member">CryptoCC32XX_AES_KEY_SIZE_128BIT</ref>,</highlight></codeline>
+<codeline lineno="240" refid="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5caa17d47b9931f9dcf05d5b7288473ad792" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5caa17d47b9931f9dcf05d5b7288473ad792" kindref="member">CryptoCC32XX_AES_KEY_SIZE_192BIT</ref>,</highlight></codeline>
+<codeline lineno="241" refid="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5caae3f924d0fd0394267ac6c00cf78704d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5caae3f924d0fd0394267ac6c00cf78704d2" kindref="member">CryptoCC32XX_AES_KEY_SIZE_256BIT</ref></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}<ref refid="_crypto_c_c32_x_x_8h_1a2f3a0d67365500c8faf37db349ccd5ca" kindref="member">CryptoCC32XX_AesKeySize</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="252" refid="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5ad6b5ee54d07f9864f9566aede6b70f8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5ad6b5ee54d07f9864f9566aede6b70f8a" kindref="member">CryptoCC32XX_DES_KEY_SIZE_SINGLE</ref>,</highlight></codeline>
+<codeline lineno="253" refid="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5ad9d8048a04492517329927602d327547" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5ad9d8048a04492517329927602d327547" kindref="member">CryptoCC32XX_DES_KEY_SIZE_TRIPLE</ref></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}<ref refid="_crypto_c_c32_x_x_8h_1a9bc1c433559c0b9112ffc84d35338bf5" kindref="member">CryptoCC32XX_DesKeySize</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264" refid="struct_crypto_c_c32_x_x___aes_aad_input_params" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="266" refid="struct_crypto_c_c32_x_x___aes_aad_input_params_1ae0cf3710fc1ed77b35c64fe837df79f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_crypto_c_c32_x_x___aes_aad_input_params_1ae0cf3710fc1ed77b35c64fe837df79f0" kindref="member">pKey2</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="267" refid="struct_crypto_c_c32_x_x___aes_aad_input_params_1a2294f21e519eb332f0385935f9ea0559" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>CryptoCC32XX_AesKeySize<sp/><ref refid="struct_crypto_c_c32_x_x___aes_aad_input_params_1a2294f21e519eb332f0385935f9ea0559" kindref="member">key2Size</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="268" refid="struct_crypto_c_c32_x_x___aes_aad_input_params_1ae02b19c042acb7036e165e4738efd73d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_crypto_c_c32_x_x___aes_aad_input_params_1ae02b19c042acb7036e165e4738efd73d" kindref="member">len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}<ref refid="struct_crypto_c_c32_x_x___aes_aad_input_params" kindref="compound">CryptoCC32XX_AesAadInputParams</ref>;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="union_crypto_c_c32_x_x___aes_aad_params" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279" refid="union_crypto_c_c32_x_x___aes_aad_params_1a894d9ab2603f10f116f8e4f0afc35676" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_crypto_c_c32_x_x___aes_aad_input_params" kindref="compound">CryptoCC32XX_AesAadInputParams</ref><sp/><ref refid="union_crypto_c_c32_x_x___aes_aad_params_1a894d9ab2603f10f116f8e4f0afc35676" kindref="member">input</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="280" refid="union_crypto_c_c32_x_x___aes_aad_params_1ae0792a6e57d5e4938f2a9855d0d38962" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tag[16];<sp/></highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}<ref refid="union_crypto_c_c32_x_x___aes_aad_params" kindref="compound">CryptoCC32XX_AesAadParams</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="struct_crypto_c_c32_x_x___aes_params" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="290" refid="struct_crypto_c_c32_x_x___aes_params_1a8eb142edeaca7fe715cda3b4fe7b36ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_crypto_c_c32_x_x___aes_params_1a8eb142edeaca7fe715cda3b4fe7b36ac" kindref="member">pKey</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="291" refid="struct_crypto_c_c32_x_x___aes_params_1a11b689045dee5b8bfb0e48ca1185b8b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>CryptoCC32XX_AesKeySize<sp/><sp/><sp/><ref refid="struct_crypto_c_c32_x_x___aes_params_1a11b689045dee5b8bfb0e48ca1185b8b8" kindref="member">keySize</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="292" refid="struct_crypto_c_c32_x_x___aes_params_1a4b2d3eeae208ff0cd4a773470b95543f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_crypto_c_c32_x_x___aes_params_1a4b2d3eeae208ff0cd4a773470b95543f" kindref="member">pIV</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="293" refid="struct_crypto_c_c32_x_x___aes_params_1a96b5213f9d5a828388bc026bb474d35d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="union_crypto_c_c32_x_x___aes_aad_params" kindref="compound">CryptoCC32XX_AesAadParams</ref><sp/><ref refid="struct_crypto_c_c32_x_x___aes_params_1a96b5213f9d5a828388bc026bb474d35d" kindref="member">aadParams</ref>;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}<ref refid="struct_crypto_c_c32_x_x___aes_params" kindref="compound">CryptoCC32XX_AesParams</ref>;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="struct_crypto_c_c32_x_x___des_params" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="303" refid="struct_crypto_c_c32_x_x___des_params_1a827c2b816124360b67d13502459beedb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_crypto_c_c32_x_x___des_params_1a827c2b816124360b67d13502459beedb" kindref="member">pKey</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="304" refid="struct_crypto_c_c32_x_x___des_params_1a724bb6ed14be439aa3f4382e49bf0539" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>CryptoCC32XX_DesKeySize<sp/><ref refid="struct_crypto_c_c32_x_x___des_params_1a724bb6ed14be439aa3f4382e49bf0539" kindref="member">keySize</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="305" refid="struct_crypto_c_c32_x_x___des_params_1a9819a3e1bde4596795d38d932dec6ea6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_crypto_c_c32_x_x___des_params_1a9819a3e1bde4596795d38d932dec6ea6" kindref="member">pIV</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}<ref refid="struct_crypto_c_c32_x_x___des_params" kindref="compound">CryptoCC32XX_DesParams</ref>;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="union_crypto_c_c32_x_x___encrypt_params" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315" refid="union_crypto_c_c32_x_x___encrypt_params_1adc3bd4be259de3a607c1de69e15dfbed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_crypto_c_c32_x_x___aes_params" kindref="compound">CryptoCC32XX_AesParams</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="union_crypto_c_c32_x_x___encrypt_params_1adc3bd4be259de3a607c1de69e15dfbed" kindref="member">aes</ref>;</highlight></codeline>
+<codeline lineno="316" refid="union_crypto_c_c32_x_x___encrypt_params_1a8f9dc1e4b36168c868612a44583bac5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_crypto_c_c32_x_x___des_params" kindref="compound">CryptoCC32XX_DesParams</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="union_crypto_c_c32_x_x___encrypt_params_1a8f9dc1e4b36168c868612a44583bac5e" kindref="member">des</ref>;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">}<ref refid="union_crypto_c_c32_x_x___encrypt_params" kindref="compound">CryptoCC32XX_EncryptParams</ref>;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="struct_crypto_c_c32_x_x___hmac_params" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="327" refid="struct_crypto_c_c32_x_x___hmac_params_1a37c7b8a248a126685fc98227fcf83327" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>*<ref refid="struct_crypto_c_c32_x_x___hmac_params_1a37c7b8a248a126685fc98227fcf83327" kindref="member">pKey</ref>;</highlight></codeline>
+<codeline lineno="329" refid="struct_crypto_c_c32_x_x___hmac_params_1a4bd03f90ece73b2a77817fa177fe68c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="struct_crypto_c_c32_x_x___hmac_params_1a4bd03f90ece73b2a77817fa177fe68c1" kindref="member">moreData</ref>;</highlight></codeline>
+<codeline lineno="331" refid="struct_crypto_c_c32_x_x___hmac_params_1a89e72b1dbe75f0b0bdbf7dde368589d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_crypto_c_c32_x_x___hmac_params_1a89e72b1dbe75f0b0bdbf7dde368589d3" kindref="member">pContext</ref>;</highlight></codeline>
+<codeline lineno="333" refid="struct_crypto_c_c32_x_x___hmac_params_1a8ec2749095c0793d5356f2c948d9cd4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="struct_crypto_c_c32_x_x___hmac_params_1a8ec2749095c0793d5356f2c948d9cd4f" kindref="member">first</ref>;</highlight></codeline>
+<codeline lineno="335" refid="struct_crypto_c_c32_x_x___hmac_params_1a488fdfb0ec8faa966d7c52b206e8d98d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_crypto_c_c32_x_x___hmac_params_1a488fdfb0ec8faa966d7c52b206e8d98d" kindref="member">digestCount</ref>;</highlight></codeline>
+<codeline lineno="337" refid="struct_crypto_c_c32_x_x___hmac_params_1afff2753156dd5f4c3786b501730013c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>innerDigest[<ref refid="_crypto_c_c32_x_x_8h_1ae06b568567100eaea9fb1053c86f8200" kindref="member">CryptoCC32XX_MAX_DIGEST_SIZE</ref>];</highlight></codeline>
+<codeline lineno="339" refid="struct_crypto_c_c32_x_x___hmac_params_1a54cfc6719d597a7bc899a09b8a280410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>buff[<ref refid="_crypto_c_c32_x_x_8h_1a964c57864c3d46f6462cbc04f3a11bce" kindref="member">CryptoCC32XX_MAX_BLOCK_SIZE</ref>];</highlight></codeline>
+<codeline lineno="341" refid="struct_crypto_c_c32_x_x___hmac_params_1aceb4e9d6711f5439023c999573417d1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_crypto_c_c32_x_x___hmac_params_1aceb4e9d6711f5439023c999573417d1a" kindref="member">buffLen</ref>;</highlight></codeline>
+<codeline lineno="343" refid="struct_crypto_c_c32_x_x___hmac_params_1a73ea0b139bcc19154e5a5bb4ac684898" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_crypto_c_c32_x_x___hmac_params_1a73ea0b139bcc19154e5a5bb4ac684898" kindref="member">blockSize</ref>;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal">}<ref refid="struct_crypto_c_c32_x_x___hmac_params" kindref="compound">CryptoCC32XX_HmacParams</ref>;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="_crypto_c_c32_x_x_8h_1a07244a71f940f18ceb48e94c011d1f7c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_crypto_c_c32_x_x___config" kindref="compound">CryptoCC32XX_Config</ref><sp/><sp/><sp/><sp/>*<ref refid="_crypto_c_c32_x_x_8h_1a07244a71f940f18ceb48e94c011d1f7c" kindref="member">CryptoCC32XX_Handle</ref>;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="struct_crypto_c_c32_x_x___object" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_crypto_c_c32_x_x___object" kindref="compound">CryptoCC32XX_Object</ref><sp/>{</highlight></codeline>
+<codeline lineno="359" refid="struct_crypto_c_c32_x_x___object_1a1b47cd50396a4979c40d5cbd987f90c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HwiP_Handle<sp/><sp/><sp/><sp/><sp/><ref refid="struct_crypto_c_c32_x_x___object_1a1b47cd50396a4979c40d5cbd987f90c2" kindref="member">hwiHandle</ref>[<ref refid="_crypto_c_c32_x_x_8h_1adc106538a31a4cd5db6f88b495c3b6d9" kindref="member">CryptoCC32XX_MAX_TYPES</ref>];</highlight></codeline>
+<codeline lineno="361" refid="struct_crypto_c_c32_x_x___object_1ae5634ade9e7b1ad2b8f11ac022ef1c53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_crypto_c_c32_x_x___object_1ae5634ade9e7b1ad2b8f11ac022ef1c53" kindref="member">isOpen</ref>;</highlight></codeline>
+<codeline lineno="363" refid="struct_crypto_c_c32_x_x___object_1ad5e3b03de5e166a0a6f8f1585dcafa5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SemaphoreP_Handle<sp/><sp/><sp/><ref refid="struct_crypto_c_c32_x_x___object_1ad5e3b03de5e166a0a6f8f1585dcafa5d" kindref="member">sem</ref>[<ref refid="_crypto_c_c32_x_x_8h_1adc106538a31a4cd5db6f88b495c3b6d9" kindref="member">CryptoCC32XX_MAX_TYPES</ref>];</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">}<sp/><ref refid="_crypto_c_c32_x_x_8h_1abc949f413f7b8d5619a25444e1e77c9f" kindref="member">CryptoCC32XX_Object</ref>;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378" refid="struct_crypto_c_c32_x_x___config" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_crypto_c_c32_x_x___config" kindref="compound">CryptoCC32XX_Config</ref><sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381" refid="struct_crypto_c_c32_x_x___config_1ac265b4a3d21805d184012c25e7c843f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_crypto_c_c32_x_x___config_1ac265b4a3d21805d184012c25e7c843f0" kindref="member">object</ref>;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal">}<sp/><ref refid="_crypto_c_c32_x_x_8h_1abf024f24fe7e9035851738b194b490a9" kindref="member">CryptoCC32XX_Config</ref>;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_crypto_c_c32_x_x_8h_1a5c702224da5a00669a7f3118bc597b7b" kindref="member">CryptoCC32XX_close</ref>(CryptoCC32XX_Handle<sp/>handle);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_crypto_c_c32_x_x_8h_1afc604beb66b331d175456758a038f595" kindref="member">CryptoCC32XX_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal">CryptoCC32XX_Handle<sp/><ref refid="_crypto_c_c32_x_x_8h_1a76f8996505a6022dcf3d1d1338a42f12" kindref="member">CryptoCC32XX_open</ref>(uint32_t<sp/>index,<sp/>uint32_t<sp/>types);</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_crypto_c_c32_x_x_8h_1ab651fe16dd7acc2b616300fe8c5ed1cc" kindref="member">CryptoCC32XX_HmacParams_init</ref>(<ref refid="struct_crypto_c_c32_x_x___hmac_params" kindref="compound">CryptoCC32XX_HmacParams</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal">int32_t<sp/><ref refid="_crypto_c_c32_x_x_8h_1a358670dff935e00bcbb7ebb3b8e34de3" kindref="member">CryptoCC32XX_encrypt</ref>(<sp/><sp/>CryptoCC32XX_Handle<sp/>handle,<sp/>CryptoCC32XX_EncryptMethod<sp/>method<sp/>,</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pInBuff,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>inLen,</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pOutBuff<sp/>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*outLen<sp/>,<sp/><ref refid="union_crypto_c_c32_x_x___encrypt_params" kindref="compound">CryptoCC32XX_EncryptParams</ref><sp/>*pParams);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal">int32_t<sp/><ref refid="_crypto_c_c32_x_x_8h_1ad595e60ce5e3b1d9effc738df2a548c7" kindref="member">CryptoCC32XX_decrypt</ref>(<sp/><sp/>CryptoCC32XX_Handle<sp/>handle,<sp/>CryptoCC32XX_EncryptMethod<sp/>method<sp/>,</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pInBuff,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>inLen,</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pOutBuff<sp/>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*outLen<sp/>,<sp/><ref refid="union_crypto_c_c32_x_x___encrypt_params" kindref="compound">CryptoCC32XX_EncryptParams</ref><sp/>*pParams);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal">int32_t<sp/><ref refid="_crypto_c_c32_x_x_8h_1ab240f1d5ed6f878db523b09902d466ba" kindref="member">CryptoCC32XX_sign</ref>(<sp/>CryptoCC32XX_Handle<sp/>handle,<sp/><ref refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52" kindref="member">CryptoCC32XX_HmacMethod</ref><sp/>method<sp/>,</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pBuff,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*pSignature,<sp/><ref refid="struct_crypto_c_c32_x_x___hmac_params" kindref="compound">CryptoCC32XX_HmacParams</ref><sp/>*pParams);</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal">int32_t<sp/><ref refid="_crypto_c_c32_x_x_8h_1ae90ba3618dfccfbaaa6942b476525c8c" kindref="member">CryptoCC32XX_verify</ref>(<sp/><sp/><sp/>CryptoCC32XX_Handle<sp/>handle,<sp/><ref refid="_crypto_c_c32_x_x_8h_1a41562672366863573601f9804e745a52" kindref="member">CryptoCC32XX_HmacMethod</ref><sp/>method<sp/>,</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pBuff,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len,</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*pSignature,<sp/><ref refid="struct_crypto_c_c32_x_x___hmac_params" kindref="compound">CryptoCC32XX_HmacParams</ref><sp/>*pParams);</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ti_drivers_CryptoCC32XX__include<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h"/>
+  </compounddef>
+</doxygen>

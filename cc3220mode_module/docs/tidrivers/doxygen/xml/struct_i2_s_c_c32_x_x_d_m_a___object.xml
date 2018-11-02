@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_i2_s_c_c32_x_x_d_m_a___object" kind="struct" language="C++" prot="public">
+    <compoundname>I2SCC32XXDMA_Object</compoundname>
+    <includes refid="_i2_s_c_c32_x_x_d_m_a_8h" local="no">I2SCC32XXDMA.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a9cf974c2b3c902a5a01d1ca31ca79497" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool I2SCC32XXDMA_Object::opened</definition>
+        <argsstring></argsstring>
+        <name>opened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="257" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1ae389e913b58a9dce5cf95a951c62d226" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2SCC32XXDMA_Object::operationMode</definition>
+        <argsstring></argsstring>
+        <name>operationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="258" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a4131f90d57d111a8abb9179d18dfc128" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars" kindref="compound">I2SCC32XXDMA_SerialPinVars</ref></type>
+        <definition>I2SCC32XXDMA_SerialPinVars I2SCC32XXDMA_Object::serialPinVars[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>serialPinVars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="261" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a6dcfc468f83cd240c268b3cbf65e3303" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2SCC32XXDMA_Object::readIndex</definition>
+        <argsstring></argsstring>
+        <name>readIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="263" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a718bfca195b66d60900ba65f3f2ab293" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2SCC32XXDMA_Object::writeIndex</definition>
+        <argsstring></argsstring>
+        <name>writeIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="264" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a34d395a3e77f25b6c95cea0c31dc300a" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_c_c32_x_x_d_m_a_8h_1a0fdf1e34ecdac89ca77146c96cee6090" kindref="member">I2SCC32XXDMA_DataSize</ref></type>
+        <definition>I2SCC32XXDMA_DataSize I2SCC32XXDMA_Object::dmaSize</definition>
+        <argsstring></argsstring>
+        <name>dmaSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="266" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a8056e6436ed4d18344a9e014c6f42ec5" prot="public" static="no" mutable="no">
+        <type>SemaphoreP_Handle</type>
+        <definition>SemaphoreP_Handle I2SCC32XXDMA_Object::writeSem</definition>
+        <argsstring></argsstring>
+        <name>writeSem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="269" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a1a3a5b8dadb9da8b1e610f2bc5ac746a" prot="public" static="no" mutable="no">
+        <type>SemaphoreP_Handle</type>
+        <definition>SemaphoreP_Handle I2SCC32XXDMA_Object::readSem</definition>
+        <argsstring></argsstring>
+        <name>readSem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="270" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1ab211b9156e7960390a1a6738f30cbb8e" prot="public" static="no" mutable="no">
+        <type>HwiP_Handle</type>
+        <definition>HwiP_Handle I2SCC32XXDMA_Object::hwiHandle</definition>
+        <argsstring></argsstring>
+        <name>hwiHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="271" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1aa7f1e4013ad30dc5061a34f946b0c5b5" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long I2SCC32XXDMA_Object::zeroWriteBufLength</definition>
+        <argsstring></argsstring>
+        <name>zeroWriteBufLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="274" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a6c09ef9233754c1f8918a73b14218c43" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long I2SCC32XXDMA_Object::emptyReadBufLength</definition>
+        <argsstring></argsstring>
+        <name>emptyReadBufLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="278" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1aeeab3e5fda8d854ae0b880a980d2973c" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> *</type>
+        <definition>I2S_BufDesc* I2SCC32XXDMA_Object::currentWriteBufDesc</definition>
+        <argsstring></argsstring>
+        <name>currentWriteBufDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="281" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1afccef61009af1f382bf5ba37ae00645f" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> *</type>
+        <definition>I2S_BufDesc* I2SCC32XXDMA_Object::prevWriteBufDesc</definition>
+        <argsstring></argsstring>
+        <name>prevWriteBufDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="284" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a4e43523ef5d01fff39c504c89ff231a2" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> *</type>
+        <definition>I2S_BufDesc* I2SCC32XXDMA_Object::currentReadBufDesc</definition>
+        <argsstring></argsstring>
+        <name>currentReadBufDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="287" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1aa6b38510df8522df6722a5017d19bb18" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a974a6d92a855f1a93deb92e18e29252a" kindref="member">I2S_BufDesc</ref> *</type>
+        <definition>I2S_BufDesc* I2SCC32XXDMA_Object::prevReadBufDesc</definition>
+        <argsstring></argsstring>
+        <name>prevReadBufDesc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="290" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1af5692cfe1f0960493ab6d04d30b092c8" prot="public" static="no" mutable="no">
+        <type><ref refid="_u_d_m_a_c_c32_x_x_8h_1af59f3e7aaf41ab38389b3978751486b0" kindref="member">UDMACC32XX_Handle</ref></type>
+        <definition>UDMACC32XX_Handle I2SCC32XXDMA_Object::dmaHandle</definition>
+        <argsstring></argsstring>
+        <name>dmaHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="293" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a88e752397a20e2bd9506c4784a1d29b4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_list___list" kindref="compound">List_List</ref></type>
+        <definition>List_List I2SCC32XXDMA_Object::readActiveQueue</definition>
+        <argsstring></argsstring>
+        <name>readActiveQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="296" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a6f03a4bf5acfd0f6501ee3a97dcb7c49" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_list___list" kindref="compound">List_List</ref></type>
+        <definition>List_List I2SCC32XXDMA_Object::readDoneQueue</definition>
+        <argsstring></argsstring>
+        <name>readDoneQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="297" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a2bade60086c9c0dd42f102bf9f13832c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_list___list" kindref="compound">List_List</ref></type>
+        <definition>List_List I2SCC32XXDMA_Object::writeActiveQueue</definition>
+        <argsstring></argsstring>
+        <name>writeActiveQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="298" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___object_1a186e9c8982edfe2a8327b9ba7061f05a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_list___list" kindref="compound">List_List</ref></type>
+        <definition>List_List I2SCC32XXDMA_Object::writeDoneQueue</definition>
+        <argsstring></argsstring>
+        <name>writeDoneQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="299" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2SCC32XXDMA Object. </para>    </briefdescription>
+    <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="135">
+        <label>I2SCC32XXDMA_SerialPinVars</label>
+        <link refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_vars"/>
+        <childnode refid="136" relation="usage">
+          <edgelabel>readWriteCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="138">
+        <label>I2S_BufDesc_</label>
+        <link refid="struct_i2_s___buf_desc__"/>
+        <childnode refid="139" relation="usage">
+          <edgelabel>qElem</edgelabel>
+        </childnode>
+      </node>
+      <node id="139">
+        <label>List_Elem</label>
+        <link refid="struct_list___elem"/>
+        <childnode refid="139" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="140">
+        <label>List_List</label>
+        <link refid="struct_list___list"/>
+        <childnode refid="139" relation="usage">
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="136">
+        <label>I2S_Config_</label>
+        <link refid="struct_i2_s___config__"/>
+        <childnode refid="137" relation="usage">
+          <edgelabel>fxnTablePtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="137">
+        <label>I2S_FxnTable_</label>
+        <link refid="struct_i2_s___fxn_table__"/>
+        <childnode refid="136" relation="usage">
+          <edgelabel>readIssueFxn</edgelabel>
+          <edgelabel>closeFxn</edgelabel>
+          <edgelabel>writeIssueFxn</edgelabel>
+          <edgelabel>writeReclaimFxn</edgelabel>
+          <edgelabel>initFxn</edgelabel>
+          <edgelabel>readReclaimFxn</edgelabel>
+          <edgelabel>controlFxn</edgelabel>
+          <edgelabel>openFxn</edgelabel>
+        </childnode>
+      </node>
+      <node id="134">
+        <label>I2SCC32XXDMA_Object</label>
+        <link refid="struct_i2_s_c_c32_x_x_d_m_a___object"/>
+        <childnode refid="135" relation="usage">
+          <edgelabel>serialPinVars</edgelabel>
+        </childnode>
+        <childnode refid="138" relation="usage">
+          <edgelabel>prevWriteBufDesc</edgelabel>
+          <edgelabel>currentWriteBufDesc</edgelabel>
+          <edgelabel>currentReadBufDesc</edgelabel>
+          <edgelabel>prevReadBufDesc</edgelabel>
+        </childnode>
+        <childnode refid="140" relation="usage">
+          <edgelabel>writeDoneQueue</edgelabel>
+          <edgelabel>readActiveQueue</edgelabel>
+          <edgelabel>readDoneQueue</edgelabel>
+          <edgelabel>writeActiveQueue</edgelabel>
+        </childnode>
+        <childnode refid="141" relation="usage">
+          <edgelabel>dmaHandle</edgelabel>
+        </childnode>
+      </node>
+      <node id="141">
+        <label>UDMACC32XX_Config</label>
+        <link refid="struct_u_d_m_a_c_c32_x_x___config"/>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="255" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="255" bodyend="300"/>
+    <listofallmembers>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a4e43523ef5d01fff39c504c89ff231a2" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>currentReadBufDesc</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1aeeab3e5fda8d854ae0b880a980d2973c" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>currentWriteBufDesc</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1af5692cfe1f0960493ab6d04d30b092c8" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>dmaHandle</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a34d395a3e77f25b6c95cea0c31dc300a" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>dmaSize</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a6c09ef9233754c1f8918a73b14218c43" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>emptyReadBufLength</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1ab211b9156e7960390a1a6738f30cbb8e" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>hwiHandle</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a9cf974c2b3c902a5a01d1ca31ca79497" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>opened</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1ae389e913b58a9dce5cf95a951c62d226" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>operationMode</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1aa6b38510df8522df6722a5017d19bb18" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>prevReadBufDesc</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1afccef61009af1f382bf5ba37ae00645f" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>prevWriteBufDesc</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a88e752397a20e2bd9506c4784a1d29b4" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>readActiveQueue</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a6f03a4bf5acfd0f6501ee3a97dcb7c49" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>readDoneQueue</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a6dcfc468f83cd240c268b3cbf65e3303" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>readIndex</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a1a3a5b8dadb9da8b1e610f2bc5ac746a" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>readSem</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a4131f90d57d111a8abb9179d18dfc128" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>serialPinVars</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a2bade60086c9c0dd42f102bf9f13832c" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>writeActiveQueue</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a186e9c8982edfe2a8327b9ba7061f05a" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>writeDoneQueue</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a718bfca195b66d60900ba65f3f2ab293" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>writeIndex</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1a8056e6436ed4d18344a9e014c6f42ec5" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>writeSem</name></member>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___object_1aa7f1e4013ad30dc5061a34f946b0c5b5" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_Object</scope><name>zeroWriteBufLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

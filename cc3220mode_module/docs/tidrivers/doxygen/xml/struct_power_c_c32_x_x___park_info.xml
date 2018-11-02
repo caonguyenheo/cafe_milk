@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_power_c_c32_x_x___park_info" kind="struct" language="C++" prot="public">
+    <compoundname>PowerCC32XX_ParkInfo</compoundname>
+    <includes refid="_power_c_c32_x_x_8h" local="no">PowerCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___park_info_1accc07ff476224c453e9c86b5128d5013" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PowerCC32XX_ParkInfo::pin</definition>
+        <argsstring></argsstring>
+        <name>pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pin to be parked </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="203" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_power_c_c32_x_x___park_info_1a6ff9c226811f204d28e4d4408f35fa9b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PowerCC32XX_ParkInfo::parkState</definition>
+        <argsstring></argsstring>
+        <name>parkState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The state to park the pin (an enumerated PowerCC32XX_ParkState) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="205" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used to specify parking of a pin during LPDS. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" line="202" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/power/PowerCC32XX.h" bodystart="202" bodyend="207"/>
+    <listofallmembers>
+      <member refid="struct_power_c_c32_x_x___park_info_1a6ff9c226811f204d28e4d4408f35fa9b" prot="public" virt="non-virtual"><scope>PowerCC32XX_ParkInfo</scope><name>parkState</name></member>
+      <member refid="struct_power_c_c32_x_x___park_info_1accc07ff476224c453e9c86b5128d5013" prot="public" virt="non-virtual"><scope>PowerCC32XX_ParkInfo</scope><name>pin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

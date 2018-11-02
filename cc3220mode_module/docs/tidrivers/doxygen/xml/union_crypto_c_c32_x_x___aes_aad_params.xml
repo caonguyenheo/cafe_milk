@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="union_crypto_c_c32_x_x___aes_aad_params" kind="union" language="C++" prot="public">
+    <compoundname>CryptoCC32XX_AesAadParams</compoundname>
+    <includes refid="_crypto_c_c32_x_x_8h" local="no">CryptoCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_crypto_c_c32_x_x___aes_aad_params_1a894d9ab2603f10f116f8e4f0afc35676" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_crypto_c_c32_x_x___aes_aad_input_params" kindref="compound">CryptoCC32XX_AesAadInputParams</ref></type>
+        <definition>CryptoCC32XX_AesAadInputParams CryptoCC32XX_AesAadParams::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>an input - additional authentication data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="279" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_crypto_c_c32_x_x___aes_aad_params_1ae0792a6e57d5e4938f2a9855d0d38962" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CryptoCC32XX_AesAadParams::tag[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>an output - pointer to a 4-word array where the hash tag is written </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="280" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AES Additional Authentication Data Parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>This union defines the AES additional authentication parameters used for CryptoCC32XX_AES_GCM and CryptoCC32XX_AES_CCM </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="53">
+        <label>CryptoCC32XX_AesAadParams</label>
+        <link refid="union_crypto_c_c32_x_x___aes_aad_params"/>
+        <childnode refid="54" relation="usage">
+          <edgelabel>input</edgelabel>
+        </childnode>
+      </node>
+      <node id="54">
+        <label>CryptoCC32XX_AesAadInputParams</label>
+        <link refid="struct_crypto_c_c32_x_x___aes_aad_input_params"/>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="278" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="277" bodyend="281"/>
+    <listofallmembers>
+      <member refid="union_crypto_c_c32_x_x___aes_aad_params_1a894d9ab2603f10f116f8e4f0afc35676" prot="public" virt="non-virtual"><scope>CryptoCC32XX_AesAadParams</scope><name>input</name></member>
+      <member refid="union_crypto_c_c32_x_x___aes_aad_params_1ae0792a6e57d5e4938f2a9855d0d38962" prot="public" virt="non-virtual"><scope>CryptoCC32XX_AesAadParams</scope><name>tag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

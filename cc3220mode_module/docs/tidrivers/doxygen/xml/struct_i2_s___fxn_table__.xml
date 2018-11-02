@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_i2_s___fxn_table__" kind="struct" language="C++" prot="public">
+    <compoundname>I2S_FxnTable_</compoundname>
+    <includes refid="_i2_s_8h" local="no">I2S.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_s___fxn_table___1a2b8c0cffbb491cd410c330e4aaeb9bbd" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a91bfa91197cb8ff2388744088177dde8" kindref="member">I2S_CloseFxn</ref></type>
+        <definition>I2S_CloseFxn I2S_FxnTable_::closeFxn</definition>
+        <argsstring></argsstring>
+        <name>closeFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to close the specified peripheral </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="521" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___fxn_table___1abc6337cafc2cb3a9010c27ffb48fe161" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1aab9f7e31e9e8eea04f7072c0f00f1482" kindref="member">I2S_ControlFxn</ref></type>
+        <definition>I2S_ControlFxn I2S_FxnTable_::controlFxn</definition>
+        <argsstring></argsstring>
+        <name>controlFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to implementation specific control function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="524" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___fxn_table___1acf16543f94f4cc7e71dd7100e707fe34" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a17f21fcbc2627ef97044ee7ff6cfdee6" kindref="member">I2S_InitFxn</ref></type>
+        <definition>I2S_InitFxn I2S_FxnTable_::initFxn</definition>
+        <argsstring></argsstring>
+        <name>initFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to initialize the given data object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="527" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___fxn_table___1af5d22941e566d37e0e065b1dcff0f135" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a0a8c4787b4a5a262dc86d9dfa7da2840" kindref="member">I2S_OpenFxn</ref></type>
+        <definition>I2S_OpenFxn I2S_FxnTable_::openFxn</definition>
+        <argsstring></argsstring>
+        <name>openFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to open the specified peripheral </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="530" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___fxn_table___1ac5fdb64147f083e7d86c811861a07fbb" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1ada70240cf4484f0817c7104ac6564c9c" kindref="member">I2S_IssueFxn</ref></type>
+        <definition>I2S_IssueFxn I2S_FxnTable_::readIssueFxn</definition>
+        <argsstring></argsstring>
+        <name>readIssueFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to queue a buffer for reading from the specified peripheral </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="533" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___fxn_table___1a336ee449bd72a5abcd1491243a5cda70" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1aeb85638443d9071ae1e46233cb7ed82c" kindref="member">I2S_ReclaimFxn</ref></type>
+        <definition>I2S_ReclaimFxn I2S_FxnTable_::readReclaimFxn</definition>
+        <argsstring></argsstring>
+        <name>readReclaimFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to retrieve a received buffer of data from the specified peripheral </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="536" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___fxn_table___1a1e858f6467d5cae9d6ebe8e451ff7f91" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1ada70240cf4484f0817c7104ac6564c9c" kindref="member">I2S_IssueFxn</ref></type>
+        <definition>I2S_IssueFxn I2S_FxnTable_::writeIssueFxn</definition>
+        <argsstring></argsstring>
+        <name>writeIssueFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to queue a buffer for writing from the specified peripheral </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="539" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___fxn_table___1a7ba463f594f6114ec9e959fd196cfe45" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1aeb85638443d9071ae1e46233cb7ed82c" kindref="member">I2S_ReclaimFxn</ref></type>
+        <definition>I2S_ReclaimFxn I2S_FxnTable_::writeReclaimFxn</definition>
+        <argsstring></argsstring>
+        <name>writeReclaimFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to retrieve a sent buffer of data from the specified peripheral </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="542" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The definition of a I2S function table that contains the required set of functions to control a specific I2S driver implementation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="126">
+        <label>I2S_Config_</label>
+        <link refid="struct_i2_s___config__"/>
+        <childnode refid="125" relation="usage">
+          <edgelabel>fxnTablePtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="125">
+        <label>I2S_FxnTable_</label>
+        <link refid="struct_i2_s___fxn_table__"/>
+        <childnode refid="126" relation="usage">
+          <edgelabel>readIssueFxn</edgelabel>
+          <edgelabel>closeFxn</edgelabel>
+          <edgelabel>writeIssueFxn</edgelabel>
+          <edgelabel>writeReclaimFxn</edgelabel>
+          <edgelabel>initFxn</edgelabel>
+          <edgelabel>readReclaimFxn</edgelabel>
+          <edgelabel>controlFxn</edgelabel>
+          <edgelabel>openFxn</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="519" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="519" bodyend="544"/>
+    <listofallmembers>
+      <member refid="struct_i2_s___fxn_table___1a2b8c0cffbb491cd410c330e4aaeb9bbd" prot="public" virt="non-virtual"><scope>I2S_FxnTable_</scope><name>closeFxn</name></member>
+      <member refid="struct_i2_s___fxn_table___1abc6337cafc2cb3a9010c27ffb48fe161" prot="public" virt="non-virtual"><scope>I2S_FxnTable_</scope><name>controlFxn</name></member>
+      <member refid="struct_i2_s___fxn_table___1acf16543f94f4cc7e71dd7100e707fe34" prot="public" virt="non-virtual"><scope>I2S_FxnTable_</scope><name>initFxn</name></member>
+      <member refid="struct_i2_s___fxn_table___1af5d22941e566d37e0e065b1dcff0f135" prot="public" virt="non-virtual"><scope>I2S_FxnTable_</scope><name>openFxn</name></member>
+      <member refid="struct_i2_s___fxn_table___1ac5fdb64147f083e7d86c811861a07fbb" prot="public" virt="non-virtual"><scope>I2S_FxnTable_</scope><name>readIssueFxn</name></member>
+      <member refid="struct_i2_s___fxn_table___1a336ee449bd72a5abcd1491243a5cda70" prot="public" virt="non-virtual"><scope>I2S_FxnTable_</scope><name>readReclaimFxn</name></member>
+      <member refid="struct_i2_s___fxn_table___1a1e858f6467d5cae9d6ebe8e451ff7f91" prot="public" virt="non-virtual"><scope>I2S_FxnTable_</scope><name>writeIssueFxn</name></member>
+      <member refid="struct_i2_s___fxn_table___1a7ba463f594f6114ec9e959fd196cfe45" prot="public" virt="non-virtual"><scope>I2S_FxnTable_</scope><name>writeReclaimFxn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

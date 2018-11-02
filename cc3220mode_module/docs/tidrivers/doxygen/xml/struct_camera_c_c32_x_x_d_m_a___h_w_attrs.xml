@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_camera_c_c32_x_x_d_m_a___h_w_attrs" kind="struct" language="C++" prot="public">
+    <compoundname>CameraCC32XXDMA_HWAttrs</compoundname>
+    <includes refid="_camera_c_c32_x_x_d_m_a_8h" local="no">CameraCC32XXDMA.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___h_w_attrs_1ab35bfe98c5466f241eff49822a4de046" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CameraCC32XXDMA_HWAttrs::baseAddr</definition>
+        <argsstring></argsstring>
+        <name>baseAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera Peripheral&apos;s base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="126" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___h_w_attrs_1a2136697500f1604ed6231fc232e46faf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CameraCC32XXDMA_HWAttrs::intNum</definition>
+        <argsstring></argsstring>
+        <name>intNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera Peripheral&apos;s interrupt vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="128" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___h_w_attrs_1a4310d7487b3300d3ea77f0b1b7345f51" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CameraCC32XXDMA_HWAttrs::intPriority</definition>
+        <argsstring></argsstring>
+        <name>intPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera Peripheral&apos;s interrupt priority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="130" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___h_w_attrs_1a6ae0ebea75dcba9f1836774d7d380b2a" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CameraCC32XXDMA_HWAttrs::channelIndex</definition>
+        <argsstring></argsstring>
+        <name>channelIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uDMA controlTable channel index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="132" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CameraCC32XXDMA Hardware attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>These fields, with the exception of intPriority, are used by driverlib APIs and therefore must be populated by driverlib macro definitions. For CC32XXWare these definitions are found in:<itemizedlist>
+<listitem><para>inc/hw_memmap.h</para></listitem><listitem><para>inc/hw_ints.h</para></listitem></itemizedlist>
+</para><para>intPriority is the Camera peripheral&apos;s interrupt priority, as defined by the underlying OS. It is passed unmodified to the underlying OS&apos;s interrupt handler creation code, so you need to refer to the OS documentation for usage. If the driver uses the ti.dpl interface instead of making OS calls directly, then the HwiP port handles the interrupt priority in an OS specific way. In the case of the SYS/BIOS port, intPriority is passed unmodified to Hwi_create().</para><para>A sample structure is shown below: <programlisting><codeline><highlight class="normal">const<sp/>CameraCC32XXDMA_HWAttrs<sp/>CameraCC32XXDMAHWAttrs[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.baseAddr<sp/>=<sp/>CAMERA_BASE,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intNum<sp/>=<sp/>INT_CAMERA,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intPriority<sp/>=<sp/>(~0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.channelIndex<sp/>=<sp/>UDMA_CH22_CAMERA</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="124" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="124" bodyend="133"/>
+    <listofallmembers>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___h_w_attrs_1ab35bfe98c5466f241eff49822a4de046" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_HWAttrs</scope><name>baseAddr</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___h_w_attrs_1a6ae0ebea75dcba9f1836774d7d380b2a" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_HWAttrs</scope><name>channelIndex</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___h_w_attrs_1a2136697500f1604ed6231fc232e46faf" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_HWAttrs</scope><name>intNum</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___h_w_attrs_1a4310d7487b3300d3ea77f0b1b7345f51" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_HWAttrs</scope><name>intPriority</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

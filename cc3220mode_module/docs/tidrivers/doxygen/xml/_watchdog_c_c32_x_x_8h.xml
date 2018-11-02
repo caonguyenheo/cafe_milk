@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_watchdog_c_c32_x_x_8h" kind="file" language="C++">
+    <compoundname>WatchdogCC32XX.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="_watchdog_8h" local="no">ti/drivers/Watchdog.h</includes>
+    <incdepgraph>
+      <node id="367">
+        <label>stdbool.h</label>
+      </node>
+      <node id="366">
+        <label>stdint.h</label>
+      </node>
+      <node id="368">
+        <label>ti/drivers/Watchdog.h</label>
+        <link refid="_watchdog_8h"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>WatchdogCC32XX.h</label>
+        <link refid="_watchdog_c_c32_x_x_8h"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_watchdog_c_c32_x_x___h_w_attrs" prot="public">WatchdogCC32XX_HWAttrs</innerclass>
+    <innerclass refid="struct_watchdog_c_c32_x_x___object" prot="public">WatchdogCC32XX_Object</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___watchdog___c_m_d_1ga2180fa0accdea4b379edd12a3a5d9113" prot="public" static="no">
+        <name>WatchdogCC32XX_CMD_IS_TIMER_ENABLE</name>
+        <initializer>(<ref refid="group___watchdog___c_o_n_t_r_o_l_1ga4d1b16e67bf555b8fe49182eb8a28b97" kindref="member">Watchdog_CMD_RESERVED</ref> + 0)</initializer>
+        <briefdescription>
+<para>Command used by Watchdog_control to determines whether the watchdog timer is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if the watchdog timer is enabled, else <computeroutput>false</computeroutput> if it is not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="138" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___watchdog___c_m_d_1ga5ef077bbc3ab4392e24fc13282993d8e" prot="public" static="no">
+        <name>WatchdogCC32XX_CMD_GET_TIMER_VALUE</name>
+        <initializer>(<ref refid="group___watchdog___c_o_n_t_r_o_l_1ga4d1b16e67bf555b8fe49182eb8a28b97" kindref="member">Watchdog_CMD_RESERVED</ref> + 1)</initializer>
+        <briefdescription>
+<para>Command used by Watchdog_control to gets the current watchdog timer value. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to an <emphasis>integer</emphasis>. <bold>*arg</bold> contains the current value of the watchdog timer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="148" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___watchdog___c_m_d_1ga8a2cadcd075a2a23fcfa9d980adf09a6" prot="public" static="no">
+        <name>WatchdogCC32XX_CMD_IS_TIMER_LOCKED</name>
+        <initializer>(<ref refid="group___watchdog___c_o_n_t_r_o_l_1ga4d1b16e67bf555b8fe49182eb8a28b97" kindref="member">Watchdog_CMD_RESERVED</ref> + 2)</initializer>
+        <briefdescription>
+<para>Command used by Watchdog_control to determines whether the watchdog timer is locked. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to a <computeroutput>bool</computeroutput>. <bold>*arg</bold> contains <computeroutput>true</computeroutput> if the watchdog timer is locked, else <computeroutput>false</computeroutput> if it is not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="159" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___watchdog___c_m_d_1ga1d0226cc406f566d7832552edd06bc28" prot="public" static="no">
+        <name>WatchdogCC32XX_CMD_GET_TIMER_RELOAD_VALUE</name>
+        <initializer>(<ref refid="group___watchdog___c_o_n_t_r_o_l_1ga4d1b16e67bf555b8fe49182eb8a28b97" kindref="member">Watchdog_CMD_RESERVED</ref> + 3)</initializer>
+        <briefdescription>
+<para>Command used by Watchdog_control to gets the current watchdog timer reload value. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this command code, <bold>arg</bold> is a pointer to an <emphasis>integer</emphasis>. <bold>*arg</bold> contains the current value loaded into the watchdog timer when the count reaches zero for the first time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="170" column="9" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_watchdog_c_c32_x_x_8h_1adab1160ed844862099021ce7c03acb34" prot="public" static="no">
+        <type>struct <ref refid="struct_watchdog_c_c32_x_x___h_w_attrs" kindref="compound">WatchdogCC32XX_HWAttrs</ref></type>
+        <definition>typedef struct WatchdogCC32XX_HWAttrs  WatchdogCC32XX_HWAttrs</definition>
+        <argsstring></argsstring>
+        <name>WatchdogCC32XX_HWAttrs</name>
+        <briefdescription>
+<para>Watchdog hardware attributes for CC32XX. </para>        </briefdescription>
+        <detaileddescription>
+<para>intPriority is the Watchdog timer&apos;s interrupt priority, as defined by the underlying OS. It is passed unmodified to the underlying OS&apos;s interrupt handler creation code, so you need to refer to the OS documentation for usage. For example, for SYS/BIOS applications, refer to the ti.sysbios.family.arm.m3.Hwi documentation for SYS/BIOS usage of interrupt priorities. If the driver uses the ti.dpl interface instead of making OS calls directly, then the HwiP port handles the interrupt priority in an OS specific way. In the case of the SYS/BIOS port, intPriority is passed unmodified to Hwi_create(). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_watchdog_c_c32_x_x_8h_1ad76c00316c580c295ae3a2bdae02650e" prot="public" static="no">
+        <type>struct <ref refid="struct_watchdog_c_c32_x_x___object" kindref="compound">WatchdogCC32XX_Object</ref></type>
+        <definition>typedef struct WatchdogCC32XX_Object  WatchdogCC32XX_Object</definition>
+        <argsstring></argsstring>
+        <name>WatchdogCC32XX_Object</name>
+        <briefdescription>
+<para>Watchdog Object for CC32XX. </para>        </briefdescription>
+        <detaileddescription>
+<para>Not to be accessed by the user. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="205" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_watchdog_c_c32_x_x_8h_1a6035ac575fbea7e6df0bcee2698855d1" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_watchdog_8h_1aa8370f2ff642b6a253e37c0b7b44fbed" kindref="member">Watchdog_FxnTable</ref></type>
+        <definition>const Watchdog_FxnTable WatchdogCC32XX_fxnTable</definition>
+        <argsstring></argsstring>
+        <name>WatchdogCC32XX_fxnTable</name>
+        <briefdescription>
+<para>Watchdog function table for CC32XX. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h" line="176" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Watchdog driver implementation for CC32XX. </para>    </briefdescription>
+    <detaileddescription>
+<para>============================================================================</para><para>The Watchdog header file for CC32XX should be included in an application as follows: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/Watchdog.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/watchdog/WatchdogCC32XX.h&gt;</highlight></codeline>
+</programlisting></para><para>Refer to <ref refid="_watchdog_8h" kindref="compound">Watchdog.h</ref> for a complete description of APIs.</para><para>This Watchdog driver implementation is designed to operate on a CC32XX device. Once opened, CC32XX Watchdog will count down from the reload value specified in the <ref refid="struct_watchdog_c_c32_x_x___h_w_attrs" kindref="compound">WatchdogCC32XX_HWAttrs</ref>. If it times out, the Watchdog interrupt flag will be set, and a user-provided callback function will be called. If the Watchdog Timer is allowed to time out again while the interrupt flag is still pending, a reset signal will be generated. To prevent a reset, <ref refid="_watchdog_8h_1a396decd6b1807db10c636f9987c3be4c" kindref="member">Watchdog_clear()</ref> must be called to clear the interrupt flag.</para><para>The reload value from which the Watchdog Timer counts down may be changed during runtime using <ref refid="_watchdog_8h_1a63ea82dda83e42e236578b9810e56880" kindref="member">Watchdog_setReload()</ref>.</para><para><ref refid="_watchdog_8h_1a1c0dfea7011b06f303d01afb631ffbdd" kindref="member">Watchdog_close()</ref> is <bold>not</bold> supported by this driver implementation.</para><para>By default the Watchdog driver has resets turned on and this feature cannot be turned disabled.</para><para>To have a user-defined function run at the warning interrupt, first define a void-type function that takes a Watchdog_Handle cast to a UArg as an argument. The callback and code to start the Watchdog timer are shown below.</para><para><programlisting><codeline><highlight class="normal">void<sp/>watchdogCallback(UArg<sp/>handle);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Watchdog_Handle<sp/>handle;</highlight></codeline>
+<codeline><highlight class="normal">Watchdog_Params<sp/>params;</highlight></codeline>
+<codeline><highlight class="normal">uint32_t<sp/>tickValue;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Watchdog_Params_init(&amp;params);</highlight></codeline>
+<codeline><highlight class="normal">params.callbackFxn<sp/>=<sp/>watchdogCallback;</highlight></codeline>
+<codeline><highlight class="normal">handle<sp/>=<sp/>Watchdog_open(Watchdog_configIndex,<sp/>&amp;params);</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Set<sp/>timeout<sp/>period<sp/>to<sp/>100<sp/>ms</highlight></codeline>
+<codeline><highlight class="normal">tickValue<sp/>=<sp/>Watchdog_convertMsToTicks(handle,<sp/>100);</highlight></codeline>
+<codeline><highlight class="normal">Watchdog_setReload(handle,<sp/>tickValue);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>watchdogCallback(UArg<sp/>handle)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>User-defined<sp/>code<sp/>here</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting><hruler/>
+ </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015-2016,<sp/>Texas<sp/>Instruments<sp/>Incorporated</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor">#ifndef<sp/>ti_drivers_watchdog_WatchdogCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ti_drivers_watchdog_WatchdogCC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_watchdog_8h" kindref="compound">ti/drivers/Watchdog.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="comment">/*<sp/>Add<sp/>WatchdogCC32XX_STATUS_*<sp/>macros<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="group___watchdog___c_m_d_1ga2180fa0accdea4b379edd12a3a5d9113" refkind="member"><highlight class="preprocessor">#define<sp/>WatchdogCC32XX_CMD_IS_TIMER_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(Watchdog_CMD_RESERVED<sp/>+<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="group___watchdog___c_m_d_1ga5ef077bbc3ab4392e24fc13282993d8e" refkind="member"><highlight class="preprocessor">#define<sp/>WatchdogCC32XX_CMD_GET_TIMER_VALUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(Watchdog_CMD_RESERVED<sp/>+<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="group___watchdog___c_m_d_1ga8a2cadcd075a2a23fcfa9d980adf09a6" refkind="member"><highlight class="preprocessor">#define<sp/>WatchdogCC32XX_CMD_IS_TIMER_LOCKED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(Watchdog_CMD_RESERVED<sp/>+<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="group___watchdog___c_m_d_1ga1d0226cc406f566d7832552edd06bc28" refkind="member"><highlight class="preprocessor">#define<sp/>WatchdogCC32XX_CMD_GET_TIMER_RELOAD_VALUE<sp/><sp/><sp/>(Watchdog_CMD_RESERVED<sp/>+<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_watchdog___fxn_table__" kindref="compound">Watchdog_FxnTable</ref><sp/><ref refid="_watchdog_c_c32_x_x_8h_1a6035ac575fbea7e6df0bcee2698855d1" kindref="member">WatchdogCC32XX_fxnTable</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="struct_watchdog_c_c32_x_x___h_w_attrs" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_watchdog_c_c32_x_x___h_w_attrs" kindref="compound">WatchdogCC32XX_HWAttrs</ref><sp/>{</highlight></codeline>
+<codeline lineno="192" refid="struct_watchdog_c_c32_x_x___h_w_attrs_1ae1f13f3ec247fee84c0d926e78b3e6a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_watchdog_c_c32_x_x___h_w_attrs_1ae1f13f3ec247fee84c0d926e78b3e6a8" kindref="member">baseAddr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193" refid="struct_watchdog_c_c32_x_x___h_w_attrs_1ac7a3918d5b95722f778f44d305c984d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_watchdog_c_c32_x_x___h_w_attrs_1ac7a3918d5b95722f778f44d305c984d4" kindref="member">intNum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194" refid="struct_watchdog_c_c32_x_x___h_w_attrs_1acf1f11e88df1ffd3f5250d35c43c1c01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_watchdog_c_c32_x_x___h_w_attrs_1acf1f11e88df1ffd3f5250d35c43c1c01" kindref="member">intPriority</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195" refid="struct_watchdog_c_c32_x_x___h_w_attrs_1a0f80ac4c136429bafd1b6d68a9d61c7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><ref refid="struct_watchdog_c_c32_x_x___h_w_attrs_1a0f80ac4c136429bafd1b6d68a9d61c7a" kindref="member">reloadValue</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}<sp/><ref refid="_watchdog_c_c32_x_x_8h_1adab1160ed844862099021ce7c03acb34" kindref="member">WatchdogCC32XX_HWAttrs</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="struct_watchdog_c_c32_x_x___object" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_watchdog_c_c32_x_x___object" kindref="compound">WatchdogCC32XX_Object</ref><sp/>{</highlight></codeline>
+<codeline lineno="204" refid="struct_watchdog_c_c32_x_x___object_1a7a1810a1fd73af5afda05581cbba2d78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_watchdog_c_c32_x_x___object_1a7a1810a1fd73af5afda05581cbba2d78" kindref="member">isOpen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Flag<sp/>for<sp/>open/close<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}<sp/><ref refid="_watchdog_c_c32_x_x_8h_1ad76c00316c580c295ae3a2bdae02650e" kindref="member">WatchdogCC32XX_Object</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ti_drivers_watchdog_WatchdogCC32XX__include<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/watchdog/WatchdogCC32XX.h"/>
+  </compounddef>
+</doxygen>

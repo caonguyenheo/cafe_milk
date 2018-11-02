@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_a_d_c_c_c32_x_x___h_w_attrs_v1" kind="struct" language="C++" prot="public">
+    <compoundname>ADCCC32XX_HWAttrsV1</compoundname>
+    <includes refid="_a_d_c_c_c32_x_x_8h" local="no">ADCCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_d_c_c_c32_x_x___h_w_attrs_v1_1a7d2d9078ddb93d1f02e3fb1f8a637ad6" prot="public" static="no" mutable="no">
+        <type>uint_fast16_t</type>
+        <definition>uint_fast16_t ADCCC32XX_HWAttrsV1::adcPin</definition>
+        <argsstring></argsstring>
+        <name>adcPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" line="94" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ADCCC32XX Hardware attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>These fields are used by driverlib APIs and therefore must be populated by driverlib macro definitions. For CC32XXWare these definitions are found in:<itemizedlist>
+<listitem><para>ti/devices/cc32xx/driverlib/adc.h</para></listitem></itemizedlist>
+</para><para>A sample structure is shown below: <programlisting><codeline><highlight class="normal">const<sp/>ADCCC32XX_HWAttrsV1<sp/>adcCC32XXHWAttrs[Board_ADCCHANNELCOUNT]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.adcPin<sp/>=<sp/>ADCCC32XX_PIN_57</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" line="93" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/adc/ADCCC32XX.h" bodystart="93" bodyend="95"/>
+    <listofallmembers>
+      <member refid="struct_a_d_c_c_c32_x_x___h_w_attrs_v1_1a7d2d9078ddb93d1f02e3fb1f8a637ad6" prot="public" virt="non-virtual"><scope>ADCCC32XX_HWAttrsV1</scope><name>adcPin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

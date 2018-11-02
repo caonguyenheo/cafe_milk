@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_crypto_c_c32_x_x___config" kind="struct" language="C++" prot="public">
+    <compoundname>CryptoCC32XX_Config</compoundname>
+    <includes refid="_crypto_c_c32_x_x_8h" local="no">CryptoCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___config_1ac265b4a3d21805d184012c25e7c843f0" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* CryptoCC32XX_Config::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a driver specific data object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="381" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Crypto Global configuration. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="struct_crypto_c_c32_x_x___config" kindref="compound">CryptoCC32XX_Config</ref> structure contains a set of pointers used to characterize the Crypto driver implementation.</para><para>This structure needs to be defined before calling <ref refid="_crypto_c_c32_x_x_8h_1afc604beb66b331d175456758a038f595" kindref="member">CryptoCC32XX_init()</ref> and it must not be changed thereafter.</para><para><simplesect kind="see"><para><ref refid="_crypto_c_c32_x_x_8h_1afc604beb66b331d175456758a038f595" kindref="member">CryptoCC32XX_init()</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="378" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="378" bodyend="383"/>
+    <listofallmembers>
+      <member refid="struct_crypto_c_c32_x_x___config_1ac265b4a3d21805d184012c25e7c843f0" prot="public" virt="non-virtual"><scope>CryptoCC32XX_Config</scope><name>object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

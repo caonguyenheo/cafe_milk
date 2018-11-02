@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_crypto_c_c32_x_x___hmac_params" kind="struct" language="C++" prot="public">
+    <compoundname>CryptoCC32XX_HmacParams</compoundname>
+    <includes refid="_crypto_c_c32_x_x_8h" local="no">CryptoCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___hmac_params_1a37c7b8a248a126685fc98227fcf83327" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* CryptoCC32XX_HmacParams::pKey</definition>
+        <argsstring></argsstring>
+        <name>pKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointer to hash key </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="327" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___hmac_params_1a4bd03f90ece73b2a77817fa177fe68c1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CryptoCC32XX_HmacParams::moreData</definition>
+        <argsstring></argsstring>
+        <name>moreData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True value will NOT close the HMAC HW machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="329" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___hmac_params_1a89e72b1dbe75f0b0bdbf7dde368589d3" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* CryptoCC32XX_HmacParams::pContext</definition>
+        <argsstring></argsstring>
+        <name>pContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved for future use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="331" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___hmac_params_1a8ec2749095c0793d5356f2c948d9cd4f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CryptoCC32XX_HmacParams::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if no data was written to the HMAC HW machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="333" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___hmac_params_1a488fdfb0ec8faa966d7c52b206e8d98d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CryptoCC32XX_HmacParams::digestCount</definition>
+        <argsstring></argsstring>
+        <name>digestCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes that was written to the HMAC HW machine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="335" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___hmac_params_1afff2753156dd5f4c3786b501730013c9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CryptoCC32XX_HmacParams::innerDigest[ 32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>innerDigest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intermediate digest </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="337" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___hmac_params_1a54cfc6719d597a7bc899a09b8a280410" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CryptoCC32XX_HmacParams::buff[ 64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>buff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal buffer - used when moreData sets to true and the data length is not an integer multiple of blockSize </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="339" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___hmac_params_1aceb4e9d6711f5439023c999573417d1a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CryptoCC32XX_HmacParams::buffLen</definition>
+        <argsstring></argsstring>
+        <name>buffLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes in buff </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="341" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_crypto_c_c32_x_x___hmac_params_1a73ea0b139bcc19154e5a5bb4ac684898" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CryptoCC32XX_HmacParams::blockSize</definition>
+        <argsstring></argsstring>
+        <name>blockSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block size of the hashing algorithm in use </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="343" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HMAC Parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines the Hmac parameters used in CryptoCC32XX_sign and CryptoCC32XX_verify functions. </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" line="325" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/crypto/CryptoCC32XX.h" bodystart="324" bodyend="344"/>
+    <listofallmembers>
+      <member refid="struct_crypto_c_c32_x_x___hmac_params_1a73ea0b139bcc19154e5a5bb4ac684898" prot="public" virt="non-virtual"><scope>CryptoCC32XX_HmacParams</scope><name>blockSize</name></member>
+      <member refid="struct_crypto_c_c32_x_x___hmac_params_1a54cfc6719d597a7bc899a09b8a280410" prot="public" virt="non-virtual"><scope>CryptoCC32XX_HmacParams</scope><name>buff</name></member>
+      <member refid="struct_crypto_c_c32_x_x___hmac_params_1aceb4e9d6711f5439023c999573417d1a" prot="public" virt="non-virtual"><scope>CryptoCC32XX_HmacParams</scope><name>buffLen</name></member>
+      <member refid="struct_crypto_c_c32_x_x___hmac_params_1a488fdfb0ec8faa966d7c52b206e8d98d" prot="public" virt="non-virtual"><scope>CryptoCC32XX_HmacParams</scope><name>digestCount</name></member>
+      <member refid="struct_crypto_c_c32_x_x___hmac_params_1a8ec2749095c0793d5356f2c948d9cd4f" prot="public" virt="non-virtual"><scope>CryptoCC32XX_HmacParams</scope><name>first</name></member>
+      <member refid="struct_crypto_c_c32_x_x___hmac_params_1afff2753156dd5f4c3786b501730013c9" prot="public" virt="non-virtual"><scope>CryptoCC32XX_HmacParams</scope><name>innerDigest</name></member>
+      <member refid="struct_crypto_c_c32_x_x___hmac_params_1a4bd03f90ece73b2a77817fa177fe68c1" prot="public" virt="non-virtual"><scope>CryptoCC32XX_HmacParams</scope><name>moreData</name></member>
+      <member refid="struct_crypto_c_c32_x_x___hmac_params_1a89e72b1dbe75f0b0bdbf7dde368589d3" prot="public" virt="non-virtual"><scope>CryptoCC32XX_HmacParams</scope><name>pContext</name></member>
+      <member refid="struct_crypto_c_c32_x_x___hmac_params_1a37c7b8a248a126685fc98227fcf83327" prot="public" virt="non-virtual"><scope>CryptoCC32XX_HmacParams</scope><name>pKey</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

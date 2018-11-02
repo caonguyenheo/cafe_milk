@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_s_d_host_c_c32_x_x___h_w_attrs_v1" kind="struct" language="C++" prot="public">
+    <compoundname>SDHostCC32XX_HWAttrsV1</compoundname>
+    <includes refid="_s_d_host_c_c32_x_x_8h" local="no">SDHostCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a8927631618c1dddff2d31b7b6e381c91" prot="public" static="no" mutable="no">
+        <type>uint_fast32_t</type>
+        <definition>uint_fast32_t SDHostCC32XX_HWAttrsV1::clkRate</definition>
+        <argsstring></argsstring>
+        <name>clkRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SD interface clock rate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="136" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1afb1234183a776ea76fd4783b4f3f61f5" prot="public" static="no" mutable="no">
+        <type>int_fast32_t</type>
+        <definition>int_fast32_t SDHostCC32XX_HWAttrsV1::intPriority</definition>
+        <argsstring></argsstring>
+        <name>intPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal SDHost ISR command/transfer priorty </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="139" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1aca47b5691607142cf044dcebc800a4aa" prot="public" static="no" mutable="no">
+        <type>uint_fast32_t</type>
+        <definition>uint_fast32_t SDHostCC32XX_HWAttrsV1::baseAddr</definition>
+        <argsstring></argsstring>
+        <name>baseAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDHost Peripheral base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="142" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a1ce7b2626d014f97978c286d2413a47f" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long SDHostCC32XX_HWAttrsV1::rxChIdx</definition>
+        <argsstring></argsstring>
+        <name>rxChIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uDMA controlTable receive channel index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="145" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a5b6329c66c64cca258e3b4e9c5d23fe6" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long SDHostCC32XX_HWAttrsV1::txChIdx</definition>
+        <argsstring></argsstring>
+        <name>txChIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uDMA controlTable transmit channel index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="148" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a2bebaf808520a4609084b03c919d08a6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDHostCC32XX_HWAttrsV1::dataPin</definition>
+        <argsstring></argsstring>
+        <name>dataPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SD Host Data pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="151" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1aa1e041e47ae623cb913717db93522d8a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDHostCC32XX_HWAttrsV1::cmdPin</definition>
+        <argsstring></argsstring>
+        <name>cmdPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SD Host CMD pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="154" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a27f71f7078f2855f1dc528b9f7e042a1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDHostCC32XX_HWAttrsV1::clkPin</definition>
+        <argsstring></argsstring>
+        <name>clkPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SD Host CLK pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="157" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" line="134" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/sd/SDHostCC32XX.h" bodystart="134" bodyend="158"/>
+    <listofallmembers>
+      <member refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1aca47b5691607142cf044dcebc800a4aa" prot="public" virt="non-virtual"><scope>SDHostCC32XX_HWAttrsV1</scope><name>baseAddr</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a27f71f7078f2855f1dc528b9f7e042a1" prot="public" virt="non-virtual"><scope>SDHostCC32XX_HWAttrsV1</scope><name>clkPin</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a8927631618c1dddff2d31b7b6e381c91" prot="public" virt="non-virtual"><scope>SDHostCC32XX_HWAttrsV1</scope><name>clkRate</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1aa1e041e47ae623cb913717db93522d8a" prot="public" virt="non-virtual"><scope>SDHostCC32XX_HWAttrsV1</scope><name>cmdPin</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a2bebaf808520a4609084b03c919d08a6" prot="public" virt="non-virtual"><scope>SDHostCC32XX_HWAttrsV1</scope><name>dataPin</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1afb1234183a776ea76fd4783b4f3f61f5" prot="public" virt="non-virtual"><scope>SDHostCC32XX_HWAttrsV1</scope><name>intPriority</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a1ce7b2626d014f97978c286d2413a47f" prot="public" virt="non-virtual"><scope>SDHostCC32XX_HWAttrsV1</scope><name>rxChIdx</name></member>
+      <member refid="struct_s_d_host_c_c32_x_x___h_w_attrs_v1_1a5b6329c66c64cca258e3b4e9c5d23fe6" prot="public" virt="non-virtual"><scope>SDHostCC32XX_HWAttrsV1</scope><name>txChIdx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

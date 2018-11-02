@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_90b750ffdaea8fe91e64751be614a64f" kind="dir">
+    <compoundname>kernel</compoundname>
+    <innerdir refid="dir_720a475c0dd1ec7aae5ad266baa1f98b">nortos</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/kernel/"/>
+  </compounddef>
+</doxygen>

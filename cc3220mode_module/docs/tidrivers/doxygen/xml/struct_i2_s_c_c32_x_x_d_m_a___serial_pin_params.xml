@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_params" kind="struct" language="C++" prot="public">
+    <compoundname>I2SCC32XXDMA_SerialPinParams</compoundname>
+    <includes refid="_i2_s_c_c32_x_x_d_m_a_8h" local="no">I2SCC32XXDMA.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_params_1ab730cfb075941e110137063045df785e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_config" kindref="compound">I2SCC32XXDMA_SerialPinConfig</ref></type>
+        <definition>I2SCC32XXDMA_SerialPinConfig I2SCC32XXDMA_SerialPinParams::serialPinConfig[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>serialPinConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CC32XX Serial Pin Configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="232" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CC32XX specific I2S Parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="146">
+        <label>I2SCC32XXDMA_SerialPinConfig</label>
+        <link refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_config"/>
+      </node>
+      <node id="145">
+        <label>I2SCC32XXDMA_SerialPinParams</label>
+        <link refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_params"/>
+        <childnode refid="146" relation="usage">
+          <edgelabel>serialPinConfig</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" line="229" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/i2s/I2SCC32XXDMA.h" bodystart="229" bodyend="234"/>
+    <listofallmembers>
+      <member refid="struct_i2_s_c_c32_x_x_d_m_a___serial_pin_params_1ab730cfb075941e110137063045df785e" prot="public" virt="non-virtual"><scope>I2SCC32XXDMA_SerialPinParams</scope><name>serialPinConfig</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

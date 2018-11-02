@@ -1,0 +1,109 @@
+SIMPLELINK_CC32XX_SDK_INSTALL_DIR ?= $(abspath ../../../../../../../..)
+
+include $(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/imports.mak
+
+KERNEL_BUILD := $(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/kernel/tirtos/builds/CC3220S_LAUNCHXL/release
+SYSCONFIG_PRODUCT := $(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/.metadata/sdk.json
+BOARD := /ti/boards/.meta/CC3220S_LAUNCHXL
+
+CC = "$(CCS_ARMCOMPILER)/bin/armcl"
+LNK = "$(CCS_ARMCOMPILER)/bin/armcl"
+
+OBJECTS = Board.obj uart_term.obj main_tirtos.obj network_if.obj client_cbs.obj mqtt_client_app.obj
+
+CONFIGPKG = $(KERNEL_BUILD)/ccs
+
+NAME = mqtt_client
+
+CFLAGS = -I../.. \
+    -I. \
+    "-I$(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/source" \
+    "-I$(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/source/ti/posix/ccs" \
+    --silicon_version=7M4 \
+    --code_state=16 \
+    --little_endian \
+    --display_error_number \
+    --diag_warning=255 \
+    --diag_wrap=off \
+    --gen_func_subsections=on \
+    --float_support=vfplib \
+    --symdebug:dwarf \
+    "-I$(CCS_ARMCOMPILER)/include"
+
+LFLAGS = "-i$(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/source/ti/net/mqtt/lib" \
+    -lccs/m4/mqtt_release.a \
+    "-i$(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/source/ti/net/lib" \
+    -lccs/m4/slnetsock_release.a \
+    "-i$(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/source/ti/drivers/net/wifi/slnetif" \
+    -lccs/Release/slnetifwifi.a \
+    "-i$(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/source" \
+    -lti/display/lib/display.aem4 \
+    -lti/grlib/lib/ccs/m4/grlib.a \
+    -lthird_party/spiffs/lib/ccs/m4/spiffs.a \
+    -lti/drivers/lib/drivers_cc32xx.aem4 \
+    -lthird_party/fatfs/lib/ccs/m4/fatfs.a \
+    "-i$(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/source/ti/drivers/net/wifi" \
+    -lccs/rtos/simplelink.a \
+    "-i$(SIMPLELINK_CC32XX_SDK_INSTALL_DIR)/kernel/tirtos/packages" \
+    -lti/dpl/lib/dpl_cc32xx.aem4 \
+    "-l$(KERNEL_BUILD)/ccs/linker.cmd" \
+    -lti/devices/cc32xx/driverlib/ccs/Release/driverlib.a \
+    ../../tirtos/ccs/CC3220S_LAUNCHXL_TIRTOS.cmd \
+    "-m$(NAME).map" \
+    --warn_sections \
+    --display_error_number \
+    --diag_wrap=off \
+    --rom_model \
+    "-i$(CCS_ARMCOMPILER)/lib" \
+    -llibc.a
+
+all: $(NAME).out
+
+$(CONFIGPKG)/linker.cmd $(CONFIGPKG)/compiler.opt:
+	@ $(ECHOBLANKLINE)
+	@ echo $(CONFIGPKG) is not built.
+	@ echo You can build it by issuing $(MAKE) in $(CONFIGPKG).
+	@ $(ECHOBLANKLINE)
+
+.INTERMEDIATE: syscfg
+Board.c Board.h : syscfg
+	@ echo generation complete
+
+syscfg: ../../common.syscfg
+	@ echo Generating configuration files...
+	@ $(NODE_JS) $(SYSCONFIG_TOOL) --product $(SYSCONFIG_PRODUCT) --board $(BOARD) --output $(@D) $<
+
+Board.obj: Board.c $(CONFIGPKG)/compiler.opt
+	@ echo Building $@
+	@ $(CC) $(CFLAGS) $< --cmd_file=$(CONFIGPKG)/compiler.opt --output_file=$@
+
+uart_term.obj: ../../uart_term.c Board.h $(CONFIGPKG)/compiler.opt
+	@ echo Building $@
+	@ $(CC) $(CFLAGS) $< --cmd_file=$(CONFIGPKG)/compiler.opt --output_file=$@
+
+main_tirtos.obj: ../../tirtos/main_tirtos.c Board.h $(CONFIGPKG)/compiler.opt
+	@ echo Building $@
+	@ $(CC) $(CFLAGS) $< --cmd_file=$(CONFIGPKG)/compiler.opt --output_file=$@
+
+network_if.obj: ../../network_if.c Board.h $(CONFIGPKG)/compiler.opt
+	@ echo Building $@
+	@ $(CC) $(CFLAGS) $< --cmd_file=$(CONFIGPKG)/compiler.opt --output_file=$@
+
+client_cbs.obj: ../../client_cbs.c Board.h $(CONFIGPKG)/compiler.opt
+	@ echo Building $@
+	@ $(CC) $(CFLAGS) $< --cmd_file=$(CONFIGPKG)/compiler.opt --output_file=$@
+
+mqtt_client_app.obj: ../../mqtt_client_app.c Board.h $(CONFIGPKG)/compiler.opt
+	@ echo Building $@
+	@ $(CC) $(CFLAGS) $< --cmd_file=$(CONFIGPKG)/compiler.opt --output_file=$@
+
+$(NAME).out: $(OBJECTS) $(CONFIGPKG)/linker.cmd
+	@ echo linking $@
+	@ $(LNK) $(CFLAGS) -z $(OBJECTS) $(LFLAGS) -o $(NAME).out
+
+clean:
+	@ echo Cleaning...
+	@ $(RM) $(OBJECTS) > $(DEVNULL) 2>&1
+	@ $(RM) $(NAME).out > $(DEVNULL) 2>&1
+	@ $(RM) $(NAME).map > $(DEVNULL) 2>&1
+	@ $(RM) Board.c Board.h  > $(DEVNULL) 2>&1

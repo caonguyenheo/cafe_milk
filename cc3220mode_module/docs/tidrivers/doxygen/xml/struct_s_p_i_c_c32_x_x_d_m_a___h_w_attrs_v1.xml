@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1" kind="struct" language="C++" prot="public">
+    <compoundname>SPICC32XXDMA_HWAttrsV1</compoundname>
+    <includes refid="_s_p_i_c_c32_x_x_d_m_a_8h" local="no">SPICC32XXDMA.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a291634e7ff74f369d9d7d58c578823ed" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::baseAddr</definition>
+        <argsstring></argsstring>
+        <name>baseAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPICC32XXDMA Peripheral&apos;s base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="269" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a9a369023434e97b97ec7bc4cd4e997fb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::intNum</definition>
+        <argsstring></argsstring>
+        <name>intNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPICC32XXDMA Peripheral&apos;s interrupt vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="272" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a4dd7d57fa12208a77dc3b75c2c7bc80e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::intPriority</definition>
+        <argsstring></argsstring>
+        <name>intPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPICC32XXDMA Peripheral&apos;s interrupt priority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="275" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a9fe09849271730031c5c4c70ec616919" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::spiPRCM</definition>
+        <argsstring></argsstring>
+        <name>spiPRCM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI PRCM peripheral number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="278" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1ad6eb0704adcd7eb48897a91b8c564c6c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::csControl</definition>
+        <argsstring></argsstring>
+        <name>csControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify if chip select line will be controlled by SW or HW </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="281" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a6a72e339d4f0ae043f8d96f5cf94634c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::csPolarity</definition>
+        <argsstring></argsstring>
+        <name>csPolarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="283" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1abde99321fe08667b6eb1c99a0ab069a2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::pinMode</definition>
+        <argsstring></argsstring>
+        <name>pinMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set peripheral to work in 3-pin or 4-pin mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="286" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a664c5a41b81b2e8022178bb14a5687e3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::turboMode</definition>
+        <argsstring></argsstring>
+        <name>turboMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable SPI TURBO mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="289" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a5803b30a5c618f2f3bb4367e276494d9" prot="public" static="no" mutable="no">
+        <type>uint32_t *</type>
+        <definition>uint32_t* SPICC32XXDMA_HWAttrsV1::scratchBufPtr</definition>
+        <argsstring></argsstring>
+        <name>scratchBufPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address of a scratch buffer of size uint32_t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="292" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1ae37a577a5b299ba44485babad490860c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::defaultTxBufValue</definition>
+        <argsstring></argsstring>
+        <name>defaultTxBufValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default TX value if txBuf == NULL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="295" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a91b9e6beabc91f965a7d40d5eb0df650" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::rxChannelIndex</definition>
+        <argsstring></argsstring>
+        <name>rxChannelIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uDMA RX channel index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="298" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a5832b23fa7855a1a36c1b5ec4258e28e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::txChannelIndex</definition>
+        <argsstring></argsstring>
+        <name>txChannelIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uDMA TX channel index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="301" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a0c1ec73d871618beb88b50562d595c4e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SPICC32XXDMA_HWAttrsV1::minDmaTransferSize</definition>
+        <argsstring></argsstring>
+        <name>minDmaTransferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum amout of data to start a uDMA transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="304" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a7576af366d6e4d35537bf367460c5b61" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPICC32XXDMA_HWAttrsV1::mosiPin</definition>
+        <argsstring></argsstring>
+        <name>mosiPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GSPI MOSI pin assignment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="307" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a3a385bc2935f75c7204f94183baa8877" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPICC32XXDMA_HWAttrsV1::misoPin</definition>
+        <argsstring></argsstring>
+        <name>misoPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GSPI MISO pin assignment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="310" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1ad6e5aaeb0fad2b5ee18da0bf20dfc9fa" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPICC32XXDMA_HWAttrsV1::clkPin</definition>
+        <argsstring></argsstring>
+        <name>clkPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GSPI CLK pin assignment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="313" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a48e4f5bcae539f4073b7ddead466212d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SPICC32XXDMA_HWAttrsV1::csPin</definition>
+        <argsstring></argsstring>
+        <name>csPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GSPI CS pin assignment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="316" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SPICC32XXDMA Hardware attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>These fields, with the exception of intPriority, are used by driverlib APIs and therefore must be populated by driverlib macro definitions. For CCWare these definitions are found in:<itemizedlist>
+<listitem><para>driverlib/prcm.h</para></listitem><listitem><para>driverlib/spi.h</para></listitem><listitem><para>driverlib/udma.h</para></listitem><listitem><para>inc/hw_memmap.h</para></listitem><listitem><para>inc/hw_ints.h</para></listitem></itemizedlist>
+</para><para>intPriority is the SPI peripheral&apos;s interrupt priority, as defined by the underlying OS. It is passed unmodified to the underlying OS&apos;s interrupt handler creation code, so you need to refer to the OS documentation for usage. For example, for SYS/BIOS applications, refer to the ti.sysbios.family.arm.m3.Hwi documentation for SYS/BIOS usage of interrupt priorities. If the driver uses the ti.dpl interface instead of making OS calls directly, then the HwiP port handles the interrupt priority in an OS specific way. In the case of the SYS/BIOS port, intPriority is passed unmodified to Hwi_create().</para><para>A sample structure is shown below: <programlisting><codeline><highlight class="normal">#if<sp/>defined(__TI_COMPILER_VERSION__)</highlight></codeline>
+<codeline><highlight class="normal">#pragma<sp/>DATA_ALIGN(scratchBuf,<sp/>32)</highlight></codeline>
+<codeline><highlight class="normal">#elif<sp/>defined(__IAR_SYSTEMS_ICC__)</highlight></codeline>
+<codeline><highlight class="normal">#pragma<sp/>data_alignment=32</highlight></codeline>
+<codeline><highlight class="normal">#elif<sp/>defined(__GNUC__)</highlight></codeline>
+<codeline><highlight class="normal">__attribute__<sp/>((aligned<sp/>(32)))</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal">uint32_t<sp/>scratchBuf;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">const<sp/>SPICC32XXDMA_HWAttrsV1<sp/>SPICC32XXDMAHWAttrs[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.baseAddr<sp/>=<sp/>GSPI_BASE,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intNum<sp/>=<sp/>INT_GSPI,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intPriority<sp/>=<sp/>(~0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.spiPRCM<sp/>=<sp/>PRCM_GSPI,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.csControl<sp/>=<sp/>SPI_HW_CTRL_CS,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.csPolarity<sp/>=<sp/>SPI_CS_ACTIVELOW,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pinMode<sp/>=<sp/>SPI_4PIN_MODE,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.turboMode<sp/>=<sp/>SPI_TURBO_OFF,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.scratchBufPtr<sp/>=<sp/>&amp;scratchBuf,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.defaultTxBufValue<sp/>=<sp/>0,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.rxChannelIndex<sp/>=<sp/>UDMA_CH6_GSPI_RX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.txChannelIndex<sp/>=<sp/>UDMA_CH7_GSPI_TX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.minDmaTransferSize<sp/>=<sp/>100,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.mosiPin<sp/>=<sp/>SPICC32XXDMA_PIN_07_MOSI,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.misoPin<sp/>=<sp/>SPICC32XXDMA_PIN_06_MISO,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.clkPin<sp/>=<sp/>SPICC32XXDMA_PIN_05_CLK,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.csPin<sp/>=<sp/>SPICC32XXDMA_PIN_08_CS,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" line="267" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/spi/SPICC32XXDMA.h" bodystart="267" bodyend="317"/>
+    <listofallmembers>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a291634e7ff74f369d9d7d58c578823ed" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>baseAddr</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1ad6e5aaeb0fad2b5ee18da0bf20dfc9fa" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>clkPin</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1ad6eb0704adcd7eb48897a91b8c564c6c" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>csControl</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a48e4f5bcae539f4073b7ddead466212d" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>csPin</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a6a72e339d4f0ae043f8d96f5cf94634c" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>csPolarity</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1ae37a577a5b299ba44485babad490860c" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>defaultTxBufValue</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a9a369023434e97b97ec7bc4cd4e997fb" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>intNum</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a4dd7d57fa12208a77dc3b75c2c7bc80e" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>intPriority</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a0c1ec73d871618beb88b50562d595c4e" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>minDmaTransferSize</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a3a385bc2935f75c7204f94183baa8877" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>misoPin</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a7576af366d6e4d35537bf367460c5b61" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>mosiPin</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1abde99321fe08667b6eb1c99a0ab069a2" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>pinMode</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a91b9e6beabc91f965a7d40d5eb0df650" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>rxChannelIndex</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a5803b30a5c618f2f3bb4367e276494d9" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>scratchBufPtr</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a9fe09849271730031c5c4c70ec616919" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>spiPRCM</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a664c5a41b81b2e8022178bb14a5687e3" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>turboMode</name></member>
+      <member refid="struct_s_p_i_c_c32_x_x_d_m_a___h_w_attrs_v1_1a5832b23fa7855a1a36c1b5ec4258e28e" prot="public" virt="non-virtual"><scope>SPICC32XXDMA_HWAttrsV1</scope><name>txChannelIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

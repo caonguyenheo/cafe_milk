@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_camera_c_c32_x_x_d_m_a___object" kind="struct" language="C++" prot="public">
+    <compoundname>CameraCC32XXDMA_Object</compoundname>
+    <includes refid="_camera_c_c32_x_x_d_m_a_8h" local="no">CameraCC32XXDMA.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1ad0c5fd07fa80c82f0c9b91967e35764c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CameraCC32XXDMA_Object::opened</definition>
+        <argsstring></argsstring>
+        <name>opened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="142" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1a914926365c8f5a65a1251560a5b8860d" prot="public" static="no" mutable="no">
+        <type><ref refid="_camera_8h_1ab0c490ea8eed1057d4f3fb49ad225ed3" kindref="member">Camera_CaptureMode</ref></type>
+        <definition>Camera_CaptureMode CameraCC32XXDMA_Object::operationMode</definition>
+        <argsstring></argsstring>
+        <name>operationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="143" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1a18597688773c693a51b5390677dd7678" prot="public" static="no" mutable="no">
+        <type><ref refid="_camera_8h_1aba0b8eb4e05a4adb316be6390d7c3ade" kindref="member">Camera_Callback</ref></type>
+        <definition>Camera_Callback CameraCC32XXDMA_Object::captureCallback</definition>
+        <argsstring></argsstring>
+        <name>captureCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="146" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1afc5b53a8841d834c3488e73a7bd3ba32" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CameraCC32XXDMA_Object::captureTimeout</definition>
+        <argsstring></argsstring>
+        <name>captureTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="147" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1a322853c174c938cf537752f7220526ba" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* CameraCC32XXDMA_Object::captureBuf</definition>
+        <argsstring></argsstring>
+        <name>captureBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="148" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1ace9686ed42c8be35499750ea0a5b9759" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CameraCC32XXDMA_Object::bufferlength</definition>
+        <argsstring></argsstring>
+        <name>bufferlength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="149" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1af1625d99fb291b6c2f2f6c1e4d01410c" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CameraCC32XXDMA_Object::frameLength</definition>
+        <argsstring></argsstring>
+        <name>frameLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="150" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1aca428626aaadbd40c14d2db32970b88c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CameraCC32XXDMA_Object::cameraDMA_PingPongMode</definition>
+        <argsstring></argsstring>
+        <name>cameraDMA_PingPongMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="152" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1aa942cedc5b6cdaf195f116efa4e7aaa5" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CameraCC32XXDMA_Object::cameraDMAxIntrRcvd</definition>
+        <argsstring></argsstring>
+        <name>cameraDMAxIntrRcvd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="153" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1ad18486537a70e669f9f1443c8ffc5a35" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CameraCC32XXDMA_Object::inUse</definition>
+        <argsstring></argsstring>
+        <name>inUse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="154" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1aec1d2b83416df75d37cc41575a5269ea" prot="public" static="no" mutable="no">
+        <type>SemaphoreP_Handle</type>
+        <definition>SemaphoreP_Handle CameraCC32XXDMA_Object::captureSem</definition>
+        <argsstring></argsstring>
+        <name>captureSem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="157" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_c_c32_x_x_d_m_a___object_1aead1cd445281ee57a6e743423aaa1a95" prot="public" static="no" mutable="no">
+        <type>HwiP_Handle</type>
+        <definition>HwiP_Handle CameraCC32XXDMA_Object::hwiHandle</definition>
+        <argsstring></argsstring>
+        <name>hwiHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="158" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CameraCC32XXDMA Object. </para>    </briefdescription>
+    <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="29">
+        <label>CameraCC32XXDMA_Object</label>
+        <link refid="struct_camera_c_c32_x_x_d_m_a___object"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>captureCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Camera_Config_</label>
+        <link refid="struct_camera___config__"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>fxnTablePtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Camera_FxnTable_</label>
+        <link refid="struct_camera___fxn_table__"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>closeFxn</edgelabel>
+          <edgelabel>initFxn</edgelabel>
+          <edgelabel>captureFxn</edgelabel>
+          <edgelabel>controlFxn</edgelabel>
+          <edgelabel>openFxn</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" line="140" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/camera/CameraCC32XXDMA.h" bodystart="140" bodyend="159"/>
+    <listofallmembers>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1ace9686ed42c8be35499750ea0a5b9759" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>bufferlength</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1aca428626aaadbd40c14d2db32970b88c" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>cameraDMA_PingPongMode</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1aa942cedc5b6cdaf195f116efa4e7aaa5" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>cameraDMAxIntrRcvd</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1a322853c174c938cf537752f7220526ba" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>captureBuf</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1a18597688773c693a51b5390677dd7678" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>captureCallback</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1aec1d2b83416df75d37cc41575a5269ea" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>captureSem</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1afc5b53a8841d834c3488e73a7bd3ba32" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>captureTimeout</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1af1625d99fb291b6c2f2f6c1e4d01410c" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>frameLength</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1aead1cd445281ee57a6e743423aaa1a95" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>hwiHandle</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1ad18486537a70e669f9f1443c8ffc5a35" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>inUse</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1ad0c5fd07fa80c82f0c9b91967e35764c" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>opened</name></member>
+      <member refid="struct_camera_c_c32_x_x_d_m_a___object_1a914926365c8f5a65a1251560a5b8860d" prot="public" virt="non-virtual"><scope>CameraCC32XXDMA_Object</scope><name>operationMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

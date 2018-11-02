@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_u_d_m_a_c_c32_x_x_8h" kind="file" language="C++">
+    <compoundname>UDMACC32XX.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">ti/drivers/dpl/HwiP.h</includes>
+    <includedby refid="_i2_s_c_c32_x_x_d_m_a_8h" local="no">I2SCC32XXDMA.h</includedby>
+    <includedby refid="_s_d_host_c_c32_x_x_8h" local="no">SDHostCC32XX.h</includedby>
+    <includedby refid="_s_p_i_c_c32_x_x_d_m_a_8h" local="no">SPICC32XXDMA.h</includedby>
+    <includedby refid="_u_a_r_t_c_c32_x_x_d_m_a_8h" local="no">UARTCC32XXDMA.h</includedby>
+    <incdepgraph>
+      <node id="349">
+        <label>stdbool.h</label>
+      </node>
+      <node id="348">
+        <label>stdint.h</label>
+      </node>
+      <node id="347">
+        <label>UDMACC32XX.h</label>
+        <link refid="_u_d_m_a_c_c32_x_x_8h"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>ti/drivers/dpl/HwiP.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="352">
+        <label>I2SCC32XXDMA.h</label>
+        <link refid="_i2_s_c_c32_x_x_d_m_a_8h"/>
+      </node>
+      <node id="354">
+        <label>SPICC32XXDMA.h</label>
+        <link refid="_s_p_i_c_c32_x_x_d_m_a_8h"/>
+      </node>
+      <node id="355">
+        <label>UARTCC32XXDMA.h</label>
+        <link refid="_u_a_r_t_c_c32_x_x_d_m_a_8h"/>
+      </node>
+      <node id="351">
+        <label>UDMACC32XX.h</label>
+        <link refid="_u_d_m_a_c_c32_x_x_8h"/>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>SDHostCC32XX.h</label>
+        <link refid="_s_d_host_c_c32_x_x_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs" prot="public">UDMACC32XX_HWAttrs</innerclass>
+    <innerclass refid="struct_u_d_m_a_c_c32_x_x___config" prot="public">UDMACC32XX_Config</innerclass>
+    <innerclass refid="struct_u_d_m_a_c_c32_x_x___object" prot="public">UDMACC32XX_Object</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_u_d_m_a_c_c32_x_x_8h_1adb07face7973e5c56c4c2c42439b938c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* UDMACC32XX_ErrorFxn) (uintptr_t arg)</definition>
+        <argsstring>)(uintptr_t arg)</argsstring>
+        <name>UDMACC32XX_ErrorFxn</name>
+        <briefdescription>
+<para>UDMA error function pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="66" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_u_d_m_a_c_c32_x_x_8h_1ad6ac74fe42eb7068cc54e1e07f6322bc" prot="public" static="no">
+        <type>struct <ref refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs" kindref="compound">UDMACC32XX_HWAttrs</ref></type>
+        <definition>typedef struct UDMACC32XX_HWAttrs  UDMACC32XX_HWAttrs</definition>
+        <argsstring></argsstring>
+        <name>UDMACC32XX_HWAttrs</name>
+        <briefdescription>
+<para>UDMACC32XX Hardware attributes. </para>        </briefdescription>
+        <detaileddescription>
+<para>This structure contains the base address of the uDMA control table, and uDMA error interrupt attributes.</para><para>The control table is used by the uDMA controller to store channel control structures. The control table can be located anywhere in system memory, but must be contiguous and aligned on a 1024-byte boundary.</para><para>dmaErrorFxn is the uDMA peripheral&apos;s error interrupt handler.</para><para>intPriority is priority of the uDMA peripheral&apos;s error interrupt, as defined by the underlying OS. It is passed unmodified to the underlying OS&apos;s interrupt handler creation code, so you need to refer to the OS documentation for usage. If the driver uses the ti.dpl interface instead of making OS calls directly, then the HwiP port handles the interrupt priority in an OS specific way. In the case of the SYS/BIOS port, intPriority is passed unmodified to Hwi_create().</para><para>A sample structure is shown below: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/devices/cc32xx/driverlib/udma.h&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#if<sp/>defined(__TI_COMPILER_VERSION__)</highlight></codeline>
+<codeline><highlight class="normal">#pragma<sp/>DATA_ALIGN(dmaControlTable,<sp/>1024)</highlight></codeline>
+<codeline><highlight class="normal">#elif<sp/>defined(__IAR_SYSTEMS_ICC__)</highlight></codeline>
+<codeline><highlight class="normal">#pragma<sp/>data_alignment=1024</highlight></codeline>
+<codeline><highlight class="normal">#elif<sp/>defined(__GNUC__)</highlight></codeline>
+<codeline><highlight class="normal">__attribute__<sp/>((aligned<sp/>(1024)))</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">static<sp/>tDMAControlTable<sp/>dmaControlTable[64];</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/dma/UDMACC32XX.h&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">UDMACC32XX_Object<sp/>udmaCC32XXObject;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">const<sp/>UDMACC32XX_HWAttrs<sp/>udmaCC32XXHWAttrs<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.controlBaseAddr<sp/>=<sp/>(void<sp/>*)dmaControlTable,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.dmaErrorFxn<sp/>=<sp/>UDMACC32XX_errorFxn,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intNum<sp/>=<sp/>INT_UDMAERR,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intPriority<sp/>=<sp/>(~0)</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_u_d_m_a_c_c32_x_x_8h_1a4d379f98a23ad54b0714f5b6b55c0694" prot="public" static="no">
+        <type>struct <ref refid="struct_u_d_m_a_c_c32_x_x___config" kindref="compound">UDMACC32XX_Config</ref></type>
+        <definition>typedef struct UDMACC32XX_Config  UDMACC32XX_Config</definition>
+        <argsstring></argsstring>
+        <name>UDMACC32XX_Config</name>
+        <briefdescription>
+<para>UDMACC32XX Global configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="struct_u_d_m_a_c_c32_x_x___config" kindref="compound">UDMACC32XX_Config</ref> structure contains pointers used by the UDMACC32XX driver.</para><para>This structure needs to be defined before calling <ref refid="_u_d_m_a_c_c32_x_x_8h_1a7940e6baeef1a2c121ca329680e147b9" kindref="member">UDMACC32XX_init()</ref> and it must not be changed thereafter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_u_d_m_a_c_c32_x_x_8h_1af59f3e7aaf41ab38389b3978751486b0" prot="public" static="no">
+        <type>struct <ref refid="struct_u_d_m_a_c_c32_x_x___config" kindref="compound">UDMACC32XX_Config</ref> *</type>
+        <definition>typedef struct UDMACC32XX_Config* UDMACC32XX_Handle</definition>
+        <argsstring></argsstring>
+        <name>UDMACC32XX_Handle</name>
+        <briefdescription>
+<para>A handle that is returned from a <ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open()</ref> call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="141" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_u_d_m_a_c_c32_x_x_8h_1ad4955d21f0f68cf63533fb5140b827e2" prot="public" static="no">
+        <type>struct <ref refid="struct_u_d_m_a_c_c32_x_x___object" kindref="compound">UDMACC32XX_Object</ref></type>
+        <definition>typedef struct UDMACC32XX_Object  UDMACC32XX_Object</definition>
+        <argsstring></argsstring>
+        <name>UDMACC32XX_Object</name>
+        <briefdescription>
+<para>UDMACC32XX object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The application must not access any member variables of this structure! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="151" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_u_d_m_a_c_c32_x_x_8h_1af9941aa4ed059c5e36d018e8a58f937f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UDMACC32XX_close</definition>
+        <argsstring>(UDMACC32XX_Handle handle)</argsstring>
+        <name>UDMACC32XX_close</name>
+        <param>
+          <type><ref refid="_u_d_m_a_c_c32_x_x_8h_1af59f3e7aaf41ab38389b3978751486b0" kindref="member">UDMACC32XX_Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Function to close the DMA driver. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function releases Power dependency on UDMA that was previously set with a call to <ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open()</ref>. If there is only one outstanding <ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open()</ref> call (i.e. all but one <ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open()</ref> calls have been matched by a corresponding call to <ref refid="_u_d_m_a_c_c32_x_x_8h_1af9941aa4ed059c5e36d018e8a58f937f" kindref="member">UDMACC32XX_close()</ref>), this function will disable the UDMA.</para><para><simplesect kind="pre"><para><ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open()</ref> has to be called first. Calling context: Task</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A UDMACC32XX_Handle returned from <ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open()</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none</para></simplesect>
+<simplesect kind="see"><para><ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_d_m_a_c_c32_x_x_8h_1a7940e6baeef1a2c121ca329680e147b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UDMACC32XX_init</definition>
+        <argsstring>()</argsstring>
+        <name>UDMACC32XX_init</name>
+        <briefdescription>
+<para>Function to initialize the CC32XX DMA driver. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function will set the isOpen flag to false, and should be called prior to opening the DMA driver.</para><para><simplesect kind="return"><para>none</para></simplesect>
+<simplesect kind="see"><para><ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_u_d_m_a_c_c32_x_x_8h_1af59f3e7aaf41ab38389b3978751486b0" kindref="member">UDMACC32XX_Handle</ref></type>
+        <definition>UDMACC32XX_Handle UDMACC32XX_open</definition>
+        <argsstring>()</argsstring>
+        <name>UDMACC32XX_open</name>
+        <briefdescription>
+<para>Function to initialize the CC32XX DMA peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open()</ref> can be called multiple times. Each time the function is called, it will set a dependency on the peripheral and enable the clock. The Power dependency count on the UDMA will be equal to the number of outstanding calls to <ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open()</ref>. Calling <ref refid="_u_d_m_a_c_c32_x_x_8h_1af9941aa4ed059c5e36d018e8a58f937f" kindref="member">UDMACC32XX_close()</ref> will decrement the Power dependency count, and the last call to <ref refid="_u_d_m_a_c_c32_x_x_8h_1af9941aa4ed059c5e36d018e8a58f937f" kindref="member">UDMACC32XX_close()</ref> will disable the UDMA.</para><para><simplesect kind="pre"><para><ref refid="_u_d_m_a_c_c32_x_x_8h_1a7940e6baeef1a2c121ca329680e147b9" kindref="member">UDMACC32XX_init()</ref> has to be called first. Calling context: Task</para></simplesect>
+<simplesect kind="return"><para>UDMACC32XX_Handle on success or NULL if an error has occurred.</para></simplesect>
+<simplesect kind="see"><para><ref refid="_u_d_m_a_c_c32_x_x_8h_1af9941aa4ed059c5e36d018e8a58f937f" kindref="member">UDMACC32XX_close()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h" line="202" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>uDMA driver implementation for CC32XX. </para>    </briefdescription>
+    <detaileddescription>
+<para>============================================================================</para><para>This driver is intended for use only by drivers that use the uDMA peripheral (e.g., SPI and I2S). This driver is mainly used for Power management of the UDMA peripheral.</para><para>The application should only define the memory for the control table and set up the <ref refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs" kindref="compound">UDMACC32XX_HWAttrs</ref> and <ref refid="struct_u_d_m_a_c_c32_x_x___config" kindref="compound">UDMACC32XX_Config</ref> structures.</para><para>The UDMACC32XX header file should be included in an application as follows: <programlisting><codeline><highlight class="normal">#include<sp/>&lt;ti/drivers/dma/UDMACC32XX.h&gt;</highlight></codeline>
+</programlisting> <hruler/>
+ </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2016-2018,<sp/>Texas<sp/>Instruments<sp/>Incorporated</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>*<sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor">#ifndef<sp/>ti_drivers_dma_UDMACC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ti_drivers_dma_UDMACC32XX__include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ti/drivers/dpl/HwiP.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_u_d_m_a_c_c32_x_x_8h_1adb07face7973e5c56c4c2c42439b938c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="_u_d_m_a_c_c32_x_x_8h_1adb07face7973e5c56c4c2c42439b938c" kindref="member">UDMACC32XX_ErrorFxn</ref>)(uintptr_t<sp/>arg);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs" kindref="compound">UDMACC32XX_HWAttrs</ref><sp/>{</highlight></codeline>
+<codeline lineno="118" refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs_1ab437c6796eecbffd602a07c6446fd147" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs_1ab437c6796eecbffd602a07c6446fd147" kindref="member">controlBaseAddr</ref>;<sp/></highlight></codeline>
+<codeline lineno="119" refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs_1a99f5b65f0016ea6412c4f8fb3b1a0e15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_d_m_a_c_c32_x_x_8h_1adb07face7973e5c56c4c2c42439b938c" kindref="member">UDMACC32XX_ErrorFxn</ref><sp/><ref refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs_1a99f5b65f0016ea6412c4f8fb3b1a0e15" kindref="member">dmaErrorFxn</ref>;<sp/></highlight></codeline>
+<codeline lineno="120" refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs_1a090073b2860517886865a8f3ad8a38db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs_1a090073b2860517886865a8f3ad8a38db" kindref="member">intNum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs_1a06303d21e675e3961276b4ca07d6ce98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_u_d_m_a_c_c32_x_x___h_w_attrs_1a06303d21e675e3961276b4ca07d6ce98" kindref="member">intPriority</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}<sp/><ref refid="_u_d_m_a_c_c32_x_x_8h_1ad6ac74fe42eb7068cc54e1e07f6322bc" kindref="member">UDMACC32XX_HWAttrs</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="struct_u_d_m_a_c_c32_x_x___config" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_d_m_a_c_c32_x_x___config" kindref="compound">UDMACC32XX_Config</ref><sp/>{</highlight></codeline>
+<codeline lineno="134" refid="struct_u_d_m_a_c_c32_x_x___config_1a8162ba3b2732a507d1ed5f7a33b21923" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_u_d_m_a_c_c32_x_x___config_1a8162ba3b2732a507d1ed5f7a33b21923" kindref="member">object</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="struct_u_d_m_a_c_c32_x_x___config_1aed5ef00c889e6733881cd663ef20eebc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct_u_d_m_a_c_c32_x_x___config_1aed5ef00c889e6733881cd663ef20eebc" kindref="member">hwAttrs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}<sp/><ref refid="_u_d_m_a_c_c32_x_x_8h_1a4d379f98a23ad54b0714f5b6b55c0694" kindref="member">UDMACC32XX_Config</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="_u_d_m_a_c_c32_x_x_8h_1af59f3e7aaf41ab38389b3978751486b0" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_d_m_a_c_c32_x_x___config" kindref="compound">UDMACC32XX_Config</ref><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="_u_d_m_a_c_c32_x_x_8h_1af59f3e7aaf41ab38389b3978751486b0" kindref="member">UDMACC32XX_Handle</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="struct_u_d_m_a_c_c32_x_x___object" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_d_m_a_c_c32_x_x___object" kindref="compound">UDMACC32XX_Object</ref><sp/>{</highlight></codeline>
+<codeline lineno="149" refid="struct_u_d_m_a_c_c32_x_x___object_1a34aef42cac317d10aabdd2efaf7b0e4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_u_d_m_a_c_c32_x_x___object_1a34aef42cac317d10aabdd2efaf7b0e4f" kindref="member">isOpen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Flag<sp/>for<sp/>open/close<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="struct_u_d_m_a_c_c32_x_x___object_1a819f3a9582e463286227760b1d769ab0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HwiP_Handle<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_u_d_m_a_c_c32_x_x___object_1a819f3a9582e463286227760b1d769ab0" kindref="member">hwiHandle</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DMA<sp/>error<sp/>Hwi<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}<sp/><ref refid="_u_d_m_a_c_c32_x_x_8h_1ad4955d21f0f68cf63533fb5140b827e2" kindref="member">UDMACC32XX_Object</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_u_d_m_a_c_c32_x_x_8h_1af9941aa4ed059c5e36d018e8a58f937f" kindref="member">UDMACC32XX_close</ref>(UDMACC32XX_Handle<sp/>handle);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_u_d_m_a_c_c32_x_x_8h_1a7940e6baeef1a2c121ca329680e147b9" kindref="member">UDMACC32XX_init</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UDMACC32XX_Handle<sp/><ref refid="_u_d_m_a_c_c32_x_x_8h_1ad1ddaa270825f1527509efc870d7f198" kindref="member">UDMACC32XX_open</ref>();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ti_drivers_dma_UDMACC32XX__include<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/dma/UDMACC32XX.h"/>
+  </compounddef>
+</doxygen>

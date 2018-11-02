@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_f980dfa2069855638b0cd8c57f735ca5" kind="dir">
+    <compoundname>tidrivers_cc32xx</compoundname>
+    <innerdir refid="dir_90b750ffdaea8fe91e64751be614a64f">kernel</innerdir>
+    <innerdir refid="dir_1f993ecc1be2c92f22fa996028484d25">source</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_460cf935d4e52a66a4d15bc079422bda" kind="dir">
+    <compoundname>utils</compoundname>
+    <innerfile refid="_list_8h">List.h</innerfile>
+    <innerfile refid="_ring_buf_8h">RingBuf.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/utils/"/>
+  </compounddef>
+</doxygen>

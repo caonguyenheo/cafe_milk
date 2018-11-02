@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_i2_s___params__" kind="struct" language="C++" prot="public">
+    <compoundname>I2S_Params_</compoundname>
+    <includes refid="_i2_s_8h" local="no">I2S.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_s___params___1aa8e2628b50d7c1881dd6576a39002337" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a2ec2f2e9bdb87f5d2ff1b23bcbfef416" kindref="member">I2S_OpMode</ref></type>
+        <definition>I2S_OpMode I2S_Params_::operationMode</definition>
+        <argsstring></argsstring>
+        <name>operationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S operational mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="439" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1a9da18ece35f03dfbf5a68667f3587240" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2S_Params_::samplingFrequency</definition>
+        <argsstring></argsstring>
+        <name>samplingFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S sampling frequency configuration in samples/second </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="442" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1a3bc2b7031a2ab4a422caa927d560282a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t I2S_Params_::slotLength</definition>
+        <argsstring></argsstring>
+        <name>slotLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slot length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="445" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1ac8067233eab0cc761558a0962bc513e2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t I2S_Params_::bitsPerSample</definition>
+        <argsstring></argsstring>
+        <name>bitsPerSample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bits per sample (Word length) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="448" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1a7dbc42c31318433c6da65070b34b4e44" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t I2S_Params_::numChannels</definition>
+        <argsstring></argsstring>
+        <name>numChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of channels (slots per frame) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="451" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1ab0727ebd99085c33e8862c9039f65fd3" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a6a13d8bc9ec9d061c003bb5cb9917057" kindref="member">I2S_DataMode</ref></type>
+        <definition>I2S_DataMode I2S_Params_::readMode</definition>
+        <argsstring></argsstring>
+        <name>readMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode for all read calls </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="454" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1abcd538ba2de411afbbfcdbb6278d08f8" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a760fd8eb272890d42560bcb494a3e2c0" kindref="member">I2S_Callback</ref></type>
+        <definition>I2S_Callback I2S_Params_::readCallback</definition>
+        <argsstring></argsstring>
+        <name>readCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to read callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="457" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1a65bb94be2fc7be08852b518d80dfe244" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2S_Params_::readTimeout</definition>
+        <argsstring></argsstring>
+        <name>readTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timeout for read semaphore </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="460" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1a792d9637b3a6e97192cd9e48cf075c83" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a6a13d8bc9ec9d061c003bb5cb9917057" kindref="member">I2S_DataMode</ref></type>
+        <definition>I2S_DataMode I2S_Params_::writeMode</definition>
+        <argsstring></argsstring>
+        <name>writeMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode for all write calls </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="463" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1a4392adb6b38a71d18a40f4383d90529d" prot="public" static="no" mutable="no">
+        <type><ref refid="_i2_s_8h_1a760fd8eb272890d42560bcb494a3e2c0" kindref="member">I2S_Callback</ref></type>
+        <definition>I2S_Callback I2S_Params_::writeCallback</definition>
+        <argsstring></argsstring>
+        <name>writeCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to write callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="466" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1ad9896c5bf8cac7146379cd58cc02c706" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t I2S_Params_::writeTimeout</definition>
+        <argsstring></argsstring>
+        <name>writeTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timeout for write semaphore </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="469" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_s___params___1a94d0c88eab1b762489f9ecd7389b2e06" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* I2S_Params_::customParams</definition>
+        <argsstring></argsstring>
+        <name>customParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to device specific custom params </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="472" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Basic I2S Parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>I2S parameters are used to with the <ref refid="_i2_s_8h_1a49305a04152a6fb37a7afceabca642eb" kindref="member">I2S_open()</ref> call. Default values for these parameters are set using <ref refid="_i2_s_8h_1a961c116273a6e8d4581278b2666f13b5" kindref="member">I2S_Params_init()</ref>.</para><para><simplesect kind="see"><para><ref refid="_i2_s_8h_1a961c116273a6e8d4581278b2666f13b5" kindref="member">I2S_Params_init()</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="129">
+        <label>I2S_Config_</label>
+        <link refid="struct_i2_s___config__"/>
+        <childnode refid="130" relation="usage">
+          <edgelabel>fxnTablePtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="130">
+        <label>I2S_FxnTable_</label>
+        <link refid="struct_i2_s___fxn_table__"/>
+        <childnode refid="129" relation="usage">
+          <edgelabel>readIssueFxn</edgelabel>
+          <edgelabel>closeFxn</edgelabel>
+          <edgelabel>writeIssueFxn</edgelabel>
+          <edgelabel>writeReclaimFxn</edgelabel>
+          <edgelabel>initFxn</edgelabel>
+          <edgelabel>readReclaimFxn</edgelabel>
+          <edgelabel>controlFxn</edgelabel>
+          <edgelabel>openFxn</edgelabel>
+        </childnode>
+      </node>
+      <node id="128">
+        <label>I2S_Params_</label>
+        <link refid="struct_i2_s___params__"/>
+        <childnode refid="129" relation="usage">
+          <edgelabel>readCallback</edgelabel>
+          <edgelabel>writeCallback</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" line="438" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/I2S.h" bodystart="438" bodyend="474"/>
+    <listofallmembers>
+      <member refid="struct_i2_s___params___1ac8067233eab0cc761558a0962bc513e2" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>bitsPerSample</name></member>
+      <member refid="struct_i2_s___params___1a94d0c88eab1b762489f9ecd7389b2e06" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>customParams</name></member>
+      <member refid="struct_i2_s___params___1a7dbc42c31318433c6da65070b34b4e44" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>numChannels</name></member>
+      <member refid="struct_i2_s___params___1aa8e2628b50d7c1881dd6576a39002337" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>operationMode</name></member>
+      <member refid="struct_i2_s___params___1abcd538ba2de411afbbfcdbb6278d08f8" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>readCallback</name></member>
+      <member refid="struct_i2_s___params___1ab0727ebd99085c33e8862c9039f65fd3" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>readMode</name></member>
+      <member refid="struct_i2_s___params___1a65bb94be2fc7be08852b518d80dfe244" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>readTimeout</name></member>
+      <member refid="struct_i2_s___params___1a9da18ece35f03dfbf5a68667f3587240" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>samplingFrequency</name></member>
+      <member refid="struct_i2_s___params___1a3bc2b7031a2ab4a422caa927d560282a" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>slotLength</name></member>
+      <member refid="struct_i2_s___params___1a4392adb6b38a71d18a40f4383d90529d" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>writeCallback</name></member>
+      <member refid="struct_i2_s___params___1a792d9637b3a6e97192cd9e48cf075c83" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>writeMode</name></member>
+      <member refid="struct_i2_s___params___1ad9896c5bf8cac7146379cd58cc02c706" prot="public" virt="non-virtual"><scope>I2S_Params_</scope><name>writeTimeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

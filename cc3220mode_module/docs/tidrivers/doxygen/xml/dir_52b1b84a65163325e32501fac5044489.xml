@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_52b1b84a65163325e32501fac5044489" kind="dir">
+    <compoundname>i2c</compoundname>
+    <innerfile refid="_i2_c_c_c32_x_x_8h">I2CCC32XX.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/i2c/"/>
+  </compounddef>
+</doxygen>

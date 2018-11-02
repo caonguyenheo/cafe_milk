@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1" kind="struct" language="C++" prot="public">
+    <compoundname>UARTCC32XX_HWAttrsV1</compoundname>
+    <includes refid="_u_a_r_t_c_c32_x_x_8h" local="no">UARTCC32XX.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1aa0f3a12c7ce1081624ef0020f5a9d2d7" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int UARTCC32XX_HWAttrsV1::baseAddr</definition>
+        <argsstring></argsstring>
+        <name>baseAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Peripheral&apos;s base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="295" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1adda229a538e5e239949565d9677a36d1" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int UARTCC32XX_HWAttrsV1::intNum</definition>
+        <argsstring></argsstring>
+        <name>intNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Peripheral&apos;s interrupt vector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="297" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a824fdc6655f48328d1dd51204cbfa4ca" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int UARTCC32XX_HWAttrsV1::intPriority</definition>
+        <argsstring></argsstring>
+        <name>intPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Peripheral&apos;s interrupt priority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="299" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1ae88e3f5a6d57e8273f46600decfb15ff" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t UARTCC32XX_HWAttrsV1::flowControl</definition>
+        <argsstring></argsstring>
+        <name>flowControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hardware flow control setting defined by driverlib </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="301" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a864b5cf45327d01dc4a039b374a7f697" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* UARTCC32XX_HWAttrsV1::ringBufPtr</definition>
+        <argsstring></argsstring>
+        <name>ringBufPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to an application ring buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="303" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1ae44282e366fedc3224583a8c787cf12b" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t UARTCC32XX_HWAttrsV1::ringBufSize</definition>
+        <argsstring></argsstring>
+        <name>ringBufSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of ringBufPtr </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="305" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a981f3b056fdc8fab9c9b3d8d4c570078" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t UARTCC32XX_HWAttrsV1::rxPin</definition>
+        <argsstring></argsstring>
+        <name>rxPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART RX pin assignment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="307" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a26d782ae87dbe841c789c125d2c9bd00" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t UARTCC32XX_HWAttrsV1::txPin</definition>
+        <argsstring></argsstring>
+        <name>txPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART TX pin assignment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="309" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1ae558d0acdab993706032bc69a6409c2f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t UARTCC32XX_HWAttrsV1::ctsPin</definition>
+        <argsstring></argsstring>
+        <name>ctsPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART clear to send (CTS) pin assignment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="311" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a65eda760213ce43fd2a505b4484404b8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t UARTCC32XX_HWAttrsV1::rtsPin</definition>
+        <argsstring></argsstring>
+        <name>rtsPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART request to send (RTS) pin assignment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="313" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1af76b4cc189d2f1b6543b936fb08779a5" prot="public" static="no" mutable="no">
+        <type><ref refid="_u_a_r_t_c_c32_x_x_8h_1acb6bb8cf2b70e351277acd6180cab586" kindref="member">UARTCC32XX_ErrorCallback</ref></type>
+        <definition>UARTCC32XX_ErrorCallback UARTCC32XX_HWAttrsV1::errorFxn</definition>
+        <argsstring></argsstring>
+        <name>errorFxn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Application error function to be called on receive errors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="315" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UARTCC32XX Hardware attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>The fields, baseAddr, intNum, and flowControl, are used by driverlib APIs and therefore must be populated by driverlib macro definitions. For CC32XXWare these definitions are found in:<itemizedlist>
+<listitem><para>inc/hw_memmap.h</para></listitem><listitem><para>inc/hw_ints.h</para></listitem><listitem><para>driverlib/uart.h</para></listitem></itemizedlist>
+</para><para>intPriority is the UART peripheral&apos;s interrupt priority, as defined by the underlying OS. It is passed unmodified to the underlying OS&apos;s interrupt handler creation code, so you need to refer to the OS documentation for usage. For example, for SYS/BIOS applications, refer to the ti.sysbios.family.arm.m3.Hwi documentation for SYS/BIOS usage of interrupt priorities. If the driver uses the ti.dpl interface instead of making OS calls directly, then the HwiP port handles the interrupt priority in an OS specific way. In the case of the SYS/BIOS port, intPriority is passed unmodified to Hwi_create().</para><para>A sample structure is shown below: <programlisting><codeline><highlight class="normal">unsigned<sp/>char<sp/>uartCC32XXRingBuffer[2][32];</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">const<sp/>UARTCC32XX_HWAttrsV1<sp/>uartCC32XXHWAttrs[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.baseAddr<sp/>=<sp/>UARTA0_BASE,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intNum<sp/>=<sp/>INT_UARTA0,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intPriority<sp/>=<sp/>(~0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.flowControl<sp/>=<sp/>UARTCC32XX_FLOWCTRL_NONE,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ringBufPtr<sp/><sp/>=<sp/>uartCC32XXRingBuffer[0],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ringBufSize<sp/>=<sp/>sizeof(uartCC32XXRingBuffer[0]),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.rxPin<sp/>=<sp/>UARTCC32XX_PIN_57_UART0_RX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.txPin<sp/>=<sp/>UARTCC32XX_PIN_55_UART0_TX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.rtsPin<sp/>=<sp/>UARTCC32XX_PIN_UNASSIGNED,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ctsPin<sp/>=<sp/>UARTCC32XX_PIN_UNASSIGNED,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.errorFxn<sp/>=<sp/>NULL</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.baseAddr<sp/>=<sp/>UARTA1_BASE,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intNum<sp/>=<sp/>INT_UARTA1,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intPriority<sp/>=<sp/>(~0),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.flowControl<sp/>=<sp/>UARTCC32XX_FLOWCTRL_HARDWARE,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ringBufPtr<sp/><sp/>=<sp/>uartCC32XXRingBuffer[1],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ringBufSize<sp/>=<sp/>sizeof(uartCC32XXRingBuffer[1]),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.rxPin<sp/>=<sp/>UARTCC32XX_PIN_08_UART1_RX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.txPin<sp/>=<sp/>UARTCC32XX_PIN_07_UART1_TX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.rtsPin<sp/>=<sp/>UARTCC32XX_PIN_50_UART1_RTS,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ctsPin<sp/>=<sp/>UARTCC32XX_PIN_61_UART1_CTS,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.errorFxn<sp/>=<sp/>NULL</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="308">
+        <label>UARTCC32XX_HWAttrsV1</label>
+        <link refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1"/>
+        <childnode refid="309" relation="usage">
+          <edgelabel>errorFxn</edgelabel>
+        </childnode>
+      </node>
+      <node id="309">
+        <label>UART_Config_</label>
+        <link refid="struct_u_a_r_t___config__"/>
+        <childnode refid="310" relation="usage">
+          <edgelabel>fxnTablePtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="310">
+        <label>UART_FxnTable_</label>
+        <link refid="struct_u_a_r_t___fxn_table__"/>
+        <childnode refid="309" relation="usage">
+          <edgelabel>writeFxn</edgelabel>
+          <edgelabel>readCancelFxn</edgelabel>
+          <edgelabel>closeFxn</edgelabel>
+          <edgelabel>initFxn</edgelabel>
+          <edgelabel>readPollingFxn</edgelabel>
+          <edgelabel>writeCancelFxn</edgelabel>
+          <edgelabel>controlFxn</edgelabel>
+          <edgelabel>openFxn</edgelabel>
+          <edgelabel>writePollingFxn</edgelabel>
+          <edgelabel>readFxn</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" line="293" column="1" bodyfile="exports/tidrivers_cc32xx/source/ti/drivers/uart/UARTCC32XX.h" bodystart="293" bodyend="316"/>
+    <listofallmembers>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1aa0f3a12c7ce1081624ef0020f5a9d2d7" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>baseAddr</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1ae558d0acdab993706032bc69a6409c2f" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>ctsPin</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1af76b4cc189d2f1b6543b936fb08779a5" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>errorFxn</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1ae88e3f5a6d57e8273f46600decfb15ff" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>flowControl</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1adda229a538e5e239949565d9677a36d1" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>intNum</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a824fdc6655f48328d1dd51204cbfa4ca" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>intPriority</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a864b5cf45327d01dc4a039b374a7f697" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>ringBufPtr</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1ae44282e366fedc3224583a8c787cf12b" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>ringBufSize</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a65eda760213ce43fd2a505b4484404b8" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>rtsPin</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a981f3b056fdc8fab9c9b3d8d4c570078" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>rxPin</name></member>
+      <member refid="struct_u_a_r_t_c_c32_x_x___h_w_attrs_v1_1a26d782ae87dbe841c789c125d2c9bd00" prot="public" virt="non-virtual"><scope>UARTCC32XX_HWAttrsV1</scope><name>txPin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
