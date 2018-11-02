@@ -30,7 +30,7 @@
 
 
 #define SPI_20_MHZ              200000000
-#define ENABLE_MODE_SPI			(1)
+
 #define PIN_READY_SPI			(0)
 
 #define SPICMD_OFFSET_ID		(0)
@@ -68,8 +68,7 @@ int gsend_pos_read = 0;
 
 extern sem_t slave;
 extern unsigned char gBuff_rx[];
-
-extern unsigned char gBuff_tx[];
+extern unsigned char gBuff_rx1[];
 
 extern int iSockIDServer;
 extern int iSockID;
@@ -102,19 +101,29 @@ void transferFxn1(SPI_Handle handle, SPI_Transaction *transaction)
 }
 
 
-#define ENABLEWRITE				(0)
+#define ENABLE_MODE_SPI			(0)
 
+
+extern int iStatus_init_tcp_done;
 
 void spi_tranfer_handler()
 {
 
 	bool            transferOK1;
 	SPI_Transaction transaction1;
-
+	int i = 0;
     for(;;)
     {
     	memset((void *)rx_buffer1, 0x0, SPI_SIZE);
+#if(ENABLE_MODE_SPI)
+
+    	memcpy(tx_buffer1, gBuff_rx1, SPI_SIZE);
+
+#else
+
     	memcpy(tx_buffer1, gBuff_rx, SPI_SIZE);
+
+#endif
 
 		transaction1.count = SPI_SIZE;
 		transaction1.txBuf = (void *)(tx_buffer1);
@@ -124,10 +133,20 @@ void spi_tranfer_handler()
 		if(transferOK1)
 		{
 //			sem_wait(&slave);
-#if(ENABLEWRITE)
-//			tcp_write(iSockIDServer, rx_buffer1, TCP_SIZE);
+#if(ENABLE_MODE_SPI)
+
+			if(iStatus_init_tcp_done == 1)
+			{
+				tcp_write(iSockIDServer, rx_buffer1, TCP_SIZE);
+			}
+
 #else
-			tcp_write(iSockID, rx_buffer1, TCP_SIZE);
+
+			if(iStatus_init_tcp_done == 2)
+			{
+				tcp_write(iSockID, rx_buffer1, TCP_SIZE);
+			}
+
 #endif
 		}
 		else
@@ -182,6 +201,12 @@ void *SlaveHandleTask(void *param)
     sem_timedwait(&slave, &ts);*/
 
 	spi_slave_init_handler();
+//	for(;;)
+//	{
+//
+//    	spi_tranfer_handler();
+//    	sleep(2);
+//	}
 
 /*	for(;;)
 	{

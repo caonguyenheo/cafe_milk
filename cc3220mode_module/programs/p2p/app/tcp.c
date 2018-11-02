@@ -44,9 +44,10 @@ extern sem_t slave;
 
 unsigned char gBuff_tx[TCP_SIZE]= {0};
 unsigned char gBuff_rx[TCP_SIZE] = {0};
-extern unsigned char tx_buffer1[];
+unsigned char gBuff_rx1[TCP_SIZE] = {0};
 
-int connectserver = 0;
+
+int iStatus_init_tcp_done = 0;
 int connectcl = 0;
 int iSockID;
 int iSockIDServer;
@@ -236,15 +237,15 @@ int tcp_open_server()
 	sAddr.in4.sin_addr.s_addr = sl_Htonl(sAddr.in4.sin_addr.s_addr);
 	PrintIPAddress(0,(void*)&sAddr.in4.sin_addr);
 	UART_PRINT("\n\r");
-	connectserver = 1;
+	iStatus_init_tcp_done = 1;
 
 
-    UART_PRINT(ANSI_COLOR_YELLOW"Master Received From Tcp\n\r"ANSI_COLOR_RESET);
+    UART_PRINT(ANSI_COLOR_GREEN"Received From Tcp iNewSockID [%d] \n\r"ANSI_COLOR_RESET, iNewSockID);
 
     for(;;)
     {
 //    	sem_post(&slave);
-		ret_val = tcp_read(iNewSockID, gBuff_rx, TCP_SIZE);
+		ret_val = tcp_read(iNewSockID, gBuff_rx1, TCP_SIZE);
 		if( ret_val > 0)
 		{
 
@@ -302,7 +303,7 @@ int tcp_client()
 		}
 
 		iStatus = sl_Connect(iSockID, sa, iAddrSize);
-		UART_PRINT("iStatus %d\n\r", iStatus);
+		UART_PRINT(ANSI_COLOR_YELLOW"Client iStatus [%d] iSockID [%d]\n\r"ANSI_COLOR_RESET, iStatus, iSockID);
 		if(iStatus < 0)
 		{
 			ASSERT_ON_ERROR(iStatus, SL_SOCKET_ERROR);
@@ -311,7 +312,8 @@ int tcp_client()
 		}
 	}
 	connectcl = 1;
-/*	while(1)
+	iStatus_init_tcp_done = 2;
+	for(;;)
 	{
 //    	sem_post(&slave);
 		ret_val = tcp_read(iSockID, gBuff_rx, TCP_SIZE);
@@ -319,7 +321,7 @@ int tcp_client()
 		{
 			//do something
 		}
-	}*/
+	}
 
 	return 0;
 }
