@@ -572,7 +572,7 @@ int system_registration()
 
 #endif
 #if 1
-    char SSID[32]="AlincoVN";
+    char SSID[32]="AlincoVN2";
     char SSID_KEY[64]="aevn2016";
     char AUTHTYPE[8]="WPA";
 	set_wireless_config(SSID, SSID_KEY, AUTHTYPE);

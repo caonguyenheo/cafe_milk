@@ -26,38 +26,28 @@
 #define SOCKET_TIMEOUT_US			(0)
 //#define SOCKET_TIMEOUT_US			(5000)
 
-#define SERVERENABLE	 			(1)
 
-#define TCP_SIZE  					(816)
+
 
 
 #define NUMBERSOCKET 			10
 
 #define PORT                    2000
 
-//ip static of server
-#define IP_ADDR                 0xc0a80169
-
+#define IP_ADDR                 0xc0a80168
 unsigned int uip1 = IP_ADDR;
 
 
 int32_t  gMode = -1;
 extern sem_t slave;
-extern sem_t clientsem;
 
-int g_pos_read = 0;
-int g_pos_write = 0;
 
 unsigned char gBuff_tx[TCP_SIZE]= {0};
 unsigned char gBuff_rx[TCP_SIZE] = {0};
-
-unsigned char rx_buffer_tcp[2][TCP_SIZE] = {0};
-
-extern unsigned char tx_buffer_spi[];
+extern unsigned char tx_buffer1[];
 
 int connectserver = 0;
-int iStatus_tcp_done = 0;
-int iStatus_init_client = 0;
+int connectcl = 0;
 int iSockID;
 int iSockIDServer;
 
@@ -92,7 +82,6 @@ int tcp_read(int socket_id, unsigned char *buffer, int length)
 		do
 		{
 			ret_val = sl_Recv(socket_id, buffer + recv_len, length - recv_len, 0);
-//			ret_val = sl_Recv(socket_id, buffer + recv_len, length - recv_len, SL_MSG_DONTWAIT);
 			if (ret_val > 0)
 			{
 //				UART_PRINT("tcp_read: read %d bytes\r\n", ret_val);
@@ -157,7 +146,6 @@ int tcp_write(int socket_id, unsigned char *buffer, int length)
 	}
 	return length;
 }
-
 
 int tcp_open_server()
 {
@@ -248,22 +236,19 @@ int tcp_open_server()
 	sAddr.in4.sin_addr.s_addr = sl_Htonl(sAddr.in4.sin_addr.s_addr);
 	PrintIPAddress(0,(void*)&sAddr.in4.sin_addr);
 	UART_PRINT("\n\r");
-
-	iStatus_tcp_done = 1;
+	connectserver = 1;
 
 
     UART_PRINT(ANSI_COLOR_YELLOW"Master Received From Tcp\n\r"ANSI_COLOR_RESET);
 
     for(;;)
     {
-    	sem_post(&clientsem);
-		ret_val = tcp_read(iNewSockID, &rx_buffer_tcp[((g_pos_read + 1) %2)][0], TCP_SIZE);
-		memcpy(gBuff_rx, &rx_buffer_tcp[((g_pos_read + 1) % 2)][0],  TCP_SIZE);
-
+//    	sem_post(&slave);
+		ret_val = tcp_read(iNewSockID, gBuff_rx, TCP_SIZE);
 		if( ret_val > 0)
 		{
+
 			//do something
-			g_pos_read = ((g_pos_read + 1) %2);
 		}
 
     }
@@ -285,8 +270,7 @@ int tcp_client()
     SlSockAddr_t	*sa;
     sockAddr_t 		sAddr;
 
-
-	if(iStatus_init_client  == 0)
+	if(connectcl == 0)
 	{
 		memset(gBuff_tx, 0x0, TCP_SIZE);
 
@@ -318,7 +302,7 @@ int tcp_client()
 		}
 
 		iStatus = sl_Connect(iSockID, sa, iAddrSize);
-		UART_PRINT(ANSI_COLOR_YELLOW" Client iStatus %d Socket %d\n\r"ANSI_COLOR_RESET, iStatus, iSockID);
+		UART_PRINT("iStatus %d\n\r", iStatus);
 		if(iStatus < 0)
 		{
 			ASSERT_ON_ERROR(iStatus, SL_SOCKET_ERROR);
@@ -326,27 +310,22 @@ int tcp_client()
 			return(-1);
 		}
 	}
-
-	iStatus_init_client = 1;
-	iStatus_tcp_done = 2;
-
-    for(;;)
-    {
-    	sem_post(&clientsem);
-		ret_val = tcp_read(iSockID, &rx_buffer_tcp[((g_pos_read + 1) %2)][0], TCP_SIZE);
-		memcpy(gBuff_rx, &rx_buffer_tcp[((g_pos_read + 1) % 2)][0],  TCP_SIZE);
-
-		if( ret_val > 0)
+	connectcl = 1;
+/*	while(1)
+	{
+//    	sem_post(&slave);
+		ret_val = tcp_read(iSockID, gBuff_rx, TCP_SIZE);
+		if(ret_val  > 0)
 		{
 			//do something
-			g_pos_read = ((g_pos_read + 1) %2);
 		}
-
-    }
-
+	}*/
 
 	return 0;
 }
+
+
+#define SERVERENABLE	 			(0)
 
 
 void * TcpThread(void *param)
@@ -383,14 +362,12 @@ void * TcpThread(void *param)
 		ClearTerm();
 
 #if (SERVERENABLE == 1)
-
 	    SlNetCfgIpV4Args_t ipV4;
-	    ipV4.Ip          = (_u32)SL_IPV4_VAL(192,168,1,105);
+	    ipV4.Ip          = (_u32)SL_IPV4_VAL(192,168,1,104);
 	    ipV4.IpMask      = (_u32)SL_IPV4_VAL(255,255,255,0);
 	    ipV4.IpGateway   = (_u32)SL_IPV4_VAL(192,168,1,1);
 	    ipV4.IpDnsServer = (_u32)SL_IPV4_VAL(192,168,1,1);
 	    sl_NetCfgSet(SL_NETCFG_IPV4_STA_ADDR_MODE,SL_NETCFG_ADDR_STATIC,sizeof(SlNetCfgIpV4Args_t),(_u8 *)&ipV4);
-
 #endif
 		system_reboot();
 

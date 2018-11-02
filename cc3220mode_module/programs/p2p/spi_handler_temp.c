@@ -27,26 +27,37 @@
 #include <ti/devices/cc32xx/inc/hw_ints.h>
 #include <ti/devices/cc32xx/inc/hw_mcspi.h>
 
+
+
 #define SPI_20_MHZ              200000000
+#define ENABLE_MODE_SPI			(1)
+#define PIN_READY_SPI			(0)
 
+#define SPICMD_OFFSET_ID		(0)
+#define SPICMD_OFFSET_TPYE		(SPICMD_OFFSET_ID+1)
+#define SPICMD_OFFSET_ADDR		(SPICMD_OFFSET_ID+2)
+#define SPICMD_OFFSET_DATA		(SPICMD_OFFSET_ID+2)
+#define SPIRESP_OFFSET_ID		(0)
+#define SPIRESP_OFFSET_DATA		(1)
 
-#define ENABLE_MODE_SPI_WRITE		(0)
-
-
-#define SPI_SIZE  					(816)
-
-
-unsigned char tx_buffer_spi[SPI_SIZE] = {0};
-
-unsigned char rx_buffer_spi[SPI_SIZE] = {0};
-
-unsigned char tx_buffer_tcp[2][SPI_SIZE] = {0};
+#define MAIN_LOOP  				(63	)
 
 
 
-int grecv_pos_write = 0;
-int grecv_pos_read = 0;
+#define BUFF_SIZE1			(16)
+#define RING_BUFF_SIZE		(1024 * 16)
+#define SPI_SEND_BUFF_SIZE	((BUFF_SIZE1/2)* 1024)
+#define SPI_RECV_BUFF_SIZE	(BUFF_SIZE1 * 1024)
+#define DMA_SIZE			(1024)
 
+
+unsigned char tx_buffer1[SPI_SIZE] = {0};
+
+unsigned char rx_buffer1[SPI_SIZE] = {0};
+
+unsigned short grecv_pos_write = 0;
+unsigned short grecv_pos_read = 0;
+int ginit_buff_status = 0;
 SPI_Handle      slaveSpi1;
 
 /*char *bootmem = (char *) 0x20000000;
@@ -62,8 +73,8 @@ extern unsigned char gBuff_tx[];
 
 extern int iSockIDServer;
 extern int iSockID;
-extern int iStatus_tcp_done;
-
+//extern int iSockIDServer;
+//extern int connectserver;
 int spi_slave_init = 0;
 
 void print_buffer_data(uint8_t * buffer, _u32 bufLen, int strat_pos)
@@ -86,58 +97,43 @@ unsigned short swapbyte2(unsigned char highByte, unsigned char lowByte)
 
 void transferFxn1(SPI_Handle handle, SPI_Transaction *transaction)
 {
-	gsend_pos_write = ((gsend_pos_write + 1) % 2);
 	sem_post(&slave);
-//	UART_PRINT("CALLBACK:%d \n\r", gsend_pos_write);
+//	UART_PRINT("CALLBACK \n\r");
 }
 
-extern sem_t clientsem;
+
+#define ENABLEWRITE				(0)
+
 
 void spi_tranfer_handler()
 {
 
 	bool            transferOK1;
 	SPI_Transaction transaction1;
-	int ret_val = 0;
-	struct timespec ts;
-	clock_gettime(CLOCK_REALTIME, &ts);
-	ts.tv_sec += 3;
 
+    for(;;)
+    {
+    	memset((void *)rx_buffer1, 0x0, SPI_SIZE);
+    	memcpy(tx_buffer1, gBuff_rx, SPI_SIZE);
 
-	memset((void *)rx_buffer_spi, 0x0, SPI_SIZE);
-	memcpy(tx_buffer_spi, gBuff_rx, SPI_SIZE);
+		transaction1.count = SPI_SIZE;
+		transaction1.txBuf = (void *)(tx_buffer1);
+		transaction1.rxBuf = (void *)(rx_buffer1);
 
-
-	transaction1.count = 816;
-	transaction1.txBuf = (void *)(tx_buffer_spi);
-	transaction1.rxBuf = (void *)(rx_buffer_spi);
-
-	sem_timedwait(&clientsem, &ts);
-	transferOK1 = SPI_transfer(slaveSpi1, &transaction1);
-
-	if(transferOK1)
-	{
-		sem_wait(&slave);
-//		memcpy(&tx_buffer_tcp[((gsend_pos_write + 1) % 2)][0], rx_buffer_spi, SPI_SIZE);
-
-
-		if(iStatus_tcp_done == 1)
+		transferOK1 = SPI_transfer(slaveSpi1, &transaction1);
+		if(transferOK1)
 		{
-//			ret_val = tcp_write(iSockIDServer, &tx_buffer_tcp[((gsend_pos_write + 1)%2)][0], SPI_SIZE);
-			ret_val = tcp_write(iSockIDServer, rx_buffer_spi, SPI_SIZE);
+//			sem_wait(&slave);
+#if(ENABLEWRITE)
+//			tcp_write(iSockIDServer, rx_buffer1, TCP_SIZE);
+#else
+			tcp_write(iSockID, rx_buffer1, TCP_SIZE);
+#endif
 		}
-
-		if(iStatus_tcp_done == 2)
+		else
 		{
-//				tcp_write(iSockID, rx_buffer_spi, SPI_SIZE);
-//			ret_val = tcp_write(iSockID, &tx_buffer_tcp[((gsend_pos_write + 1)%2)][0], SPI_SIZE);
-			ret_val = tcp_write(iSockID, rx_buffer_spi, SPI_SIZE);
+			UART_PRINT("Unsuccessful slave SPI transfer\n\r");
 		}
-
-	}
-	else
-	{
-		UART_PRINT("Unsuccessful slave SPI transfer\n\r");
 	}
 }
 void spi_slave_init_handler()
@@ -152,8 +148,8 @@ void spi_slave_init_handler()
 		SPI_Params_init(&spiParams1);
 		spiParams1.frameFormat = SPI_POL0_PHA0;
 		spiParams1.mode = SPI_SLAVE;
-		spiParams1.transferMode = SPI_MODE_CALLBACK;
-		spiParams1.transferCallbackFxn = transferFxn1;
+/*		spiParams1.transferMode = SPI_MODE_CALLBACK;
+		spiParams1.transferCallbackFxn = transferFxn1;*/
 		spiParams1.bitRate = SPI_20_MHZ;
 		spiParams1.dataSize = 8;
 
@@ -186,10 +182,12 @@ void *SlaveHandleTask(void *param)
     sem_timedwait(&slave, &ts);*/
 
 	spi_slave_init_handler();
-	for(;;)
+
+/*	for(;;)
 	{
 		spi_tranfer_handler();
-	}
+	}*/
+//    transferFxn1(slaveSpi, &transaction);
 
 	return(0);
 }

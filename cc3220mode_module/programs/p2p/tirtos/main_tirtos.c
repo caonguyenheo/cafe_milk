@@ -157,12 +157,11 @@ int main(void)
     {
         while (1);
     }
-
-    retc = sem_init(&clientsem, 0, 0);
-    if (retc < 0)
-    {
-        while (1);
-    }
+//    retc = sem_init(&clientsem, 0, 0);
+//    if (retc < 0)
+//    {
+//        while (1);
+//    }
 
 
     retc = sem_init(&slave, 0, 0);
@@ -284,7 +283,7 @@ int main(void)
 
     priParam.sched_priority = TASK_PRIORITY_SPI_SLAVE;
     retc = pthread_attr_setschedparam(&pAttrs, &priParam);
-    retc |= pthread_attr_setstacksize(&pAttrs, TASK_STACK_SIZE * 6);
+    retc |= pthread_attr_setstacksize(&pAttrs, TASK_STACK_SIZE * 5);
 
     if(retc != 0)
     {
@@ -316,7 +315,7 @@ int main(void)
 //    pthread_attr_init(&pAttrs_tcp);
     priParam.sched_priority = TASK_PRIORITY_TCP;
     retc = pthread_attr_setschedparam(&pAttrs, &priParam);
-    retc |= pthread_attr_setstacksize(&pAttrs, TASK_STACK_SIZE * 6);
+    retc |= pthread_attr_setstacksize(&pAttrs, TASK_STACK_SIZE * 5);
 
     if(retc != 0)
     {

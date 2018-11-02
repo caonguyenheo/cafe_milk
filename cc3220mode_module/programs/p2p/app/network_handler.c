@@ -979,9 +979,6 @@ int Network_IF_Connect2AP_static_ip(char* ssid, char* pass, int retry)
   #endif
     return lRetVal;
 }
-
-
-
 ConfigureSimpleLinkToDefaultState(int32_t Mode)
 {
      uint8_t                              ucConfigOpt;
@@ -1046,11 +1043,9 @@ ConfigureSimpleLinkToDefaultState(int32_t Mode)
         ASSERT_ON_ERROR(RetVal, WLAN_ERROR); */
 
 
-
      /* enable DHCP client */
      RetVal = sl_NetCfgSet(SL_NETCFG_IPV4_STA_ADDR_MODE,
      SL_NETCFG_ADDR_DHCP, 0, 0);
-
      ASSERT_ON_ERROR(RetVal, NETAPP_ERROR);
 
      /* Disable ipv6 */
