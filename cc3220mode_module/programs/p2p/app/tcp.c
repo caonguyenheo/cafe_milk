@@ -28,7 +28,7 @@
 
 #define SERVERENABLE	 			(0)
 
-#define TCP_SIZE  					(1632)
+#define TCP_SIZE  					(816)
 
 
 #define NUMBERSOCKET 			10

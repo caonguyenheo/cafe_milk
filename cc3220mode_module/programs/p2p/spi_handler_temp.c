@@ -33,7 +33,7 @@
 #define ENABLE_MODE_SPI_WRITE		(0)
 
 
-#define SPI_SIZE  					(1632)
+#define SPI_SIZE  					(816)
 
 
 unsigned char tx_buffer_spi[SPI_SIZE] = {0};
@@ -99,11 +99,12 @@ void spi_tranfer_handler()
 	bool            transferOK1;
 	SPI_Transaction transaction1;
 	int ret_val = 0;
+	int i = 0;
 //	struct timespec ts;
 //	clock_gettime(CLOCK_REALTIME, &ts);
 //	ts.tv_sec += 3;
 
-	for(;;)
+	for(i = 0;i <100;i++)
 	{
 		memset((void *)rx_buffer_spi, 0x0, SPI_SIZE);
 
@@ -175,7 +176,7 @@ void spi_slave_init_handler()
 	}
 	spi_slave_init = 1;
 
-	spi_tranfer_handler();
+//	spi_tranfer_handler();
 
 //	SPI_close(slaveSpi);
 
@@ -189,12 +190,10 @@ void *SlaveHandleTask(void *param)
     sem_timedwait(&slave, &ts);*/
 
 	spi_slave_init_handler();
-/*
 	for(;;)
 	{
 		spi_tranfer_handler();
 	}
-*/
 
 	return(0);
 }
