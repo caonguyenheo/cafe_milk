@@ -26,7 +26,7 @@
 #define SOCKET_TIMEOUT_US			(0)
 //#define SOCKET_TIMEOUT_US			(5000)
 
-#define SERVERENABLE	 			(1)
+#define SERVERENABLE	 			(0)
 
 #define TCP_SIZE  					(816)
 
@@ -227,7 +227,7 @@ int tcp_open_server()
 		// accepts a connection form a TCP client, if there is any
 		// otherwise returns SL_EAGAIN
 		iNewSockID = sl_Accept(iSockID, csa, (SlSocklen_t*)&iAddrSize);
-		UART_PRINT("iNewSockID:%d\n\r",iNewSockID);
+		UART_PRINT(ANSI_COLOR_GREEN"iNewSockID:%d\n\r"ANSI_COLOR_RESET,iNewSockID);
 		iSockIDServer = iNewSockID ;
 		if( (iNewSockID == SL_ERROR_BSD_EAGAIN))
 		{
@@ -252,11 +252,11 @@ int tcp_open_server()
 	iStatus_tcp_done = 1;
 
 
-    UART_PRINT(ANSI_COLOR_YELLOW"Master Received From Tcp\n\r"ANSI_COLOR_RESET);
+    UART_PRINT(ANSI_COLOR_YELLOW"Received From Tcp\n\r"ANSI_COLOR_RESET);
 
     for(;;)
     {
-    	sem_post(&clientsem);
+/*    	sem_post(&clientsem);
 		ret_val = tcp_read(iNewSockID, &rx_buffer_tcp[((g_pos_read + 1) %2)][0], TCP_SIZE);
 		memcpy(gBuff_rx, &rx_buffer_tcp[((g_pos_read + 1) % 2)][0],  TCP_SIZE);
 
@@ -264,8 +264,9 @@ int tcp_open_server()
 		{
 			//do something
 			g_pos_read = ((g_pos_read + 1) %2);
-		}
+		}*/
 
+    	tcp_read(iNewSockID, gBuff_rx, TCP_SIZE);
     }
 
 
@@ -318,7 +319,7 @@ int tcp_client()
 		}
 
 		iStatus = sl_Connect(iSockID, sa, iAddrSize);
-		UART_PRINT(ANSI_COLOR_YELLOW" Client iStatus %d Socket %d\n\r"ANSI_COLOR_RESET, iStatus, iSockID);
+		UART_PRINT(ANSI_COLOR_YELLOW"Client iStatus %d Socket %d\n\r"ANSI_COLOR_RESET, iStatus, iSockID);
 		if(iStatus < 0)
 		{
 			ASSERT_ON_ERROR(iStatus, SL_SOCKET_ERROR);
@@ -332,7 +333,7 @@ int tcp_client()
 
     for(;;)
     {
-    	sem_post(&clientsem);
+/*    	sem_post(&clientsem);
 		ret_val = tcp_read(iSockID, &rx_buffer_tcp[((g_pos_read + 1) %2)][0], TCP_SIZE);
 		memcpy(gBuff_rx, &rx_buffer_tcp[((g_pos_read + 1) % 2)][0],  TCP_SIZE);
 
@@ -340,8 +341,8 @@ int tcp_client()
 		{
 			//do something
 			g_pos_read = ((g_pos_read + 1) %2);
-		}
-
+		}*/
+    	tcp_read(iSockID, gBuff_rx, TCP_SIZE);
     }
 
 
@@ -382,6 +383,7 @@ void * TcpThread(void *param)
 		osi_Sleep(1000);
 		ClearTerm();
 
+
 #if (SERVERENABLE == 1)
 
 	    SlNetCfgIpV4Args_t ipV4;
@@ -400,13 +402,55 @@ void * TcpThread(void *param)
 		UART_PRINT("-REGISTER_DONE\n\r");
 		GPIO_write(Board_GPIO_LED0, Board_GPIO_LED_ON);
 		get_wireless_config();
+	    char acCmdStore[512];
+	    int mode = -1;
+	    UART_PRINT("\n\r");
+    	UART_PRINT(ANSI_COLOR_YELLOW"Select Mode:"ANSI_COLOR_RESET);
+    	UART_PRINT("\n\r");
 
+
+		RetVal = GetCmd(acCmdStore, sizeof(acCmdStore));
+
+		if (strcmp(acCmdStore, "server") == 0)
+		{
+			mode = 1;
+		}
+		else if (strcmp(acCmdStore, "client") == 0)
+		{
+			mode = 2;
+		}
+
+	    if(mode == 1)
+	    {
+	    	UART_PRINT(ANSI_COLOR_GREEN"Mode Server\n\r"ANSI_COLOR_RESET);
+		    SlNetCfgIpV4Args_t ipV4;
+		    ipV4.Ip          = (_u32)SL_IPV4_VAL(192,168,1,105);
+		    ipV4.IpMask      = (_u32)SL_IPV4_VAL(255,255,255,0);
+		    ipV4.IpGateway   = (_u32)SL_IPV4_VAL(192,168,1,1);
+		    ipV4.IpDnsServer = (_u32)SL_IPV4_VAL(192,168,1,1);
+		    sl_NetCfgSet(SL_NETCFG_IPV4_STA_ADDR_MODE,SL_NETCFG_ADDR_STATIC,sizeof(SlNetCfgIpV4Args_t),(_u8 *)&ipV4);
+
+			tcp_open_server();
+	    }
+	    else if(mode == 2)
+	    {
+	    	UART_PRINT(ANSI_COLOR_GREEN"Mode Client\n\r"ANSI_COLOR_RESET);
+	    	tcp_client();
+	    }
+	    else
+	    {
+	    	UART_PRINT("NOT Mode\n\r");
+	    }
+
+
+/*
 #if (SERVERENABLE == 1)
 
 		tcp_open_server();
 #else
 		tcp_client();
 #endif
+*/
 
 
 

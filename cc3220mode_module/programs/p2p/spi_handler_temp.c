@@ -99,45 +99,47 @@ void spi_tranfer_handler()
 	bool            transferOK1;
 	SPI_Transaction transaction1;
 	int ret_val = 0;
-	struct timespec ts;
-	clock_gettime(CLOCK_REALTIME, &ts);
-	ts.tv_sec += 3;
+//	struct timespec ts;
+//	clock_gettime(CLOCK_REALTIME, &ts);
+//	ts.tv_sec += 3;
 
-
-	memset((void *)rx_buffer_spi, 0x0, SPI_SIZE);
-	memcpy(tx_buffer_spi, gBuff_rx, SPI_SIZE);
-
-
-	transaction1.count = 816;
-	transaction1.txBuf = (void *)(tx_buffer_spi);
-	transaction1.rxBuf = (void *)(rx_buffer_spi);
-
-	sem_timedwait(&clientsem, &ts);
-	transferOK1 = SPI_transfer(slaveSpi1, &transaction1);
-
-	if(transferOK1)
+	for(;;)
 	{
-		sem_wait(&slave);
-//		memcpy(&tx_buffer_tcp[((gsend_pos_write + 1) % 2)][0], rx_buffer_spi, SPI_SIZE);
+		memset((void *)rx_buffer_spi, 0x0, SPI_SIZE);
+		memcpy(tx_buffer_spi, gBuff_rx, SPI_SIZE);
 
 
-		if(iStatus_tcp_done == 1)
+		transaction1.count = 816;
+		transaction1.txBuf = (void *)(tx_buffer_spi);
+		transaction1.rxBuf = (void *)(rx_buffer_spi);
+
+	//	sem_timedwait(&clientsem, &ts);
+		transferOK1 = SPI_transfer(slaveSpi1, &transaction1);
+
+		if(transferOK1)
 		{
-//			ret_val = tcp_write(iSockIDServer, &tx_buffer_tcp[((gsend_pos_write + 1)%2)][0], SPI_SIZE);
-			ret_val = tcp_write(iSockIDServer, rx_buffer_spi, SPI_SIZE);
-		}
+			sem_wait(&slave);
+	//		memcpy(&tx_buffer_tcp[((gsend_pos_write + 1) % 2)][0], rx_buffer_spi, SPI_SIZE);
 
-		if(iStatus_tcp_done == 2)
+
+			if(iStatus_tcp_done == 1)
+			{
+	//			ret_val = tcp_write(iSockIDServer, &tx_buffer_tcp[((gsend_pos_write + 1)%2)][0], SPI_SIZE);
+				ret_val = tcp_write(iSockIDServer, rx_buffer_spi, SPI_SIZE);
+			}
+
+			if(iStatus_tcp_done == 2)
+			{
+	//				tcp_write(iSockID, rx_buffer_spi, SPI_SIZE);
+	//			ret_val = tcp_write(iSockID, &tx_buffer_tcp[((gsend_pos_write + 1)%2)][0], SPI_SIZE);
+				ret_val = tcp_write(iSockID, rx_buffer_spi, SPI_SIZE);
+			}
+
+		}
+		else
 		{
-//				tcp_write(iSockID, rx_buffer_spi, SPI_SIZE);
-//			ret_val = tcp_write(iSockID, &tx_buffer_tcp[((gsend_pos_write + 1)%2)][0], SPI_SIZE);
-			ret_val = tcp_write(iSockID, rx_buffer_spi, SPI_SIZE);
+			UART_PRINT("Unsuccessful slave SPI transfer\n\r");
 		}
-
-	}
-	else
-	{
-		UART_PRINT("Unsuccessful slave SPI transfer\n\r");
 	}
 }
 void spi_slave_init_handler()
@@ -186,10 +188,12 @@ void *SlaveHandleTask(void *param)
     sem_timedwait(&slave, &ts);*/
 
 	spi_slave_init_handler();
+/*
 	for(;;)
 	{
 		spi_tranfer_handler();
 	}
+*/
 
 	return(0);
 }
