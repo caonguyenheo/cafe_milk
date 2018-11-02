@@ -33,7 +33,7 @@
 #define ENABLE_MODE_SPI_WRITE		(0)
 
 
-#define SPI_SIZE  					(816)
+#define SPI_SIZE  					(1632)
 
 
 unsigned char tx_buffer_spi[SPI_SIZE] = {0};
@@ -106,10 +106,11 @@ void spi_tranfer_handler()
 	for(;;)
 	{
 		memset((void *)rx_buffer_spi, 0x0, SPI_SIZE);
-		memcpy(tx_buffer_spi, gBuff_rx, SPI_SIZE);
+
+		memcpy(tx_buffer_spi, gBuff_rx, SPI_SIZE/2);
 
 
-		transaction1.count = 816;
+		transaction1.count = 818;
 		transaction1.txBuf = (void *)(tx_buffer_spi);
 		transaction1.rxBuf = (void *)(rx_buffer_spi);
 

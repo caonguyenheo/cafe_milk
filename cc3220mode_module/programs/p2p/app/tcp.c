@@ -28,7 +28,7 @@
 
 #define SERVERENABLE	 			(0)
 
-#define TCP_SIZE  					(816)
+#define TCP_SIZE  					(1632)
 
 
 #define NUMBERSOCKET 			10
@@ -233,6 +233,7 @@ int tcp_open_server()
 		{
 			UART_PRINT("Sleep\n\r");
 			sleep(1);
+			continue;
 		}
 		else if( iNewSockID < 0 )
 		{
