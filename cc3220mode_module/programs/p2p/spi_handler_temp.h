@@ -21,4 +21,7 @@ void spi_slave_init_handler();
 void spi_tranfer_handler();
 void print_buffer_data(uint8_t * buffer, _u32 bufLen, int strat_pos);
 
+//void spi_recv_handler(unsigned char * buffer);
+void spi_recv_handler();
+
 #endif /* SPI_HANDLER_TEMP_H_ */

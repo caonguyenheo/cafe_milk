@@ -78,11 +78,12 @@ int tcp_read(int socket_id, unsigned char *buffer, int length)
 	tv.tv_sec = SOCKET_TIMEOUT_S;
 	tv.tv_usec = SOCKET_TIMEOUT_US;
 
-	if (sl_Select(socket_id +1, &fdset, NULL, NULL, &tv) == 1)
-	{
+//	if (sl_Select(socket_id +1, &fdset, NULL, NULL, &tv) == 1)
+//	{
 		do
 		{
 			ret_val = sl_Recv(socket_id, buffer + recv_len, length - recv_len, 0);
+//			ret_val = sl_Recv(socket_id, buffer + recv_len, length - recv_len, SL_MSG_DONTWAIT);
 			if (ret_val > 0)
 			{
 //				UART_PRINT("tcp_read: read %d bytes\r\n", ret_val);
@@ -106,7 +107,7 @@ int tcp_read(int socket_id, unsigned char *buffer, int length)
 				break;
 			}
 		} while (recv_len < length);
-	}
+//	}
 
 	return recv_len;
 
@@ -200,7 +201,7 @@ int tcp_open_server()
 		return(-1);
 	}
 
-	SlSockNonblocking_t BlockingOption;
+/*	SlSockNonblocking_t BlockingOption;
 	BlockingOption.NonBlockingEnabled = 0;
 	iStatus = sl_SetSockOpt(iSockID, SL_SOL_SOCKET, SL_SO_NONBLOCKING, &BlockingOption, sizeof(BlockingOption));
 	if(iStatus< 0)
@@ -209,7 +210,7 @@ int tcp_open_server()
 				   SL_SOCKET_ERROR);
 		sl_Close(iSockID);
 		return(-1);
-	}
+	}*/
 
 	while( iNewSockID < 0 )
 	{
@@ -245,12 +246,18 @@ int tcp_open_server()
     for(;;)
     {
 //    	sem_post(&slave);
-		ret_val = tcp_read(iNewSockID, gBuff_rx1, TCP_SIZE);
-		if( ret_val > 0)
+		ret_val = tcp_read(iNewSockID, gBuff_rx1, 2000);
+//		spi_recv_handler(gBuff_rx1);
+		spi_recv_handler();
+//		memset(gBuff_rx1, 0x0, TCP_SIZE);
+//		memset(gBuff_rx1, 0x0, TCP_SIZE);
+
+//    	sl_Recv(iNewSockID, gBuff_rx1, TCP_SIZE, 0);
+/*		if( ret_val > 0)
 		{
 
 			//do something
-		}
+		}*/
 
     }
 
@@ -291,7 +298,7 @@ int tcp_client()
 		iSockID = sl_Socket(sa->sa_family, SL_SOCK_STREAM, 0);
 		ASSERT_ON_ERROR(iSockID, SL_SOCKET_ERROR);
 
-		SlSockNonblocking_t BlockingOption;
+/*		SlSockNonblocking_t BlockingOption;
 		BlockingOption.NonBlockingEnabled = 0;
 		iStatus = sl_SetSockOpt(iSockID, SL_SOL_SOCKET, SL_SO_NONBLOCKING, &BlockingOption, sizeof(BlockingOption));
 		if(iStatus< 0)
@@ -300,20 +307,39 @@ int tcp_client()
 					   SL_SOCKET_ERROR);
 			sl_Close(iSockID);
 			return(-1);
-		}
-
-		iStatus = sl_Connect(iSockID, sa, iAddrSize);
-		UART_PRINT(ANSI_COLOR_YELLOW"Client iStatus [%d] iSockID [%d]\n\r"ANSI_COLOR_RESET, iStatus, iSockID);
-		if(iStatus < 0)
+		}*/
+		iStatus = -1;
+		while(iStatus < 0)
 		{
-			ASSERT_ON_ERROR(iStatus, SL_SOCKET_ERROR);
-			sl_Close(iSockID);
-			return(-1);
+			UART_PRINT(ANSI_COLOR_GREEN"Try Connect To Server\n\r"ANSI_COLOR_RESET);
+			iStatus = sl_Connect(iSockID, sa, iAddrSize);
+			UART_PRINT(ANSI_COLOR_YELLOW"Client iStatus [%d] iSockID [%d]\n\r"ANSI_COLOR_RESET, iStatus, iSockID);
+			if(iStatus < 0)
+			{
+				UART_PRINT("[line:%d], [error:%d], [function:%s], [%s]\n\r", __LINE__, iStatus, __FUNCTION__, SL_SOCKET_ERROR);
+				sleep(1);
+				continue;
+//			sl_Close(iSockID);
+//				return(-1);
+			}
+			else
+			{
+				UART_PRINT(ANSI_COLOR_GREEN"Client Connect Successful\n\r"ANSI_COLOR_RESET);
+			}
 		}
 	}
 	connectcl = 1;
 	iStatus_init_tcp_done = 2;
-	for(;;)
+/*	for(;;)
+	{
+//    	sem_post(&slave);
+		ret_val = tcp_write(iSockID, gBuff_tx, TCP_SIZE);
+		if(ret_val  > 0)
+		{
+			//do something
+		}
+	}*/
+/*	for(;;)
 	{
 //    	sem_post(&slave);
 		ret_val = tcp_read(iSockID, gBuff_rx, TCP_SIZE);
@@ -321,7 +347,7 @@ int tcp_client()
 		{
 			//do something
 		}
-	}
+	}*/
 
 	return 0;
 }

@@ -78,8 +78,8 @@ extern void *SlaveHandleTask(void *param);
 */
 
 #define SPAWN_TASK_PRIORITY				(2)
-#define TASK_PRIORITY_TCP				(7)
-#define TASK_PRIORITY_SPI_SLAVE			(7)
+#define TASK_PRIORITY_TCP				(8)
+#define TASK_PRIORITY_SPI_SLAVE			(4)
 #define TASK_PRIORITY_CLI				(1)
 
 

@@ -33,16 +33,6 @@
 
 #define PIN_READY_SPI			(0)
 
-#define SPICMD_OFFSET_ID		(0)
-#define SPICMD_OFFSET_TPYE		(SPICMD_OFFSET_ID+1)
-#define SPICMD_OFFSET_ADDR		(SPICMD_OFFSET_ID+2)
-#define SPICMD_OFFSET_DATA		(SPICMD_OFFSET_ID+2)
-#define SPIRESP_OFFSET_ID		(0)
-#define SPIRESP_OFFSET_DATA		(1)
-
-#define MAIN_LOOP  				(63	)
-
-
 
 #define BUFF_SIZE1			(16)
 #define RING_BUFF_SIZE		(1024 * 16)
@@ -105,7 +95,33 @@ void transferFxn1(SPI_Handle handle, SPI_Transaction *transaction)
 
 
 extern int iStatus_init_tcp_done;
+extern unsigned char gBuff_tx[];
 
+//void spi_recv_handler(unsigned char *buffer)
+void spi_recv_handler()
+{
+
+	bool            transferOK1;
+	SPI_Transaction transaction1;
+	int i = 0;
+    	memset((void *)rx_buffer1, 0x0, SPI_SIZE);
+    	memset((void *)tx_buffer1, 0x0, SPI_SIZE);
+
+#if(ENABLE_MODE_SPI == 1)
+//    	memcpy(tx_buffer1, buffer, SPI_SIZE);
+    	memcpy(tx_buffer1, gBuff_rx1, SPI_SIZE);
+#endif
+
+
+		transaction1.count = SPI_SIZE;
+		transaction1.txBuf = (void *)(tx_buffer1);
+		transaction1.rxBuf = (void *)(NULL);
+//		transaction1.rxBuf = (void *)(rx_buffer1);
+
+		transferOK1 = SPI_transfer(slaveSpi1, &transaction1);
+
+}
+//void spi_tranfer_handler()
 void spi_tranfer_handler()
 {
 
@@ -115,6 +131,12 @@ void spi_tranfer_handler()
     for(;;)
     {
     	memset((void *)rx_buffer1, 0x0, SPI_SIZE);
+//    	memset((void *)tx_buffer1, 0x0, SPI_SIZE);
+#if(ENABLE_MODE_SPI == 2)
+    	memcpy(tx_buffer1, gBuff_rx1, SPI_SIZE);
+#endif
+
+/*
 #if(ENABLE_MODE_SPI)
 
     	memcpy(tx_buffer1, gBuff_rx1, SPI_SIZE);
@@ -124,15 +146,29 @@ void spi_tranfer_handler()
     	memcpy(tx_buffer1, gBuff_rx, SPI_SIZE);
 
 #endif
+*/
 
 		transaction1.count = SPI_SIZE;
-		transaction1.txBuf = (void *)(tx_buffer1);
+		transaction1.txBuf = (void *)(NULL);
+//		transaction1.txBuf = (void *)(tx_buffer1);
 		transaction1.rxBuf = (void *)(rx_buffer1);
 
 		transferOK1 = SPI_transfer(slaveSpi1, &transaction1);
+
 		if(transferOK1)
 		{
 //			sem_wait(&slave);
+#if(ENABLE_MODE_SPI == 0)
+
+				if(iStatus_init_tcp_done == 2)
+				{
+					tcp_write(iSockID, rx_buffer1, 2000);
+				}
+				usleep(5000);
+//				memset((void *)tx_buffer1, 0x0, SPI_SIZE);
+
+#endif
+/*
 #if(ENABLE_MODE_SPI)
 
 			if(iStatus_init_tcp_done == 1)
@@ -148,6 +184,7 @@ void spi_tranfer_handler()
 			}
 
 #endif
+*/
 		}
 		else
 		{
@@ -185,9 +222,20 @@ void spi_slave_init_handler()
 			UART_PRINT(ANSI_COLOR_GREEN"Slave SPI Init Done [%u]\n\r"ANSI_COLOR_RESET,slaveSpi1);
 		}
 	}
-	spi_slave_init = 1;
+
+	if(spi_slave_init == 0)
+	{
+#if(ENABLE_MODE_SPI == 1)
+
+	spi_recv_handler(NULL);
+#else
 
 	spi_tranfer_handler();
+
+#endif
+	}
+	spi_slave_init = 1;
+
 
 //	SPI_close(slaveSpi);
 
